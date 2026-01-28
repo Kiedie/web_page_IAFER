@@ -1,0 +1,16 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporales
+*.log
+*.tmp
+
+# Node modules (si decides usar npm)
+node_modules/
