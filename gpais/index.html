@@ -1,73 +1,237 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPAIS - IAFER</title>
+    <title>GPAIS - General Purpose Artificial Intelligence | IAFER</title>
+    <meta name="description" content="Núcleo de investigación avanzada en IA de propósito general - IAFER Project">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
 </head>
-<body class="gpais-section">
-    <header>
-        <div class="container">
-            <nav class="breadcrumb">
-                <a href="../index.html">← Inicio</a>
-            </nav>
-            <h1>GPAIS</h1>
-            <p class="subtitle">Genetic Programming for Attribute and Instance Selection</p>
+<body id="top">
+    
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
+        <div class="breadcrumb-container">
+            <a href="../index.html" class="breadcrumb-link">
+                <span aria-hidden="true">←</span>
+                <span>Inicio</span>
+            </a>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section class="intro">
-            <h2>Área GPAIS</h2>
-            <p>Contenido principal sobre GPAIS y sus subáreas.</p>
-        </section>
+    <!-- Hero Section / Tarjeta Principal -->
+    <div class="hero-wrapper">
+        <!-- Partículas de fondo -->
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
 
-        <section class="sub-nodes">
-            <h3>Subáreas de GPAIS</h3>
-            <div class="nodes-grid">
-                <div class="node-card small">
-                    <div class="node-icon">📊</div>
-                    <h4>Análisis de Resultados</h4>
-                    <p>Visualización y análisis de experimentos</p>
-                    <a href="resultados/index.html" class="btn-small">Ver más</a>
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">🧠</span>
+                    <span>GPAIS Core</span>
                 </div>
 
-                <div class="node-card small">
-                    <div class="node-icon">🧬</div>
-                    <h4>Algoritmos Genéticos</h4>
-                    <p>Implementación y optimización</p>
-                    <a href="algoritmos/index.html" class="btn-small">Ver más</a>
+                <!-- Título principal -->
+                <h1 class="hero-title">General Purpose Artificial Intelligence</h1>
+                <p class="hero-subtitle">El núcleo de investigación avanzada en IAFER</p>
+
+                <!-- Botones de acción -->
+                <div class="hero-actions">
+                    <a href="#research-areas" class="btn btn-primary">
+                        <span>Explorar ramas</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="../index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Volver a inicio</span>
+                    </a>
                 </div>
 
-                <div class="node-card small">
-                    <div class="node-icon">📚</div>
-                    <h4>Datasets</h4>
-                    <p>Conjuntos de datos utilizados</p>
-                    <a href="datasets/index.html" class="btn-small">Ver más</a>
-                </div>
+                <!-- Divisor decorativo -->
+                <div class="hero-divider"></div>
 
-                <div class="node-card small">
-                    <div class="node-icon">📖</div>
-                    <h4>Publicaciones</h4>
-                    <p>Papers y documentación</p>
-                    <a href="publicaciones/index.html" class="btn-small">Ver más</a>
-                </div>
+                <!-- Subtarjetas de investigación -->
+                <section id="research-areas" class="research-grid" aria-labelledby="research-title">
+                    <h2 id="research-title" class="research-title">Áreas de Investigación</h2>
+                    
+                    <div class="research-cards">
+                        <!-- Tarjeta 1: Zero-Shot Learning -->
+                        <article class="research-card">
+                            <span class="research-badge">Research Focus</span>
+                            <div class="research-icon" aria-hidden="true">🎯</div>
+                            <h3 class="research-card-title">Zero-Shot Learning</h3>
+                            <p class="research-card-desc">
+                                Aprendizaje sin ejemplos previos mediante transferencia de conocimiento semántico.
+                            </p>
+                            <div class="research-card-glow"></div>
+                        </article>
+
+                        <!-- Tarjeta 2: Contrastive Learning -->
+                        <article class="research-card">
+                            <span class="research-badge">Research Focus</span>
+                            <div class="research-icon" aria-hidden="true">⚡</div>
+                            <h3 class="research-card-title">Contrastive Learning</h3>
+                            <p class="research-card-desc">
+                                Aprendizaje de representaciones mediante comparación de ejemplos positivos y negativos.
+                            </p>
+                            <div class="research-card-glow"></div>
+                        </article>
+
+                        <!-- Tarjeta 3: Self-Supervised Learning -->
+                        <article class="research-card">
+                            <span class="research-badge">Research Focus</span>
+                            <div class="research-icon" aria-hidden="true">🔄</div>
+                            <h3 class="research-card-title">Self-Supervised Learning</h3>
+                            <p class="research-card-desc">
+                                Aprendizaje automático de características sin etiquetas manuales de supervisión.
+                            </p>
+                            <div class="research-card-glow"></div>
+                        </article>
+
+                        <!-- Tarjeta 4: Agentic AI -->
+                        <article class="research-card">
+                            <span class="research-badge">Research Focus</span>
+                            <div class="research-icon" aria-hidden="true">🤖</div>
+                            <h3 class="research-card-title">Agentic AI</h3>
+                            <p class="research-card-desc">
+                                Sistemas autónomos con capacidad de toma de decisiones y planificación estratégica.
+                            </p>
+                            <div class="research-card-glow"></div>
+                        </article>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección inferior: Dos tarjetas grandes -->
+    <div class="container">
+        <section class="info-section">
+            <div class="info-grid">
+                
+                <!-- Tarjeta izquierda: Texto explicativo -->
+                <article class="info-card info-card--text">
+                    <div class="info-card-number">1</div>
+                    <h2 class="info-card-title">
+                        <span aria-hidden="true">💡</span>
+                        ¿Qué es GPAIS?
+                    </h2>
+                    
+                    <div class="info-card-content">
+                        <p>
+                            <strong class="text-highlight">GPAIS</strong> (General Purpose Artificial Intelligence Systems) 
+                            representa el marco conceptual y técnico que sustenta nuestra investigación en sistemas de 
+                            inteligencia artificial de propósito general. A diferencia de los sistemas especializados, 
+                            GPAIS busca desarrollar arquitecturas capaces de <em>generalizar conocimiento</em> a través 
+                            de múltiples dominios y tareas.
+                        </p>
+                        
+                        <p>
+                            Nuestro enfoque integra técnicas de aprendizaje avanzado que permiten a los modelos 
+                            <strong>adaptarse sin reentrenamiento completo</strong>, aprovechando conocimiento previo 
+                            para resolver nuevos problemas. Esto incluye métodos como Zero-Shot Learning, que permite 
+                            reconocer clases nunca vistas durante el entrenamiento, y Self-Supervised Learning, que 
+                            extrae patrones de datos no etiquetados.
+                        </p>
+                        
+                        <p>
+                            La escalabilidad y eficiencia son pilares fundamentales de GPAIS. Buscamos sistemas que 
+                            no solo sean poderosos, sino también <strong class="text-highlight">sostenibles y 
+                            accesibles</strong>, reduciendo la dependencia de grandes volúmenes de datos etiquetados 
+                            y recursos computacionales masivos. Nuestro objetivo es democratizar el acceso a IA 
+                            avanzada mientras mantenemos estándares rigurosos de investigación científica.
+                        </p>
+                    </div>
+
+                    <div class="info-features">
+                        <div class="info-feature">
+                            <span class="info-feature-icon">🎯</span>
+                            <span>Generalización Multi-Dominio</span>
+                        </div>
+                        <div class="info-feature">
+                            <span class="info-feature-icon">⚡</span>
+                            <span>Eficiencia Computacional</span>
+                        </div>
+                        <div class="info-feature">
+                            <span class="info-feature-icon">🔬</span>
+                            <span>Rigor Científico</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Tarjeta derecha: Imagen conceptual -->
+                <article class="info-card info-card--visual">
+                    <div class="info-card-number">2</div>
+                    <h2 class="info-card-title">
+                        <span aria-hidden="true">🎨</span>
+                        Visión Conceptual
+                    </h2>
+                    
+                    <figure class="visual-figure">
+                        <div class="visual-wrapper">
+                            <img 
+                                src="../images/gpais/gpais-concept.png" 
+                                alt="Diagrama conceptual de la arquitectura GPAIS mostrando las conexiones entre diferentes métodos de aprendizaje"
+                                class="visual-image"
+                                loading="lazy"
+                            >
+                            <div class="visual-overlay">
+                                <span class="visual-placeholder">🖼️ Imagen de concepto</span>
+                            </div>
+                        </div>
+                        <figcaption class="visual-caption">
+                            Arquitectura conceptual del sistema GPAIS, integrando múltiples paradigmas de aprendizaje 
+                            para lograr inteligencia generalista y adaptativa.
+                        </figcaption>
+                    </figure>
+
+                    <button class="visual-update-btn" type="button" aria-label="Actualizar imagen conceptual">
+                        <span aria-hidden="true">🔄</span>
+                        <span>Actualizar imagen</span>
+                    </button>
+
+                    <div class="visual-meta">
+                        <div class="visual-meta-item">
+                            <span class="visual-meta-label">Formato:</span>
+                            <span class="visual-meta-value">PNG / SVG</span>
+                        </div>
+                        <div class="visual-meta-item">
+                            <span class="visual-meta-label">Resolución:</span>
+                            <span class="visual-meta-value">Alta definición</span>
+                        </div>
+                    </div>
+                </article>
+
             </div>
         </section>
+    </div>
 
-        <section class="content-area">
-            <h3>Descripción Detallada</h3>
-            <p>Aquí va el contenido específico de GPAIS...</p>
-        </section>
-    </main>
-
-    <footer>
+    <!-- Footer minimalista -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 IAFER Project - GPAIS</p>
+            <p class="footer-text">
+                <strong>GPAIS</strong> - General Purpose Artificial Intelligence Systems
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">IAFER Project 2026</a>
+            </p>
         </div>
     </footer>
-    <!-- JS específico cuando sea necesario: <script src="../js/gpais.js"></script> -->
+
 </body>
 </html>
