@@ -10,7 +10,7 @@ web_page_IAFER/
 ├── gpais/                  # Nodo GPAIS
 │   ├── index.html
 │   └── publicaciones/
-├── node2/                  # Trustworthy AI
+├── trustworthy/            # Nodo Trustworthy AI
 │   └── index.html
 ├── css/
 │   ├── base.css            # Estilos globales compartidos
