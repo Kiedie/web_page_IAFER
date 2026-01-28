@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero-Shot Learning - GPAIS | IAFER</title>
+    <meta name="description" content="Aprende sobre Zero-Shot Learning: técnicas de aprendizaje sin ejemplos previos mediante transferencia de conocimiento semántico">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/gpais.css">
+</head>
+<body id="top">
+    
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
+        <div class="breadcrumb-container">
+            <a href="index.html" class="breadcrumb-link">
+                <span aria-hidden="true">←</span>
+                <span>GPAIS</span>
+            </a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Zero-Shot Learning</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">🎯</span>
+                    <span>Research Focus</span>
+                </div>
+
+                <!-- Título principal -->
+                <h1 class="hero-title">Zero-Shot Learning</h1>
+                <p class="hero-subtitle">Aprendizaje sin ejemplos previos mediante transferencia de conocimiento semántico</p>
+
+                <!-- Botones de acción -->
+                <div class="hero-actions">
+                    <a href="#fundamentos" class="btn btn-primary">
+                        <span>Explorar contenido</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Volver a GPAIS</span>
+                    </a>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <!-- Introducción -->
+                <section id="fundamentos" class="content-section">
+                    <h2 class="section-title">¿Qué es Zero-Shot Learning?</h2>
+                    <div class="content-text">
+                        <p>
+                            <strong class="text-highlight">Zero-Shot Learning (ZSL)</strong> es un paradigma de aprendizaje automático 
+                            que permite a los modelos reconocer y clasificar objetos o conceptos que nunca han visto durante el entrenamiento. 
+                            A diferencia de los métodos tradicionales de aprendizaje supervisado, que requieren numerosos ejemplos etiquetados 
+                            de cada clase, ZSL puede generalizar a <strong>clases completamente nuevas</strong> sin ejemplos directos.
+                        </p>
+                        
+                        <p>
+                            Este enfoque revolucionario es fundamental para crear sistemas de IA verdaderamente generales, capaces de 
+                            adaptarse a nuevos escenarios sin necesidad de reentrenamiento costoso. ZSL logra esto mediante la 
+                            <strong>transferencia de conocimiento semántico</strong>, utilizando descripciones de alto nivel (atributos, 
+                            embeddings de texto, o grafos de conocimiento) para relacionar clases conocidas con clases desconocidas.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Cómo Funciona -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">¿Cómo Funciona?</h2>
+            <p class="section-intro">
+                El proceso de Zero-Shot Learning se basa en tres componentes clave que trabajan juntos para lograr 
+                el reconocimiento de clases no vistas
+            </p>
+            
+            <div class="research-cards">
+                <!-- Componente 1 -->
+                <article class="research-card">
+                    <span class="research-badge">Componente 1</span>
+                    <div class="research-icon" aria-hidden="true">🧩</div>
+                    <h3 class="research-card-title">Espacio de Características Visuales</h3>
+                    <p class="research-card-desc">
+                        Se extraen características visuales de las imágenes utilizando redes neuronales profundas 
+                        pre-entrenadas (como ResNet, ViT, o CLIP). Estas representan los atributos visuales de bajo nivel.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Componente 2 -->
+                <article class="research-card">
+                    <span class="research-badge">Componente 2</span>
+                    <div class="research-icon" aria-hidden="true">📚</div>
+                    <h3 class="research-card-title">Espacio Semántico</h3>
+                    <p class="research-card-desc">
+                        Cada clase se describe mediante atributos semánticos, word embeddings (Word2Vec, GloVe) o 
+                        embeddings de lenguaje (BERT, GPT). Este espacio codifica el conocimiento humano sobre las clases.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Componente 3 -->
+                <article class="research-card">
+                    <span class="research-badge">Componente 3</span>
+                    <div class="research-icon" aria-hidden="true">🔗</div>
+                    <h3 class="research-card-title">Función de Compatibilidad</h3>
+                    <p class="research-card-desc">
+                        Se aprende una función que proyecta el espacio visual al espacio semántico, permitiendo 
+                        medir la similitud entre una imagen y las descripciones de clases no vistas durante el test.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Tipos de ZSL -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Variantes de Zero-Shot Learning</h2>
+            
+            <div class="content-grid">
+                <!-- Classical ZSL -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔵</span>
+                        Classical Zero-Shot (CZS)
+                    </h3>
+                    <p class="info-card-text">
+                        Durante el test, el modelo solo encuentra <strong>clases no vistas</strong>. Es el escenario 
+                        más desafiante y académico, pero menos realista en aplicaciones prácticas.
+                    </p>
+                </article>
+
+                <!-- Generalized ZSL -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🟢</span>
+                        Generalized Zero-Shot (GZSL)
+                    </h3>
+                    <p class="info-card-text">
+                        Durante el test, el modelo debe clasificar entre <strong>clases vistas y no vistas</strong> 
+                        simultáneamente. Es más realista y refleja escenarios del mundo real.
+                    </p>
+                </article>
+
+                <!-- Transductive ZSL -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🟡</span>
+                        Transductive Zero-Shot
+                    </h3>
+                    <p class="info-card-text">
+                        El modelo tiene acceso a las <strong>instancias no etiquetadas</strong> de las clases no vistas 
+                        durante el entrenamiento, permitiendo aprovechar su distribución.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Aplicaciones -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Aplicaciones Prácticas</h2>
+            <div class="content-text">
+                <p>
+                    El Zero-Shot Learning tiene un impacto significativo en múltiples dominios donde es imposible 
+                    o impracticable obtener ejemplos de entrenamiento para todas las categorías posibles:
+                </p>
+                
+                <ul class="feature-list">
+                    <li><strong>Reconocimiento de especies raras:</strong> Clasificación de animales en peligro de extinción sin fotografías abundantes</li>
+                    <li><strong>Diagnóstico médico:</strong> Identificación de enfermedades raras con pocos casos documentados</li>
+                    <li><strong>Reconocimiento de objetos en e-commerce:</strong> Clasificación de millones de productos sin etiquetar manualmente cada categoría</li>
+                    <li><strong>Detección de actividades:</strong> Reconocimiento de acciones humanas complejas o inusuales en video vigilancia</li>
+                    <li><strong>Búsqueda de imágenes semántica:</strong> Encontrar imágenes basándose en descripciones textuales sin ejemplos previos</li>
+                    <li><strong>Robótica y manipulación de objetos:</strong> Robots que reconocen y manipulan objetos nuevos sin reentrenamiento</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Desafíos -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Desafíos Actuales</h2>
+            <p class="section-intro">
+                A pesar de sus avances, el Zero-Shot Learning enfrenta varios desafíos fundamentales que 
+                definen las líneas de investigación actuales
+            </p>
+            
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span class="challenge-number">01</span>
+                    <h3 class="challenge-title">Domain Shift</h3>
+                    <p class="challenge-desc">
+                        Discrepancia entre la distribución de clases vistas y no vistas, causando que el modelo 
+                        tienda a predecir clases vistas incluso para instancias de clases no vistas.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">02</span>
+                    <h3 class="challenge-title">Hubness Problem</h3>
+                    <p class="challenge-desc">
+                        En espacios de alta dimensionalidad, ciertos puntos ("hubs") se convierten en vecinos 
+                        frecuentes de muchos otros, generando clasificaciones sesgadas.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">03</span>
+                    <h3 class="challenge-title">Calidad del Espacio Semántico</h3>
+                    <p class="challenge-desc">
+                        La efectividad del ZSL depende críticamente de la calidad de las descripciones semánticas, 
+                        que pueden ser ruidosas, incompletas o subjetivas.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">04</span>
+                    <h3 class="challenge-title">Bias en GZSL</h3>
+                    <p class="challenge-desc">
+                        Los modelos tienden a favorecer fuertemente las clases vistas sobre las no vistas, 
+                        dificultando el rendimiento equilibrado en escenarios generalizados.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Investigación en IAFER -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Nuestra Investigación</h2>
+            <div class="content-text">
+                <p>
+                    En el grupo <strong class="text-highlight">GPAIS</strong> del proyecto IAFER, estamos trabajando 
+                    en técnicas innovadoras de Zero-Shot Learning que abordan estos desafíos fundamentales:
+                </p>
+                
+                <div class="highlight-box">
+                    <h3 class="highlight-title">🚀 Líneas de Investigación Activas</h3>
+                    <ul class="feature-list">
+                        <li><strong>Semantic-Inductive Attribute Selection:</strong> Selección de atributos semánticos más discriminativos para mejorar la transferencia de conocimiento</li>
+                        <li><strong>Ranking Feature Selection:</strong> Técnicas de ranking para identificar las características visuales más relevantes en escenarios zero-shot</li>
+                        <li><strong>Hybrid ZSL-SSL:</strong> Combinación de Zero-Shot Learning con Self-Supervised Learning para aprovechar datos no etiquetados</li>
+                        <li><strong>Contrastive ZSL:</strong> Uso de aprendizaje contrastivo para mejorar la separabilidad en el espacio de embeddings</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <strong>Zero-Shot Learning</strong> - GPAIS Research Area
+                <span aria-hidden="true">•</span>
+                <a href="index.html" class="footer-link">Volver a GPAIS</a>
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">IAFER Project 2026</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

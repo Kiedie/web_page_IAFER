@@ -887,6 +887,214 @@ body::before {
 }
 
 /* ========================================
+   RESEARCH CARD LINKS
+======================================== */
+
+.research-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform var(--transition-normal);
+}
+
+.research-card-link:hover .research-card {
+    transform: translateY(-8px);
+    border-color: var(--primary-coral);
+}
+
+.research-card-link:focus {
+    outline: 2px solid var(--primary-coral);
+    outline-offset: 4px;
+    border-radius: var(--radius-lg);
+}
+
+.research-card-link:active .research-card {
+    transform: translateY(-4px);
+}
+
+/* ========================================
+   CONTENT SECTIONS (para páginas detalladas)
+======================================== */
+
+.content-section {
+    margin-bottom: var(--space-4xl);
+}
+
+.content-text {
+    font-size: var(--font-size-lg);
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.content-text p {
+    margin-bottom: var(--space-lg);
+}
+
+.content-text strong {
+    color: var(--text-white);
+    font-weight: var(--font-weight-semibold);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+/* ========================================
+   INFO CARDS (variante de tarjetas)
+======================================== */
+
+.info-card {
+    background: rgba(33, 34, 50, 0.5);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(220, 68, 55, 0.15);
+    border-radius: var(--radius-lg);
+    padding: var(--space-xl);
+    transition: all var(--transition-normal);
+}
+
+.info-card:hover {
+    border-color: var(--primary-coral);
+    box-shadow: 0 8px 24px rgba(220, 68, 55, 0.2);
+}
+
+.info-card-title {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-white);
+    margin-bottom: var(--space-md);
+}
+
+.info-card-icon {
+    font-size: var(--font-size-2xl);
+}
+
+.info-card-text {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+/* ========================================
+   FEATURE LISTS
+======================================== */
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: var(--space-xl) 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: var(--space-xl);
+    margin-bottom: var(--space-md);
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+.feature-list li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary-coral);
+    font-weight: var(--font-weight-bold);
+}
+
+.feature-list li strong {
+    color: var(--text-white);
+}
+
+/* ========================================
+   CHALLENGE LIST (para desafíos/problemas)
+======================================== */
+
+.challenge-list {
+    display: grid;
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+}
+
+.challenge-item {
+    position: relative;
+    padding: var(--space-xl);
+    padding-left: calc(var(--space-3xl) + var(--space-xl));
+    background: rgba(33, 34, 50, 0.4);
+    border-left: 3px solid var(--primary-coral);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+}
+
+.challenge-item:hover {
+    background: rgba(33, 34, 50, 0.6);
+    border-left-color: var(--primary-orange);
+    transform: translateX(4px);
+}
+
+.challenge-number {
+    position: absolute;
+    left: var(--space-lg);
+    top: var(--space-xl);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    color: var(--primary-coral);
+    opacity: 0.3;
+}
+
+.challenge-title {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-white);
+    margin-bottom: var(--space-sm);
+}
+
+.challenge-desc {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ========================================
+   HIGHLIGHT BOX
+======================================== */
+
+.highlight-box {
+    background: linear-gradient(135deg, rgba(220, 68, 55, 0.1), rgba(226, 140, 40, 0.1));
+    border: 1px solid rgba(220, 68, 55, 0.3);
+    border-radius: var(--radius-lg);
+    padding: var(--space-2xl);
+    margin: var(--space-2xl) 0;
+}
+
+.highlight-title {
+    font-size: var(--font-size-2xl);
+    font-weight: var(--font-weight-semibold);
+    color: var(--text-white);
+    margin-bottom: var(--space-lg);
+}
+
+/* ========================================
+   BREADCRUMB IMPROVEMENTS
+======================================== */
+
+.breadcrumb-separator {
+    color: var(--text-muted);
+    margin: 0 var(--space-sm);
+}
+
+.breadcrumb-current {
+    color: var(--text-white);
+    font-weight: var(--font-weight-medium);
+}
+
+/* ========================================
    RESPONSIVE DESIGN
 ======================================== */
 
