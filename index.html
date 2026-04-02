@@ -1,52 +1,304 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IAFER - Página Principal</title>
+    <title>IAFER - Cátedra de Inteligencia Artificial</title>
+    <meta name="description" content="Cátedra IAFER – Investigación en Inteligencia Artificial: GPAIS y Trustworthy AI">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>IAFER Project</h1>
-            <p class="subtitle">Inteligencia Artificial para...</p>
+<body id="top">
+
+    <!-- ==============================
+         BANDA DE LOGOS
+    ============================== -->
+    <div class="logos-banner">
+        <img
+            src="images/gpais/logos/Banda de logos_Catedra-españa digital.svg"
+            alt="Logos institucionales – Cátedra ENIA IAFER"
+            class="logos-banner__img"
+        >
+    </div>
+
+    <!-- ==============================
+         HERO
+    ============================== -->
+    <header class="hero">
+        <!-- Partículas decorativas -->
+        <div class="hero__particles" aria-hidden="true">
+            <span class="particle p1"></span>
+            <span class="particle p2"></span>
+            <span class="particle p3"></span>
+            <span class="particle p4"></span>
+            <span class="particle p5"></span>
+        </div>
+
+        <div class="container hero__content">
+            <div class="hero__badge">
+                <span>Cátedra ENIA IAFER</span>
+            </div>
+            <h1 class="hero__title">
+                <span class="hero__title--accent">IAFER</span>
+            </h1>
+            <p class="hero__subtitle">
+                Inteligencia Artificial Ética, Responsable y de Propósito General
+            </p>
+            <p class="hero__desc">
+                Investigación en IA orientada a dos grandes ejes:
+                IA de Propósito General e IA Fiable y Ética.
+            </p>
+            <div class="hero__actions">
+                <a href="#lineas" class="btn btn--primary">Ver líneas de investigación</a>
+                <a href="#equipo" class="btn btn--outline">Conocer el equipo</a>
+            </div>
         </div>
     </header>
 
-    <main class="container">
-        <section class="intro">
-            <h2>Bienvenido al Proyecto IAFER</h2>
-            <p>Selecciona una de las áreas principales para explorar:</p>
-        </section>
+    <main>
 
-        <section class="main-nodes">
-            <div class="node-card">
-                <div class="node-icon">🔬</div>
-                <h3>GPAIS</h3>
-                <p>Genetic Programming for Attribute and Instance Selection</p>
-                <a href="gpais/index.html" class="btn">Explorar GPAIS</a>
-                <div class="node-badge">Tu área</div>
+        <!-- ==============================
+             LÍNEAS DE INVESTIGACIÓN
+        ============================== -->
+        <section id="lineas" class="research-lines section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Líneas de Investigación</h2>
+                    <p class="section__subtitle">
+                        Dos grandes pilares que articulan toda la actividad científica de la cátedra
+                    </p>
+                </div>
+
+                <div class="research-lines__grid">
+
+                    <!-- GPAIS -->
+                    <article class="research-card research-card--gpais">
+                        <div class="research-card__icon" aria-hidden="true">🧠</div>
+                        <h3 class="research-card__title">GPAIS</h3>
+                        <p class="research-card__name">General Purpose Artificial Intelligence Systems</p>
+                        <p class="research-card__desc">
+                            Avanzando hacia sistemas de IA de propósito general: 
+                            más versátiles, más adaptables y preparados para problemas 
+                            del mundo real.
+                        </p>
+                        <ul class="research-card__tags">
+                            <li>Contrastive Learning</li>
+                            <li>Self-Supervised Learning</li>
+                            <li>Zero-Shot Learning</li>
+                            <li>Agentic AI</li>
+                        </ul>
+                        <a href="gpais/index.html" class="btn btn--primary research-card__cta">
+                            Explorar GPAIS <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                    <!-- TRUSTWORTHY -->
+                    <article class="research-card research-card--trustworthy">
+                        <div class="research-card__icon" aria-hidden="true">🛡️</div>
+                        <h3 class="research-card__title">Trustworthy AI</h3>
+                        <p class="research-card__name">Inteligencia Artificial Fiable</p>
+                        <p class="research-card__desc">
+                            Investigación en IA robusta, explicable, justa y segura. Desarrollo de
+                            marcos de evaluación de confianza, detección de sesgos y auditoría
+                            algorítmica alineados con la normativa europea de IA.
+                        </p>
+                        <ul class="research-card__tags">
+                            <li>Explainability (XAI)</li>
+                            <li>Fairness &amp; Bias</li>
+                            <li>Robustness</li>
+                            <li>AI Auditing</li>
+                        </ul>
+                        <a href="trustworthy/index.html" class="btn btn--secondary research-card__cta">
+                            Explorar Trustworthy <span aria-hidden="true">→</span>
+                        </a>
+                    </article>
+
+                </div>
             </div>
+        </section>
 
-            <div class="node-card">
-                <div class="node-icon">🛡️</div>
-                <h3>Trustworthy AI</h3>
-                <p>Inteligencia Artificial Confiable, Ética y Explicable</p>
-                <a href="trustworthy/index.html" class="btn">Explorar Trustworthy AI</a>
+        <!-- ==============================
+             QUIÉNES SOMOS
+        ============================== -->
+        <section id="equipo" class="team section section--alt">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Quiénes Somos</h2>
+                    <p class="section__subtitle">
+                        Nuestros investigadores:
+                    </p>
+                </div>
+
+                <div class="team__grid">
+
+                    <!-- Miembro 1 -->
+                    <article class="member-card">
+                        <div class="member-card__photo-wrap">
+                            <img
+                                src="images/team/member-1.jpg"
+                                alt="Foto de [Nombre]"
+                                class="member-card__photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                            >
+                            <div class="member-card__photo-placeholder" aria-hidden="true">
+                                <span>👤</span>
+                            </div>
+                        </div>
+                        <div class="member-card__info">
+                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
+                            <p class="member-card__role">[Cargo / Posición]</p>
+                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
+                            <div class="member-card__links">
+                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
+                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Miembro 2 -->
+                    <article class="member-card">
+                        <div class="member-card__photo-wrap">
+                            <img
+                                src="images/team/member-2.jpg"
+                                alt="Foto de [Nombre]"
+                                class="member-card__photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                            >
+                            <div class="member-card__photo-placeholder" aria-hidden="true">
+                                <span>👤</span>
+                            </div>
+                        </div>
+                        <div class="member-card__info">
+                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
+                            <p class="member-card__role">[Cargo / Posición]</p>
+                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
+                            <div class="member-card__links">
+                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
+                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Miembro 3 -->
+                    <article class="member-card">
+                        <div class="member-card__photo-wrap">
+                            <img
+                                src="images/team/member-3.jpg"
+                                alt="Foto de [Nombre]"
+                                class="member-card__photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                            >
+                            <div class="member-card__photo-placeholder" aria-hidden="true">
+                                <span>👤</span>
+                            </div>
+                        </div>
+                        <div class="member-card__info">
+                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
+                            <p class="member-card__role">[Cargo / Posición]</p>
+                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
+                            <div class="member-card__links">
+                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
+                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Miembro 4 -->
+                    <article class="member-card">
+                        <div class="member-card__photo-wrap">
+                            <img
+                                src="images/team/member-4.jpg"
+                                alt="Foto de [Nombre]"
+                                class="member-card__photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                            >
+                            <div class="member-card__photo-placeholder" aria-hidden="true">
+                                <span>👤</span>
+                            </div>
+                        </div>
+                        <div class="member-card__info">
+                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
+                            <p class="member-card__role">[Cargo / Posición]</p>
+                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
+                            <div class="member-card__links">
+                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
+                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Miembro 5 -->
+                    <article class="member-card">
+                        <div class="member-card__photo-wrap">
+                            <img
+                                src="images/team/member-5.jpg"
+                                alt="Foto de [Nombre]"
+                                class="member-card__photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                            >
+                            <div class="member-card__photo-placeholder" aria-hidden="true">
+                                <span>👤</span>
+                            </div>
+                        </div>
+                        <div class="member-card__info">
+                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
+                            <p class="member-card__role">[Cargo / Posición]</p>
+                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
+                            <div class="member-card__links">
+                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
+                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Miembro 6 -->
+                    <article class="member-card">
+                        <div class="member-card__photo-wrap">
+                            <img
+                                src="images/team/member-6.jpg"
+                                alt="Foto de [Nombre]"
+                                class="member-card__photo"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+                            >
+                            <div class="member-card__photo-placeholder" aria-hidden="true">
+                                <span>👤</span>
+                            </div>
+                        </div>
+                        <div class="member-card__info">
+                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
+                            <p class="member-card__role">[Cargo / Posición]</p>
+                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
+                            <div class="member-card__links">
+                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
+                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div><!-- /.team__grid -->
             </div>
         </section>
 
-        <section class="info">
-            <h3>Sobre el Proyecto</h3>
-            <p>Información general sobre IAFER y sus objetivos...</p>
-        </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 IAFER Project. Universidad de Granada.</p>
+    <!-- ==============================
+         FOOTER
+    ============================== -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p class="footer__copy">&copy; 2026 Cátedra IAFER –  Universidad de Granada.</p>
+            <nav class="footer__nav" aria-label="Navegación secundaria">
+                <a href="gpais/index.html">GPAIS</a>
+                <a href="trustworthy/index.html">Trustworthy AI</a>
+            </nav>
         </div>
     </footer>
+
+    <script src="js/base.js"></script>
 </body>
 </html>

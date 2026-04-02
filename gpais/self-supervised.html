@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Supervised Learning - GPAIS | IAFER</title>
+    <meta name="description" content="Aprende sobre Self-Supervised Learning: aprendizaje automático a partir de datos no etiquetados mediante tareas auxiliares">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/gpais.css">
+    <link rel="stylesheet" href="../css/self-supervised.css">
+</head>
+<body id="top">
+    
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
+        <div class="breadcrumb-container">
+            <a href="index.html" class="breadcrumb-link">
+                <span aria-hidden="true">←</span>
+                <span>GPAIS</span>
+            </a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Self-Supervised Learning</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">🔁</span>
+                    <span>Research Focus</span>
+                </div>
+
+                <!-- Título principal -->
+                <h1 class="hero-title">Self-Supervised Learning</h1>
+                <p class="hero-subtitle">Aprendizaje de representaciones generales a partir de datos no etiquetados</p>
+
+                <!-- Botones de acción -->
+                <div class="hero-actions">
+                    <a href="#fundamentos" class="btn btn-primary">
+                        <span>Explorar contenido</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Volver a GPAIS</span>
+                    </a>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <!-- Introducción -->
+                <section id="fundamentos" class="content-section">
+                    <h2 class="section-title">¿Qué es Self-Supervised Learning?</h2>
+                    <div class="content-text">
+                        <p>
+                            El <strong class="text-highlight">aprendizaje auto-supervisado (SSL)</strong> es un paradigma en el que 
+                            los modelos de IA aprovechan grandes volúmenes de datos no etiquetados aprendiendo directamente de la 
+                            <strong>estructura inherente de los propios datos</strong>. En lugar de depender de anotaciones humanas, 
+                            los modelos resuelven <em>tareas auxiliares</em> generadas automáticamente a partir de los datos, lo que 
+                            les permite adquirir representaciones generales y transferibles.
+                        </p>
+                        <p>
+                            Este enfoque es fundamental para el desarrollo de los 
+                            <strong>Modelos Fundacionales</strong> y constituye una pieza clave en la evolución de los 
+                            Sistemas de Inteligencia Artificial de Propósito General (GPAIS).
+                        </p>
+                    </div>
+                </section>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Tipos de métodos -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Tipos de métodos</h2>
+            <p class="section-intro">
+                En visión por ordenador, los modelos SSL aprenden sin etiquetas resolviendo diferentes tipos de tareas auxiliares:
+            </p>
+            
+            <div class="research-cards">
+                <!-- Método 1 -->
+                <article class="research-card">
+                    <span class="research-badge">Joint Embedding</span>
+                    <div class="research-icon" aria-hidden="true">🔗</div>
+                    <h3 class="research-card-title">Contrastive Learning</h3>
+                    <p class="research-card-desc">
+                        Los modelos aprenden representaciones forzando que vistas similares de un mismo dato (p. ej., dos 
+                        recortes de la misma imagen) obtengan representaciones cercanas, mientras que datos distintos 
+                        se alejan en el espacio latente. Modelos como <strong>DINOv2</strong> representan el estado del arte.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Método 2 -->
+                <article class="research-card">
+                    <span class="research-badge">Reconstrucción</span>
+                    <div class="research-icon" aria-hidden="true">🧩</div>
+                    <h3 class="research-card-title">Masked Image Modeling</h3>
+                    <p class="research-card-desc">
+                        Los modelos aprenden a reconstruir partes eliminadas de una imagen. Inspirada en modelos de 
+                        lenguaje como <strong>BERT</strong>, esta técnica no requiere definir aumentaciones de datos 
+                        y ha demostrado ser muy eficaz para aprender representaciones ricas y robustas.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Método 3 -->
+                <article class="research-card">
+                    <span class="research-badge">Datos Tabulares</span>
+                    <div class="research-icon" aria-hidden="true">📊</div>
+                    <h3 class="research-card-title">SSL para Tabular</h3>
+                    <p class="research-card-desc">
+                        Adaptar SSL a datos tabulares es un reto abierto dado su carácter heterogéneo. 
+                        Las representaciones auto-supervisadas en este dominio son clave para tareas de 
+                        fusión de conocimiento, reducción de datos y generalización entre dominios.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Datos Tabulares -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">La revolución de los datos tabulares</h2>
+            <p class="section-intro">
+                Los datos tabulares están presentes en industria, salud y finanzas, pero plantean retos únicos para SSL.
+            </p>
+            <div class="content-grid">
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🚀📈</span>
+                        Modelos Fundacionales Tabulares
+                    </h3>
+                    <p class="info-card-text">
+                        Modelos como <strong>TabPFN</strong> han superado la capacidad predictiva de enfoques tradicionales, 
+                        pero requieren datos etiquetados y no proporcionan representaciones de propósito general, lo que 
+                        limita su aplicabilidad en escenarios sin supervisión.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🧬🔬</span>
+                        Representaciones Transferibles
+                    </h3>
+                    <p class="info-card-text">
+                        Las representaciones aprendidas de forma auto-supervisada en datos tabulares son esenciales para 
+                        tareas posteriores como la <strong>fusión de modelos</strong>, la generalización entre dominios y 
+                        la adaptación a nuevos conjuntos de datos con mínima supervisión.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Desafíos -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Retos Actuales</h2>
+            <p class="section-intro">
+                El SSL en dominios más allá de las imágenes enfrenta desafíos abiertos que marcan las líneas de investigación del equipo:
+            </p>
+            
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span class="challenge-number">01</span>
+                    <h3 class="challenge-title">Objetivos auto-supervisados para tabular</h3>
+                    <p class="challenge-desc">
+                        Diseñar tareas auxiliares efectivas para datos tabulares es difícil dada su 
+                        heterogeneidad: mezcla de variables numéricas, categóricas y ordinales con 
+                        semánticas muy distintas entre columnas.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">02</span>
+                    <h3 class="challenge-title">Escasez de grandes conjuntos de datos</h3>
+                    <p class="challenge-desc">
+                        La heterogeneidad de los datos tabulares dificulta la creación de fuentes masivas 
+                        homogéneas con las que entrenar grandes modelos fundacionales, a diferencia de lo 
+                        que ocurre en imagen o texto.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">03</span>
+                    <h3 class="challenge-title">Ausencia de etiquetas en dominios críticos</h3>
+                    <p class="challenge-desc">
+                        En ámbitos como la biomedicina o la detección de fraudes, los datos etiquetados 
+                        son escasos o inexistentes. El SSL ofrece una alternativa para extraer conocimiento 
+                        valioso sin depender de anotaciones humanas.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">04</span>
+                    <h3 class="challenge-title">Fusión y generalización del conocimiento</h3>
+                    <p class="challenge-desc">
+                        Las representaciones auto-supervisadas deben ser suficientemente generales para 
+                        servir como base en tareas de fusión de modalidades y transferencia de conocimiento 
+                        entre dominios dispares.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Investigación en IAFER -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Nuestra Investigación</h2>
+            <div class="content-text">
+                <p>
+                    En el grupo <strong class="text-highlight">GPAIS</strong> estamos liderando la
+                    investigación en el emergente campo del SSL aplicado a modalidades de datos más allá de imágenes y texto, 
+                    con especial énfasis en los <strong>datos tabulares</strong>:
+                </p>
+                <h3 class="highlight-title">🚀 Líneas de Investigación Activas</h3>
+                <ul class="feature-list">
+                    <li><strong>Aprendizaje de representaciones no supervisado:</strong> Aprovechamiento de datos no etiquetados para mejorar tareas clásicas de procesamiento tabular</li>
+                    <li><strong>Reducción de datos y optimización del etiquetado:</strong> Técnicas para minimizar el esfuerzo de anotación humana sin sacrificar rendimiento</li>
+                    <li><strong>SSL como base para GPAIS:</strong> Representaciones auto-supervisadas como componente transversal para múltiples tareas de inteligencia artificial de propósito general</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Aplicaciones -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Aplicaciones Prácticas</h2>
+            <div class="content-text">
+                <p>
+                    El SSL tiene un impacto transversal en dominios donde los datos no etiquetados abundan 
+                    pero las anotaciones son costosas o inaccesibles:
+                </p>
+                
+                <ul class="feature-list">
+                    <li><strong>Diagnóstico médico:</strong> Aprendizaje de representaciones clínicas a partir de historiales sin etiquetar para detectar patologías raras</li>
+                    <li><strong>Detección de fraude:</strong> Identificación de patrones anómalos en transacciones financieras sin necesidad de ejemplos etiquetados previos</li>
+                    <li><strong>Industria 4.0:</strong> Mantenimiento predictivo y detección de fallos en maquinaria a partir de datos de sensores no supervisados</li>
+                    <li><strong>Visión por ordenador:</strong> Preentrenamiento de modelos visuales generales (DINOv2, MAE) reutilizables en múltiples tareas</li>
+                    <li><strong>Procesamiento del lenguaje:</strong> Base de modelos como BERT y GPT, que aprenden representaciones lingüísticas de propósito general</li>
+                    <li><strong>Ciencias de la salud:</strong> Análisis de datos ómicos y clínicos con supervisión mínima para descubrimiento de biomarcadores</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <strong>Self-Supervised Learning</strong> - GPAIS Research Area
+                <span aria-hidden="true">•</span>
+                <a href="index.html" class="footer-link">Volver a GPAIS</a>
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">IAFER Project 2026</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

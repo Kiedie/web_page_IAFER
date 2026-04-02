@@ -1,0 +1,238 @@
+/*
+ * SELF-SUPERVISED LEARNING - Estilos específicos de página
+ * Extiende gpais.css con paleta propia SSL: Teal/Cian + Verde esmeralda
+ * Paleta: --ssl-teal (#0ea5e9), --ssl-green (#10b981)
+ */
+
+/* ========================================
+   VARIABLES DE COLOR SSL
+======================================== */
+
+:root {
+    --ssl-teal:          #0ea5e9;
+    --ssl-teal-bright:   #38bdf8;
+    --ssl-green:         #10b981;
+    --ssl-green-bright:  #34d399;
+
+    /* Sombras SSL */
+    --shadow-ssl:        0 10px 30px rgba(14, 165, 233, 0.3);
+    --shadow-ssl-hover:  0 15px 40px rgba(14, 165, 233, 0.45);
+
+    /* Gradientes SSL */
+    --gradient-ssl-divider: linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.45), transparent);
+}
+
+/* ========================================
+   FONDO DEL BODY — tonos fríos
+======================================== */
+
+body::before {
+    background-image:
+        radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.14) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(16, 185, 129, 0.12) 0%, transparent 50%);
+}
+
+/* ========================================
+   BREADCRUMB
+======================================== */
+
+.breadcrumb-nav {
+    border-bottom-color: rgba(14, 165, 233, 0.12);
+}
+
+.breadcrumb-link:hover {
+    color: var(--ssl-teal);
+}
+
+*:focus-visible {
+    outline-color: var(--ssl-teal);
+}
+
+/* ========================================
+   HERO CARD
+======================================== */
+
+.hero-card {
+    border-color: rgba(14, 165, 233, 0.25);
+    box-shadow: var(--shadow-2xl), var(--shadow-ssl);
+}
+
+.hero-card::before {
+    background: linear-gradient(90deg,
+        transparent,
+        var(--ssl-teal),
+        var(--ssl-green),
+        transparent
+    );
+}
+
+.hero-badge {
+    background: rgba(14, 165, 233, 0.15);
+    border-color: rgba(14, 165, 233, 0.35);
+    color: var(--ssl-teal);
+}
+
+.hero-title {
+    background: linear-gradient(135deg, var(--text-white), var(--ssl-teal));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.hero-divider {
+    background: var(--gradient-ssl-divider);
+}
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.btn-primary {
+    background: linear-gradient(135deg, var(--ssl-teal), var(--ssl-green));
+    box-shadow: var(--shadow-ssl);
+}
+
+.btn-primary:hover {
+    box-shadow: var(--shadow-ssl-hover);
+}
+
+.btn-secondary {
+    background: rgba(14, 165, 233, 0.1);
+    color: var(--ssl-teal);
+    border-color: rgba(14, 165, 233, 0.3);
+}
+
+.btn-secondary:hover {
+    background: rgba(14, 165, 233, 0.2);
+    border-color: var(--ssl-teal);
+}
+
+/* ========================================
+   SECTION DIVIDER
+======================================== */
+
+.section-divider {
+    background: var(--gradient-ssl-divider);
+}
+
+/* ========================================
+   TEXT HIGHLIGHT
+======================================== */
+
+.text-highlight {
+    color: var(--ssl-teal);
+}
+
+/* ========================================
+   RESEARCH CARDS
+======================================== */
+
+.research-card {
+    border-color: rgba(14, 165, 233, 0.15);
+}
+
+.research-card:hover {
+    border-color: var(--ssl-teal);
+    box-shadow: var(--shadow-ssl);
+}
+
+.research-card-glow {
+    background: radial-gradient(circle at 50% 0%, rgba(14, 165, 233, 0.22), transparent 70%);
+}
+
+.research-badge {
+    background: rgba(16, 185, 129, 0.18);
+    border-color: rgba(16, 185, 129, 0.4);
+    color: var(--ssl-green-bright);
+}
+
+/* ========================================
+   INFO CARDS
+======================================== */
+
+.info-card {
+    border-color: rgba(14, 165, 233, 0.15);
+}
+
+.info-card:hover {
+    border-color: var(--ssl-teal);
+    box-shadow: 0 8px 24px rgba(14, 165, 233, 0.2);
+}
+
+/* ========================================
+   CHALLENGE LIST
+======================================== */
+
+.challenge-item {
+    border-left-color: var(--ssl-teal);
+}
+
+.challenge-item:hover {
+    border-left-color: var(--ssl-green);
+}
+
+.challenge-number {
+    color: var(--ssl-teal);
+}
+
+/* ========================================
+   FEATURE LIST
+======================================== */
+
+.feature-list li::before {
+    color: var(--ssl-teal);
+}
+
+/* ========================================
+   HIGHLIGHT BOX
+======================================== */
+
+.highlight-box {
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.1), rgba(16, 185, 129, 0.1));
+    border-color: rgba(14, 165, 233, 0.3);
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+    border-top-color: rgba(14, 165, 233, 0.12);
+}
+
+.footer-link {
+    color: var(--ssl-teal);
+}
+
+.footer-link:hover {
+    color: var(--ssl-green-bright);
+}
+
+/* ========================================
+   PARTÍCULAS — colores SSL
+======================================== */
+
+.particle {
+    background: rgba(14, 165, 233, 0.6);
+}
+
+.particle-2 {
+    background: rgba(16, 185, 129, 0.6);
+}
+
+.particle-4 {
+    background: rgba(16, 185, 129, 0.5);
+}
+
+/* ========================================
+   ANIMACIÓN ICONO HERO BADGE
+======================================== */
+
+.hero-badge span:first-child {
+    display: inline-block;
+    animation: ssl-spin 6s linear infinite;
+}
+
+@keyframes ssl-spin {
+    0%   { transform: rotate(0deg);   }
+    100% { transform: rotate(360deg); }
+}
