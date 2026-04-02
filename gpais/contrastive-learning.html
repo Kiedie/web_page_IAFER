@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kristina Stemikovskaya – AI for Health & EEG | GPAIS · IAFER</title>
-    <meta name="description" content="Kristina Stemikovskaya: AI for Health, EEG Seizure Detection, Frequency-Aware Contrastive Learning, and Privacy-Preserving Federated AI — GPAIS · IAFER">
+    <title>Contrastive Learning - GPAIS | IAFER</title>
+    <meta name="description" content="Aprende sobre Contrastive Learning: aprendizaje de representaciones mediante comparación de pares de ejemplos similares y disimilares">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,25 +15,21 @@
 </head>
 <body id="top">
 
-    <!-- ==============================
-         BREADCRUMB
-    ============================== -->
-    <nav class="breadcrumb-nav" aria-label="Breadcrumb navigation">
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
         <div class="breadcrumb-container">
             <a href="index.html" class="breadcrumb-link">
                 <span aria-hidden="true">←</span>
                 <span>GPAIS</span>
             </a>
             <span class="breadcrumb-separator" aria-hidden="true">/</span>
-            <span class="breadcrumb-current">Kristina Stemikovskaya</span>
+            <span class="breadcrumb-current">Contrastive Learning</span>
         </div>
     </nav>
 
-    <!-- ==============================
-         HERO
-    ============================== -->
+    <!-- Hero Section -->
     <div class="hero-wrapper">
-        <div class="hero-particles" aria-hidden="true">
+        <div class="hero-particles">
             <div class="particle particle-1"></div>
             <div class="particle particle-2"></div>
             <div class="particle particle-3"></div>
@@ -43,57 +39,49 @@
 
         <main class="container">
             <section class="hero-card">
-
-                <!-- Top badge -->
+                <!-- Badge superior -->
                 <div class="hero-badge">
-                    <span aria-hidden="true">🧬</span>
-                    <span>Researcher Profile · GPAIS</span>
+                    <span aria-hidden="true">⚡</span>
+                    <span>Research Focus</span>
                 </div>
 
-                <!-- Main title -->
-                <h1 class="hero-title">Kristina Stemikovskaya</h1>
-                <p class="hero-subtitle">
-                    AI for Health, EEG Analysis, and Privacy-Preserving Machine Learning
-                </p>
+                <!-- Título principal -->
+                <h1 class="hero-title">Contrastive Learning</h1>
+                <p class="hero-subtitle">Aprendizaje de representaciones mediante la comparación de pares similares y disimilares</p>
 
-                <!-- Action buttons -->
+                <!-- Botones de acción -->
                 <div class="hero-actions">
-                    <a href="#research-overview" class="btn btn-primary">
-                        <span>Explore research</span>
+                    <a href="#fundamentos" class="btn btn-primary">
+                        <span>Explorar contenido</span>
                         <span aria-hidden="true">→</span>
                     </a>
                     <a href="index.html" class="btn btn-secondary">
                         <span aria-hidden="true">←</span>
-                        <span>Back to GPAIS</span>
+                        <span>Volver a GPAIS</span>
                     </a>
                 </div>
 
                 <div class="hero-divider"></div>
 
-                <!-- Introduction -->
-                <section id="introduction" class="content-section">
-                    <h2 class="section-title">Introduction</h2>
+                <!-- Introducción -->
+                <section id="fundamentos" class="content-section">
+                    <h2 class="section-title">¿Qué es Contrastive Learning?</h2>
                     <div class="content-text">
                         <p>
-                            <strong class="text-highlight">Kristina Stemikovskaya</strong> is a researcher associated with
-                            <strong>TECNALIA Research &amp; Innovation</strong>, one of the leading applied research centres
-                            in Europe. Her work sits at the intersection of <strong>artificial intelligence and healthcare</strong>,
-                            with a particular focus on the challenges that arise when machine learning methods are deployed
-                            in real-world clinical and biomedical contexts.
+                            <strong class="text-highlight">Contrastive Learning</strong> es un paradigma de aprendizaje
+                            automático que entrena modelos aprendiendo a <strong>comparar ejemplos</strong>: acercando
+                            en el espacio vectorial aquellas representaciones que deben ser similares
+                            (<em>pares positivos</em>) y alejando las que deben ser distintas (<em>pares negativos</em>).
+                            Este enfoque permite que el modelo descubra estructuras útiles en los datos
+                            <strong>sin necesidad de etiquetas manuales</strong>, convirtiéndose en uno de
+                            los pilares del aprendizaje auto-supervisado moderno.
                         </p>
                         <p>
-                            Her research addresses a field that is both technically demanding and socially significant:
-                            designing AI systems that are capable of learning from complex, noisy, and scarce biomedical
-                            signals while simultaneously respecting the privacy constraints inherent to medical data.
-                            This dual commitment — to technical rigor and to clinical applicability — defines the
-                            character of her scientific work.
-                        </p>
-                        <p>
-                            Her background is notably interdisciplinary. Earlier in her career, her work touched on
-                            statistical methodology, including the study of empirical copula processes, which reflects
-                            a grounding in rigorous mathematical foundations. This trajectory has evolved towards
-                            applied AI for health, where the same concern for formal correctness is brought to bear
-                            on problems of genuine clinical urgency.
+                            La idea central puede resumirse con una analogía intuitiva: el modelo aprende
+                            que dos augmentaciones distintas de la misma imagen deben producir representaciones
+                            cercanas entre sí, mientras que representaciones de imágenes diferentes deben
+                            estar alejadas. El componente clave es la <strong>función de pérdida contrastiva</strong>,
+                            que guía este proceso de organización del espacio latente.
                         </p>
                     </div>
                 </section>
@@ -102,298 +90,154 @@
         </main>
     </div>
 
-    <!-- Section divider -->
+    <!-- Divisor de sección -->
     <div class="section-divider"></div>
 
-    <!-- ==============================
-         RESEARCH OVERVIEW
-    ============================== -->
+    <!-- Sección: Tipos de pares -->
     <div class="container">
-        <section id="research-overview" class="content-section">
-            <h2 class="section-title">Research Overview</h2>
+        <section class="content-section">
+            <h2 class="section-title">¿Qué son los pares contrastivos?</h2>
             <p class="section-intro">
-                A broad yet coherent programme spanning biomedical signal processing,
-                self-supervised learning, and privacy-preserving AI
-            </p>
-            <div class="content-text">
-                <p>
-                    Stemikovskaya's research programme can be understood as a sustained effort to make
-                    machine learning genuinely useful in healthcare settings — not merely as an
-                    academic exercise, but as a set of methods capable of operating under the
-                    real constraints that clinical environments impose. Those constraints are
-                    severe: medical data is scarce, highly heterogeneous, often confidential,
-                    and collected under conditions that are difficult to standardise.
-                </p>
-                <p>
-                    Her work engages with <strong>biomedical data in multiple forms</strong>, with a
-                    particular emphasis on <strong>time series</strong> arising from physiological processes.
-                    Among the signals she studies, <strong>electroencephalography (EEG)</strong> occupies
-                    a central role. EEG recordings capture electrical activity in the brain at high
-                    temporal resolution, making them invaluable for detecting neurological events — but
-                    also notoriously difficult to analyse automatically due to their complexity, noise,
-                    and variability across individuals.
-                </p>
-                <p>
-                    <strong>Seizure detection</strong> is a core clinical application within her research.
-                    Identifying epileptic seizures reliably and automatically in continuous EEG streams
-                    remains an open problem, particularly when models are required to generalise across
-                    patients. Her work also extends to <strong>brain-machine interfaces (BMI)</strong>,
-                    where decoding algorithms are used to interpret neural signals for rehabilitation
-                    and assistance applications.
-                </p>
-                <p>
-                    A transversal theme throughout her research is the problem of <strong>data scarcity
-                    and privacy</strong>. In response, she investigates <strong>synthetic data generation</strong>
-                    as a means of augmenting training sets, and <strong>privacy-preserving federated
-                    learning</strong> as a framework for enabling collaborative model training across
-                    hospitals and institutions without sharing raw patient data.
-                </p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Section divider -->
-    <div class="section-divider"></div>
-
-    <!-- ==============================
-         CURRENT RESEARCH
-    ============================== -->
-    <div class="container">
-        <section id="current-research" class="content-section">
-            <h2 class="section-title">Current Research</h2>
-            <p class="section-intro">
-                Contrastive learning methods for EEG, cross-patient generalisation,
-                and trustworthy AI in federated medical settings
-            </p>
-            <div class="content-text">
-                <p>
-                    Current public information indicates that Stemikovskaya's most recent work focuses
-                    intensely on <strong>self-supervised learning for EEG analysis</strong>, particularly
-                    in the context of <strong>automatic seizure detection</strong>. Self-supervised
-                    approaches are especially attractive in biomedical settings because they can extract
-                    rich representations from large volumes of unlabelled EEG recordings, circumventing
-                    the bottleneck of expert annotation that limits conventional supervised methods.
-                </p>
-                <p>
-                    A key methodological contribution of her recent work is the development of
-                    <strong>frequency-aware contrastive learning</strong> for EEG. Standard contrastive
-                    learning frameworks treat all signal augmentations symmetrically, but EEG signals
-                    carry clinically meaningful information at specific frequency bands — delta, theta,
-                    alpha, beta, and gamma rhythms each correspond to distinct neurological states.
-                    Her work appears to incorporate this domain knowledge directly into the contrastive
-                    objective, allowing the model to learn representations that are sensitive to
-                    frequency-level structure in neural signals.
-                </p>
-                <p>
-                    A persistent challenge in EEG-based AI is <strong>cross-patient generalisation</strong>:
-                    models trained on one patient or cohort frequently fail when applied to new individuals,
-                    whose brain signals may differ substantially in morphology, amplitude, and spectral
-                    characteristics. Her research addresses this challenge by designing learning
-                    frameworks that promote more robust and transferable representations.
-                </p>
-                <p>
-                    In parallel, her work on <strong>trustworthy federated learning in medical settings</strong>
-                    reflects a recognition that the deployment of AI in healthcare cannot be reduced to
-                    predictive performance alone. Federated systems operating across clinical institutions
-                    must contend with heterogeneous data distributions, fairness across subpopulations,
-                    Byzantine robustness, and transparent accountability — all of which are active
-                    concerns in her research agenda.
-                </p>
-            </div>
-        </section>
-    </div>
-
-    <!-- Section divider -->
-    <div class="section-divider"></div>
-
-    <!-- ==============================
-         MAIN RESEARCH LINES (cards)
-    ============================== -->
-    <div class="container">
-        <section id="research-lines" class="content-section">
-            <h2 class="section-title">Main Research Lines</h2>
-            <p class="section-intro">
-                Five interconnected areas that collectively define a research programme
-                at the boundary of AI, neuroscience, and clinical practice
+                El aprendizaje contrastivo se estructura en torno a la construcción y comparación de dos tipos de pares
             </p>
 
             <div class="research-cards">
-
-                <!-- Line 1 -->
+                <!-- Par positivo -->
                 <article class="research-card">
-                    <span class="research-badge">Neurological AI</span>
-                    <div class="research-icon" aria-hidden="true">🧠</div>
-                    <h3 class="research-card-title">EEG and Seizure Detection</h3>
+                    <span class="research-badge">Similitud</span>
+                    <div class="research-icon" aria-hidden="true">🔗</div>
+                    <h3 class="research-card-title">Par Positivo</h3>
                     <p class="research-card-desc">
-                        Automatic detection of epileptic seizures from EEG recordings using
-                        self-supervised and contrastive learning approaches. This line develops
-                        frequency-aware representation learning methods that exploit the
-                        spectral structure of neural signals and promote cross-patient
-                        generalisation under realistic data constraints.
+                        Dos vistas del <strong>mismo ejemplo</strong> generadas mediante transformaciones
+                        o aumentaciones de datos. El modelo aprende a producir representaciones
+                        cercanas para estos pares, capturando la invarianza ante transformaciones irrelevantes.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Line 2 -->
+                <!-- Par negativo -->
                 <article class="research-card">
-                    <span class="research-badge">Signal Processing</span>
-                    <div class="research-icon" aria-hidden="true">📈</div>
-                    <h3 class="research-card-title">Biomedical Time Series Analysis</h3>
+                    <span class="research-badge">Contraste</span>
+                    <div class="research-icon" aria-hidden="true">↔️</div>
+                    <h3 class="research-card-title">Par Negativo</h3>
                     <p class="research-card-desc">
-                        Development of deep learning architectures adapted to the specific
-                        challenges of physiological time series: high dimensionality, non-stationarity,
-                        intra- and inter-subject variability, and limited labelled data. Methods
-                        from this line are applicable beyond EEG to other biosignals such as
-                        ECG, EMG, and accelerometry.
+                        Vistas procedentes de <strong>ejemplos distintos</strong> del conjunto de datos.
+                        El modelo aprende a separarlas en el espacio vectorial, lo que obliga a las
+                        representaciones internas a capturar diferencias semánticamente significativas
+                        entre instancias.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Line 3 -->
+                <!-- Función de pérdida -->
                 <article class="research-card">
-                    <span class="research-badge">Neurotechnology</span>
-                    <div class="research-icon" aria-hidden="true">🤖</div>
-                    <h3 class="research-card-title">Brain-Machine Interfaces &amp; Neurorehabilitation</h3>
+                    <span class="research-badge">Objetivo</span>
+                    <div class="research-icon" aria-hidden="true">🎯</div>
+                    <h3 class="research-card-title">Pérdida Contrastiva</h3>
                     <p class="research-card-desc">
-                        Design of decoding algorithms that translate neural signals into
-                        control commands for assistive and rehabilitative devices.
-                        Her work appears to focus on making BMI systems more robust
-                        and adaptive, enabling reliable operation in non-ideal conditions
-                        and with patients exhibiting diverse neurological profiles.
+                        La función de pérdida más empleada es la <strong>InfoNCE</strong> (Noise-Contrastive
+                        Estimation), que maximiza la similitud entre pares positivos respecto a los negativos. 
+                        Variantes como la <em>NT-Xent loss</em>
+                        y la pérdida <em>frequency-aware</em> para señales biométricas extienden este
+                        marco a dominios específicos.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
+            </div>
+        </section>
+    </div>
 
-                <!-- Line 4 -->
-                <article class="research-card">
-                    <span class="research-badge">Privacy &amp; Trust</span>
-                    <div class="research-icon" aria-hidden="true">🔐</div>
-                    <h3 class="research-card-title">Federated Learning and Privacy</h3>
-                    <p class="research-card-desc">
-                        Investigation of federated learning frameworks for collaborative
-                        AI development across healthcare institutions without centralising
-                        patient data. This line engages with trustworthiness at multiple
-                        levels: differential privacy, fairness across sites, robustness
-                        to data heterogeneity, and accountability in clinical AI systems.
-                    </p>
-                    <div class="research-card-glow"></div>
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Métodos principales -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Métodos principales</h2>
+            <p class="section-intro">
+                Cuatro familias de algoritmos que han definido el estado del arte en aprendizaje contrastivo
+            </p>
+            <div class="content-grid">
+
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🌐</span>
+                        SimCLR
+                    </h3>
                 </article>
 
-                <!-- Line 5 -->
-                <article class="research-card">
-                    <span class="research-badge">Data Augmentation</span>
-                    <div class="research-icon" aria-hidden="true">🔬</div>
-                    <h3 class="research-card-title">Synthetic Data for Healthcare AI</h3>
-                    <p class="research-card-desc">
-                        Generation of realistic synthetic biomedical data as a strategy
-                        for addressing label scarcity and for enabling data sharing in
-                        privacy-constrained settings. Synthetic EEG signals can augment
-                        training datasets, support model pre-training, and serve as
-                        privacy-safe surrogates for sensitive patient records.
-                    </p>
-                    <div class="research-card-glow"></div>
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔁</span>
+                        MoCo
+                    </h3>
+                </article>
+
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🤝</span>
+                        BYOL &amp; SimSiam
+                    </h3>
+                </article>
+
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🧬</span>
+                        Frequency-Aware CL
+                    </h3>
                 </article>
 
             </div>
         </section>
     </div>
 
-    <!-- Section divider -->
+    <!-- Divisor de sección -->
     <div class="section-divider"></div>
 
-    <!-- ==============================
-         WHY THIS RESEARCH AREA MATTERS
-    ============================== -->
+    <!-- Sección: Desafíos -->
     <div class="container">
-        <section id="why-it-matters" class="content-section">
-            <h2 class="section-title">Why This Research Area Matters</h2>
+        <section class="content-section">
+            <h2 class="section-title">Desafíos Actuales</h2>
             <p class="section-intro">
-                The scientific and practical case for AI in healthcare,
-                EEG analysis, and privacy-sensitive machine learning
+                A pesar de sus avances, el Contrastive Learning enfrenta retos fundamentales
+                que definen las líneas de investigación activas en el campo
             </p>
-
-            <div class="content-text">
-                <p>
-                    The application of artificial intelligence to healthcare represents one of the
-                    most consequential frontiers in current research. The potential benefits are
-                    substantial: earlier and more accurate diagnosis, reduced burden on clinical staff,
-                    more personalised treatment, and AI-assisted monitoring of patients in settings
-                    where continuous human supervision is impractical. Yet realising these benefits
-                    requires confronting a set of fundamental challenges that distinguish healthcare
-                    AI from its counterparts in other domains.
-                </p>
-            </div>
 
             <div class="challenge-list">
 
                 <div class="challenge-item">
                     <span class="challenge-number">01</span>
-                    <h3 class="challenge-title">Scarcity of Labelled Medical Data</h3>
+                    <h3 class="challenge-title">Selección de ejemplos negativos</h3>
                     <p class="challenge-desc">
-                        Unlike image recognition or natural language processing, most biomedical
-                        domains lack large annotated datasets. Labelling clinical data — whether
-                        EEG recordings, histological images, or patient records — requires scarce
-                        expert time and is prone to inter-annotator variability. This scarcity
-                        makes standard supervised learning brittle, and motivates exploration of
-                        self-supervised, semi-supervised, and synthetic data methods that can
-                        extract value from unlabelled or minimally labelled corpora.
+                        Negativos demasiado fáciles no aportan aprendizaje; negativos <em>falsos</em>
+                        (instancias similares tratadas como distintas) deterioran las representaciones.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">02</span>
-                    <h3 class="challenge-title">Patient Variability and Generalisation</h3>
+                    <h3 class="challenge-title">Colapso de representaciones</h3>
                     <p class="challenge-desc">
-                        Physiological signals are profoundly individual. EEG morphology, spectral
-                        content, and noise characteristics vary enormously between patients, across
-                        recording sessions, and even within a single session. A model trained on
-                        data from one cohort may fail entirely when applied to a new population.
-                        Building AI systems that generalise robustly across patients and clinical
-                        sites is a central open problem in biomedical AI.
+                        Sin negativos o con arquitecturas inadecuadas, el modelo puede colapsar y asignar
+                        la misma representación a todos los ejemplos.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">03</span>
-                    <h3 class="challenge-title">Privacy Restrictions in Medical Machine Learning</h3>
+                    <h3 class="challenge-title">Aumentaciones dependientes del dominio</h3>
                     <p class="challenge-desc">
-                        Medical data is among the most sensitive information generated about
-                        individuals. Legal frameworks such as the GDPR impose strict constraints
-                        on its collection, storage, and transfer. These constraints make it
-                        extremely difficult to accumulate the large, multi-site datasets that
-                        powerful AI models typically require. Federated learning and
-                        privacy-preserving techniques offer a principled path forward, but
-                        they introduce their own challenges related to communication efficiency,
-                        model convergence, and resistance to inference attacks.
+                        Las transformaciones válidas para imágenes no sirven en señales temporales o EEG;
+                        definir cuáles preservan la información relevante requiere conocimiento del dominio.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">04</span>
-                    <h3 class="challenge-title">Reliability and Clinical Trust</h3>
+                    <h3 class="challenge-title">Coste computacional</h3>
                     <p class="challenge-desc">
-                        For an AI system to be usable in a clinical setting, predictive accuracy
-                        alone is insufficient. Clinicians require tools that are interpretable,
-                        robust to distribution shift, calibrated in their confidence estimates,
-                        and auditable. The emerging field of trustworthy AI seeks to formalise
-                        these requirements and develop evaluation frameworks aligned with
-                        regulatory standards, including the EU AI Act and domain-specific
-                        medical device regulations.
-                    </p>
-                </div>
-
-                <div class="challenge-item">
-                    <span class="challenge-number">05</span>
-                    <h3 class="challenge-title">EEG Analysis and Seizure Detection at Scale</h3>
-                    <p class="challenge-desc">
-                        Epilepsy affects over 50 million people worldwide. Continuous EEG
-                        monitoring generates hours of data per patient, far exceeding the
-                        capacity of manual expert review. Automated seizure detection could
-                        transform clinical monitoring by enabling real-time alerts, reducing
-                        review time, and supporting remote or ambulatory monitoring. Yet the
-                        complexity and variability of ictal EEG patterns make this a genuinely
-                        hard computational problem, particularly in the absence of labels and
-                        when models must transfer to unseen patients.
+                        Requiere baches grandes o colas de negativos extensas, lo que limita su uso
+                        directo en entornos con recursos restringidos.
                     </p>
                 </div>
 
@@ -401,51 +245,50 @@
         </section>
     </div>
 
-    <!-- Section divider -->
+    <!-- Divisor de sección -->
     <div class="section-divider"></div>
 
-    <!-- ==============================
-         REPRESENTATIVE WORK
-    ============================== -->
+    <!-- Sección: Nuestra Investigación -->
     <div class="container">
-        <section id="representative-work" class="content-section">
-            <h2 class="section-title">Representative Work</h2>
-            <p class="section-intro">
-                Selected contributions that illustrate the scope and direction of her research
-            </p>
+        <section class="content-section">
+            <h2 class="section-title">Nuestra Investigación</h2>
+            <div class="content-text">
+                <p>
+                    En el grupo <strong class="text-highlight">GPAIS</strong> de la cátedra IAFER,
+                    aplicamos Contrastive Learning a problemas donde los datos etiquetados son escasos
+                    y la variabilidad entre sujetos es alta, con especial énfasis en señales biomédicas:
+                </p>
+                <h3 class="highlight-title">🚀 Líneas de Investigación Activas</h3>
+                <ul class="feature-list">
+                    <li><strong>Frequency-Aware Contrastive Learning para EEG:</strong> Diseño de funciones de pérdida contrastiva que incorporan el conocimiento de las bandas de frecuencia cerebrales para aprender representaciones más transferibles en detección de crisis epilépticas.</li>
+                    <li><strong>Generalización entre pacientes:</strong> Métodos contrastivos que reducen el <em>domain shift</em> entre pacientes, clave para desplegar modelos en entornos clínicos reales sin reentrenamiento por paciente.</li>
+                    <li><strong>Contrastive Learning federado:</strong> Adaptación de marcos contrastivos a entornos de aprendizaje federado donde los datos clínicos no pueden centralizarse por restricciones de privacidad.</li>
+                </ul>
+            </div>
 
             <div class="highlight-box">
-                <h3 class="highlight-title">📄 Key Publications</h3>
-
+                <h3 class="highlight-title">📚 Publicaciones</h3>
                 <div class="publications-container">
 
-                    <!-- Publication 1 -->
+                    <!-- Publicación 1 -->
                     <article class="publication-card">
                         <div class="publication-image-wrapper">
-                            <div class="visual-wrapper" style="aspect-ratio: 4/3; border: none; border-radius: 0.75rem;">
-                                <div class="visual-overlay">
-                                    <span class="visual-placeholder" style="font-size:3rem;">🧠</span>
-                                </div>
-                            </div>
+                            <img src="../images/gpais/contrastive_learning/Kristina_paper_1.png"
+                                 alt="Frequency-Aware Contrastive Learning para EEG - Stemikovskaya et al. 2025"
+                                 style="width:100%; border-radius:0.75rem; display:block;">
                             <span class="publication-badge">2025</span>
                         </div>
                         <div class="publication-content">
                             <p class="publication-abstract">
-                                <strong style="color: #f1f3f4;">
-                                    Frequency-Aware Contrastive Loss for Self-Supervised EEG Seizure Detection
-                                </strong><br><br>
-                                This work addresses one of the core limitations in EEG-based seizure detection:
-                                the absence of large labelled datasets for supervised training.
-                                By formulating a <em>contrastive learning objective that is explicitly aware
-                                of the frequency structure of EEG signals</em>, the paper enables models
-                                to learn clinically meaningful representations from unlabelled recordings.
-                                The key insight is that different frequency bands in EEG carry distinct
-                                neurological information, and a learning signal that respects this
-                                structure produces more transferable and clinically useful features.
-                                The work reports improved performance on seizure detection benchmarks,
-                                particularly in cross-patient evaluation settings. It represents a
-                                significant methodological step in applying self-supervised learning
-                                to biomedical time series with strong domain structure.
+                                Este trabajo propone una <strong>función de pérdida contrastiva consciente de
+                                la frecuencia</strong> para la detección auto-supervisada de convulsiones en EEG.
+                                A diferencia de los marcos contrastivos estándar, que tratan todas las
+                                transformaciones de la señal de forma simétrica, este enfoque incorpora
+                                explícitamente el conocimiento de que las distintas bandas de frecuencia
+                                del EEG (delta, theta, alpha, beta, gamma) codifican información neurológica
+                                diferenciada. El resultado es un sistema capaz de aprender representaciones
+                                clínicamente útiles a partir de grabaciones no etiquetadas, con mejoras
+                                significativas de rendimiento en evaluaciones cruzadas entre pacientes.
                             </p>
                             <p class="publication-authors">
                                 Stemikovskaya, K. et al. · TECNALIA Research &amp; Innovation · 2025
@@ -453,182 +296,32 @@
                         </div>
                     </article>
 
-                    <!-- Publication 2 -->
-                    <article class="publication-card">
-                        <div class="publication-image-wrapper">
-                            <div class="visual-wrapper" style="aspect-ratio: 4/3; border: none; border-radius: 0.75rem;">
-                                <div class="visual-overlay">
-                                    <span class="visual-placeholder" style="font-size:3rem;">📊</span>
-                                </div>
-                            </div>
-                            <span class="publication-badge">Statistics</span>
-                        </div>
-                        <div class="publication-content">
-                            <p class="publication-abstract">
-                                <strong style="color: #f1f3f4;">
-                                    Work on Empirical Copula Processes and Statistical Methodology
-                                </strong><br><br>
-                                Earlier in her career, Stemikovskaya's work appears to have engaged with
-                                <em>rigorous statistical methodology</em>, including the theory of
-                                <strong>empirical copula processes</strong> — mathematical tools used
-                                to model and analyse the dependency structure between random variables
-                                independently of their marginal distributions. This line of work reflects
-                                a strong foundation in formal probability and inference theory.
-                                While distinct in application from her current healthcare AI research,
-                                this statistical grounding is likely to inform her approach to uncertainty
-                                modelling, calibration, and the principled design of learning algorithms —
-                                qualities that are particularly valuable in clinical AI, where overconfident
-                                or poorly calibrated models can have serious consequences.
-                            </p>
-                            <p class="publication-authors">
-                                Stemikovskaya, K. · Statistical methodology · Earlier career
-                            </p>
-                        </div>
-                    </article>
-
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Section divider -->
+    <!-- Divisor de sección -->
     <div class="section-divider"></div>
 
-    <!-- ==============================
-         APPLICATIONS AND IMPACT
-    ============================== -->
+    <!-- Sección: Aplicaciones Prácticas -->
     <div class="container">
-        <section id="applications" class="content-section">
-            <h2 class="section-title">Applications and Impact</h2>
-            <p class="section-intro">
-                From clinical monitoring to collaborative hospital AI — the practical
-                reach of research at this intersection
-            </p>
-
-            <div class="content-grid">
-
-                <article class="info-card">
-                    <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">⚡</span>
-                        Epilepsy Monitoring
-                    </h3>
-                    <p class="info-card-text">
-                        Automated and continuous EEG-based seizure detection can reduce the
-                        burden of manual clinical review, enable real-time alerting for patients
-                        at risk, and support ambulatory monitoring outside hospital settings.
-                        Self-supervised models capable of generalising across patients could
-                        make such systems clinically viable even in the absence of patient-specific
-                        annotated training data.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🏥</span>
-                        Clinical Decision Support
-                    </h3>
-                    <p class="info-card-text">
-                        AI-assisted interpretation of physiological signals can support
-                        neurologists and intensivists in time-critical decision-making,
-                        particularly in intensive care settings where EEG monitoring is
-                        used continuously. Reliable, explainable AI tools can serve as
-                        second-opinion systems, flagging events for clinical review and
-                        reducing the risk of missed diagnoses during long monitoring sessions.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🦾</span>
-                        Neurorehabilitation
-                    </h3>
-                    <p class="info-card-text">
-                        Brain-machine interface technologies enabled by robust neural
-                        decoding algorithms have direct applications in rehabilitation
-                        for patients with motor impairments following stroke, spinal cord
-                        injury, or neurodegenerative disease. More generalised and adaptive
-                        BMI systems — requiring less patient-specific calibration — could
-                        make these technologies accessible to a broader clinical population.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🔐</span>
-                        Privacy-Preserving Medical AI
-                    </h3>
-                    <p class="info-card-text">
-                        Federated learning frameworks allow AI models to be trained on
-                        distributed patient data across multiple hospitals without
-                        centralising sensitive records. This architecture is increasingly
-                        relevant as healthcare systems seek to harness large-scale data
-                        while complying with data protection legislation and maintaining
-                        patient trust. Research on trustworthy federated AI directly
-                        addresses these systemic needs.
-                    </p>
-                </article>
-
-                <article class="info-card">
-                    <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🤝</span>
-                        Collaborative Hospital-Based Learning
-                    </h3>
-                    <p class="info-card-text">
-                        Multi-site federated training enables hospitals to collectively
-                        build more powerful and generalisable AI systems than any single
-                        institution could produce independently. This is especially valuable
-                        for rare conditions or minority patient populations where data at
-                        any single site is insufficient for model development. Synthetic
-                        data generation can complement federated approaches by augmenting
-                        local datasets and enabling safe data sharing.
-                    </p>
-                </article>
-
-            </div>
-        </section>
-    </div>
-
-    <!-- Section divider -->
-    <div class="section-divider"></div>
-
-    <!-- ==============================
-         CLOSING SUMMARY
-    ============================== -->
-    <div class="container">
-        <section id="summary" class="content-section">
-            <h2 class="section-title">Summary</h2>
+        <section class="content-section">
+            <h2 class="section-title">Aplicaciones Prácticas</h2>
             <div class="content-text">
                 <p>
-                    Kristina Stemikovskaya represents a scientific profile that is increasingly
-                    valued in the current landscape of applied AI research: one that combines
-                    formal methodological rigour with a clear orientation towards real-world
-                    clinical problems. Her trajectory — from statistical theory to self-supervised
-                    EEG analysis and federated medical AI — reflects a coherent intellectual
-                    arc driven by the question of how machine learning can be made both
-                    technically sound and genuinely deployable in healthcare.
+                    El Contrastive Learning tiene un impacto creciente en múltiples dominios
+                    donde los datos no etiquetados son abundantes pero las anotaciones son costosas o escasas:
                 </p>
-                <p>
-                    Her work on <strong class="text-highlight">frequency-aware contrastive learning</strong>
-                    for EEG places her at the frontier of a rapidly evolving area: the application
-                    of self-supervised representation learning to biomedical signals. This field
-                    is attracting substantial attention precisely because it offers a principled
-                    response to the label scarcity problem that has historically limited AI in
-                    clinical neurology. By incorporating domain knowledge — specifically the
-                    spectral organisation of neural signals — into the learning objective,
-                    her approach moves beyond generic contrastive frameworks and towards
-                    methods that are genuinely adapted to the structure of the data they process.
-                </p>
-                <p>
-                    More broadly, her simultaneous engagement with <strong>trustworthy federated
-                    learning</strong>, <strong>synthetic data</strong>, and <strong>cross-patient
-                    generalisation</strong> situates her work at the confluence of several major
-                    trends in contemporary AI research: the turn towards privacy-preserving
-                    distributed learning, the growing emphasis on reliability and accountability in
-                    AI systems, and the expanding toolkit of self-supervised methods.
-                    Taken together, these commitments define a research programme that is technically
-                    ambitious, clinically motivated, and well-aligned with the direction in which
-                    healthcare AI is moving.
-                </p>
+
+                <ul class="feature-list">
+                    <li><strong>Visión por computador:</strong> Pre-entrenamiento de modelos de representación visual sin anotaciones, con posterior fine-tuning en tareas de clasificación, detección o segmentación con pocos ejemplos etiquetados.</li>
+                    <li><strong>Procesamiento del lenguaje natural:</strong> Aprendizaje de embeddings de oraciones y documentos que capturan similitud semántica, usados en recuperación de información y clasificación de texto.</li>
+                    <li><strong>Señales biomédicas y EEG:</strong> Detección automática de crisis epilépticas, codificación de señales cerebrales para interfaces cerebro-computadora y análisis de series temporales fisiológicas sin etiquetas.</li>
+                    <li><strong>Aprendizaje multimodal:</strong> Alineación de representaciones de diferentes modalidades (imagen-texto, audio-vídeo), como en CLIP, permitiendo búsqueda y comprensión cruzada entre modalidades.</li>
+                    <li><strong>Sistemas de recomendación:</strong> Aprendizaje de representaciones de usuarios e ítems a partir de interacciones implícitas, mejorando la personalización sin necesidad de ratings explícitos.</li>
+                    <li><strong>Robótica y control:</strong> Pre-entrenamiento de políticas de control mediante observaciones no supervisadas del entorno, facilitando la transferencia a nuevas tareas con pocos ejemplos de demostración.</li>
+                </ul>
             </div>
         </section>
     </div>
@@ -637,11 +330,11 @@
     <footer class="footer">
         <div class="container">
             <p class="footer-text">
-                <strong>Kristina Stemikovskaya</strong> – GPAIS Research Profile
+                <strong>Contrastive Learning</strong> - GPAIS Research Area
                 <span aria-hidden="true">•</span>
-                <a href="index.html" class="footer-link">Back to GPAIS</a>
+                <a href="index.html" class="footer-link">Volver a GPAIS</a>
                 <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">IAFER · 2026</a>
+                <a href="../index.html" class="footer-link">IAFER Project 2026</a>
             </p>
         </div>
     </footer>
