@@ -1,0 +1,53 @@
+{
+  "id": "stad_2024",
+  "title": "Aprendizaje Generalizado de Cero Ejemplos: Revisión de Estado del Arte y Estudio Preliminar de la Influencia del Preprocesamiento",
+  "authors": [
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Nottingham"
+    },
+    {
+      "name": "Juan José Herrera",
+      "affiliation": "Universidad de Granada"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "Universidad de Granada"
+    }
+  ],
+  "year": 2024,
+  "month": "Nov",
+  "title_es": "Aprendizaje Generalizado de Cero Ejemplos: Revisión de Estado del Arte y Estudio Preliminar",
+  "description_es": "Este trabajo actualiza el estado del arte del Aprendizaje de Cero Ejemplos Generalizado (GZSL) integrando los LLMs y proponiendo una nueva clasificación de espacios semánticos en 'explícitos' e 'implícitos'. Realiza un experimento preliminar que demuestra que reducir la cantidad de atributos semánticos mediante selección de características aumenta significativamente la precisión del modelo.",
+  "publication": {
+    "type": "conference",
+    "venue": "XI Simposio Teoría y Aplicaciones de Minería de Datos (STAD)",
+    "location": "España"
+  },
+  "abstract": "El Aprendizaje Generalizado de Cero Ejemplos (GZSL) es un paradigma emergente en contextos de IA de propósito general. En este artículo presentamos una revisión del estado del arte en GZSL, analizando las principales técnicas y enfoques utilizados para clasificar instancias de clases nunca vistas durante el entrenamiento. Además, realizamos un estudio preliminar sobre la influencia del preprocesamiento en el espacio semántico, que es el componente clave que permite asociar el conocimiento previo con situaciones desconocidas. Nuestros resultados indican que la calidad y la relevancia de los atributos semánticos juegan un papel fundamental en el desempeño del modelo.",
+  "pdf_url": "",
+  "paper_url": "https://academica-e.unavarra.es/server/api/core/bitstreams/a3b019d8-4c47-44fd-87d3-80c3c7098fb9/content",
+  "keywords": [
+    "Aprendizaje Cero Ejemplos",
+    "GZSL",
+    "Espacio Semántico",
+    "Preprocesamiento",
+    "Selección de Características"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{triguero2024aprendizaje,\n  title={Aprendizaje Generalizado de Cero Ejemplos: Revisión de Estado del Arte y Estudio Preliminar de la Influencia del Preprocesamiento},\n  author={Triguero, Isaac and Herrera, Juan José and Herrera, Francisco},\n  booktitle={XI Simposio Teoría y Aplicaciones de Minería de Datos},\n  year={2024}\n}",
+    "apa": "Triguero, I., Herrera, J. J., & Herrera, F. (2024). Aprendizaje Generalizado de Cero Ejemplos: Revisión de Estado del Arte y Estudio Preliminar de la Influencia del Preprocesamiento. XI Simposio Teoría y Aplicaciones de Minería de Datos.",
+    "mla": "Triguero, Isaac, et al. \"Aprendizaje Generalizado de Cero Ejemplos: Revisión de Estado del Arte y Estudio Preliminar de la Influencia del Preprocesamiento.\" XI Simposio Teoría y Aplicaciones de Minería de Datos, 2024."
+  },
+  "research_area": "gpais",
+  "research_line": "Zero-Shot Learning",
+  "image": "images/gpais/zero-shot_paper_2.png",
+  "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:qjMakFHDy7sC",
+  "metadata": {
+    "contributions": [
+      "Presenta una revisión integral del estado del arte en GZSL",
+      "Actualiza la clasificación de espacios semánticos en 'explícitos' e 'implícitos'",
+      "Demuestra que con LLMs se pueden mejorar significativamente los espacios semánticos"
+    ]
+  }
+}

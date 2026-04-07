@@ -1,0 +1,464 @@
+/* ============================================
+   SIDEBAR.CSS - Árbol de navegación (Sidebar)
+   Inspirado en el navegador de repositorios de GitHub
+   ============================================ */
+
+/* ==============================
+   CONTENEDOR SIDEBAR
+============================== */
+.page-sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height: 100vh;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: 0.875rem;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Scrollbar personalizada */
+.page-sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.page-sidebar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.page-sidebar::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+.page-sidebar::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* ==============================
+   HEADER DEL SIDEBAR
+============================== */
+.sidebar-header {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    background: #f9fafb;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.sidebar-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sidebar-title__icon {
+    font-size: 1.25rem;
+    display: none;
+}
+
+/* ==============================
+   ÁRBOL DE NAVEGACIÓN
+============================== */
+.nav-tree {
+    list-style: none;
+    margin: 0;
+    padding: 0.5rem 0;
+}
+
+.nav-item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Elemento de árbol (parent) */
+.tree-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #374151;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+    line-height: 1.5;
+    position: relative;
+    border-left: 2px solid transparent;
+    margin-left: -2px;
+}
+
+.tree-item:hover {
+    background: #f3f4f6;
+    color: #1f2937;
+    border-left-color: #9333ea;
+}
+}
+
+.tree-item.active {
+    background: #eff6ff;
+    color: #2563eb;
+    font-weight: 600;
+    border-left: 3px solid #2563eb;
+    padding-left: calc(1rem - 3px);
+}
+
+.tree-item.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #2563eb;
+    width: 3px;
+    border-radius: 0 2px 2px 0;
+}
+
+/* Icono de expand/collapse */
+.tree-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.25rem;
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+    font-size: 0.75rem;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.tree-item[data-expandable="false"] .tree-toggle {
+    visibility: hidden;
+}
+
+.tree-item[data-collapsed="true"] .tree-toggle {
+    transform: rotate(-90deg);
+}
+
+/* Icono de tipo */
+.tree-icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 0.5rem;
+    flex-shrink: 0;
+    font-size: 1rem;
+}
+
+/* Label/nombre */
+.tree-label {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ==============================
+   NODOS HIJOS (Nested)
+============================== */
+.tree-children {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 1000px;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+}
+
+.tree-item[data-collapsed="true"] .tree-children {
+    max-height: 0;
+    opacity: 0;
+}
+
+/* Niveles de indentación */
+.tree-item--level-1 {
+    padding-left: 1rem;
+}
+
+.tree-item--level-2 {
+    padding-left: 2.5rem;
+    font-size: 0.8125rem;
+}
+
+.tree-item--level-3 {
+    padding-left: 3.5rem;
+    font-size: 0.75rem;
+}
+
+.tree-children > .nav-item:not(:last-child) > .tree-item--level-2::before {
+    content: '';
+    position: absolute;
+    left: 1.25rem;
+    top: 100%;
+    height: 1000px;
+    width: 1px;
+    background: #e5e7eb;
+    opacity: 0.5;
+}
+
+/* ==============================
+   SECCIONES DE CATEGORÍA
+============================== */
+.sidebar-section {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.sidebar-section:first-child {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.sidebar-section-title {
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #9ca3af;
+    user-select: none;
+}
+
+/* ==============================
+   BOTONES DE ACCIÓN
+============================== */
+.sidebar-actions {
+    padding: 1rem;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    gap: 0.5rem;
+    position: sticky;
+    bottom: 0;
+    background: #f9fafb;
+    z-index: 10;
+}
+
+.sidebar-action-btn {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #374151;
+    transition: all 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.sidebar-action-btn:hover {
+    background: #f3f4f6;
+    border-color: #9ca3af;
+}
+
+/* ==============================
+   MAIN CONTENT (Ajuste de layout)
+============================== */
+body.sidebar-open {
+    margin-left: 280px;
+}
+
+@media (max-width: 1024px) {
+    body.sidebar-open {
+        margin-left: 0;
+    }
+
+    .page-sidebar {
+        width: 280px;
+        position: fixed;
+        left: -280px;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    .page-sidebar.active {
+        left: 0;
+    }
+
+    /* Overlay */
+    body.sidebar-open::before {
+        content: '';
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-sidebar {
+        width: 250px;
+        left: -250px;
+    }
+
+    body.sidebar-open {
+        margin-left: 0;
+    }
+
+    .sidebar-header {
+        padding: 1rem;
+    }
+
+    .tree-item {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.8125rem;
+    }
+
+    .tree-item--level-1 {
+        padding-left: 0.75rem;
+    }
+
+    .tree-item--level-2 {
+        padding-left: 1.5rem;
+    }
+
+    .tree-item--level-3 {
+        padding-left: 2.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-sidebar {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .sidebar-title {
+        font-size: 0.875rem;
+    }
+
+    .tree-label {
+        font-size: 0.75rem;
+    }
+}
+
+/* ==============================
+   TOGGLE BUTTON (para móviles)
+============================== */
+.sidebar-toggle {
+    display: none;
+    position: fixed;
+    left: 1rem;
+    top: 1rem;
+    z-index: 1001;
+    background: white;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.25rem;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-60px);
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-toggle.visible {
+    display: flex;
+}
+
+.sidebar-toggle:hover {
+    background: #f3f4f6;
+}
+
+body.sidebar-open .sidebar-toggle {
+    transform: translateX(280px);
+}
+
+@media (max-width: 1024px) {
+    .sidebar-toggle.visible {
+        display: flex;
+    }
+
+    body.sidebar-open .sidebar-toggle {
+        transform: translateX(250px);
+    }
+}
+
+/* ==============================
+   ANIMACIONES
+============================== */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.tree-children:not([data-collapsed="true"]) {
+    animation: slideIn 0.2s ease;
+}
+
+/* ==============================
+   TEMAS OSCURO (Opcional)
+============================== */
+@media (prefers-color-scheme: dark) {
+    .page-sidebar {
+        background: #1f2937;
+        border-right-color: #374151;
+    }
+
+    .sidebar-header {
+        background: #111827;
+        border-bottom-color: #374151;
+    }
+
+    .sidebar-title {
+        color: #f3f4f6;
+    }
+
+    .tree-item {
+        color: #d1d5db;
+    }
+
+    .tree-item:hover {
+        background: #374151;
+        color: #f3f4f6;
+    }
+
+    .tree-item.active {
+        background: #1e3a8a;
+        color: #60a5fa;
+        border-left-color: #60a5fa;
+    }
+
+    .sidebar-section-title {
+        color: #6b7280;
+    }
+
+    .sidebar-action-btn {
+        background: #374151;
+        border-color: #4b5563;
+        color: #d1d5db;
+    }
+
+    .sidebar-action-btn:hover {
+        background: #4b5563;
+    }
+}

@@ -12,8 +12,156 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/papers.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 </head>
 <body id="top">
+
+    <!-- ==============================
+         SIDEBAR / ÁRBOL DE NAVEGACIÓN
+    ============================== -->
+    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
+
+    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">
+                <span class="sidebar-title__icon">🗂️</span>
+                <span>Navegación</span>
+            </h2>
+        </div>
+
+        <nav>
+            <ul class="nav-tree">
+                <!-- Inicio -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Inicio</span>
+                    <a href="#top" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">🏠</span>
+                        <span class="tree-label">Inicio</span>
+                    </a>
+                    <a href="#lineas" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">📍</span>
+                        <span class="tree-label">Líneas de Investigación</span>
+                    </a>
+                    <a href="#equipo" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">👥</span>
+                        <span class="tree-label">Equipo</span>
+                    </a>
+                </li>
+
+                <!-- GPAIS -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">GPAIS</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🧠</span>
+                        <span class="tree-label">General Purpose AI</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="gpais/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gpais/contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔗</span>
+                                <span class="tree-label">Contrastive Learning</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gpais/self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🎯</span>
+                                <span class="tree-label">Self-Supervised Learning</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gpais/zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚡</span>
+                                <span class="tree-label">Zero-Shot Learning</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy AI -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Trustworthy AI</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🛡️</span>
+                        <span class="tree-label">IA Fiable</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="trustworthy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trustworthy/explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">👁️</span>
+                                <span class="tree-label">Explainability (XAI)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trustworthy/fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚖️</span>
+                                <span class="tree-label">Fairness & Bias</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trustworthy/robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">💪</span>
+                                <span class="tree-label">Robustness</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trustworthy/privacy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔐</span>
+                                <span class="tree-label">Privacy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trustworthy/governance/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📋</span>
+                                <span class="tree-label">Governance</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trustworthy/automl/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚙️</span>
+                                <span class="tree-label">AutoML</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="trustworthy/critical-applications/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🚨</span>
+                                <span class="tree-label">Critical Applications</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Recursos -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Recursos</span>
+                    <a href="#top" class="tree-item tree-item--level-1" data-expandable="false" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+                        <span class="tree-icon">📚</span>
+                        <span class="tree-label">Publicaciones</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-actions">
+            <a href="gpais/index.html" class="sidebar-action-btn">GPAIS</a>
+            <a href="trustworthy/index.html" class="sidebar-action-btn">Trustworthy</a>
+        </div>
+    </aside>
 
     <!-- ==============================
          BANDA DE LOGOS
@@ -119,6 +267,22 @@
                     </article>
 
                 </div>
+            </div>
+        </section>
+
+        <!-- ==============================
+             CARRUSEL DE PUBLICACIONES
+        ============================== -->
+        <section class="publications-section section">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Nuestras Publicaciones</h2>
+                    <p class="section__subtitle">
+                        Trabajos recientes del grupo de investigación en IA
+                    </p>
+                </div>
+
+                <div id="papers-carousel-main"></div>
             </div>
         </section>
 
@@ -300,5 +464,43 @@
     </footer>
 
     <script src="js/base.js"></script>
+    <!-- PDF.js para renderizar PDFs como imágenes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="js/pdf-renderer.js"></script>
+    <script src="js/papers.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script>
+        /**
+         * Carga los papers en el carrusel de la página principal
+         */
+        document.addEventListener('DOMContentLoaded', async () => {
+            console.log('🔄 Iniciando carga de papers para página principal...');
+            
+            try {
+                // Esperar a que se carguen los papers
+                const papers = await initPapersManager('./');
+                console.log('✅ Papers cargados:', papers.length, 'papers');
+                console.log('📦 Papers disponibles:', papersManager.papers);
+                
+                // Ordernar papers por año (descendente)
+                const sortedPapers = papersManager.sortByYear();
+                console.log('📊 Papers ordenados:', sortedPapers);
+
+                // Renderizar carrusel en la página principal
+                const container = document.getElementById('papers-carousel-main');
+                console.log('🎯 Contenedor encontrado:', container);
+                
+                if (container && sortedPapers && sortedPapers.length > 0) {
+                    console.log('🎨 Renderizando carrusel con', sortedPapers.length, 'papers');
+                    papersManager.renderCarousel('papers-carousel-main', sortedPapers);
+                    console.log('✨ Carrusel renderizado exitosamente');
+                } else {
+                    console.warn('⚠️ No se pudo renderizar: contenedor existe:', !!container, ', papers:', sortedPapers?.length || 0);
+                }
+            } catch (error) {
+                console.error('❌ Error al cargar papers:', error);
+            }
+        });
+    </script>
 </body>
 </html>
