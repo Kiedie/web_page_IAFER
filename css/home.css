@@ -280,7 +280,7 @@ body::before {
 }
 
 .research-card--trustworthy::before {
-    background: linear-gradient(90deg, #5b5ea6, #9b59b6);
+    background: linear-gradient(90deg, #f59e0b, #d97706);
 }
 
 .research-card:hover {
@@ -308,7 +308,7 @@ body::before {
 }
 
 .research-card--gpais   .research-card__title { color: var(--home-coral); }
-.research-card--trustworthy .research-card__title { color: #9b8fff; }
+.research-card--trustworthy .research-card__title { color: #f59e0b; }
 
 .research-card__name {
     font-size: 0.9rem;
