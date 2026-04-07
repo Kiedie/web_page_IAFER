@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GPAIS - General Purpose Artificial Intelligence | IAFER</title>
-    <meta name="description" content="Núcleo de investigación avanzada en IA de propósito general - IAFER Project">
+    <title>GPAIS – General Purpose Artificial Intelligence Systems | IAFER</title>
+    <meta name="description" content="GPAIS: investigación en Zero-Shot, Self-Supervised y Contrastive Learning, y Agentic AI. Sistemas de IA que generalizan con menos supervisión. Cátedra ENIA IAFER.">
     
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -46,7 +46,7 @@
 
                 <!-- Título principal -->
                 <h1 class="hero-title">General Purpose Artificial Intelligence</h1>
-                <p class="hero-subtitle">El núcleo de investigación avanzada en IAFER</p>
+                <p class="hero-subtitle">IA que aprende a generalizar: menos supervisión, más alcance</p>
 
                 <!-- Botones de acción -->
                 <div class="hero-actions">
@@ -63,47 +63,18 @@
                 <!-- Divisor decorativo -->
                 <div class="hero-divider"></div>
 
-                <!-- Sección: ¿Qué es GPAIS? con imagen -->
+                <!-- Sección: ¿Qué es GPAIS? -->
                 <section id="research-areas" class="gpais-about-section" aria-labelledby="research-title">
-                    <h2 id="research-title" class="research-title">¿Qué es GPAIS?</h2>
-                    
-                    <div class="gpais-about-grid">
-                        <!-- Columna izquierda: Texto -->
-                        <div class="gpais-about-text">
-                            <p>
-                                <strong class="text-highlight">GPAIS</strong> (General Purpose Artificial Intelligence Systems) 
-                                representa ...
-                            </p>
-                            
-                            <p>
-                                Blablabla
-                            </p>
-                            
-                            <p>
-                                Bla Bla Blaa
-                            </p>
+                    <h2 id="research-title" class="research-title">¿Qué son?</h2>
 
-                        </div>
-
-                        <!-- Columna derecha: Imagen -->
-                        <div class="gpais-about-visual">
-                            <figure class="visual-figure">
-                                <div class="visual-wrapper">
-                                    <img 
-                                        src="../images/gpais/gpais-concept.png" 
-                                        alt="Diagrama conceptual de la arquitectura GPAIS mostrando las conexiones entre diferentes métodos de aprendizaje"
-                                        class="visual-image"
-                                        loading="lazy"
-                                    >
-                                    <div class="visual-overlay">
-                                        <span class="visual-placeholder">🖼️ Visión Conceptual</span>
-                                    </div>
-                                </div>
-                                <figcaption class="visual-caption">
-                                    Pie de foto 
-                                </figcaption>
-                            </figure>
-                        </div>
+                    <div class="content-text" style="max-width:800px; margin:0 auto;">
+                            <p>
+                            La mayoría de los sistemas actuales funcionan bien dentro del dominio para el que fueron entrenados.
+                            Cuando se topan con algo fuera de ese margen —una clase que nunca vieron, un dominio distinto,
+                            una tarea para la que no hay ejemplos— su rendimiento cae. Los GPAIs son
+                            sistemas de IA capaces de generalizar con menos datos etiquetados, menos supervisión
+                            y mayor capacidad de adaptarse a contextos nuevos.
+                        </p>
                     </div>
                 </section>
             </section>
@@ -113,12 +84,58 @@
     <!-- Divisor de sección -->
     <div class="section-divider"></div>
 
+    <!-- Sección: Mundo Cerrado vs Mundo Abierto -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">GPAIs de mundo abierto y cerrado</h2>
+            <p class="section-intro">
+                Los GPAIs se categorizan en dos enfoques principales
+            </p>
+
+            <div class="content-grid">
+
+                <!-- Mundo Cerrado -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔒</span>
+                        Mundo Cerrado
+                    </h3>
+                    <p class="info-card-text">
+                       En el mundo cerrado (closed world), el sistema opera sobre un conjunto de 
+                       tareas conocido y delimitado de antemano. Puede abordar varias tareas, 
+                       pero todas forman parte del escenario previsto durante su diseño y entrenamiento, 
+                       por lo que su capacidad de actuación queda ligada a ese marco definido.
+                    </p>
+                </article>
+
+                <!-- Mundo Abierto -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🌐</span>
+                        Mundo Abierto
+                    </h3>
+                    <p class="info-card-text">
+                        En el mundo abierto (open world), el sistema actúa en un entorno dinámico y cambiante, 
+                        donde pueden aparecer nuevas tareas, datos o situaciones no previstas inicialmente. 
+                        Por eso, además de resolver lo ya conocido, debe mostrar mayor capacidad de generalización, 
+                        adaptación y respuesta ante lo desconocido.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
     <!-- Sección: Áreas de Investigación -->
     <div class="container">
         <section class="research-areas-section">
-            <h2 class="section-title">Áreas de Investigación</h2>
+            <h2 class="section-title" id="research-areas">Áreas de Investigación</h2>
             <p class="section-intro">
-                Nuestro instituto de investigación se especializa en diversos paradigmas que son fundamentales para el desarrollo de GPAIS
+                Cuatro paradigmas de aprendizaje que el grupo trabaja en paralelo,
+                con aplicaciones en salud, industria y entorno rural
             </p>
             
             <div class="research-cards">
@@ -136,26 +153,30 @@
                 </a>
 
                 <!-- Tarjeta 2: Contrastive Learning -->
-                <article class="research-card">
-                    <span class="research-badge">Research Focus</span>
-                    <div class="research-icon" aria-hidden="true">⚡</div>
-                    <h3 class="research-card-title">Contrastive Learning</h3>
-                    <p class="research-card-desc">
-                        Aprendizaje de representaciones mediante comparación de ejemplos positivos y negativos.
-                    </p>
-                    <div class="research-card-glow"></div>
-                </article>
+                <a href="contrastive-learning.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">⚡</div>
+                        <h3 class="research-card-title">Contrastive Learning</h3>
+                        <p class="research-card-desc">
+                            Aprendizaje de representaciones mediante comparación de ejemplos positivos y negativos.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
 
                 <!-- Tarjeta 3: Self-Supervised Learning -->
-                <article class="research-card">
-                    <span class="research-badge">Research Focus</span>
-                    <div class="research-icon" aria-hidden="true">🔄</div>
-                    <h3 class="research-card-title">Self-Supervised Learning</h3>
-                    <p class="research-card-desc">
-                        Aprendizaje automático de características sin etiquetas manuales de supervisión.
-                    </p>
-                    <div class="research-card-glow"></div>
-                </article>
+                <a href="self-supervised.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">🔄</div>
+                        <h3 class="research-card-title">Self-Supervised Learning</h3>
+                        <p class="research-card-desc">
+                            Aprendizaje automático de características sin etiquetas manuales de supervisión.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
 
                 <!-- Tarjeta 4: Agentic AI -->
                 <article class="research-card">
@@ -177,7 +198,7 @@
             <p class="footer-text">
                 <strong>GPAIS</strong> - General Purpose Artificial Intelligence Systems
                 <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">IAFER Project 2026</a>
+                <a href="../index.html" class="footer-link">Cátedra ENIA IAFER 2026</a>
             </p>
         </div>
     </footer>
