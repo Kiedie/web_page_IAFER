@@ -1,0 +1,50 @@
+{
+  "papers": [
+    {
+      "id": "2510.03260",
+      "file": "paper_2510.03260.json",
+      "title": "Semantic-Inductive Attribute Selection for Zero-Shot Learning",
+      "year": 2025,
+      "authors": "Herrera-Aranda, J. J., Gomez-Trenado, G., Herrera, F., & Triguero, I.",
+      "research_area": "gpais",
+      "research_line": "Zero-Shot Learning",
+      "image": "images/gpais/zero-shot_paper_5.png"
+    },
+    {
+      "id": "cec_2025_ga",
+      "file": "paper_cec_2025.json",
+      "title": "A first approach to refine semantic spaces in zero-shot learning with a genetic algorithm",
+      "year": 2025,
+      "authors": "Herrera, J. J., Herrera, F., & Triguero, I.",
+      "research_area": "gpais",
+      "research_line": "Zero-Shot Learning",
+      "image": "images/gpais/zero-shot_paper_4.png"
+    },
+    {
+      "id": "hais_2024",
+      "file": "paper_hais_2024.json",
+      "title": "A preliminary study on preprocessing the semantic space in zero-shot learning",
+      "year": 2024,
+      "authors": "Herrera Aranda, J. J., Herrera, F., & Triguero, I.",
+      "research_area": "gpais",
+      "research_line": "Zero-Shot Learning",
+      "image": "images/gpais/zero-shot_paper_3.png"
+    },
+    {
+      "id": "stad_2024",
+      "file": "paper_stad_2024.json",
+      "title": "Aprendizaje Generalizado de Cero Ejemplos: Revisión de Estado del Arte y Estudio Preliminar de la Influencia del Preprocesamiento",
+      "year": 2024,
+      "authors": "Triguero, I., Herrera, J. J., & Herrera, F.",
+      "research_area": "gpais",
+      "research_line": "Zero-Shot Learning",
+      "image": "images/gpais/zero-shot_paper_2.png"
+    }
+  ],
+  "metadata": {
+    "total": 4,
+    "last_updated": "2024-04-07",
+    "research_areas": ["gpais"],
+    "research_lines": ["Zero-Shot Learning"]
+  }
+}

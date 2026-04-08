@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robustez y OOD - Trustworthy AI | IAFER</title>
+    <meta name="description" content="Investigación en robustez de sistemas de IA: resiliencia ante datos fuera de distribución, ataques adversariales y cambios ambientales.">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/trustworthy.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+</head>
+<body id="top">
+    
+    <!-- ==============================
+         SIDEBAR / ÁRBOL DE NAVEGACIÓN
+    ============================== -->
+    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
+
+    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">
+                <span class="sidebar-title__icon">🗂️</span>
+                <span>Navegación</span>
+            </h2>
+        </div>
+
+        <nav>
+            <ul class="nav-tree">
+                <!-- Inicio -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Inicio</span>
+                    <a href="../../#top" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">🏠</span>
+                        <span class="tree-label">Inicio</span>
+                    </a>
+                    <a href="../../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">📍</span>
+                        <span class="tree-label">Líneas Investigación</span>
+                    </a>
+                    <a href="../../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">👥</span>
+                        <span class="tree-label">Equipo</span>
+                    </a>
+                </li>
+
+                <!-- GPAIS -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">GPAIS</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🧠</span>
+                        <span class="tree-label">General Purpose AI</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="../../gpais/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔗</span>
+                                <span class="tree-label">Contrastive Learning</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🎯</span>
+                                <span class="tree-label">Self-Supervised</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚡</span>
+                                <span class="tree-label">Zero-Shot Learning</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy AI -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Trustworthy AI</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🛡️</span>
+                        <span class="tree-label">IA Fiable</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="../index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">👁️</span>
+                                <span class="tree-label">Explainability</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚖️</span>
+                                <span class="tree-label">Fairness & Bias</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="tree-item tree-item--level-2 active" data-expandable="false">
+                                <span class="tree-icon">💪</span>
+                                <span class="tree-label">Robustness</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../privacy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔐</span>
+                                <span class="tree-label">Privacy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../governance/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚙️</span>
+                                <span class="tree-label">Governance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-actions">
+            <a href="../../gpais/index.html" class="sidebar-action-btn">GPAIS</a>
+            <a href="../index.html" class="sidebar-action-btn">Trustworthy</a>
+        </div>
+    </aside>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
+        <div class="breadcrumb-container">
+            <a href="../index.html" class="breadcrumb-link">
+                <span aria-hidden="true">←</span>
+                <span>Trustworthy AI</span>
+            </a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Robustez y OOD</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">🛡️</span>
+                    <span>Research Focus</span>
+                </div>
+
+                <!-- Título principal -->
+                <h1 class="hero-title">Robustez y Out-of-Distribution</h1>
+                <p class="hero-subtitle">Sistemas de IA resilientes ante datos inesperados, adversarios y cambios en el entorno</p>
+
+                <!-- Botones de acción -->
+                <div class="hero-actions">
+                    <a href="#fundamentos" class="btn btn-primary">
+                        <span>Explorar contenido</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="../index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Volver a Trustworthy</span>
+                    </a>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <!-- Introducción -->
+                <section id="fundamentos" class="content-section">
+                    <h2 class="section-title">¿Qué es Robustez en IA?</h2>
+                    <div class="content-text">
+                        <p>
+                            Un sistema robusto continúa funcionando confiablemente incluso cuando enfrenta datos o situaciones 
+                            que no había visto durante el entrenamiento. <strong class="text-highlight">Out-of-Distribution (OOD)</strong> 
+                            se refiere justamente a esos datos fuera del rango esperado.
+                        </p>
+                        <p>
+                            Investigamos defensas contra ataques adversariales, métodos para detectar cuando un modelo enfrenta 
+                            datos OOD, y técnicas de <strong>adaptación continua</strong> que permiten al sistema actualizarse 
+                            en entornos dinámicos.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Tipos de Vulnerabilidades -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Fuentes de Vulnerabilidad</h2>
+            <p class="section-intro">
+                Diferentes tipos de desafíos a la robustez
+            </p>
+            
+            <div class="research-cards">
+                <!-- Vulnerabilidad 1 -->
+                <article class="research-card">
+                    <span class="research-badge">Adversarial</span>
+                    <div class="research-icon" aria-hidden="true">⚔️</div>
+                    <h3 class="research-card-title">Ataques Adversariales</h3>
+                    <p class="research-card-desc">
+                        Pequeñas perturbaciones en la entrada pueden causar predicciones incorrectas. 
+                        Investigamos defensa contra ataques pertinentes y robustez certificable.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Vulnerabilidad 2 -->
+                <article class="research-card">
+                    <span class="research-badge">Distribucional</span>
+                    <div class="research-icon" aria-hidden="true">📊</div>
+                    <h3 class="research-card-title">Shift de Distribución</h3>
+                    <p class="research-card-desc">
+                        La distribución de datos en producción difiere de entrenamiento. 
+                        Métodos de adaptación sin acceso a etiquetas verdaderas.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Vulnerabilidad 3 -->
+                <article class="research-card">
+                    <span class="research-badge">Ambiental</span>
+                    <div class="research-icon" aria-hidden="true">🌍</div>
+                    <h3 class="research-card-title">Cambios Ambientales</h3>
+                    <p class="research-card-desc">
+                        El entorno operacional cambia: sensores envejecen, condiciones varían. 
+                        Sistemas que se adaptan continuamente sin perder conocimiento anterior.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Defensa -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Estrategias de Defensa</h2>
+            <p class="section-intro">
+                Técnicas para mejorar robustez
+            </p>
+            <div class="content-grid">
+                <!-- Defensa 1 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🎓</span>
+                        Entrenamiento Adversarial
+                    </h3>
+                    <p class="info-card-text">
+                        Entrenar en ejemplos adversariales para que el modelo aprenda a ser resistente 
+                        ante perturbaciones.
+                    </p>
+                </article>
+
+                <!-- Defensa 2 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔍</span>
+                        Detección OOD
+                    </h3>
+                    <p class="info-card-text">
+                        Identificar cuando datos están fuera de distribución para abstenerse de hacer predicciones 
+                        no confiables.
+                    </p>
+                </article>
+
+                <!-- Defensa 3 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔄</span>
+                        Adaptación Continua
+                    </h3>
+                    <p class="info-card-text">
+                        Actualizar el modelo dinámicamente con feedback humano o datos nuevos 
+                        sin catastrophic forgetting.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Desafíos -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Desafíos Actuales</h2>
+            <p class="section-intro">
+                Problemas abiertos en robustez
+            </p>
+            
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span class="challenge-number">01</span>
+                    <h3 class="challenge-title">Robustez Certificable</h3>
+                    <p class="challenge-desc">
+                        Es difícil garantizar formalmente que un modelo es robusto. Buscamos métodos de verificación 
+                        que proporcionen certificados de robustez.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">02</span>
+                    <h3 class="challenge-title">Trade-off Robustez-Utilidad</h3>
+                    <p class="challenge-desc">
+                        Mejorar robustez a menudo reduce precisión en datos normales. Investigamos 
+                        métodos que equilibran ambos objetivos.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">03</span>
+                    <h3 class="challenge-title">Escalabilidad</h3>
+                    <p class="challenge-desc">
+                        Los métodos de robustez son computacionalmente costosos. Necesitamos técnicas 
+                        que escalen a modelos grandes.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Footer minimalista -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <strong>Robustez & OOD</strong> - Trustworthy AI
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">Cátedra ENIA IAFER 2026</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/sidebar.js"></script>
+</body>
+</html>

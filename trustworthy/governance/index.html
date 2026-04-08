@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gobernanza y Regulación - Trustworthy AI | IAFER</title>
+    <meta name="description" content="Marcos de gobernanza, cumplimiento regulatorio y políticas para IA responsable.">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/trustworthy.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+</head>
+<body id="top">
+    
+    <!-- ==============================
+         SIDEBAR / ÁRBOL DE NAVEGACIÓN
+    ============================== -->
+    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
+
+    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">
+                <span class="sidebar-title__icon">🗂️</span>
+                <span>Navegación</span>
+            </h2>
+        </div>
+
+        <nav>
+            <ul class="nav-tree">
+                <!-- Inicio -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Inicio</span>
+                    <a href="../../#top" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">🏠</span>
+                        <span class="tree-label">Inicio</span>
+                    </a>
+                    <a href="../../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">📍</span>
+                        <span class="tree-label">Líneas Investigación</span>
+                    </a>
+                    <a href="../../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">👥</span>
+                        <span class="tree-label">Equipo</span>
+                    </a>
+                </li>
+
+                <!-- GPAIS -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">GPAIS</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🧠</span>
+                        <span class="tree-label">General Purpose AI</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="../../gpais/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔗</span>
+                                <span class="tree-label">Contrastive Learning</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🎯</span>
+                                <span class="tree-label">Self-Supervised</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚡</span>
+                                <span class="tree-label">Zero-Shot Learning</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy AI -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Trustworthy AI</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🛡️</span>
+                        <span class="tree-label">IA Fiable</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="../index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">👁️</span>
+                                <span class="tree-label">Explainability</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚖️</span>
+                                <span class="tree-label">Fairness & Bias</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">💪</span>
+                                <span class="tree-label">Robustness</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../privacy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔐</span>
+                                <span class="tree-label">Privacy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="tree-item tree-item--level-2 active" data-expandable="false">
+                                <span class="tree-icon">⚙️</span>
+                                <span class="tree-label">Governance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-actions">
+            <a href="../../gpais/index.html" class="sidebar-action-btn">GPAIS</a>
+            <a href="../index.html" class="sidebar-action-btn">Trustworthy</a>
+        </div>
+    </aside>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
+        <div class="breadcrumb-container">
+            <a href="../index.html" class="breadcrumb-link">
+                <span aria-hidden="true">←</span>
+                <span>Trustworthy AI</span>
+            </a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Gobernanza y Regulación</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">📋</span>
+                    <span>Research Focus</span>
+                </div>
+
+                <!-- Título principal -->
+                <h1 class="hero-title">Gobernanza y Regulación</h1>
+                <p class="hero-subtitle">Marcos legales, políticas organizacionales y estándares para IA responsable</p>
+
+                <!-- Botones de acción -->
+                <div class="hero-actions">
+                    <a href="#fundamentos" class="btn btn-primary">
+                        <span>Explorar contenido</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="../index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Volver a Trustworthy</span>
+                    </a>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <!-- Introducción -->
+                <section id="fundamentos" class="content-section">
+                    <h2 class="section-title">¿Por qué importa la gobernanza?</h2>
+                    <div class="content-text">
+                        <p>
+                            La tecnología sin regulación produce externalidades. Gobiernos, empresas y universidades 
+                            necesitan marcos que aseguren IA desarrollada responsablemente. Pero regulación mal diseñada 
+                            sofoca innovación. Nuestro trabajo busca equilibrio.
+                        </p>
+                        <p>
+                            Estudiamos <strong>leyes emergentes (EU AI Act), estándares técnicos ISO, marcos éticos 
+                            corporativos y políticas públicas</strong> para identificar cómo mejor implementar 
+                            trustworthiness a escala.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Marcos Regulatorios -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Marcos Regulatorios</h2>
+            <p class="section-intro">
+                Normativas emergentes que guían desarrollo responsable
+            </p>
+            
+            <div class="research-cards">
+                <!-- Marco 1 -->
+                <article class="research-card">
+                    <span class="research-badge">Europa</span>
+                    <div class="research-icon" aria-hidden="true">🇪🇺</div>
+                    <h3 class="research-card-title">EU AI Act</h3>
+                    <p class="research-card-desc">
+                        Ley pionera europea que clasifica IA por riesgo, requiere documentación y auditoría. 
+                        Establece estándares globales de facto.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Marco 2 -->
+                <article class="research-card">
+                    <span class="research-badge">Estándares</span>
+                    <div class="research-icon" aria-hidden="true">⚙️</div>
+                    <h3 class="research-card-title">ISO/IEC 42001</h3>
+                    <p class="research-card-desc">
+                        Estándar internacional de sistemas de gestión de IA. Define requisitos de auditoría, 
+                        riesgo y cumplimiento.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Marco 3 -->
+                <article class="research-card">
+                    <span class="research-badge">EEUU</span>
+                    <div class="research-icon" aria-hidden="true">🇺🇸</div>
+                    <h3 class="research-card-title">Executive Order</h3>
+                    <p class="research-card-desc">
+                        Orden ejecutiva estadounidense sobre IA segura, con énfasis en transparencia y 
+                        protección de consumidores.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Marco 4 -->
+                <article class="research-card">
+                    <span class="research-badge">Corporativo</span>
+                    <div class="research-icon" aria-hidden="true">🏢</div>
+                    <h3 class="research-card-title">Marcos Éticos Internos</h3>
+                    <p class="research-card-desc">
+                        Políticas corporativas de IA responsable. Comités de ética, auditorías internas y 
+                        principios alineados con valores.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Pilares -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Pilares de Gobernanza Efectiva</h2>
+            <p class="section-intro">
+                Componentes clave de un marco de gobernanza
+            </p>
+            <div class="content-grid">
+                <!-- Pilar 1 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">📚</span>
+                        Transparencia Documentaria
+                    </h3>
+                    <p class="info-card-text">
+                        Documentar decisiones de diseño, evaluaciones de riesgo, testing, validación. 
+                        Trazabilidad completa.
+                    </p>
+                </article>
+
+                <!-- Pilar 2 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔍</span>
+                        Auditoría y Certificación
+                    </h3>
+                    <p class="info-card-text">
+                        Terceras partes independientes verifican cumplimiento. Certificación del sistema de 
+                        gestión de IA.
+                    </p>
+                </article>
+
+                <!-- Pilar 3 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">👥</span>
+                        Governance Multisectorial
+                    </h3>
+                    <p class="info-card-text">
+                        Colaboración entre industria, gobierno, academia y sociedad civil para establecer 
+                        normas aceptadas.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Desafíos -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Desafíos Regulatorios</h2>
+            <p class="section-intro">
+                Obstáculos en harmonización y cumplimiento
+            </p>
+            
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span class="challenge-number">01</span>
+                    <h3 class="challenge-title">Fragmentación Global</h3>
+                    <p class="challenge-desc">
+                        Distintos países regulan diferente. Empresas multinacionales enfrentan conflictos 
+                        normativos. Necesidad de armonización.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">02</span>
+                    <h3 class="challenge-title">Tecnología Que Evoluciona Rápido</h3>
+                    <p class="challenge-desc">
+                        Regulación es lenta, IA es rápida. Marcos legales pueden quedar obsoletos. 
+                        Necesidad de flexibilidad regulatoria.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">03</span>
+                    <h3 class="challenge-title">Costo de Cumplimiento</h3>
+                    <p class="challenge-desc">
+                        Auditorías, documentación, certificación. Especialmente gravoso para startups y actores 
+                        pequeños.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Footer minimalista -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <strong>Gobernanza y Regulación</strong> - Trustworthy AI
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">Cátedra ENIA IAFER 2026</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/sidebar.js"></script>
+</body>
+</html>

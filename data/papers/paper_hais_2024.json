@@ -1,0 +1,54 @@
+{
+  "id": "hais_2024",
+  "title": "A preliminary study on preprocessing the semantic space in zero-shot learning",
+  "authors": [
+    {
+      "name": "Juan José Herrera Aranda",
+      "affiliation": "Universidad de Granada"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "Universidad de Granada"
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Nottingham"
+    }
+  ],
+  "year": 2024,
+  "month": "Oct",
+  "title_es": "Preprocesamiento del Espacio Semántico en Zero-Shot Learning",
+  "description_es": "Este estudio presenta un método técnico para 'limpiar' el espacio semántico antes del entrenamiento. Implementa un esquema de validación cruzada que utiliza algoritmos de selección de características embebidos para identificar y descartar atributos irrelevantes o ruidosos, logrando así mejorar la capacidad de generalización en clases nunca vistas.",
+  "publication": {
+    "type": "conference",
+    "venue": "International Conference on Hybrid Artificial Intelligence Systems",
+    "pages": "177-189"
+  },
+  "abstract": "Realising a general purpose artificial intelligence is an ambitious goal. To do this, new techniques, especially in an open-world context where new tasks may appear, are to be developed to deal with the dynamism and diversity of these systems. A relevant example of this kind is Zero-Shot Learning, where training and test sets have disjoint label sets, so that no examples of the classes expected in the test (unseen classes) are available during the training phase, and the training (seen) classes are not involved in the test phase. Recent studies aim to generalise from seen to unseen classes by building a variety of models that exploit semantic information in addition to the actual samples (e.g. images). However, the adequacy of the input semantic attributes has not been explored. This initial work studies the influence of preprocessing the semantic space using embedded feature selection within a cross-validation scheme.",
+  "pdf_url": "",
+  "springer_url": "https://link.springer.com/chapter/10.1007/978-3-031-74186-9_15",
+  "paper_url": "https://link.springer.com/chapter/10.1007/978-3-031-74186-9_15",
+  "keywords": [
+    "Zero-Shot Learning",
+    "Semantic Space",
+    "Feature Selection",
+    "Preprocessing",
+    "General Purpose AI"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{herrera2024preliminary,\n  title={A preliminary study on preprocessing the semantic space in zero-shot learning},\n  author={Herrera Aranda, Juan José and Herrera, Francisco and Triguero, Isaac},\n  booktitle={International Conference on Hybrid Artificial Intelligence Systems},\n  pages={177--189},\n  year={2024},\n  organization={Springer Nature Switzerland}\n}",
+    "apa": "Herrera Aranda, J. J., Herrera, F., & Triguero, I. (2024). A preliminary study on preprocessing the semantic space in zero-shot learning. In International Conference on Hybrid Artificial Intelligence Systems (pp. 177-189). Springer Nature Switzerland.",
+    "mla": "Herrera Aranda, Juan José, et al. \"A preliminary study on preprocessing the semantic space in zero-shot learning.\" International Conference on Hybrid Artificial Intelligence Systems. Springer Nature Switzerland, 2024. 177-189."
+  },
+  "research_area": "gpais",
+  "research_line": "Zero-Shot Learning",
+  "image": "images/gpais/zero-shot_paper_3.png",
+  "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:d1gkVwhDpl0C",
+  "metadata": {
+    "contributions": [
+      "Presenta un método técnico para 'limpiar' el espacio semántico antes del entrenamiento",
+      "Implementa esquema de validación cruzada con selección de características embebida",
+      "Identifica y descarta atributos irrelevantes o ruidosos"
+    ]
+  }
+}

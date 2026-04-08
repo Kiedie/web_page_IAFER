@@ -28,6 +28,18 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--bg-secondary);
+    transition: margin-left 0.3s ease;
+}
+
+/* Ajuste de margen para desktop con sidebar */
+@media (min-width: 1025px) {
+    body {
+        margin-left: 280px;
+    }
+
+    .sidebar-toggle {
+        display: none !important;
+    }
 }
 
 .container {

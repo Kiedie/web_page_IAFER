@@ -1,0 +1,54 @@
+{
+  "id": "cec_2025_ga",
+  "title": "A first approach to refine semantic spaces in zero-shot learning with a genetic algorithm",
+  "authors": [
+    {
+      "name": "Juan José Herrera-Aranda",
+      "affiliation": "Universidad de Granada"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "Universidad de Granada"
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Nottingham"
+    }
+  ],
+  "year": 2025,
+  "month": "Jun",
+  "title_es": "GAZeLa: Optimización del Espacio Semántico mediante Algoritmo Genético",
+  "description_es": "Este trabajo introduce GAZeLa, un algoritmo genético que optimiza el espacio semántico simulando clases desconocidas durante el propio entrenamiento. A diferencia de métodos anteriores, selecciona automáticamente los atributos más relevantes sin requerir configuración manual, logrando superar la precisión de los modelos previos con un número significativamente menor de características.",
+  "publication": {
+    "type": "conference",
+    "venue": "2025 IEEE Congress on Evolutionary Computation (CEC)",
+    "pages": "1-4"
+  },
+  "abstract": "Evolutionary computation has been successfully applied to tackle a wide variety of machine learning problems due to its generalisation and adaptability capabilities. Recently, it has shown great potential to enhance General Purpose Artificial Intelligence Systems, particularly those that work in open-world scenarios which require dynamic adaptation abilities. Zero-Shot Learning (ZSL) is an emerging paradigm within the open-world context that allows us to perform predictive tasks, such as the classification of unknown elements (i.e. unknown classes) for which a model has not been specifically trained. To do this, ZSL uses auxiliary information known as semantic space, typically in the form of attributes that define each class. This plays a crucial role in associating prior knowledge with unknown situations. However, the treatment of the semantic space has remained an underexplored area, as selecting the most relevant attributes has not been thoroughly investigated.",
+  "pdf_url": "",
+  "ieee_url": "https://ieeexplore.ieee.org/abstract/document/11042972/",
+  "paper_url": "https://ieeexplore.ieee.org/abstract/document/11042972/",
+  "keywords": [
+    "Zero-Shot Learning",
+    "Genetic Algorithm",
+    "Semantic Space",
+    "Feature Selection",
+    "Evolutionary Computation"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{herrera2025first,\n  title={A first approach to refine semantic spaces in zero-shot learning with a genetic algorithm},\n  author={Herrera, JJ and Herrera, Francisco and Triguero, Isaac},\n  booktitle={2025 IEEE Congress on Evolutionary Computation (CEC)},\n  pages={1--4},\n  year={2025},\n  organization={IEEE}\n}",
+    "apa": "Herrera, J. J., Herrera, F., & Triguero, I. (2025). A first approach to refine semantic spaces in zero-shot learning with a genetic algorithm. In 2025 IEEE Congress on Evolutionary Computation (CEC) (pp. 1-4). IEEE.",
+    "mla": "Herrera, JJ, et al. \"A first approach to refine semantic spaces in zero-shot learning with a genetic algorithm.\" 2025 IEEE Congress on Evolutionary Computation (CEC). IEEE, 2025. 1-4."
+  },
+  "research_area": "gpais",
+  "research_line": "Zero-Shot Learning",
+  "image": "images/gpais/zero-shot_paper_4.png",
+  "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:2osOgNQ5qMEC",
+  "metadata": {
+    "contributions": [
+      "Introduce un algoritmo genético para optimizar el espacio semántico en ZSL",
+      "Simula clases desconocidas durante el entrenamiento",
+      "Selecciona automáticamente atributos relevantes sin configuración manual"
+    ]
+  }
+}

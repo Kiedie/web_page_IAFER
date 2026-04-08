@@ -1,0 +1,340 @@
+/* ============================================
+   RESPONSIVE.CSS - Mejoras de responsividad global
+   ============================================ */
+
+/* ==============================
+   ORIENTACIÓN GENERAL
+============================== */
+
+/* Mobile First - Por defecto para celulares */
+@media (max-width: 640px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 3rem 0 2rem;
+    }
+
+    .hero__title {
+        font-size: clamp(2rem, 8vw, 3rem);
+    }
+
+    .hero__subtitle {
+        font-size: clamp(0.875rem, 2vw, 1rem);
+    }
+
+    .hero__desc {
+        font-size: 0.875rem;
+        padding: 0 1rem;
+    }
+
+    .hero__actions {
+        flex-direction: column;
+    }
+
+    /* Secciones */
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section__title {
+        font-size: clamp(1.75rem, 6vw, 2.25rem);
+    }
+
+    .section__subtitle {
+        font-size: 0.875rem;
+    }
+
+    /* Grillas */
+    .research-lines__grid,
+    .team__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Tarjetas de research */
+    .research-card {
+        padding: 1.5rem;
+    }
+
+    .research-card__tags {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .research-card__tags li {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.5rem;
+    }
+
+    /* Logos banner */
+    .logos-banner {
+        padding: 0.5rem 1rem;
+    }
+
+    /* Footer */
+    .footer__inner {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
+
+/* Tablets pequeñas */
+@media (min-width: 641px) and (max-width: 768px) {
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero {
+        padding: 4rem 0 3rem;
+    }
+
+    .hero__title {
+        font-size: clamp(2.5rem, 8vw, 4rem);
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .research-lines__grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .carousel-wrapper {
+        padding: 0 2rem;
+    }
+
+    .carousel-nav {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+}
+
+/* Tablets medianas */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 0 2rem;
+    }
+
+    .research-lines__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .team__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .carousel-wrapper {
+        padding: 0 3rem;
+    }
+}
+
+/* Desktops pequenos */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .team__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .research-lines__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktops grandes */
+@media (min-width: 1281px) {
+    .team__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .research-lines__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==============================
+   TIPOGRAFÍA RESPONSIVE
+============================== */
+
+h1, h2, h3, h4, h5, h6 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* Evitar overflow en móviles */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+
+    .btn {
+        padding: 0.625rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    /* Ocultar elementos decorativos en móviles */
+    .hero__particles {
+        display: none;
+    }
+
+    .particle {
+        display: none;
+    }
+}
+
+/* ==============================
+   IMÁGENES Y MEDIA
+============================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Evitar imágenes muy grandes */
+@media (max-width: 768px) {
+    .research-card__icon {
+        font-size: 2rem;
+    }
+
+    .member-card__photo {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ==============================
+   FLEX Y GRID RESPONSIVE
+============================== */
+
+@media (max-width: 768px) {
+    /* Convertir filas a columnas en móviles */
+    [class*="__grid"],
+    [class*="__flex"] {
+        flex-direction: column;
+    }
+
+    /* Ancho completo en móviles */
+    .carousel-container {
+        scroll-snap-type: x mandatory;
+    }
+}
+
+/* ==============================
+   ESPACIADO RESPONSIVE
+============================== */
+
+@media (max-width: 640px) {
+    .section {
+        padding: 2rem 0;
+    }
+
+    .section__header {
+        margin-bottom: 2rem;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}
+
+/* ==============================
+   OVERFLOW Y SCROLL
+============================== */
+
+@media (max-width: 768px) {
+    /* Prevenir scroll horizontal innecesario */
+    body,
+    html {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    *::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 4px;
+    }
+}
+
+/* ==============================
+   OPTIMIZACIONES PARA TOUCH
+============================== */
+
+@media (hover: none) and (pointer: coarse) {
+    /* Para dispositivos táctiles */
+    button,
+    a,
+    [role="button"] {
+        padding: 0.75rem 1.25rem;
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Aumentar área de toque */
+    .research-card__cta,
+    .member-link {
+        min-height: 48px;
+    }
+}
+
+/* ==============================
+   VISIBILIDAD CONDICIONAL
+============================== */
+
+/* Ocultar elementos decorativos en móviles para ahorrar recursos */
+@media (max-width: 480px) {
+    .hero__particles,
+    [aria-hidden="true"] {
+        display: none;
+    }
+}
+
+/* ==============================
+   PRINT (Impresión)
+============================== */
+
+@media print {
+    body {
+        background: white;
+    }
+
+    .hero__particles,
+    .logos-banner,
+    .footer {
+        display: none;
+    }
+
+    .section {
+        page-break-inside: avoid;
+    }
+}

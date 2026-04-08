@@ -1,54 +1,383 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trustworthy AI - IAFER</title>
+    <title>Trustworthy AI | IAFER</title>
+    <meta name="description" content="Trustworthy AI: investigación en [TEMA_PRINCIPAL]. Sistemas de IA confiables y éticos. Cátedra ENIA IAFER.">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/trustworthy.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
-<body class="trustworthy-section">
-    <header>
-        <div class="container">
-            <nav class="breadcrumb">
-                <a href="../index.html">← Inicio</a>
-            </nav>
-            <h1>Trustworthy AI</h1>
-            <p class="subtitle">Inteligencia Artificial Confiable y Ética</p>
+<body id="top">
+    
+    <!-- ==============================
+         SIDEBAR / ÁRBOL DE NAVEGACIÓN
+    ============================== -->
+    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
+
+    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">
+                <span class="sidebar-title__icon">🗂️</span>
+                <span>Navegación</span>
+            </h2>
         </div>
-    </header>
 
-    <main class="container">
-        <section class="intro">
-            <h2>Área del Nodo 2</h2>
-            <p>Contenido principal del segundo nodo.</p>
-        </section>
+        <nav>
+            <ul class="nav-tree">
+                <!-- Inicio -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Inicio</span>
+                    <a href="../#top" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">🏠</span>
+                        <span class="tree-label">Inicio</span>
+                    </a>
+                    <a href="../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">📍</span>
+                        <span class="tree-label">Líneas Investigación</span>
+                    </a>
+                    <a href="../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">👥</span>
+                        <span class="tree-label">Equipo</span>
+                    </a>
+                </li>
 
-        <section class="sub-nodes">
-            <h3>Subáreas del Nodo 2</h3>
-            <div class="nodes-grid">
-                <div class="node-card small">
-                    <div class="node-icon">🔧</div>
-                    <h4>Subárea 1</h4>
-                    <p>Descripción breve</p>
-                    <a href="subarea1/index.html" class="btn-small">Ver más</a>
+                <!-- GPAIS -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">GPAIS</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🧠</span>
+                        <span class="tree-label">General Purpose AI</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="../gpais/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../gpais/contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔗</span>
+                                <span class="tree-label">Contrastive Learning</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../gpais/self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🎯</span>
+                                <span class="tree-label">Self-Supervised</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../gpais/zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚡</span>
+                                <span class="tree-label">Zero-Shot Learning</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy AI -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Trustworthy AI</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🛡️</span>
+                        <span class="tree-label">IA Fiable</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="index.html" class="tree-item tree-item--level-2 active" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">👁️</span>
+                                <span class="tree-label">Explainability</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚖️</span>
+                                <span class="tree-label">Fairness & Bias</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">💪</span>
+                                <span class="tree-label">Robustness</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="privacy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔐</span>
+                                <span class="tree-label">Privacy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="governance/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚙️</span>
+                                <span class="tree-label">Governance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-actions">
+            <a href="../gpais/index.html" class="sidebar-action-btn">GPAIS</a>
+            <a href="index.html" class="sidebar-action-btn">Trustworthy</a>
+        </div>
+    </aside>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
+        <div class="breadcrumb-container">
+            <a href="../index.html" class="breadcrumb-link">
+                <span aria-hidden="true">←</span>
+                <span>Inicio</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Tarjeta Principal -->
+    <div class="hero-wrapper">
+        <!-- Partículas de fondo -->
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">🛡️</span>
+                    <span>Trustworthy AI</span>
                 </div>
 
-                <div class="node-card small">
-                    <div class="node-icon">⚙️</div>
-                    <h4>Subárea 2</h4>
-                    <p>Descripción breve</p>
-                    <a href="subarea2/index.html" class="btn-small">Ver más</a>
+                <!-- Título principal -->
+                <h1 class="hero-title">Trustworthy Artificial Intelligence</h1>
+                <p class="hero-subtitle">IA confiable, explicable y responsable en dominios críticos</p>
+
+                <!-- Botones de acción -->
+                <div class="hero-actions">
+                    <a href="#research-areas" class="btn btn-primary">
+                        <span>Explorar ramas</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="../index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Volver a inicio</span>
+                    </a>
                 </div>
+
+                <!-- Divisor decorativo -->
+                <div class="hero-divider"></div>
+
+                <!-- Sección: ¿Qué es? -->
+                <section id="research-areas" class="gpais-about-section" aria-labelledby="research-title">
+                    <h2 id="research-title" class="research-title">¿Qué es?</h2>
+
+                    <div class="content-text" style="max-width:800px; margin:0 auto;">
+                        <p>
+                            La confianza en sistemas de IA no es opcional, es fundamental. Trustworthy AI integra 
+                            explicabilidad, privacidad, equidad y robustez en el diseño, desarrollo y despliegue de 
+                            sistemas inteligentes. Nuestro trabajo se alinea con los marcos regulatorios europeos, 
+                            especialmente la Ley de IA, garantizando que los sistemas sean seguros, interpretables 
+                            y responsables en aplicaciones críticas.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Conceptos Clave -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Pilares de Confianza</h2>
+            <p class="section-intro">
+                Tres ejes fundamentales que articulan nuestra investigación en IA responsable
+            </p>
+
+            <div class="content-grid">
+
+                <!-- Pilar 1 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔍</span>
+                        Explicabilidad y Transparencia
+                    </h3>
+                    <p class="info-card-text">
+                        Desarrollamos métodos para que los sistemas de IA sean interpretables y auditable. 
+                        No solo "caja negra de resultados", sino explicaciones útiles y evaluables de decisiones.
+                    </p>
+                </article>
+
+                <!-- Pilar 2 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">⚖️</span>
+                        Equidad y Privacidad
+                    </h3>
+                    <p class="info-card-text">
+                        Identificamos y mitigamos sesgos, garantizamos privacidad en aprendizaje federado, 
+                        y protegemos la autonomía humana frente a decisiones automatizadas.
+                    </p>
+                </article>
+
+                <!-- Pilar 3 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🛡️</span>
+                        Robustez y Seguridad
+                    </h3>
+                    <p class="info-card-text">
+                        Sistemas que funcionan confiablemente en contextos fuera de distribución y dominios críticos. 
+                        Gobernanza alineada con normativa europea de IA.
+                    </p>
+                </article>
+
             </div>
         </section>
-    </main>
+    </div>
 
-    <footer>
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Áreas de Investigación -->
+    <div class="container">
+        <section class="research-areas-section">
+            <h2 class="section-title" id="research-areas">Líneas de Investigación</h2>
+            <p class="section-intro">
+                Siete líneas de investigación alineadas con la normativa europea y las necesidades de dominios críticos
+            </p>
+            
+            <div class="research-cards">
+                <!-- Tarjeta 1: Explainability -->
+                <a href="explainability/index.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">🔍</div>
+                        <h3 class="research-card-title">Explainability Útil y Evaluable</h3>
+                        <p class="research-card-desc">
+                            Métodos de interpretabilidad evaluables que van más allá de visualizaciones: explicaciones auditables y verificables.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
+
+                <!-- Tarjeta 2: Privacy + Trust -->
+                <a href="privacy/index.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">🔐</div>
+                        <h3 class="research-card-title">Privacidad + Confianza en FL</h3>
+                        <p class="research-card-desc">
+                            Aprendizaje federado con garantías de privacidad diferencial y mecanismos de confianza distribuida.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
+
+                <!-- Tarjeta 3: Bias & Fairness -->
+                <a href="fairness/index.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">⚖️</div>
+                        <h3 class="research-card-title">Bias, Fairness y Autonomía Humana</h3>
+                        <p class="research-card-desc">
+                            Detección y mitigación de sesgos, métricas de equidad, y preservación de la toma de decisiones humana.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
+
+                <!-- Tarjeta 4: Robustness -->
+                <a href="robustness/index.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">🛡️</div>
+                        <h3 class="research-card-title">Robustez y OOD</h3>
+                        <p class="research-card-desc">
+                            Sistemas resilientes ante datos fuera de distribución, adversarios y cambios en el entorno operacional.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
+
+                <!-- Tarjeta 5: Critical Applications -->
+                <a href="critical-applications/index.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">🏥</div>
+                        <h3 class="research-card-title">Aplicaciones en Dominios Críticos</h3>
+                        <p class="research-card-desc">
+                            Despliegue seguro de IA en salud, justicia, financiero y otros sectores de alto riesgo.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
+
+                <!-- Tarjeta 6: Governance -->
+                <a href="governance/index.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">📋</div>
+                        <h3 class="research-card-title">Gobernanza y Regulación</h3>
+                        <p class="research-card-desc">
+                            Marcos operacionales alineados con la Ley de IA europea y mejores prácticas en gobernanza responsable.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
+
+                <!-- Tarjeta 7: AutoML emergente -->
+                <a href="automl/index.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">🚀</div>
+                        <h3 class="research-card-title">AutoML Confiable (Emergente)</h3>
+                        <p class="research-card-desc">
+                            Pipelines automáticos que mantienen garantías de confianza, explicabilidad y privacidad en cada etapa.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer minimalista -->
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 IAFER Project - Trustworthy AI</p>
+            <p class="footer-text">
+                <strong>Trustworthy AI</strong> - IA Confiable, Explicable y Responsable
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">Cátedra ENIA IAFER 2026</a>
+            </p>
         </div>
     </footer>
-    <!-- JS específico cuando sea necesario: <script src="../js/trustworthy.js"></script> -->
+
+    <!-- Scripts -->
+    <script src="../js/sidebar.js"></script>
 </body>
 </html>
