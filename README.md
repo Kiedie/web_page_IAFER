@@ -29,6 +29,10 @@ web_page_IAFER/
 
 # To Do List
 
+## Landing Page
+
+[] Poner más bonico lo de nuestras publicaciones 
+
 ## GPAIS
 
 [] Poner lógos en todos los nodos
@@ -45,6 +49,9 @@ web_page_IAFER/
     [] Subrayar palabras clave en toda la página (más importante en la parte de los papers)
     [] Cambiar disposición de las tarjetas de los Espacios Semanticos para que se vean como una fila 1x3
     [] HYacer mi propia página web de Zero-Shot
+[] Poner barra scrolleable para los papers y dejarlo de la manera en la que lo tengo yo
+
+
 
 ## Trustworthy
 
