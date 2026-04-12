@@ -224,6 +224,59 @@ body::before {
 }
 
 /* ========================================
+   TARJETAS DE LÍNEAS DE INVESTIGACIÓN
+======================================== */
+
+.ssl-line-card {
+    border-left: 3px solid rgba(14, 165, 233, 0.5);
+}
+
+.ssl-line-card--contrastive {
+    border-left-color: var(--ssl-teal);
+}
+
+.ssl-line-card--contrastive:hover {
+    border-color: var(--ssl-teal);
+    box-shadow: 0 8px 28px rgba(14, 165, 233, 0.22);
+}
+
+.ssl-line-card--tabular {
+    border-left-color: var(--ssl-green);
+}
+
+.ssl-line-card--tabular:hover {
+    border-color: var(--ssl-green);
+    box-shadow: 0 8px 28px rgba(16, 185, 129, 0.22);
+}
+
+.ssl-line-list {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.ssl-line-list li {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    padding-left: 1.1rem;
+    position: relative;
+}
+
+.ssl-line-list li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--ssl-teal);
+    font-weight: 700;
+}
+
+.ssl-line-list--tabular li::before {
+    color: var(--ssl-green-bright);
+}
+
+/* ========================================
    ANIMACIÓN ICONO HERO BADGE
 ======================================== */
 
