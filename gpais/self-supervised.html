@@ -4,131 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Self-Supervised Learning - GPAIS | IAFER</title>
-    <meta name="description" content="Aprende sobre Self-Supervised Learning: aprendizaje automático a partir de datos no etiquetados mediante tareas auxiliares">
-    
+    <meta name="description" content="Self-Supervised Learning: qué es, tipos de métodos, Contrastive Learning y SSL para datos tabulares. Investigación GPAIS en IAFER.">
+
     <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
     <link rel="stylesheet" href="../css/self-supervised.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 <body id="top">
-    
-    <!-- ==============================
-         SIDEBAR / ÁRBOL DE NAVEGACIÓN
-    ============================== -->
-    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
-
-    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
-        <div class="sidebar-header">
-            <h2 class="sidebar-title">
-                <span class="sidebar-title__icon">🗂️</span>
-                <span>Navegación</span>
-            </h2>
-        </div>
-
-        <nav>
-            <ul class="nav-tree">
-                <!-- Inicio -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Inicio</span>
-                    <a href="../#top" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">🏠</span>
-                        <span class="tree-label">Inicio</span>
-                    </a>
-                    <a href="../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">📍</span>
-                        <span class="tree-label">Líneas Investigación</span>
-                    </a>
-                    <a href="../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">👥</span>
-                        <span class="tree-label">Equipo</span>
-                    </a>
-                </li>
-
-                <!-- GPAIS -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">GPAIS</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🧠</span>
-                        <span class="tree-label">General Purpose AI</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🔗</span>
-                                <span class="tree-label">Contrastive Learning</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="self-supervised.html" class="tree-item tree-item--level-2 active" data-expandable="false">
-                                <span class="tree-icon">🎯</span>
-                                <span class="tree-label">Self-Supervised</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">⚡</span>
-                                <span class="tree-label">Zero-Shot Learning</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy AI -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Trustworthy AI</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🛡️</span>
-                        <span class="tree-label">IA Fiable</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="../trustworthy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">👁️</span>
-                                <span class="tree-label">Explainability</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">⚖️</span>
-                                <span class="tree-label">Fairness & Bias</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">💪</span>
-                                <span class="tree-label">Robustness</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="sidebar-actions">
-            <a href="index.html" class="sidebar-action-btn">GPAIS</a>
-            <a href="../trustworthy/index.html" class="sidebar-action-btn">Trustworthy</a>
-        </div>
-    </aside>
 
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
@@ -154,19 +40,16 @@
 
         <main class="container">
             <section class="hero-card">
-                <!-- Badge superior -->
                 <div class="hero-badge">
                     <span aria-hidden="true">🔁</span>
                     <span>Research Focus</span>
                 </div>
 
-                <!-- Título principal -->
                 <h1 class="hero-title">Self-Supervised Learning</h1>
                 <p class="hero-subtitle">Aprendizaje de representaciones generales a partir de datos no etiquetados</p>
 
-                <!-- Botones de acción -->
                 <div class="hero-actions">
-                    <a href="#fundamentos" class="btn btn-primary">
+                    <a href="#tipos" class="btn btn-primary">
                         <span>Explorar contenido</span>
                         <span aria-hidden="true">→</span>
                     </a>
@@ -178,76 +61,74 @@
 
                 <div class="hero-divider"></div>
 
-                <!-- Introducción -->
+                <!-- Qué es SSL -->
                 <section id="fundamentos" class="content-section">
-                    <h2 class="section-title">¿Qué es Self-Supervised Learning?</h2>
+                    <h2 class="section-title" style="text-align:left;">¿Qué es Self-Supervised Learning?</h2>
                     <div class="content-text">
                         <p>
-                            El <strong class="text-highlight">aprendizaje auto-supervisado (SSL)</strong> es un paradigma en el que 
-                            los modelos de IA aprovechan grandes volúmenes de datos no etiquetados aprendiendo directamente de la 
-                            <strong>estructura inherente de los propios datos</strong>. En lugar de depender de anotaciones humanas, 
-                            los modelos resuelven <em>tareas auxiliares</em> generadas automáticamente a partir de los datos, lo que 
-                            les permite adquirir representaciones generales y transferibles.
+                            El <strong class="text-highlight">aprendizaje auto-supervisado (SSL)</strong> es un paradigma
+                            en el que los modelos de IA aprovechan grandes volúmenes de datos no etiquetados aprendiendo
+                            directamente de la <strong>estructura inherente de los propios datos</strong>. En lugar de
+                            depender de anotaciones humanas, los modelos resuelven <em>tareas auxiliares</em> generadas
+                            automáticamente que les permiten adquirir representaciones generales y transferibles.
                         </p>
                         <p>
-                            Este enfoque es fundamental para el desarrollo de los 
-                            <strong>Modelos Fundacionales</strong> y constituye una pieza clave en la evolución de los 
-                            Sistemas de Inteligencia Artificial de Propósito General (GPAIS).
+                            Este enfoque es fundamental para el desarrollo de los <strong>Modelos Fundacionales</strong>
+                            y constituye una pieza clave en la evolución de los Sistemas de Inteligencia Artificial de
+                            Propósito General (GPAIS). La clave está en que las representaciones aprendidas no son
+                            específicas de una tarea, sino que capturan estructura semántica reutilizable en múltiples
+                            contextos con mínima supervisión posterior.
                         </p>
                     </div>
                 </section>
-
             </section>
         </main>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Tipos de métodos SSL -->
     <div class="section-divider"></div>
-
-    <!-- Sección: Tipos de métodos -->
     <div class="container">
-        <section class="content-section">
+        <section id="tipos" class="content-section">
             <h2 class="section-title">Tipos de métodos</h2>
             <p class="section-intro">
-                En visión por ordenador, los modelos SSL aprenden sin etiquetas resolviendo diferentes tipos de tareas auxiliares:
+                Los métodos SSL se organizan en torno a diferentes estrategias para generar
+                la señal de supervisión directamente desde los datos
             </p>
-            
+
             <div class="research-cards">
-                <!-- Método 1 -->
                 <article class="research-card">
                     <span class="research-badge">Joint Embedding</span>
                     <div class="research-icon" aria-hidden="true">🔗</div>
                     <h3 class="research-card-title">Contrastive Learning</h3>
                     <p class="research-card-desc">
-                        Los modelos aprenden representaciones forzando que vistas similares de un mismo dato (p. ej., dos 
-                        recortes de la misma imagen) obtengan representaciones cercanas, mientras que datos distintos 
-                        se alejan en el espacio latente. Modelos como <strong>DINOv2</strong> representan el estado del arte.
+                        Los modelos aprenden acercando en el espacio vectorial vistas similares de un mismo dato
+                        (<em>pares positivos</em>) y alejando las de datos distintos (<em>pares negativos</em>).
+                        Es uno de los paradigmas más influyentes del SSL moderno
+                        y el núcleo de modelos como <strong>SimCLR</strong>, <strong>MoCo</strong> o <strong>DINOv2</strong>.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Método 2 -->
                 <article class="research-card">
                     <span class="research-badge">Reconstrucción</span>
                     <div class="research-icon" aria-hidden="true">🧩</div>
-                    <h3 class="research-card-title">Masked Image Modeling</h3>
+                    <h3 class="research-card-title">Masked Modeling</h3>
                     <p class="research-card-desc">
-                        Los modelos aprenden a reconstruir partes eliminadas de una imagen. Inspirada en modelos de 
-                        lenguaje como <strong>BERT</strong>, esta técnica no requiere definir aumentaciones de datos 
-                        y ha demostrado ser muy eficaz para aprender representaciones ricas y robustas.
+                        Los modelos aprenden a reconstruir partes eliminadas o enmascaradas de una muestra.
+                        Inspirada en <strong>BERT</strong>, esta técnica no requiere definir aumentaciones
+                        de datos y es muy eficaz para aprender representaciones ricas tanto en imagen como en texto.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Método 3 -->
                 <article class="research-card">
-                    <span class="research-badge">Datos Tabulares</span>
+                    <span class="research-badge">Tabular</span>
                     <div class="research-icon" aria-hidden="true">📊</div>
                     <h3 class="research-card-title">SSL para Tabular</h3>
                     <p class="research-card-desc">
-                        Adaptar SSL a datos tabulares es un reto abierto dado su carácter heterogéneo. 
-                        Las representaciones auto-supervisadas en este dominio son clave para tareas de 
-                        fusión de conocimiento, reducción de datos y generalización entre dominios.
+                        Adaptar SSL a datos tabulares es un reto abierto dado su carácter heterogéneo:
+                        mezcla de variables numéricas, categóricas y ordinales. Las representaciones
+                        obtenidas son clave para fusión de conocimiento y generalización entre dominios.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -255,142 +136,288 @@
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Nuestras líneas de investigación -->
     <div class="section-divider"></div>
-
-    <!-- Sección: Datos Tabulares -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">La revolución de los datos tabulares</h2>
+            <h2 class="section-title">Nuestras líneas de investigación</h2>
             <p class="section-intro">
-                Los datos tabulares están presentes en industria, salud y finanzas, pero plantean retos únicos para SSL.
+                En el grupo trabajamos dos líneas complementarias de SSL, cada una orientada a un tipo de dato
+                donde los métodos supervisados tradicionales encuentran sus límites
             </p>
+
             <div class="content-grid">
-                <article class="info-card">
+
+                <!-- Línea 1: Contrastive Learning -->
+                <article class="info-card ssl-line-card ssl-line-card--contrastive">
                     <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🚀📈</span>
-                        Modelos Fundacionales Tabulares
+                        <span class="info-card-icon" aria-hidden="true">🔗</span>
+                        Contrastive Learning para señales biomédicas
                     </h3>
                     <p class="info-card-text">
-                        Modelos como <strong>TabPFN</strong> han superado la capacidad predictiva de enfoques tradicionales, 
-                        pero requieren datos etiquetados y no proporcionan representaciones de propósito general, lo que 
-                        limita su aplicabilidad en escenarios sin supervisión.
+                        Aplicamos Contrastive Learning a problemas donde los datos etiquetados son escasos
+                        y la variabilidad entre sujetos es alta. La idea central: dos aumentaciones distintas
+                        de la misma señal deben producir representaciones cercanas, mientras que señales
+                        de distinto origen deben estar separadas en el espacio latente.
                     </p>
+                    <p class="info-card-text" style="margin-top:0.8rem;">
+                        Nuestro foco principal son las <strong>señales EEG</strong>, donde hemos desarrollado
+                        funciones de pérdida contrastiva <em>frequency-aware</em> que incorporan el conocimiento
+                        de las bandas de frecuencia cerebrales (delta, theta, alpha, beta, gamma) para aprender
+                        representaciones más transferibles en detección de crisis epilépticas.
+                    </p>
+                    <ul class="ssl-line-list">
+                        <li>Frequency-Aware Contrastive Learning para EEG</li>
+                        <li>Generalización entre pacientes sin reentrenamiento</li>
+                        <li>Contrastive Learning federado con privacidad</li>
+                    </ul>
                 </article>
 
-                <article class="info-card">
+                <!-- Línea 2: SSL Tabular -->
+                <article class="info-card ssl-line-card ssl-line-card--tabular">
                     <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🧬🔬</span>
-                        Representaciones Transferibles
+                        <span class="info-card-icon" aria-hidden="true">📊</span>
+                        SSL para datos tabulares
                     </h3>
                     <p class="info-card-text">
-                        Las representaciones aprendidas de forma auto-supervisada en datos tabulares son esenciales para 
-                        tareas posteriores como la <strong>fusión de modelos</strong>, la generalización entre dominios y 
-                        la adaptación a nuevos conjuntos de datos con mínima supervisión.
+                        La mayoría de avances en SSL se han producido en imagen y texto. Aplicarlo a datos
+                        tabulares —presentes en industria, salud y finanzas— sigue siendo un reto abierto por
+                        su carácter heterogéneo: columnas con tipos, escalas y semánticas muy dispares.
                     </p>
+                    <p class="info-card-text" style="margin-top:0.8rem;">
+                        Modelos como <strong>TabPFN</strong> han demostrado el potencial de los modelos
+                        fundacionales tabulares, pero requieren datos etiquetados. Nuestra investigación
+                        busca obtener representaciones de propósito general que sirvan como base para tareas
+                        de fusión de conocimiento, reducción de datos y adaptación con mínima supervisión.
+                    </p>
+                    <ul class="ssl-line-list ssl-line-list--tabular">
+                        <li>Representaciones no supervisadas para tabular</li>
+                        <li>Fusión de modelos y generalización entre dominios</li>
+                        <li>Reducción del esfuerzo de anotación humana</li>
+                    </ul>
                 </article>
+
             </div>
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Mecanismo Contrastive: pares y pérdida -->
     <div class="section-divider"></div>
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Cómo funciona el Contrastive Learning</h2>
+            <p class="section-intro">
+                El aprendizaje contrastivo se estructura en torno a la construcción y comparación de pares,
+                guiados por una función de pérdida específica
+            </p>
+            <div class="research-cards">
+                <article class="research-card">
+                    <span class="research-badge">Similitud</span>
+                    <div class="research-icon" aria-hidden="true">🔗</div>
+                    <h3 class="research-card-title">Par Positivo</h3>
+                    <p class="research-card-desc">
+                        Dos vistas del <strong>mismo ejemplo</strong> obtenidas mediante transformaciones
+                        o aumentaciones de datos. El modelo aprende a producir representaciones cercanas,
+                        capturando invarianza ante cambios irrelevantes para la tarea.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
 
-    <!-- Sección: Desafíos -->
+                <article class="research-card">
+                    <span class="research-badge">Contraste</span>
+                    <div class="research-icon" aria-hidden="true">↔️</div>
+                    <h3 class="research-card-title">Par Negativo</h3>
+                    <p class="research-card-desc">
+                        Vistas procedentes de <strong>ejemplos distintos</strong>. El modelo aprende a
+                        separarlas en el espacio vectorial, forzando a las representaciones a capturar
+                        diferencias semánticamente significativas entre instancias.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <article class="research-card">
+                    <span class="research-badge">Objetivo</span>
+                    <div class="research-icon" aria-hidden="true">🎯</div>
+                    <h3 class="research-card-title">Pérdida InfoNCE</h3>
+                    <p class="research-card-desc">
+                        La función de pérdida más empleada maximiza la similitud entre pares positivos
+                        respecto a los negativos. Variantes como <em>NT-Xent</em> y la pérdida
+                        <em>frequency-aware</em> para EEG extienden este marco a dominios específicos.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+
+            <!-- Métodos principales -->
+            <div style="margin-top: 2rem;">
+                <h3 class="section-title" style="font-size:1.2rem; margin-bottom:0.8rem;">Algoritmos de referencia</h3>
+                <div class="content-grid">
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🌐</span>SimCLR</h3>
+                    </article>
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🔁</span>MoCo</h3>
+                    </article>
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🤝</span>BYOL &amp; SimSiam</h3>
+                    </article>
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🧬</span>Frequency-Aware CL</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Retos actuales (fusionados) -->
+    <div class="section-divider"></div>
     <div class="container">
         <section class="content-section">
             <h2 class="section-title">Retos Actuales</h2>
             <p class="section-intro">
-                El SSL en dominios más allá de las imágenes enfrenta desafíos abiertos que marcan las líneas de investigación del equipo:
+                Tanto en señales biomédicas como en datos tabulares, el SSL enfrenta una serie de
+                desafíos abiertos que definen las fronteras de la investigación
             </p>
-            
+
             <div class="challenge-list">
                 <div class="challenge-item">
                     <span class="challenge-number">01</span>
-                    <h3 class="challenge-title">Objetivos auto-supervisados para tabular</h3>
+                    <h3 class="challenge-title">Selección y calidad de los pares contrastivos</h3>
                     <p class="challenge-desc">
-                        Diseñar tareas auxiliares efectivas para datos tabulares es difícil dada su 
-                        heterogeneidad: mezcla de variables numéricas, categóricas y ordinales con 
-                        semánticas muy distintas entre columnas.
+                        Negativos demasiado fáciles no aportan aprendizaje; negativos <em>falsos</em>
+                        —instancias semánticamente similares tratadas como distintas— deterioran las
+                        representaciones. Definir aumentaciones adecuadas para señales temporales o EEG
+                        requiere conocimiento profundo del dominio.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">02</span>
-                    <h3 class="challenge-title">Escasez de grandes conjuntos de datos</h3>
+                    <h3 class="challenge-title">Diseño de tareas auxiliares para datos tabulares</h3>
                     <p class="challenge-desc">
-                        La heterogeneidad de los datos tabulares dificulta la creación de fuentes masivas 
-                        homogéneas con las que entrenar grandes modelos fundacionales, a diferencia de lo 
-                        que ocurre en imagen o texto.
+                        A diferencia de imágenes o texto, los datos tabulares mezclan variables numéricas,
+                        categóricas y ordinales con semánticas muy distintas entre columnas. Diseñar
+                        objetivos auto-supervisados efectivos en este contexto sigue siendo un problema abierto.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">03</span>
-                    <h3 class="challenge-title">Ausencia de etiquetas en dominios críticos</h3>
+                    <h3 class="challenge-title">Colapso de representaciones</h3>
                     <p class="challenge-desc">
-                        En ámbitos como la biomedicina o la detección de fraudes, los datos etiquetados 
-                        son escasos o inexistentes. El SSL ofrece una alternativa para extraer conocimiento 
-                        valioso sin depender de anotaciones humanas.
+                        Sin una selección cuidadosa de negativos o con arquitecturas inadecuadas, el modelo
+                        puede colapsar y asignar la misma representación a todos los ejemplos, perdiendo
+                        toda capacidad discriminante.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">04</span>
-                    <h3 class="challenge-title">Fusión y generalización del conocimiento</h3>
+                    <h3 class="challenge-title">Escasez de grandes conjuntos de datos heterogéneos</h3>
                     <p class="challenge-desc">
-                        Las representaciones auto-supervisadas deben ser suficientemente generales para 
-                        servir como base en tareas de fusión de modalidades y transferencia de conocimiento 
-                        entre dominios dispares.
+                        Los datos tabulares son difícilmente homogeneizables para entrenar modelos fundacionales
+                        a gran escala, a diferencia de lo que ocurre en imagen o texto. La falta de benchmarks
+                        comunes dificulta comparar métodos.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">05</span>
+                    <h3 class="challenge-title">Generalización y fusión entre dominios</h3>
+                    <p class="challenge-desc">
+                        Las representaciones auto-supervisadas deben ser suficientemente generales para
+                        transferirse entre pacientes, instalaciones o conjuntos de datos. El <em>domain
+                        shift</em> es uno de los principales obstáculos para el despliegue clínico e industrial.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">06</span>
+                    <h3 class="challenge-title">Coste computacional y recursos limitados</h3>
+                    <p class="challenge-desc">
+                        El Contrastive Learning requiere baches grandes o colas de negativos extensas.
+                        Adaptar estos marcos a entornos federados —donde los datos clínicos no pueden
+                        centralizarse— añade restricciones adicionales de memoria y comunicación.
                     </p>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Nuestra investigación (fusionada) -->
     <div class="section-divider"></div>
-
-    <!-- Sección: Investigación en IAFER -->
     <div class="container">
         <section class="content-section">
             <h2 class="section-title">Nuestra Investigación</h2>
             <div class="content-text">
                 <p>
-                    En el grupo <strong class="text-highlight">GPAIS</strong> estamos liderando la
-                    investigación en el emergente campo del SSL aplicado a modalidades de datos más allá de imágenes y texto, 
-                    con especial énfasis en los <strong>datos tabulares</strong>:
+                    En el grupo <strong class="text-highlight">GPAIS</strong> de la cátedra IAFER estamos
+                    liderando la investigación en SSL aplicado a dos dominios donde los datos etiquetados
+                    son escasos y la generalización es crítica: las <strong>señales biomédicas</strong>
+                    y los <strong>datos tabulares heterogéneos</strong>.
                 </p>
+            </div>
+
+            <div style="margin-top:1.5rem;">
                 <h3 class="highlight-title">🚀 Líneas de Investigación Activas</h3>
                 <ul class="feature-list">
-                    <li><strong>Aprendizaje de representaciones no supervisado:</strong> Aprovechamiento de datos no etiquetados para mejorar tareas clásicas de procesamiento tabular</li>
-                    <li><strong>Reducción de datos y optimización del etiquetado:</strong> Técnicas para minimizar el esfuerzo de anotación humana sin sacrificar rendimiento</li>
-                    <li><strong>SSL como base para GPAIS:</strong> Representaciones auto-supervisadas como componente transversal para múltiples tareas de inteligencia artificial de propósito general</li>
+                    <li><strong>Frequency-Aware Contrastive Learning para EEG:</strong> funciones de pérdida que incorporan las bandas de frecuencia cerebrales para detectar crisis epilépticas sin etiquetas</li>
+                    <li><strong>Generalización entre pacientes:</strong> métodos que reducen el <em>domain shift</em> clínico para desplegar modelos sin reentrenamiento por sujeto</li>
+                    <li><strong>Contrastive Learning federado:</strong> adaptación a entornos donde los datos no pueden centralizarse por restricciones de privacidad</li>
+                    <li><strong>Representaciones tabulares no supervisadas:</strong> aprovechamiento de datos sin etiquetar para mejorar tareas de clasificación, detección de anomalías y fusión de modelos</li>
+                    <li><strong>Reducción del esfuerzo de anotación:</strong> técnicas SSL como base para disminuir la supervisión necesaria sin sacrificar rendimiento</li>
+                    <li><strong>SSL como componente transversal de GPAIS:</strong> representaciones auto-supervisadas reutilizables en múltiples tareas de IA de propósito general</li>
                 </ul>
+            </div>
+
+            <div class="highlight-box" style="margin-top:2rem;">
+                <h3 class="highlight-title">📚 Publicaciones</h3>
+                <div class="publications-container">
+                    <article class="publication-card">
+                        <div class="publication-image-wrapper">
+                            <img src="../images/gpais/contrastive_learning/Kristina_paper_1.png"
+                                 alt="Frequency-Aware Contrastive Learning para EEG - Stemikovskaya et al. 2025"
+                                 style="width:100%; border-radius:0.75rem; display:block;">
+                            <span class="publication-badge">2025</span>
+                        </div>
+                        <div class="publication-content">
+                            <p class="publication-abstract">
+                                Este trabajo propone una <strong>función de pérdida contrastiva consciente de
+                                la frecuencia</strong> para la detección auto-supervisada de convulsiones en EEG.
+                                A diferencia de los marcos contrastivos estándar, este enfoque incorpora
+                                explícitamente el conocimiento de que las distintas bandas de frecuencia del EEG
+                                codifican información neurológica diferenciada. El resultado es un sistema capaz
+                                de aprender representaciones clínicamente útiles a partir de grabaciones no
+                                etiquetadas, con mejoras significativas en evaluaciones cruzadas entre pacientes.
+                            </p>
+                            <p class="publication-authors">
+                                Stemikovskaya, K. et al. · TECNALIA Research &amp; Innovation · 2025
+                            </p>
+                        </div>
+                    </article>
+                </div>
             </div>
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Aplicaciones (fusionadas) -->
     <div class="section-divider"></div>
-
-    <!-- Sección: Aplicaciones -->
     <div class="container">
         <section class="content-section">
             <h2 class="section-title">Aplicaciones Prácticas</h2>
             <div class="content-text">
                 <p>
-                    El SSL tiene un impacto transversal en dominios donde los datos no etiquetados abundan 
-                    pero las anotaciones son costosas o inaccesibles:
+                    El SSL tiene un impacto transversal en dominios donde los datos no etiquetados abundan
+                    pero las anotaciones son costosas, escasas o inaccesibles:
                 </p>
-                
                 <ul class="feature-list">
-                    <li><strong>Diagnóstico médico:</strong> Aprendizaje de representaciones clínicas a partir de historiales sin etiquetar para detectar patologías raras</li>
-                    <li><strong>Detección de fraude:</strong> Identificación de patrones anómalos en transacciones financieras sin necesidad de ejemplos etiquetados previos</li>
-                    <li><strong>Industria 4.0:</strong> Mantenimiento predictivo y detección de fallos en maquinaria a partir de datos de sensores no supervisados</li>
-                    <li><strong>Visión por ordenador:</strong> Preentrenamiento de modelos visuales generales (DINOv2, MAE) reutilizables en múltiples tareas</li>
-                    <li><strong>Procesamiento del lenguaje:</strong> Base de modelos como BERT y GPT, que aprenden representaciones lingüísticas de propósito general</li>
-                    <li><strong>Ciencias de la salud:</strong> Análisis de datos ómicos y clínicos con supervisión mínima para descubrimiento de biomarcadores</li>
+                    <li><strong>Señales biomédicas y EEG:</strong> detección de crisis epilépticas, interfaces cerebro-computadora y análisis de series temporales fisiológicas sin etiquetas</li>
+                    <li><strong>Diagnóstico médico:</strong> aprendizaje de representaciones clínicas a partir de historiales sin etiquetar para detectar patologías raras</li>
+                    <li><strong>Detección de fraude:</strong> identificación de patrones anómalos en transacciones financieras sin ejemplos etiquetados previos</li>
+                    <li><strong>Industria 4.0:</strong> mantenimiento predictivo y detección de fallos en maquinaria a partir de datos de sensores no supervisados</li>
+                    <li><strong>Aprendizaje multimodal:</strong> alineación de representaciones entre modalidades (imagen-texto, audio-vídeo), como en CLIP</li>
+                    <li><strong>Visión por ordenador y lenguaje:</strong> base de modelos fundacionales como DINOv2, MAE, BERT y GPT, reutilizables en múltiples tareas</li>
+                    <li><strong>Ciencias de la salud:</strong> análisis de datos ómicos y clínicos con supervisión mínima para descubrimiento de biomarcadores</li>
                 </ul>
             </div>
         </section>
@@ -400,7 +427,7 @@
     <footer class="footer">
         <div class="container">
             <p class="footer-text">
-                <strong>Self-Supervised Learning</strong> - GPAIS Research Area
+                <strong>Self-Supervised Learning</strong> — GPAIS Research Area
                 <span aria-hidden="true">•</span>
                 <a href="index.html" class="footer-link">Volver a GPAIS</a>
                 <span aria-hidden="true">•</span>
@@ -409,7 +436,5 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="../js/sidebar.js"></script>
 </body>
 </html>

@@ -12,123 +12,9 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 <body id="top">
     
-    <!-- ==============================
-         SIDEBAR / ÁRBOL DE NAVEGACIÓN
-    ============================== -->
-    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
-
-    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
-        <div class="sidebar-header">
-            <h2 class="sidebar-title">
-                <span class="sidebar-title__icon">🗂️</span>
-                <span>Navegación</span>
-            </h2>
-        </div>
-
-        <nav>
-            <ul class="nav-tree">
-                <!-- Inicio -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Inicio</span>
-                    <a href="../#top" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">🏠</span>
-                        <span class="tree-label">Inicio</span>
-                    </a>
-                    <a href="../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">📍</span>
-                        <span class="tree-label">Líneas Investigación</span>
-                    </a>
-                    <a href="../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">👥</span>
-                        <span class="tree-label">Equipo</span>
-                    </a>
-                </li>
-
-                <!-- GPAIS -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">GPAIS</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🧠</span>
-                        <span class="tree-label">General Purpose AI</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="index.html" class="tree-item tree-item--level-2 active" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🔗</span>
-                                <span class="tree-label">Contrastive Learning</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🎯</span>
-                                <span class="tree-label">Self-Supervised</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">⚡</span>
-                                <span class="tree-label">Zero-Shot Learning</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy AI -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Trustworthy AI</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🛡️</span>
-                        <span class="tree-label">IA Fiable</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="../trustworthy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">👁️</span>
-                                <span class="tree-label">Explainability</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">⚖️</span>
-                                <span class="tree-label">Fairness & Bias</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">💪</span>
-                                <span class="tree-label">Robustness</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="sidebar-actions">
-            <a href="index.html" class="sidebar-action-btn">GPAIS</a>
-            <a href="../trustworthy/index.html" class="sidebar-action-btn">Trustworthy</a>
-        </div>
-    </aside>
-
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
         <div class="breadcrumb-container">
@@ -248,7 +134,7 @@
         <section class="research-areas-section">
             <h2 class="section-title" id="research-areas">Áreas de Investigación</h2>
             <p class="section-intro">
-                Cuatro paradigmas de aprendizaje que el grupo trabaja en paralelo,
+                Tres líneas de investigación que el grupo trabaja en paralelo,
                 con aplicaciones en salud, industria y entorno rural
             </p>
             
@@ -266,42 +152,32 @@
                     </article>
                 </a>
 
-                <!-- Tarjeta 2: Contrastive Learning -->
-                <a href="contrastive-learning.html" class="research-card-link">
-                    <article class="research-card">
-                        <span class="research-badge">Research Focus</span>
-                        <div class="research-icon" aria-hidden="true">⚡</div>
-                        <h3 class="research-card-title">Contrastive Learning</h3>
-                        <p class="research-card-desc">
-                            Aprendizaje de representaciones mediante comparación de ejemplos positivos y negativos.
-                        </p>
-                        <div class="research-card-glow"></div>
-                    </article>
-                </a>
-
-                <!-- Tarjeta 3: Self-Supervised Learning -->
+                <!-- Tarjeta 2: Self-Supervised Learning (incluye Contrastive + Tabular) -->
                 <a href="self-supervised.html" class="research-card-link">
                     <article class="research-card">
                         <span class="research-badge">Research Focus</span>
-                        <div class="research-icon" aria-hidden="true">🔄</div>
+                        <div class="research-icon" aria-hidden="true">🔁</div>
                         <h3 class="research-card-title">Self-Supervised Learning</h3>
                         <p class="research-card-desc">
-                            Aprendizaje automático de características sin etiquetas manuales de supervisión.
+                            Dos líneas complementarias: <strong>Contrastive Learning</strong> para señales biomédicas
+                            y <strong>SSL para datos tabulares</strong> en entornos de alta complejidad.
                         </p>
                         <div class="research-card-glow"></div>
                     </article>
                 </a>
 
                 <!-- Tarjeta 4: Agentic AI -->
-                <article class="research-card">
-                    <span class="research-badge">Research Focus</span>
-                    <div class="research-icon" aria-hidden="true">🤖</div>
-                    <h3 class="research-card-title">Agentic AI</h3>
-                    <p class="research-card-desc">
-                        Sistemas autónomos con capacidad de toma de decisiones y planificación estratégica.
-                    </p>
-                    <div class="research-card-glow"></div>
-                </article>
+                <a href="agentic-ai.html" class="research-card-link">
+                    <article class="research-card">
+                        <span class="research-badge">Research Focus</span>
+                        <div class="research-icon" aria-hidden="true">🤖</div>
+                        <h3 class="research-card-title">Agentic AI</h3>
+                        <p class="research-card-desc">
+                            Sistemas autónomos con capacidad de toma de decisiones y planificación estratégica.
+                        </p>
+                        <div class="research-card-glow"></div>
+                    </article>
+                </a>
             </div>
         </section>
     </div>
@@ -317,7 +193,5 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="../js/sidebar.js"></script>
 </body>
 </html>

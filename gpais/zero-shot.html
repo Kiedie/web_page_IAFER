@@ -12,123 +12,8 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
-    <link rel="stylesheet" href="../css/papers.css">
-    <link rel="stylesheet" href="../css/responsive.css">
-    <link rel="stylesheet" href="../css/sidebar.css">
 </head>
 <body id="top">
-    
-    <!-- ==============================
-         SIDEBAR / ÁRBOL DE NAVEGACIÓN
-    ============================== -->
-    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
-
-    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
-        <div class="sidebar-header">
-            <h2 class="sidebar-title">
-                <span class="sidebar-title__icon">🗂️</span>
-                <span>Navegación</span>
-            </h2>
-        </div>
-
-        <nav>
-            <ul class="nav-tree">
-                <!-- Inicio -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Inicio</span>
-                    <a href="../#top" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">🏠</span>
-                        <span class="tree-label">Inicio</span>
-                    </a>
-                    <a href="../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">📍</span>
-                        <span class="tree-label">Líneas Investigación</span>
-                    </a>
-                    <a href="../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">👥</span>
-                        <span class="tree-label">Equipo</span>
-                    </a>
-                </li>
-
-                <!-- GPAIS -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">GPAIS</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🧠</span>
-                        <span class="tree-label">General Purpose AI</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🔗</span>
-                                <span class="tree-label">Contrastive Learning</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🎯</span>
-                                <span class="tree-label">Self-Supervised</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="zero-shot.html" class="tree-item tree-item--level-2 active" data-expandable="false">
-                                <span class="tree-icon">⚡</span>
-                                <span class="tree-label">Zero-Shot Learning</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy AI -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Trustworthy AI</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🛡️</span>
-                        <span class="tree-label">IA Fiable</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="../trustworthy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">👁️</span>
-                                <span class="tree-label">Explainability</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">⚖️</span>
-                                <span class="tree-label">Fairness & Bias</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../trustworthy/robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">💪</span>
-                                <span class="tree-label">Robustness</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="sidebar-actions">
-            <a href="index.html" class="sidebar-action-btn">GPAIS</a>
-            <a href="../trustworthy/index.html" class="sidebar-action-btn">Trustworthy</a>
-        </div>
-    </aside>
     
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
@@ -364,7 +249,95 @@
                 </p>
                 <div class="highlight-box">
                     <h3 class="highlight-title">📚 Publicaciones</h3>
-                    <div id="publications-carousel-zsl" class="publications-container"></div>
+                    
+                    <div class="publications-container">
+                        <!-- Publicación 1 -->
+                        <article class="publication-card">
+                            <div class="publication-image-wrapper">
+                                <img src="../images/gpais/zero-shot_paper_2.png" 
+                                     alt="Portada del artículo sobre Semantic-Inductive Attribute Selection"
+                                     class="publication-image">
+                                <span class="publication-badge">2024</span>
+                            </div>
+                            <div class="publication-content">
+                                <p class="publication-abstract">
+                                    Este trabajo actualiza el estado del arte del Aprendizaje de Cero Ejemplos Generalizado (GZSL) integrando los 
+                                    LLMs y proponiendo una nueva clasificación de espacios semánticos en 
+                                    "explícitos" e "implícitos". Además, realiza un experimento preliminar que demuestra que reducir la cantidad de 
+                                    atributos semánticos mediante selección de características aumenta la precisión del modelo
+                                </p>
+                                <p class="publication-authors">
+                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Publicación 2 -->
+                        <article class="publication-card">
+                            <div class="publication-image-wrapper">
+                                <img src="../images/gpais/zero-shot_paper_3.png" 
+                                     alt="Portada del artículo sobre Ranking Feature Selection en ZSL"
+                                     class="publication-image">
+                                <span class="publication-badge">2024</span>
+                            </div>
+                            <div class="publication-content">
+                                <p class="publication-abstract">
+                                    Este estudio presenta un método técnico para "limpiar" el espacio semántico antes del entrenamiento. 
+                                    Implementa un esquema de validación cruzada que utiliza algoritmos de selección de características embebidos
+                                    para identificar y descartar atributos irrelevantes o ruidosos, logrando así mejorar la capacidad de
+                                    generalización en clases nunca vistas.
+                                </p>
+                                <p class="publication-authors">
+                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Publicación 3 -->
+                        <article class="publication-card">
+                            <div class="publication-image-wrapper">
+                                <img src="../images/gpais/zero-shot_paper_4.png" 
+                                     alt="Portada del artículo sobre preprocesamiento del espacio semántico"
+                                     class="publication-image">
+                                <span class="publication-badge">2025</span>
+                            </div>
+                            <div class="publication-content">
+                                <p class="publication-abstract">
+                                    Este trabajo introduce GAZeLa, un algoritmo genético que optimiza el espacio semántico simulando 
+                                    clases desconocidas durante el propio entrenamiento. A diferencia de los métodos anteriores, 
+                                    selecciona automáticamente los atributos más relevantes sin requerir configuración manual, 
+                                    logrando superar la precisión de los modelos previos con un número significativamente menor de 
+                                    características.
+                                </p>
+                                <p class="publication-authors">
+                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Publicación 4 -->
+                        <article class="publication-card">
+                            <div class="publication-image-wrapper">
+                                <img src="../images/gpais/zero-shot_paper_5.png" 
+                                     alt="Portada del artículo sobre ZSL con lógica difusa"
+                                     class="publication-image">
+                                <span class="publication-badge">2026</span>
+                            </div>
+                            <div class="publication-content">
+                                <p class="publication-abstract">
+                                    Para combatir el ruido en los espacios semánticos de ZSL, proponemos un esquema de partición 
+                                    inductiva que permite filtrar atributos irrelevantes. Al contrastar métodos de ranking (RFS) 
+                                    frente a algoritmos evolutivos (GA), demostramos que eliminar la redundancia no solo simplifica 
+                                    el modelo, sino que mejora consistentemente su precisión, validando la eficacia del refinamiento 
+                                    semántico.
+                                </p>
+                                <p class="publication-authors">
+                                    Herrera-Aranda, JJ., Gomez-Trenado, G., Triguero, I., Herrera, F.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -409,135 +382,6 @@
             </p>
         </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="../js/papers.js"></script>
-    <!-- PDF.js para renderizar PDFs como imágenes -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <script src="../js/pdf-renderer.js"></script>
-    <script src="../js/sidebar.js"></script>
-    <script>
-        /**
-         * Carga los papers específicos de Zero-Shot Learning en orden
-         */
-        document.addEventListener('DOMContentLoaded', async () => {
-            console.log('🔄 Iniciando carga de papers para Zero-Shot Learning...');
-            
-            try {
-                // Esperar a que se carguen los papers
-                const papers = await initPapersManager('../');
-                console.log('✅ Papers cargados:', papers.length, 'papers');
-                console.log('📦 Papers disponibles:', papersManager.papers);
-                
-                // Orden específico de papers para Zero-Shot Learning
-                const paperIds = [
-                    'stad_2024',         // 2024 - Estado del Arte
-                    'hais_2024',         // 2024 - Preprocesamiento
-                    'cec_2025_ga',       // 2025 - GAZeLa
-                    '2510.03260'         // 2025 - Selección Inductiva
-                ];
-                console.log('🔍 Buscando papers:', paperIds);
-
-                // Cargar los papers en el orden especificado
-                const zslPapers = [];
-                for (const id of paperIds) {
-                    const paper = await papersManager.loadPaper(id);
-                    if (paper) {
-                        zslPapers.push(paper);
-                        console.log('✅ Paper cargado:', id, paper);
-                    } else {
-                        console.warn('⚠️ Paper no encontrado:', id);
-                    }
-                }
-                console.log('📊 Total de papers cargados:', zslPapers.length);
-
-                // Renderizar en el contenedor
-                const container = document.getElementById('publications-carousel-zsl');
-                console.log('🎯 Contenedor encontrado:', container);
-                
-                if (container && zslPapers.length > 0) {
-                    const html = zslPapers.map((paper, index) => {
-                        // Formatear autores desde el JSON
-                        const authorNames = paper.authors
-                            .map(a => typeof a === 'string' ? a : a.name)
-                            .join(', ');
-                        
-                        // Generar gradientes únicos por papel
-                        const gradients = [
-                            'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                            'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-                            'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
-                            'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
-                            'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
-                        ];
-                        const gradient = gradients[index % gradients.length];
-                        const paperUrl = paper.paper_url || '#';
-                        const title = paper.title_es || paper.title || 'Sin título';
-                        let imagePath = paper.image || '';
-                        // Ajustar rutas relativas desde gpais/zero-shot.html
-                        if (imagePath && imagePath.startsWith('images/')) {
-                            imagePath = '../' + imagePath;
-                        }
-                        const backgroundStyle = imagePath 
-                            ? 'background-image: url(' + imagePath + '); background-size: cover; background-position: center;' 
-                            : 'background: ' + gradient + ';';
-                        
-                        return `
-                            <article class="paper-card" data-paper-id="${paper.id}">
-                                <div class="paper-card__image-wrapper" style="${backgroundStyle}">
-                                    <div class="paper-card__preview">
-                                        <a href="${paperUrl}" target="_blank" rel="noopener noreferrer" class="paper-card__title-link">
-                                            ${title}
-                                        </a>
-                                    </div>
-                                    <span class="paper-badge">${paper.year}</span>
-                                </div>
-                                <div class="paper-card__content">
-                                    <h3 class="paper-card__title">${title}</h3>
-                                    <p class="paper-card__authors">${authorNames}</p>
-                                    <div class="paper-card__actions">
-                                        <a href="${paperUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
-                                            Ver Paper
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        `;
-                    }).join('');
-                    
-                    container.innerHTML = `
-                        <div class="carousel-wrapper">
-                            <div class="carousel-container" id="carousel-zsl-content">
-                                ${html}
-                            </div>
-                            <button class="carousel-nav carousel-nav--prev" aria-label="Anterior">←</button>
-                            <button class="carousel-nav carousel-nav--next" aria-label="Siguiente">→</button>
-                        </div>
-                    `;
-                    
-                    // Configurar navegación del carrusel
-                    const prevBtn = container.querySelector('.carousel-nav--prev');
-                    const nextBtn = container.querySelector('.carousel-nav--next');
-                    const carouselContent = container.querySelector('#carousel-zsl-content');
-                    
-                    if (prevBtn && nextBtn && carouselContent) {
-                        prevBtn.addEventListener('click', () => {
-                            carouselContent.scrollBy({ left: -300, behavior: 'smooth' });
-                        });
-                        nextBtn.addEventListener('click', () => {
-                            carouselContent.scrollBy({ left: 300, behavior: 'smooth' });
-                        });
-                    }
-                    
-                    console.log('✨ Papers renderizados exitosamente');
-                } else {
-                    console.warn('⚠️ No se pudo renderizar: contenedor existe:', !!container, ', papers:', zslPapers.length);
-                }
-            } catch (error) {
-                console.error('❌ Error al cargar papers:', error);
-            }
-        });
-    </script>
 
 </body>
 </html>
