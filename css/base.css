@@ -31,16 +31,7 @@ body {
     transition: margin-left 0.3s ease;
 }
 
-/* Ajuste de margen para desktop con sidebar */
-@media (min-width: 1025px) {
-    body {
-        margin-left: 280px;
-    }
-
-    .sidebar-toggle {
-        display: none !important;
-    }
-}
+/* Sidebar eliminado — navbar fijo sustituye la navegacion lateral */
 
 .container {
     max-width: 1200px;
