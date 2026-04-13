@@ -29,7 +29,6 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    padding-top: 60px; /* altura de la navbar fija */
     overflow-x: hidden;
 }
 
