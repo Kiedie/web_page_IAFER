@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papers | IAFER</title>
+    <meta name="description" content="Publicaciones y artículos del grupo de investigación IAFER">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset & Base ── */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafafa;
+            color: #1a1a2e;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* ── Layout ── */
+        .page-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        /* ── Breadcrumb ── */
+        .breadcrumb {
+            margin-bottom: 2rem;
+        }
+
+        .breadcrumb a {
+            font-size: 0.875rem;
+            color: #6b7280;
+            transition: color 0.2s;
+        }
+
+        .breadcrumb a:hover {
+            color: #2563eb;
+        }
+
+        /* ── Header ── */
+        .page-header {
+            margin-bottom: 2rem;
+        }
+
+        .page-header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            color: #111;
+            margin-bottom: 0.25rem;
+        }
+
+        .page-header p {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        /* ── Search ── */
+        .search-bar {
+            position: relative;
+            margin-bottom: 1rem;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.75rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-family: inherit;
+            background: #fff;
+            color: #1a1a2e;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .search-bar input:focus {
+            outline: none;
+            border-color: #2563eb;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        .search-bar input::placeholder {
+            color: #9ca3af;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 0.875rem;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #9ca3af;
+            pointer-events: none;
+        }
+
+        .search-icon svg {
+            width: 18px;
+            height: 18px;
+        }
+
+        /* ── Tags filter ── */
+        .tags-filter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .tag-btn {
+            padding: 0.375rem 0.875rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 999px;
+            background: #fff;
+            font-size: 0.8rem;
+            font-family: inherit;
+            color: #4b5563;
+            cursor: pointer;
+            transition: all 0.2s;
+            user-select: none;
+        }
+
+        .tag-btn:hover {
+            border-color: #2563eb;
+            color: #2563eb;
+        }
+
+        .tag-btn.active {
+            background: #2563eb;
+            border-color: #2563eb;
+            color: #fff;
+        }
+
+        /* ── Results counter ── */
+        .results-info {
+            font-size: 0.8rem;
+            color: #9ca3af;
+            margin-bottom: 1rem;
+        }
+
+        /* ── Paper list ── */
+        .papers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            background: #e5e7eb;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #e5e7eb;
+        }
+
+        .paper-item {
+            background: #fff;
+            padding: 1.25rem 1.5rem;
+            transition: background 0.15s;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .paper-item:hover {
+            background: #f9fafb;
+        }
+
+        .paper-item.hidden {
+            display: none;
+        }
+
+        /* Top row: year + venue */
+        .paper-meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+
+        .paper-year {
+            font-weight: 600;
+            color: #6b7280;
+        }
+
+        .paper-venue {
+            padding: 0.125rem 0.5rem;
+            background: #f3f4f6;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        /* Title */
+        .paper-title {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: #111;
+            line-height: 1.4;
+            transition: color 0.2s;
+        }
+
+        .paper-title-link:hover .paper-title {
+            color: #2563eb;
+        }
+
+        /* Authors */
+        .paper-authors {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        /* Tags row */
+        .paper-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.375rem;
+            margin-top: 0.25rem;
+        }
+
+        .paper-tag {
+            padding: 0.175rem 0.6rem;
+            background: #eff6ff;
+            color: #2563eb;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        /* ── Empty state ── */
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #9ca3af;
+            display: none;
+        }
+
+        .empty-state.visible {
+            display: block;
+        }
+
+        .empty-state svg {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 1rem;
+            opacity: 0.4;
+        }
+
+        .empty-state p {
+            font-size: 0.95rem;
+        }
+
+        /* ── Footer ── */
+        .page-footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #9ca3af;
+        }
+
+        .page-footer a {
+            color: #6b7280;
+            transition: color 0.2s;
+        }
+
+        .page-footer a:hover {
+            color: #2563eb;
+        }
+
+        /* ── Responsive ── */
+        @media (max-width: 640px) {
+            .page-wrapper {
+                padding: 1.25rem 1rem 3rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .paper-item {
+                padding: 1rem 1.125rem;
+            }
+
+            .paper-title {
+                font-size: 0.95rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Navegacion">
+            <a href="../index.html">&larr; Inicio</a>
+        </nav>
+
+        <!-- Header -->
+        <header class="page-header">
+            <h1>Papers</h1>
+            <p>Publicaciones del grupo de investigacion IAFER</p>
+        </header>
+
+        <!-- Search -->
+        <div class="search-bar">
+            <span class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/>
+                </svg>
+            </span>
+            <input type="text" id="search-input" placeholder="Buscar por titulo, autor o palabra clave..." autocomplete="off">
+        </div>
+
+        <!-- Tag filters -->
+        <div class="tags-filter" id="tags-filter"></div>
+
+        <!-- Results info -->
+        <div class="results-info" id="results-info"></div>
+
+        <!-- Paper list -->
+        <div class="papers-list" id="papers-list"></div>
+
+        <!-- Empty state -->
+        <div class="empty-state" id="empty-state">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/>
+            </svg>
+            <p>No se encontraron papers con esos criterios.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <p>&copy; 2026 <a href="../index.html">Catedra IAFER</a> &mdash; Universidad de Granada</p>
+        </footer>
+    </div>
+
+    <script>
+    (function () {
+        'use strict';
+
+        /* ── State ── */
+        let papers = [];
+        let allTags = [];
+        let activeTags = new Set();
+        let searchQuery = '';
+
+        /* ── DOM refs ── */
+        const searchInput   = document.getElementById('search-input');
+        const tagsContainer = document.getElementById('tags-filter');
+        const listContainer = document.getElementById('papers-list');
+        const emptyState    = document.getElementById('empty-state');
+        const resultsInfo   = document.getElementById('results-info');
+
+        /* ── Load data ── */
+        async function loadPapers() {
+            try {
+                const res = await fetch('../data/papers.json');
+                if (!res.ok) throw new Error(res.status);
+                const data = await res.json();
+                papers = (data.papers || []).sort((a, b) => b.year - a.year);
+            } catch (e) {
+                console.error('Error cargando papers:', e);
+                papers = [];
+            }
+
+            // Collect unique tags
+            const tagSet = new Set();
+            papers.forEach(p => (p.tags || []).forEach(t => tagSet.add(t)));
+            allTags = [...tagSet].sort();
+
+            renderTags();
+            renderList();
+        }
+
+        /* ── Render tag pills ── */
+        function renderTags() {
+            tagsContainer.innerHTML = allTags.map(tag => {
+                const active = activeTags.has(tag) ? ' active' : '';
+                return `<button class="tag-btn${active}" data-tag="${tag}">${tag}</button>`;
+            }).join('');
+        }
+
+        /* ── Render paper list ── */
+        function renderList() {
+            const filtered = getFilteredPapers();
+
+            listContainer.innerHTML = filtered.map(p => {
+                const tagsHtml = (p.tags || []).map(t =>
+                    `<span class="paper-tag">${t}</span>`
+                ).join('');
+
+                const venue = p.venue ? `<span class="paper-venue">${p.venue}</span>` : '';
+                const linkOpen = p.paper_url ? `<a href="${p.paper_url}" target="_blank" rel="noopener noreferrer" class="paper-title-link">` : '<div class="paper-title-link">';
+                const linkClose = p.paper_url ? '</a>' : '</div>';
+
+                return `
+                <div class="paper-item" data-id="${p.id}">
+                    <div class="paper-meta">
+                        <span class="paper-year">${p.year}</span>
+                        ${venue}
+                    </div>
+                    ${linkOpen}
+                        <h2 class="paper-title">${highlightMatch(p.title, searchQuery)}</h2>
+                    ${linkClose}
+                    <p class="paper-authors">${highlightMatch(p.authors, searchQuery)}</p>
+                    <div class="paper-tags">${tagsHtml}</div>
+                </div>`;
+            }).join('');
+
+            // Show/hide empty state & list
+            const hasResults = filtered.length > 0;
+            listContainer.style.display = hasResults ? '' : 'none';
+            emptyState.classList.toggle('visible', !hasResults);
+
+            // Update results info
+            if (searchQuery || activeTags.size > 0) {
+                resultsInfo.textContent = `${filtered.length} de ${papers.length} papers`;
+            } else {
+                resultsInfo.textContent = `${papers.length} papers`;
+            }
+        }
+
+        /* ── Filter logic ── */
+        function getFilteredPapers() {
+            return papers.filter(p => {
+                // Tag filter: paper must have ALL active tags
+                if (activeTags.size > 0) {
+                    const paperTags = new Set(p.tags || []);
+                    for (const tag of activeTags) {
+                        if (!paperTags.has(tag)) return false;
+                    }
+                }
+
+                // Text search
+                if (searchQuery) {
+                    const q = searchQuery.toLowerCase();
+                    const searchable = [
+                        p.title,
+                        p.authors,
+                        ...(p.tags || []),
+                        p.venue || '',
+                        String(p.year)
+                    ].join(' ').toLowerCase();
+                    return searchable.includes(q);
+                }
+
+                return true;
+            });
+        }
+
+        /* ── Highlight matching text ── */
+        function highlightMatch(text, query) {
+            if (!query || !text) return text || '';
+            const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const regex = new RegExp(`(${escaped})`, 'gi');
+            return text.replace(regex, '<mark style="background:#fef08a;color:inherit;border-radius:2px;padding:0 1px">$1</mark>');
+        }
+
+        /* ── Events ── */
+        searchInput.addEventListener('input', function () {
+            searchQuery = this.value.trim();
+            renderList();
+        });
+
+        tagsContainer.addEventListener('click', function (e) {
+            const btn = e.target.closest('.tag-btn');
+            if (!btn) return;
+
+            const tag = btn.dataset.tag;
+            if (activeTags.has(tag)) {
+                activeTags.delete(tag);
+            } else {
+                activeTags.add(tag);
+            }
+
+            renderTags();
+            renderList();
+        });
+
+        /* ── Init ── */
+        loadPapers();
+    })();
+    </script>
+</body>
+</html>

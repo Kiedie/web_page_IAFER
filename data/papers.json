@@ -8,7 +8,10 @@
       "authors": "Herrera-Aranda, J. J., Gomez-Trenado, G., Herrera, F., & Triguero, I.",
       "research_area": "gpais",
       "research_line": "Zero-Shot Learning",
-      "image": "images/gpais/zero-shot_paper_5.png"
+      "image": "images/gpais/zero-shot_paper_5.png",
+      "paper_url": "https://arxiv.org/abs/2510.03260",
+      "venue": "IGPL",
+      "tags": ["Zero-Shot Learning", "Feature Selection", "GPAIS", "Evolutionary Computation"]
     },
     {
       "id": "cec_2025_ga",
@@ -18,7 +21,10 @@
       "authors": "Herrera, J. J., Herrera, F., & Triguero, I.",
       "research_area": "gpais",
       "research_line": "Zero-Shot Learning",
-      "image": "images/gpais/zero-shot_paper_4.png"
+      "image": "images/gpais/zero-shot_paper_4.png",
+      "paper_url": "",
+      "venue": "CEC",
+      "tags": ["Zero-Shot Learning", "Genetic Algorithm", "GPAIS", "Semantic Spaces"]
     },
     {
       "id": "hais_2024",
@@ -28,7 +34,10 @@
       "authors": "Herrera Aranda, J. J., Herrera, F., & Triguero, I.",
       "research_area": "gpais",
       "research_line": "Zero-Shot Learning",
-      "image": "images/gpais/zero-shot_paper_3.png"
+      "image": "images/gpais/zero-shot_paper_3.png",
+      "paper_url": "",
+      "venue": "HAIS",
+      "tags": ["Zero-Shot Learning", "GPAIS", "Preprocessing", "Semantic Spaces"]
     },
     {
       "id": "stad_2024",
@@ -38,13 +47,29 @@
       "authors": "Triguero, I., Herrera, J. J., & Herrera, F.",
       "research_area": "gpais",
       "research_line": "Zero-Shot Learning",
-      "image": "images/gpais/zero-shot_paper_2.png"
+      "image": "images/gpais/zero-shot_paper_2.png",
+      "paper_url": "",
+      "venue": "CAEPIA",
+      "tags": ["Zero-Shot Learning", "GPAIS", "Survey", "Preprocessing"]
+    }
+    ,{
+      "id": "kristina_2025_cl",
+      "file": "paper_kristina_2025.json",
+      "title": "Frequency-Aware Contrastive Learning for Self-Supervised EEG Seizure Detection",
+      "year": 2025,
+      "authors": "Stemikovskaya, K. et al.",
+      "research_area": "gpais",
+      "research_line": "Contrastive Learning",
+      "image": "images/gpais/contrastive_learning/Kristina_paper_1.png",
+      "paper_url": "",
+      "venue": "IJCNN",
+      "tags": ["Contrastive Learning", "Self-Supervised Learning", "GPAIS", "EEG"]
     }
   ],
   "metadata": {
-    "total": 4,
-    "last_updated": "2024-04-07",
+    "total": 5,
+    "last_updated": "2025-04-13",
     "research_areas": ["gpais"],
-    "research_lines": ["Zero-Shot Learning"]
+    "research_lines": ["Zero-Shot Learning", "Contrastive Learning"]
   }
 }
