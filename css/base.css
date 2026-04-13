@@ -29,6 +29,7 @@ body {
     color: var(--text-color);
     background-color: var(--bg-secondary);
     transition: margin-left 0.3s ease;
+    padding-top: 60px; /* altura de la navbar fija */
 }
 
 /* Sidebar eliminado — navbar fijo sustituye la navegacion lateral */
