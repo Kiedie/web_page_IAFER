@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/papers.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body id="top">
@@ -172,22 +171,6 @@
             </div>
         </section>
 
-        <!-- ==============================
-             CARRUSEL DE PUBLICACIONES
-        ============================== -->
-        <section class="publications-section section">
-            <div class="container">
-                <div class="section__header">
-                    <h2 class="section__title">Nuestras Publicaciones</h2>
-                    <p class="section__subtitle">
-                        Trabajos recientes del grupo de investigacion en IA
-                    </p>
-                </div>
-
-                <div id="papers-carousel-main"></div>
-            </div>
-        </section>
-
     </main>
 
     <!-- ==============================
@@ -205,10 +188,6 @@
     </footer>
 
     <script src="js/base.js"></script>
-    <!-- PDF.js para renderizar PDFs como imagenes -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
-    <script src="js/pdf-renderer.js"></script>
-    <script src="js/papers.js"></script>
 
     <!-- Navbar -->
     <script>
@@ -255,20 +234,5 @@
     })();
     </script>
 
-    <!-- Papers carousel -->
-    <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            try {
-                const papers = await initPapersManager('./');
-                const sortedPapers = papersManager.sortByYear();
-                const container = document.getElementById('papers-carousel-main');
-                if (container && sortedPapers && sortedPapers.length > 0) {
-                    papersManager.renderCarousel('papers-carousel-main', sortedPapers);
-                }
-            } catch (error) {
-                console.error('Error al cargar papers:', error);
-            }
-        });
-    </script>
 </body>
 </html>
