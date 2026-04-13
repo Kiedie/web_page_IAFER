@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IAFER - Cátedra de Inteligencia Artificial</title>
-    <meta name="description" content="Cátedra IAFER – Investigación en Inteligencia Artificial: GPAIS y Trustworthy AI">
+    <title>IAFER - Catedra de Inteligencia Artificial</title>
+    <meta name="description" content="Catedra IAFER – Investigacion en Inteligencia Artificial: GPAIS y Trustworthy AI">
 
     <!-- Fuentes institucionales -->
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,8 +13,58 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/papers.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body id="top">
+
+    <!-- ==============================
+         NAVBAR
+    ============================== -->
+    <nav class="navbar" aria-label="Navegacion principal">
+        <div class="navbar__inner">
+            <a href="index.html" class="navbar__brand">IAFER</a>
+
+            <ul class="navbar__menu" id="navbar-menu">
+                <!-- GPAIS -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="gpais/index.html" class="navbar__link">GPAIS</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="gpais/contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="gpais/self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="gpais/zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="gpais/agentic-ai.html">Agentic AI</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="trustworthy/index.html" class="navbar__link">Trustworthy</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="trustworthy/explainability/index.html">Explainability (XAI)</a></li>
+                        <li><a href="trustworthy/fairness/index.html">Fairness & Bias</a></li>
+                        <li><a href="trustworthy/robustness/index.html">Robustness</a></li>
+                        <li><a href="trustworthy/privacy/index.html">Privacy</a></li>
+                        <li><a href="trustworthy/governance/index.html">Governance</a></li>
+                        <li><a href="trustworthy/automl/index.html">AutoML</a></li>
+                        <li><a href="trustworthy/critical-applications/index.html">Critical Applications</a></li>
+                    </ul>
+                </li>
+
+                <!-- Resultados -->
+                <li class="navbar__item">
+                    <a href="papers/index.html" class="navbar__link">Resultados</a>
+                </li>
+            </ul>
+
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
     <!-- ==============================
          BANDA DE LOGOS
@@ -22,7 +72,7 @@
     <div class="logos-banner">
         <img
             src="images/gpais/logos/Banda de logos_Catedra-españa digital.svg"
-            alt="Logos institucionales – Cátedra ENIA IAFER"
+            alt="Logos institucionales – Catedra ENIA IAFER"
             class="logos-banner__img"
         >
     </div>
@@ -31,7 +81,7 @@
          HERO
     ============================== -->
     <header class="hero">
-        <!-- Partículas decorativas -->
+        <!-- Particulas decorativas -->
         <div class="hero__particles" aria-hidden="true">
             <span class="particle p1"></span>
             <span class="particle p2"></span>
@@ -42,21 +92,21 @@
 
         <div class="container hero__content">
             <div class="hero__badge">
-                <span>Cátedra ENIA IAFER</span>
+                <span>Catedra ENIA IAFER</span>
             </div>
             <h1 class="hero__title">
                 <span class="hero__title--accent">IAFER</span>
             </h1>
             <p class="hero__subtitle">
-                Inteligencia Artificial Ética, Responsable y de Propósito General
+                Inteligencia Artificial Etica, Responsable y de Proposito General
             </p>
             <p class="hero__desc">
-                Investigación en IA orientada a dos grandes ejes:
-                IA de Propósito General e IA Fiable y Ética.
+                Investigacion en IA orientada a dos grandes ejes:
+                IA de Proposito General e IA Fiable y Etica.
             </p>
             <div class="hero__actions">
-                <a href="#lineas" class="btn btn--primary">Ver líneas de investigación</a>
-                <a href="#equipo" class="btn btn--outline">Conocer el equipo</a>
+                <a href="#lineas" class="btn btn--primary">Ver lineas de investigacion</a>
+                <a href="papers/index.html" class="btn btn--outline">Ver publicaciones</a>
             </div>
         </div>
     </header>
@@ -64,14 +114,14 @@
     <main>
 
         <!-- ==============================
-             LÍNEAS DE INVESTIGACIÓN
+             LINEAS DE INVESTIGACION
         ============================== -->
         <section id="lineas" class="research-lines section">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Líneas de Investigación</h2>
+                    <h2 class="section__title">Lineas de Investigacion</h2>
                     <p class="section__subtitle">
-                        Dos grandes pilares que articulan toda la actividad científica de la cátedra
+                        Dos grandes pilares que articulan toda la actividad cientifica de la catedra
                     </p>
                 </div>
 
@@ -83,8 +133,8 @@
                         <h3 class="research-card__title">GPAIS</h3>
                         <p class="research-card__name">General Purpose Artificial Intelligence Systems</p>
                         <p class="research-card__desc">
-                            Avanzando hacia sistemas de IA de propósito general: 
-                            más versátiles, más adaptables y preparados para problemas 
+                            Avanzando hacia sistemas de IA de proposito general:
+                            mas versatiles, mas adaptables y preparados para problemas
                             del mundo real.
                         </p>
                         <ul class="research-card__tags">
@@ -94,7 +144,7 @@
                             <li>Agentic AI</li>
                         </ul>
                         <a href="gpais/index.html" class="btn btn--primary research-card__cta">
-                            Explorar GPAIS <span aria-hidden="true">→</span>
+                            Explorar GPAIS <span aria-hidden="true">&rarr;</span>
                         </a>
                     </article>
 
@@ -104,9 +154,9 @@
                         <h3 class="research-card__title">Trustworthy AI</h3>
                         <p class="research-card__name">Inteligencia Artificial Fiable</p>
                         <p class="research-card__desc">
-                            Investigación en IA robusta, explicable, justa y segura. Desarrollo de
-                            marcos de evaluación de confianza, detección de sesgos y auditoría
-                            algorítmica alineados con la normativa europea de IA.
+                            Investigacion en IA robusta, explicable, justa y segura. Desarrollo de
+                            marcos de evaluacion de confianza, deteccion de sesgos y auditoria
+                            algoritmica alineados con la normativa europea de IA.
                         </p>
                         <ul class="research-card__tags">
                             <li>Explainability (XAI)</li>
@@ -115,7 +165,7 @@
                             <li>AI Auditing</li>
                         </ul>
                         <a href="trustworthy/index.html" class="btn btn--secondary research-card__cta">
-                            Explorar Trustworthy <span aria-hidden="true">→</span>
+                            Explorar Trustworthy <span aria-hidden="true">&rarr;</span>
                         </a>
                     </article>
 
@@ -124,164 +174,18 @@
         </section>
 
         <!-- ==============================
-             QUIÉNES SOMOS
+             CARRUSEL DE PUBLICACIONES
         ============================== -->
-        <section id="equipo" class="team section section--alt">
+        <section class="publications-section section">
             <div class="container">
                 <div class="section__header">
-                    <h2 class="section__title">Quiénes Somos</h2>
+                    <h2 class="section__title">Nuestras Publicaciones</h2>
                     <p class="section__subtitle">
-                        Nuestros investigadores:
+                        Trabajos recientes del grupo de investigacion en IA
                     </p>
                 </div>
 
-                <div class="team__grid">
-
-                    <!-- Miembro 1 -->
-                    <article class="member-card">
-                        <div class="member-card__photo-wrap">
-                            <img
-                                src="images/team/member-1.jpg"
-                                alt="Foto de [Nombre]"
-                                class="member-card__photo"
-                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                            >
-                            <div class="member-card__photo-placeholder" aria-hidden="true">
-                                <span>👤</span>
-                            </div>
-                        </div>
-                        <div class="member-card__info">
-                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
-                            <p class="member-card__role">[Cargo / Posición]</p>
-                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
-                            <div class="member-card__links">
-                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
-                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Miembro 2 -->
-                    <article class="member-card">
-                        <div class="member-card__photo-wrap">
-                            <img
-                                src="images/team/member-2.jpg"
-                                alt="Foto de [Nombre]"
-                                class="member-card__photo"
-                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                            >
-                            <div class="member-card__photo-placeholder" aria-hidden="true">
-                                <span>👤</span>
-                            </div>
-                        </div>
-                        <div class="member-card__info">
-                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
-                            <p class="member-card__role">[Cargo / Posición]</p>
-                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
-                            <div class="member-card__links">
-                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
-                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Miembro 3 -->
-                    <article class="member-card">
-                        <div class="member-card__photo-wrap">
-                            <img
-                                src="images/team/member-3.jpg"
-                                alt="Foto de [Nombre]"
-                                class="member-card__photo"
-                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                            >
-                            <div class="member-card__photo-placeholder" aria-hidden="true">
-                                <span>👤</span>
-                            </div>
-                        </div>
-                        <div class="member-card__info">
-                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
-                            <p class="member-card__role">[Cargo / Posición]</p>
-                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
-                            <div class="member-card__links">
-                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
-                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Miembro 4 -->
-                    <article class="member-card">
-                        <div class="member-card__photo-wrap">
-                            <img
-                                src="images/team/member-4.jpg"
-                                alt="Foto de [Nombre]"
-                                class="member-card__photo"
-                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                            >
-                            <div class="member-card__photo-placeholder" aria-hidden="true">
-                                <span>👤</span>
-                            </div>
-                        </div>
-                        <div class="member-card__info">
-                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
-                            <p class="member-card__role">[Cargo / Posición]</p>
-                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
-                            <div class="member-card__links">
-                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
-                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Miembro 5 -->
-                    <article class="member-card">
-                        <div class="member-card__photo-wrap">
-                            <img
-                                src="images/team/member-5.jpg"
-                                alt="Foto de [Nombre]"
-                                class="member-card__photo"
-                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                            >
-                            <div class="member-card__photo-placeholder" aria-hidden="true">
-                                <span>👤</span>
-                            </div>
-                        </div>
-                        <div class="member-card__info">
-                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
-                            <p class="member-card__role">[Cargo / Posición]</p>
-                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
-                            <div class="member-card__links">
-                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
-                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Miembro 6 -->
-                    <article class="member-card">
-                        <div class="member-card__photo-wrap">
-                            <img
-                                src="images/team/member-6.jpg"
-                                alt="Foto de [Nombre]"
-                                class="member-card__photo"
-                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
-                            >
-                            <div class="member-card__photo-placeholder" aria-hidden="true">
-                                <span>👤</span>
-                            </div>
-                        </div>
-                        <div class="member-card__info">
-                            <h3 class="member-card__name">[Nombre Apellidos]</h3>
-                            <p class="member-card__role">[Cargo / Posición]</p>
-                            <p class="member-card__desc">[Descripción breve: líneas de investigación, institución, especialidad…]</p>
-                            <div class="member-card__links">
-                                <a href="#" class="member-link" aria-label="Perfil académico">🎓</a>
-                                <a href="#" class="member-link" aria-label="Correo electrónico">✉️</a>
-                            </div>
-                        </div>
-                    </article>
-
-                </div><!-- /.team__grid -->
+                <div id="papers-carousel-main"></div>
             </div>
         </section>
 
@@ -292,14 +196,80 @@
     ============================== -->
     <footer class="footer">
         <div class="container footer__inner">
-            <p class="footer__copy">&copy; 2026 Cátedra IAFER –  Universidad de Granada.</p>
-            <nav class="footer__nav" aria-label="Navegación secundaria">
+            <p class="footer__copy">&copy; 2026 Catedra IAFER – Universidad de Granada.</p>
+            <nav class="footer__nav" aria-label="Navegacion secundaria">
                 <a href="gpais/index.html">GPAIS</a>
                 <a href="trustworthy/index.html">Trustworthy AI</a>
+                <a href="papers/index.html">Papers</a>
             </nav>
         </div>
     </footer>
 
     <script src="js/base.js"></script>
+    <!-- PDF.js para renderizar PDFs como imagenes -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <script src="js/pdf-renderer.js"></script>
+    <script src="js/papers.js"></script>
+
+    <!-- Navbar -->
+    <script>
+    (function() {
+        const toggle = document.getElementById('navbar-toggle');
+        const menu = document.getElementById('navbar-menu');
+
+        // Hamburger toggle
+        toggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            menu.classList.toggle('open');
+        });
+
+        // Mobile: toggle dropdowns on click
+        if ('ontouchstart' in window || window.innerWidth <= 768) {
+            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        this.parentElement.classList.toggle('open');
+                    }
+                });
+            });
+        }
+
+        // Close menu when clicking a dropdown link (mobile)
+        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                menu.classList.remove('open');
+                toggle.classList.remove('active');
+            });
+        });
+
+        // Close menu on resize to desktop
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                menu.classList.remove('open');
+                toggle.classList.remove('active');
+                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
+                    item.classList.remove('open');
+                });
+            }
+        });
+    })();
+    </script>
+
+    <!-- Papers carousel -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const papers = await initPapersManager('./');
+                const sortedPapers = papersManager.sortByYear();
+                const container = document.getElementById('papers-carousel-main');
+                if (container && sortedPapers && sortedPapers.length > 0) {
+                    papersManager.renderCarousel('papers-carousel-main', sortedPapers);
+                }
+            } catch (error) {
+                console.error('Error al cargar papers:', error);
+            }
+        });
+    </script>
 </body>
 </html>

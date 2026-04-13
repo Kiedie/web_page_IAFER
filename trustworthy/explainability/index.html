@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explainability Útil y Evaluable - Trustworthy AI | IAFER</title>
+    <meta name="description" content="Investigación en explicabilidad y interpretabilidad de sistemas de IA: métodos evaluables, auditoría y trazabilidad.">
+    
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/trustworthy.css">
+    <link rel="stylesheet" href="../../css/responsive.css">
+    <link rel="stylesheet" href="../../css/sidebar.css">
+</head>
+<body id="top">
+    
+    <!-- ==============================
+         SIDEBAR / ÁRBOL DE NAVEGACIÓN
+    ============================== -->
+    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
+
+    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
+        <div class="sidebar-header">
+            <h2 class="sidebar-title">
+                <span class="sidebar-title__icon">🗂️</span>
+                <span>Navegación</span>
+            </h2>
+        </div>
+
+        <nav>
+            <ul class="nav-tree">
+                <!-- Inicio -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Inicio</span>
+                    <a href="../../#top" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">🏠</span>
+                        <span class="tree-label">Inicio</span>
+                    </a>
+                    <a href="../../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">📍</span>
+                        <span class="tree-label">Líneas Investigación</span>
+                    </a>
+                    <a href="../../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
+                        <span class="tree-icon">👥</span>
+                        <span class="tree-label">Equipo</span>
+                    </a>
+                </li>
+
+                <!-- GPAIS -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">GPAIS</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🧠</span>
+                        <span class="tree-label">General Purpose AI</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="../../gpais/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔗</span>
+                                <span class="tree-label">Contrastive Learning</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🎯</span>
+                                <span class="tree-label">Self-Supervised</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../../gpais/zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚡</span>
+                                <span class="tree-label">Zero-Shot Learning</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy AI -->
+                <li class="nav-item sidebar-section">
+                    <span class="sidebar-section-title">Trustworthy AI</span>
+                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
+                        <span class="tree-toggle">▶</span>
+                        <span class="tree-icon">🛡️</span>
+                        <span class="tree-label">IA Fiable</span>
+                    </div>
+                    <ul class="tree-children">
+                        <li class="nav-item">
+                            <a href="../index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">📘</span>
+                                <span class="tree-label">Overview</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="index.html" class="tree-item tree-item--level-2 active" data-expandable="false">
+                                <span class="tree-icon">👁️</span>
+                                <span class="tree-label">Explainability</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../fairness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚖️</span>
+                                <span class="tree-label">Fairness & Bias</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">💪</span>
+                                <span class="tree-label">Robustness</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../privacy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">🔐</span>
+                                <span class="tree-label">Privacy</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="../governance/index.html" class="tree-item tree-item--level-2" data-expandable="false">
+                                <span class="tree-icon">⚙️</span>
+                                <span class="tree-label">Governance</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-actions">
+            <a href="../../gpais/index.html" class="sidebar-action-btn">GPAIS</a>
+            <a href="../index.html" class="sidebar-action-btn">Trustworthy</a>
+        </div>
+    </aside>
+
+    <!-- Breadcrumb Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
+        <div class="breadcrumb-container">
+            <a href="../index.html" class="breadcrumb-link">
+                <span aria-hidden="true">←</span>
+                <span>Trustworthy AI</span>
+            </a>
+            <span class="breadcrumb-separator" aria-hidden="true">/</span>
+            <span class="breadcrumb-current">Explainability Útil y Evaluable</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">🔍</span>
+                    <span>Research Focus</span>
+                </div>
+
+                <!-- Título principal -->
+                <h1 class="hero-title">Explainability Útil y Evaluable</h1>
+                <p class="hero-subtitle">Interpretabilidad verificable de sistemas de IA mediante métodos formales y auditables</p>
+
+                <!-- Botones de acción -->
+                <div class="hero-actions">
+                    <a href="#fundamentos" class="btn btn-primary">
+                        <span>Explorar contenido</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="../index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Volver a Trustworthy</span>
+                    </a>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <!-- Introducción -->
+                <section id="fundamentos" class="content-section">
+                    <h2 class="section-title">¿Qué es Explainability?</h2>
+                    <div class="content-text">
+                        <p>
+                            La <strong class="text-highlight">explicabilidad (XAI)</strong> en sistemas de IA va más allá de generar 
+                            visualizaciones o heurísticas superficiales. Buscamos métodos que proporcionen explicaciones 
+                            <strong>verificables, trazables y evaluables</strong> del comportamiento de los modelos. 
+                        </p>
+                        <p>
+                            Nuestro trabajo integra rigor formal, auditabilidad algorítmica y métodos que permitan no solo 
+                            entender qué decide el modelo, sino <strong>por qué lo decide</strong> y <strong>cómo verificarlo</strong>.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Enfoques -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Enfoques de Interpretabilidad</h2>
+            <p class="section-intro">
+                Distintos métodos para comprender decisiones de modelos de IA
+            </p>
+            
+            <div class="research-cards">
+                <!-- Enfoque 1 -->
+                <article class="research-card">
+                    <span class="research-badge">Local</span>
+                    <div class="research-icon" aria-hidden="true">🎯</div>
+                    <h3 class="research-card-title">Explicaciones Locales</h3>
+                    <p class="research-card-desc">
+                        Entienden decisiones específicas de una instancia individual, mediante técnicas como LIME o SHAP 
+                        que identifican características más influyentes en cada predicción.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Enfoque 2 -->
+                <article class="research-card">
+                    <span class="research-badge">Global</span>
+                    <div class="research-icon" aria-hidden="true">🌍</div>
+                    <h3 class="research-card-title">Explicaciones Globales</h3>
+                    <p class="research-card-desc">
+                        Permiten comprender el comportamiento general del modelo, sus reglas de decisión implícitas 
+                        y patrones que sigue en el conjunto completo de datos.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Enfoque 3 -->
+                <article class="research-card">
+                    <span class="research-badge">Formal</span>
+                    <div class="research-icon" aria-hidden="true">📐</div>
+                    <h3 class="research-card-title">Métodos Formales</h3>
+                    <p class="research-card-desc">
+                        Verificación rigurosa de propiedades del modelo: alcanzabilidad, seguridad, lógica subyacente. 
+                        Utilizan herramientas como model checking y síntesis automática.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Aplicaciones -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Aplicaciones Clave</h2>
+            <p class="section-intro">
+                Dominios donde la explicabilidad es crítica
+            </p>
+            <div class="content-grid">
+                <!-- Aplicación 1 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🏥</span>
+                        Medicina y Salud
+                    </h3>
+                    <p class="info-card-text">
+                        Diagnósticos y tratamientos requieren explicaciones que médicos y pacientes puedan comprender y verificar.
+                    </p>
+                </article>
+
+                <!-- Aplicación 2 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">⚖️</span>
+                        Justicia y Derecho
+                    </h3>
+                    <p class="info-card-text">
+                        Decisiones legales automatizadas necesitan ser auditables y justificables ante revisión judicial.
+                    </p>
+                </article>
+
+                <!-- Aplicación 3 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">💰</span>
+                        Finanzas y Crédito
+                    </h3>
+                    <p class="info-card-text">
+                        Decisiones crediticias deben ser explicables para cumplir normativa regulatoria y proteger derechos.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Sección: Desafíos -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Desafíos Actuales</h2>
+            <p class="section-intro">
+                Problemas abiertos en explicabilidad verificable
+            </p>
+            
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span class="challenge-number">01</span>
+                    <h3 class="challenge-title">Escalabilidad Formal</h3>
+                    <p class="challenge-desc">
+                        Los métodos formales son rigurosos pero costosos computacionalmente. Investigamos técnicas 
+                        que escalen a redes neuronales profundas.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">02</span>
+                    <h3 class="challenge-title">Evaluación de Explicaciones</h3>
+                    <p class="challenge-desc">
+                        No existe consenso sobre métricas para evaluar la calidad de una explicación. 
+                        Trabajamos en frameworks de evaluación rigurosos.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">03</span>
+                    <h3 class="challenge-title">Trade-off Accuracy-Interpretability</h3>
+                    <p class="challenge-desc">
+                        Los modelos más interpretables suelen sacrificar rendimiento. Buscamos arquitecturas que equilibren ambos objetivos.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Footer minimalista -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <strong>Explainability</strong> - Trustworthy AI
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">Cátedra ENIA IAFER 2026</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../../js/sidebar.js"></script>
+</body>
+</html>
