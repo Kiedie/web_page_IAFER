@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero-Shot Learning - GPAIS | IAFER</title>
-    <meta name="description" content="Aprende sobre Zero-Shot Learning: técnicas de aprendizaje sin ejemplos previos mediante transferencia de conocimiento semántico">
+    <meta name="description" content="Learn about Zero-Shot Learning: learning techniques without previous examples through semantic knowledge transfer.">
     
-    <!-- Fuentes -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Estilos -->
+    <!-- Styles -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body id="top">
     <!-- ==============================
-         NAVBAR PRINCIPAL
+         MAIN NAVBAR
     ============================== -->
-    <nav class="navbar" aria-label="Navegacion principal">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="navbar__inner">
             <a href="../index.html" class="navbar__brand">IAFER</a>
 
@@ -48,13 +48,13 @@
                     </ul>
                 </li>
 
-                <!-- Resultados -->
+                <!-- Results -->
                 <li class="navbar__item">
-                    <a href="../papers/index.html" class="navbar__link">Resultados</a>
+                    <a href="../papers/index.html" class="navbar__link">Results</a>
                 </li>
             </ul>
 
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -77,43 +77,43 @@
 
         <main class="container">
             <section class="hero-card">
-                <!-- Badge superior -->
+                <!-- Upper badge -->
                 <div class="hero-badge">
                     <span aria-hidden="true">🎯</span>
                     <span>Research Focus</span>
                 </div>
 
-                <!-- Título principal -->
+                <!-- Main title -->
                 <h1 class="hero-title">Zero-Shot Learning</h1>
-                <p class="hero-subtitle">Aprendizaje sin ejemplos mediante transferencia de conocimiento semántico</p>
+                <p class="hero-subtitle">Learning without examples through semantic knowledge transfer</p>
 
-                <!-- Botones de acción -->
+                <!-- Action buttons -->
                 <div class="hero-actions">
                     <a href="#fundamentos" class="btn btn-primary">
-                        <span>Explorar contenido</span>
+                        <span>Explore content</span>
                         <span aria-hidden="true">→</span>
                     </a>
                     <a href="index.html" class="btn btn-secondary">
                         <span aria-hidden="true">←</span>
-                        <span>Volver a GPAIS</span>
+                        <span>Back to GPAIS</span>
                     </a>
                 </div>
 
                 <div class="hero-divider"></div>
 
-                <!-- Introducción -->
+                <!-- Introduction -->
                 <section id="fundamentos" class="content-section">
-                    <h2 class="section-title">¿Qué es Zero-Shot Learning?</h2>
+                    <h2 class="section-title">What is Zero-Shot Learning?</h2>
                     <div class="content-text">
                         <p>
-                            <strong class="text-highlight">Zero-Shot Learning (ZSL)</strong> es un paradigma de aprendizaje automático 
-                            que permite a los modelo clasificar objetos que nunca han visto durante el entrenamiento. Para ello, se basa en 
-                            la <strong>transferencia de conocimiento semántico</strong>, utilizando descripciones de alto nivel (atributos, 
-                            embeddings de texto, o grafos de conocimiento) para relacionar clases conocidas con clases desconocidas. 
-                            semánticas que relacionan las clases conocidas con las desconocidas. 
+                            <strong class="text-highlight">Zero-Shot Learning (ZSL)</strong> is a machine learning paradigm
+                            that enables models to classify objects that they have never seen during training. To do this, it is based on
+                            the <strong>transfer of semantic knowledge</strong>, using high-level descriptions (attributes,
+                            text embeddings, or knowledge graphs) to relate known classes to unknown classes.
+                            semantic relationships that link known classes with unknown ones.
                         </p>
                         <p>
-                            El conjunto de todas esas descripciones conforman el componente clave, el <strong>espacio semántico</strong>.  
+                            The set of all those descriptions makes up the key component, the <strong>semantic space</strong>.
                         </p>
                     </div>
                 </section>
@@ -123,50 +123,50 @@
         </main>
     </div>
 
-    <!-- Divisor de sección -->
+<!-- Divider section -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Cómo Funciona -->
+    <!-- Section: How It Works -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">¿Tipos de espacio semántico?</h2>
+            <h2 class="section-title">Types of semantic space?</h2>
             <p class="section-intro">
-                Según su naturaleza, los espacios semánticos se pueden clasificar en: 
+                According to its nature, semantic spaces can be classified as:
             </p>
             
             <div class="research-cards">
-                <!-- Componente 1 -->
+                <!-- Component 1 -->
                 <article class="research-card">
-                    <span class="research-badge">Implícitos</span>
+                    <span class="research-badge">Implicit</span>
                     <div class="research-icon" aria-hidden="true">🤖</div>
-                    <h3 class="research-card-title">Implícito</h3>
+                    <h3 class="research-card-title">Implicit</h3>
                     <p class="research-card-desc">
-                        Es el espacio semántico que viene implícito en los grandes modelos de lenguaje. Es un espacio originado a partir de la 
-                        ingente cantidad de datos con los que estos modelos ha sido entrenados. Es un espacio muy rico en conocimiento, pero difícil de interpretar.
+                        It is the semantic space that comes implicit in large language models. It is a space originated from the
+                        vast amount of data with which these models have been trained. It is a space very rich in knowledge, but difficult to interpret.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Componente 2 -->
+                <!-- Component 2 -->
                 <article class="research-card">
-                    <span class="research-badge">Explícitos</span>
+                    <span class="research-badge">Explicit</span>
                     <div class="research-icon" aria-hidden="true">✍️</div>
-                    <h3 class="research-card-title">Manuales</h3>
+                    <h3 class="research-card-title">Manual</h3>
                     <p class="research-card-desc">
-                        Es un espacio semántico definido manualmente por expertos humanos. Consiste en atributos que describen a las imágenes, e.g., "tiene alas", 
-                        "es de color rojo", etc. Este tipo de espacio es interpretable pero costoso de generar.
+                        It is a semantic space defined manually by human experts. It consists of attributes that describe images, e.g., "has wings",
+                        "is red", etc. This type of space is interpretable but costly to generate.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Componente 3 -->
+                <!-- Component 3 -->
                 <article class="research-card">
-                    <span class="research-badge">Explícitos</span>
+                    <span class="research-badge">Explicit</span>
                     <div class="research-icon" aria-hidden="true">🧠</div>
-                    <h3 class="research-card-title">Aprendidos</h3>
+                    <h3 class="research-card-title">Learned</h3>
                     <p class="research-card-desc">
-                        Espacios semánticos generados por la salida de un modelo de aprendizaje automático. Son más flexibles y fáciles de generar, 
-                        pero pueden carecer de interpretabilidad y precisión.
+                        Semantic spaces generated by the output of a machine learning model. They are more flexible and easier to generate,
+                        but may lack interpretability and precision.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>

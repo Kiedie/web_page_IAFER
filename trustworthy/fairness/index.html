@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bias, Fairness y Autonomía Humana - Trustworthy AI | IAFER</title>
-    <meta name="description" content="Investigación en equidad algorítmica, detección de sesgos y preservación de autonomía humana en sistemas de IA.">
+    <title>Fairness, Bias & Human Autonomy - Trustworthy AI | IAFER</title>
+    <meta name="description" content="Research in algorithmic fairness, bias detection, and preservation of human autonomy in AI systems.">
     
-    <!-- Fuentes -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Estilos -->
+    <!-- Styles -->
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/trustworthy.css">
     <link rel="stylesheet" href="../../css/responsive.css">
@@ -18,9 +18,9 @@
 </head>
 <body id="top">
     <!-- ==============================
-         NAVBAR PRINCIPAL
+         MAIN NAVBAR
     ============================== -->
-    <nav class="navbar" aria-label="Navegacion principal">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="navbar__inner">
             <a href="../../index.html" class="navbar__brand">IAFER</a>
 
@@ -50,145 +50,19 @@
                     </ul>
                 </li>
 
-                <!-- Resultados -->
+                <!-- Results -->
                 <li class="navbar__item">
-                    <a href="../../papers/index.html" class="navbar__link">Resultados</a>
+                    <a href="../../papers/index.html" class="navbar__link">Results</a>
                 </li>
             </ul>
 
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
     </nav>
-
-
-    
-    <!-- ==============================
-         SIDEBAR / ÁRBOL DE NAVEGACIÓN
-    ============================== -->
-    <button class="sidebar-toggle visible" aria-label="Alternar navegación" title="Alternar navegación">☰</button>
-
-    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
-        <div class="sidebar-header">
-            <h2 class="sidebar-title">
-                <span class="sidebar-title__icon">🗂️</span>
-                <span>Navegación</span>
-            </h2>
-        </div>
-
-        <nav>
-            <ul class="nav-tree">
-                <!-- Inicio -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Inicio</span>
-                    <a href="../../#top" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">🏠</span>
-                        <span class="tree-label">Inicio</span>
-                    </a>
-                    <a href="../../#lineas" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">📍</span>
-                        <span class="tree-label">Líneas Investigación</span>
-                    </a>
-                    <a href="../../#equipo" class="tree-item tree-item--level-1" data-expandable="false">
-                        <span class="tree-icon">👥</span>
-                        <span class="tree-label">Equipo</span>
-                    </a>
-                </li>
-
-                <!-- GPAIS -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">GPAIS</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="true">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🧠</span>
-                        <span class="tree-label">General Purpose AI</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="../../gpais/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../gpais/contrastive-learning.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🔗</span>
-                                <span class="tree-label">Contrastive Learning</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../gpais/self-supervised.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🎯</span>
-                                <span class="tree-label">Self-Supervised</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../../gpais/zero-shot.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">⚡</span>
-                                <span class="tree-label">Zero-Shot Learning</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy AI -->
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Trustworthy AI</span>
-                    <div class="tree-item tree-item--level-1" data-expandable="true" data-collapsed="false">
-                        <span class="tree-toggle">▶</span>
-                        <span class="tree-icon">🛡️</span>
-                        <span class="tree-label">IA Fiable</span>
-                    </div>
-                    <ul class="tree-children">
-                        <li class="nav-item">
-                            <a href="../index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">📘</span>
-                                <span class="tree-label">Overview</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../explainability/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">👁️</span>
-                                <span class="tree-label">Explainability</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="index.html" class="tree-item tree-item--level-2 active" data-expandable="false">
-                                <span class="tree-icon">⚖️</span>
-                                <span class="tree-label">Fairness & Bias</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../robustness/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">💪</span>
-                                <span class="tree-label">Robustness</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../privacy/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">🔐</span>
-                                <span class="tree-label">Privacy</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../governance/index.html" class="tree-item tree-item--level-2" data-expandable="false">
-                                <span class="tree-icon">⚙️</span>
-                                <span class="tree-label">Governance</span>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="sidebar-actions">
-            <a href="../../gpais/index.html" class="sidebar-action-btn">GPAIS</a>
-            <a href="../index.html" class="sidebar-action-btn">Trustworthy</a>
-        </div>
-    </aside>
 
 
     <!-- Hero Section -->
@@ -203,25 +77,25 @@
 
         <main class="container">
             <section class="hero-card">
-                <!-- Badge superior -->
+                <!-- Badge -->
                 <div class="hero-badge">
                     <span aria-hidden="true">⚖️</span>
                     <span>Research Focus</span>
                 </div>
 
-                <!-- Título principal -->
-                <h1 class="hero-title">Bias, Fairness y Autonomía Humana</h1>
-                <p class="hero-subtitle">Equidad algorítmica, detección de sesgos y preservación de la toma de decisiones humana</p>
+                <!-- Main title -->
+                <h1 class="hero-title">Fairness, Bias & Human Autonomy</h1>
+                <p class="hero-subtitle">Algorithmic fairness, bias detection, and preservation of human decision-making</p>
 
-                <!-- Botones de acción -->
+                <!-- Action buttons -->
                 <div class="hero-actions">
                     <a href="#fundamentos" class="btn btn-primary">
-                        <span>Explorar contenido</span>
+                        <span>Explore content</span>
                         <span aria-hidden="true">→</span>
                     </a>
                     <a href="../index.html" class="btn btn-secondary">
                         <span aria-hidden="true">←</span>
-                        <span>Volver a Trustworthy</span>
+                        <span>Back to Trustworthy AI</span>
                     </a>
                 </div>
 
