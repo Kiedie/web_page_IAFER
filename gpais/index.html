@@ -12,8 +12,57 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
+    <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body id="top">
+    <!-- ==============================
+         NAVBAR PRINCIPAL
+    ============================== -->
+    <nav class="navbar" aria-label="Navegacion principal">
+        <div class="navbar__inner">
+            <a href="../index.html" class="navbar__brand">IAFER</a>
+
+            <ul class="navbar__menu" id="navbar-menu">
+                <!-- GPAIS -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="../gpais/index.html" class="navbar__link">GPAIS</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="../gpais/contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="../gpais/self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="../gpais/zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="../gpais/agentic-ai.html">Agentic AI</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="../trustworthy/index.html" class="navbar__link">Trustworthy</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
+                        <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
+                        <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
+                        <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
+                        <li><a href="../trustworthy/governance/index.html">Governance</a></li>
+                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
+                        <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
+                    </ul>
+                </li>
+
+                <!-- Resultados -->
+                <li class="navbar__item">
+                    <a href="../papers/index.html" class="navbar__link">Resultados</a>
+                </li>
+            </ul>
+
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+
     
     <!-- Breadcrumb Navigation -->
     <nav class="breadcrumb-nav" aria-label="Navegación de ruta">
@@ -193,5 +242,47 @@
         </div>
     </footer>
 
+
+    <!-- Navbar -->
+    <script src="../js/base.js"></script>
+    <script>
+    (function() {
+        const toggle = document.getElementById('navbar-toggle');
+        const menu = document.getElementById('navbar-menu');
+
+        toggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            menu.classList.toggle('open');
+        });
+
+        if ('ontouchstart' in window || window.innerWidth <= 768) {
+            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
+                link.addEventListener('click', function(e) {
+                    if (window.innerWidth <= 768) {
+                        e.preventDefault();
+                        this.parentElement.classList.toggle('open');
+                    }
+                });
+            });
+        }
+
+        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                menu.classList.remove('open');
+                toggle.classList.remove('active');
+            });
+        });
+
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                menu.classList.remove('open');
+                toggle.classList.remove('active');
+                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
+                    item.classList.remove('open');
+                });
+            }
+        });
+    })();
+    </script>
 </body>
 </html>
