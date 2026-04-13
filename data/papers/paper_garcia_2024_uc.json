@@ -1,0 +1,56 @@
+{
+  "id": "garcia_2024_uc",
+  "title": "Implementation and Evaluation of Machine Learning Techniques in Educational Data Mining",
+  "authors": [
+    {
+      "name": "David García-Gil",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Julián Luengo",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2024,
+  "month": "Mar",
+  "title_es": "Implementación y evaluación de técnicas de aprendizaje automático en minería de datos educativos",
+  "description_es": "Este trabajo presenta la implementación y evaluación de técnicas modernas de aprendizaje automático aplicadas a minería de datos educativos.",
+  "publication": {
+    "type": "conference/workshop",
+    "venue": "Universidad de Córdoba",
+    "location": "Córdoba, Spain",
+    "year": 2024
+  },
+  "abstract": "Educational data mining requires specialized machine learning techniques to extract meaningful patterns from student data. This paper implements and evaluates multiple ML approaches for predicting student performance and identifying at-risk learners.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "educational data mining",
+    "machine learning",
+    "student performance",
+    "classification",
+    "prediction"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{garcia2024implementation,\n  title={Implementation and Evaluation of Machine Learning Techniques in Educational Data Mining},\n  author={García-Gil, David and Triguero, Isaac and Luengo, Julián},\n  booktitle={Universidad de Córdoba Workshop},\n  year={2024},\n  address={Córdoba, Spain}\n}",
+    "apa": "García-Gil, D., Triguero, I., & Luengo, J. (2024). Implementation and Evaluation of Machine Learning Techniques in Educational Data Mining. Universidad de Córdoba Workshop, Córdoba, Spain.",
+    "mla": "García-Gil, David, et al. \"Implementation and Evaluation of Machine Learning Techniques in Educational Data Mining.\" Universidad de Córdoba Workshop, Córdoba, Spain, 2024."
+  },
+  "tags": ["Educational Data Mining", "Student Performance", "Classification", "GPAIS"],
+  "research_area": "gpais",
+  "research_line": "Aplicaciones de Aprendizaje Automático",
+  "image": "images/gpais/educational_data_1.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "ML implementation for education",
+      "Student performance prediction",
+      "Educational data analysis"
+    ]
+  }
+}

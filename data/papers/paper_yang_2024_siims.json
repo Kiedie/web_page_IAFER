@@ -1,0 +1,54 @@
+{
+  "id": "yang_2024_siims",
+  "title": "Robust Image Quality Assessment using Uncertain Knowledge Graphs and Multi-Modal Features",
+  "authors": [
+    {
+      "name": "Yang Qian",
+      "affiliation": ""
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2024,
+  "month": "Jul",
+  "title_es": "Evaluación de calidad de imagen robusta usando grafos de conocimiento incierto y características multimodales",
+  "description_es": "Este trabajo presenta un método robusto para la evaluación de calidad de imagen combinando grafos de conocimiento con características multimodales.",
+  "publication": {
+    "type": "journal",
+    "venue": "SIAM Journal on Imaging Sciences",
+    "volume": "17",
+    "issue": "3",
+    "pages": "1589-1618",
+    "year": 2024
+  },
+  "abstract": "Image quality assessment is crucial for multimedia applications. This paper proposes a robust framework combining uncertain knowledge graphs with multi-modal features for accurate and interpretable image quality prediction.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://epubs.siam.org/doi/10.1137/23M1567894",
+  "keywords": [
+    "image quality assessment",
+    "knowledge graphs",
+    "multi-modal learning",
+    "uncertainty",
+    "robustness"
+  ],
+  "citations": {
+    "bibtex": "@article{yang2024robust,\n  title={Robust Image Quality Assessment using Uncertain Knowledge Graphs and Multi-Modal Features},\n  author={Yang, Qian and Triguero, Isaac},\n  journal={SIAM Journal on Imaging Sciences},\n  volume={17},\n  number={3},\n  pages={1589--1618},\n  year={2024},\n  publisher={SIAM}\n}",
+    "apa": "Yang, Q., & Triguero, I. (2024). Robust Image Quality Assessment using Uncertain Knowledge Graphs and Multi-Modal Features. SIAM Journal on Imaging Sciences, 17(3), 1589-1618.",
+    "mla": "Yang, Qian, and Isaac Triguero. \"Robust Image Quality Assessment using Uncertain Knowledge Graphs and Multi-Modal Features.\" SIAM Journal on Imaging Sciences, vol. 17, no. 3, 2024, pp. 1589-1618."
+  },
+  "tags": ["Image Quality Assessment", "Knowledge Graphs", "Multi-Modal Learning", "Robustness", "GPAIS"],
+  "research_area": "gpais",
+  "research_line": "Robustness in Deep Learning",
+  "image": "images/gpais/image_quality_1.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Knowledge graph-based image assessment",
+      "Multi-modal feature integration",
+      "Uncertainty quantification"
+    ]
+  }
+}

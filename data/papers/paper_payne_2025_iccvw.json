@@ -1,0 +1,65 @@
+{
+  "id": "payne_2025_iccvw",
+  "title": "A Case for the Use of Chroma Cartesian Colour Representations for Image Classification on Plant-Based Domains",
+  "authors": [
+    {
+      "name": "J. S Payne",
+      "affiliation": ""
+    },
+    {
+      "name": "G. Hopkins",
+      "affiliation": ""
+    },
+    {
+      "name": "S. N. Gowda",
+      "affiliation": ""
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "M. P. Pound",
+      "affiliation": ""
+    }
+  ],
+  "year": 2025,
+  "month": "Oct",
+  "title_es": "Un caso para el uso de representaciones de color cartesianas de croma para clasificación de imágenes en dominios basados en plantas",
+  "description_es": "Este trabajo demuestra la efectividad de las representaciones de color Cartesianas de croma para la clasificación de imágenes en aplicaciones agrícolas.",
+  "publication": {
+    "type": "conference",
+    "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
+    "location": "Honolulu, HI, USA",
+    "pages": "7187-7196",
+    "year": 2025
+  },
+  "abstract": "This paper presents a comprehensive analysis of chroma Cartesian colour representations for plant image classification. Our approach demonstrates superior performance compared to traditional RGB color spaces, particularly in handling variations in lighting conditions and leaf morphology.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://openaccess.thecvf.com/content/ICCV2025W/CVPPA/html/Payne_A_Case_for_the_Use_of_Chroma_Cartesian_Colour_Representations_ICCVW_2025_paper.html",
+  "keywords": [
+    "image classification",
+    "color representations",
+    "plant phenotyping",
+    "computer vision",
+    "deep learning"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{payne2025case,\n  title={A Case for the Use of Chroma Cartesian Colour Representations for Image Classification on Plant-Based Domains},\n  author={Payne, J. S. and Hopkins, G. and Gowda, S. N. and Triguero, Isaac and Pound, M. P.},\n  booktitle={2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)},\n  pages={7187--7196},\n  year={2025},\n  organization={IEEE}\n}",
+    "apa": "Payne, J. S., Hopkins, G., Gowda, S. N., Triguero, I., & Pound, M. P. (2025). A Case for the Use of Chroma Cartesian Colour Representations for Image Classification on Plant-Based Domains. In 2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW) (pp. 7187-7196). IEEE.",
+    "mla": "Payne, J. S., et al. \"A Case for the Use of Chroma Cartesian Colour Representations for Image Classification on Plant-Based Domains.\" 2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW), IEEE, 2025, pp. 7187-7196."
+  },
+  "tags": ["Image Classification", "Color Representations", "Plant Phenotyping", "Computer Vision", "GPAIS"],
+  "research_area": "gpais",
+  "research_line": "Robustness in Deep Learning",
+  "image": "images/gpais/plant_classification_1.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Novel color representation for plant image classification",
+      "Performance improvement in agricultural vision tasks",
+      "Robustness to lighting variations"
+    ]
+  }
+}

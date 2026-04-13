@@ -1,0 +1,56 @@
+{
+  "id": "sevillano_2026_pr",
+  "title": "STOOD-X: Explainable Out-of-Distribution Detection via Nonparametric Statistical Testing on Large-Scale Datasets",
+  "authors": [
+    {
+      "name": "Iván Sevillano-García",
+      "affiliation": ""
+    },
+    {
+      "name": "Julián Luengo",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Apr",
+  "title_es": "STOOD-X: Detección explicable de distribución fuera de distribución mediante pruebas estadísticas no paramétricas en conjuntos de datos grandes",
+  "description_es": "Este trabajo presenta STOOD-X, un método para detectar muestras fuera de distribución de manera explicable usando pruebas estadísticas no paramétricas.",
+  "publication": {
+    "type": "journal",
+    "venue": "Pattern Recognition",
+    "pages": "113254",
+    "year": 2026
+  },
+  "abstract": "Out-of-distribution (OOD) detection is crucial for deploying robust machine learning systems. This paper introduces STOOD-X, a nonparametric statistical testing approach for OOD detection that provides explainability alongside high detection accuracy on large-scale datasets.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://www.sciencedirect.com/science/article/pii/S0031320326002190",
+  "keywords": [
+    "out-of-distribution detection",
+    "explainability",
+    "statistical testing",
+    "deep learning",
+    "robustness"
+  ],
+  "citations": {
+    "bibtex": "@article{sevillano2026stood,\n  title={STOOD-X: Explainable Out-of-Distribution Detection via Nonparametric Statistical Testing on Large-Scale Datasets},\n  author={Sevillano-García, Iván and Luengo, Julián and Herrera, Francisco},\n  journal={Pattern Recognition},\n  pages={113254},\n  year={2026},\n  publisher={Elsevier}\n}",
+    "apa": "Sevillano-García, I., Luengo, J., & Herrera, F. (2026). STOOD-X: Explainable Out-of-Distribution Detection via Nonparametric Statistical Testing on Large-Scale Datasets. Pattern Recognition, 113254.",
+    "mla": "Sevillano-García, Iván, et al. \"STOOD-X: Explainable Out-of-Distribution Detection via Nonparametric Statistical Testing on Large-Scale Datasets.\" Pattern Recognition, 2026, p. 113254."
+  },
+  "tags": ["OOD Detection", "Explainability", "Statistical Testing", "Robustness", "Trustworthy AI"],
+  "research_area": "trustworthy",
+  "research_line": "Explicabilidad y Robustez",
+  "image": "images/trustworthy/ood_detection_1.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Explainable OOD detection methodology",
+      "Nonparametric statistical approach",
+      "Scalability to large datasets"
+    ]
+  }
+}

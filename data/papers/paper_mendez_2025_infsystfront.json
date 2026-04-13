@@ -1,0 +1,55 @@
+{
+  "id": "mendez_2025_infsystfront",
+  "title": "CUBIC: Unsupervised Detection of Conceptual Biases via Vision-Language Embeddings",
+  "authors": [
+    {
+      "name": "David Méndez",
+      "affiliation": ""
+    },
+    {
+      "name": "Gianpaolo Bontempo",
+      "affiliation": ""
+    },
+    {
+      "name": "Elisa Ficarra",
+      "affiliation": ""
+    }
+  ],
+  "year": 2025,
+  "month": "Jan",
+  "title_es": "CUBIC: Detección no supervisada de sesgos conceptuales mediante incrustaciones visión-lenguaje",
+  "description_es": "Este trabajo presenta un enfoque novedoso para detectar sesgos conceptuales en modelos de visión por computadora utilizando representaciones de visión-lenguaje.",
+  "publication": {
+    "type": "journal",
+    "venue": "Information Systems Frontiers",
+    "year": 2025
+  },
+  "abstract": "Vision-language models have become increasingly powerful, but understanding and detecting biases in their representations remains challenging. This paper introduces CUBIC, an unsupervised method for detecting conceptual biases via vision-language embeddings, providing insights into model behavior and fairness.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1007/s10796-025-10669-0",
+  "keywords": [
+    "bias detection",
+    "vision-language models",
+    "embeddings",
+    "fairness",
+    "explainability"
+  ],
+  "citations": {
+    "bibtex": "@article{mendez2025cubic,\n  title={CUBIC: Unsupervised Detection of Conceptual Biases via Vision-Language Embeddings},\n  author={Méndez, David and Bontempo, Gianpaolo and Ficarra, Elisa},\n  journal={Information Systems Frontiers},\n  year={2025},\n  publisher={Springer}\n}",
+    "apa": "Méndez, D., Bontempo, G., & Ficarra, E. (2025). CUBIC: Unsupervised Detection of Conceptual Biases via Vision-Language Embeddings. Information Systems Frontiers.",
+    "mla": "Méndez, David, et al. \"CUBIC: Unsupervised Detection of Conceptual Biases via Vision-Language Embeddings.\" Information Systems Frontiers, 2025."
+  },
+  "tags": ["Bias Detection", "Vision-Language Models", "Explainability", "Fairness", "GPAIS"],
+  "research_area": "gpais",
+  "research_line": "Explicabilidad y Modelos Generativos",
+  "image": "images/gpais/bias_detection_1.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Unsupervised bias detection methodology",
+      "Vision-language embedding analysis",
+      "Fairness in multimodal AI"
+    ]
+  }
+}
