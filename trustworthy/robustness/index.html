@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robustez y OOD - Trustworthy AI | IAFER</title>
-    <meta name="description" content="Investigación en robustez de sistemas de IA: resiliencia ante datos fuera de distribución, ataques adversariales y cambios ambientales.">
+    <title>Robustness and Out-of-Distribution Detection - Trustworthy AI | IAFER</title>
+    <meta name="description" content="Research in AI robustness: resilience to out-of-distribution data, adversarial attacks, and environmental changes.">
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -84,13 +84,13 @@
                 </div>
 
                 <!-- Título principal -->
-                <h1 class="hero-title">Robustez y Out-of-Distribution</h1>
-                <p class="hero-subtitle">Sistemas de IA resilientes ante datos inesperados, adversarios y cambios en el entorno</p>
+                <h1 class="hero-title">Robustness and Out-of-Distribution</h1>
+                <p class="hero-subtitle">AI systems resilient to unexpected data, adversaries and environmental changes</p>
 
                 <!-- Botones de acción -->
                 <div class="hero-actions">
                     <a href="#fundamentos" class="btn btn-primary">
-                        <span>Explorar contenido</span>
+                        <span>Explore Content</span>
                         <span aria-hidden="true">→</span>
                     </a>
                     <a href="../index.html" class="btn btn-secondary">
@@ -103,17 +103,17 @@
 
                 <!-- Introducción -->
                 <section id="fundamentos" class="content-section">
-                    <h2 class="section-title">¿Qué es Robustez en IA?</h2>
+                    <h2 class="section-title">What is Robustness in AI?</h2>
                     <div class="content-text">
                         <p>
-                            Un sistema robusto continúa funcionando confiablemente incluso cuando enfrenta datos o situaciones 
-                            que no había visto durante el entrenamiento. <strong class="text-highlight">Out-of-Distribution (OOD)</strong> 
-                            se refiere justamente a esos datos fuera del rango esperado.
+                            A robust system continues to function reliably even when facing data or situations 
+                            it has not seen during training. <strong class="text-highlight">Out-of-Distribution (OOD)</strong> 
+                            refers precisely to data outside the expected range.
                         </p>
                         <p>
-                            Investigamos defensas contra ataques adversariales, métodos para detectar cuando un modelo enfrenta 
-                            datos OOD, y técnicas de <strong>adaptación continua</strong> que permiten al sistema actualizarse 
-                            en entornos dinámicos.
+                            We investigate defenses against adversarial attacks, methods to detect when a model faces 
+                            OOD data, and <strong>continuous adaptation</strong> techniques that allow the system to update 
+                            in dynamic environments.
                         </p>
                     </div>
                 </section>
@@ -127,9 +127,9 @@
     <!-- Sección: Tipos de Vulnerabilidades -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Fuentes de Vulnerabilidad</h2>
+            <h2 class="section-title">Sources of Vulnerability</h2>
             <p class="section-intro">
-                Diferentes tipos de desafíos a la robustez
+                Different types of robustness challenges
             </p>
             
             <div class="research-cards">
@@ -137,10 +137,10 @@
                 <article class="research-card">
                     <span class="research-badge">Adversarial</span>
                     <div class="research-icon" aria-hidden="true">⚔️</div>
-                    <h3 class="research-card-title">Ataques Adversariales</h3>
+                    <h3 class="research-card-title">Adversarial Attacks</h3>
                     <p class="research-card-desc">
-                        Pequeñas perturbaciones en la entrada pueden causar predicciones incorrectas. 
-                        Investigamos defensa contra ataques pertinentes y robustez certificable.
+                        Small perturbations in input can cause incorrect predictions. 
+                        We research defense against pertinent attacks and certified robustness.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -149,10 +149,10 @@
                 <article class="research-card">
                     <span class="research-badge">Distribucional</span>
                     <div class="research-icon" aria-hidden="true">📊</div>
-                    <h3 class="research-card-title">Shift de Distribución</h3>
+                    <h3 class="research-card-title">Distribution Shift</h3>
                     <p class="research-card-desc">
-                        La distribución de datos en producción difiere de entrenamiento. 
-                        Métodos de adaptación sin acceso a etiquetas verdaderas.
+                        Data distribution in production differs from training. 
+                        Adaptation methods without access to true labels.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -161,10 +161,10 @@
                 <article class="research-card">
                     <span class="research-badge">Ambiental</span>
                     <div class="research-icon" aria-hidden="true">🌍</div>
-                    <h3 class="research-card-title">Cambios Ambientales</h3>
+                    <h3 class="research-card-title">Environmental Changes</h3>
                     <p class="research-card-desc">
-                        El entorno operacional cambia: sensores envejecen, condiciones varían. 
-                        Sistemas que se adaptan continuamente sin perder conocimiento anterior.
+                        The operating environment changes: sensors age, conditions vary. 
+                        Systems that adapt continuously without losing prior knowledge.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -178,20 +178,20 @@
     <!-- Sección: Defensa -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Estrategias de Defensa</h2>
+            <h2 class="section-title">Defense Strategies</h2>
             <p class="section-intro">
-                Técnicas para mejorar robustez
+                Techniques to improve robustness
             </p>
             <div class="content-grid">
                 <!-- Defensa 1 -->
                 <article class="info-card">
                     <h3 class="info-card-title">
                         <span class="info-card-icon" aria-hidden="true">🎓</span>
-                        Entrenamiento Adversarial
+                        Adversarial Training
                     </h3>
                     <p class="info-card-text">
-                        Entrenar en ejemplos adversariales para que el modelo aprenda a ser resistente 
-                        ante perturbaciones.
+                        Train on adversarial examples so the model learns to be resilient 
+                        to perturbations.
                     </p>
                 </article>
 
@@ -199,11 +199,11 @@
                 <article class="info-card">
                     <h3 class="info-card-title">
                         <span class="info-card-icon" aria-hidden="true">🔍</span>
-                        Detección OOD
+                        OOD Detection
                     </h3>
                     <p class="info-card-text">
-                        Identificar cuando datos están fuera de distribución para abstenerse de hacer predicciones 
-                        no confiables.
+                        Identify when data is out-of-distribution to refrain from making 
+                        unreliable predictions.
                     </p>
                 </article>
 
@@ -211,11 +211,11 @@
                 <article class="info-card">
                     <h3 class="info-card-title">
                         <span class="info-card-icon" aria-hidden="true">🔄</span>
-                        Adaptación Continua
+                        Continuous Adaptation
                     </h3>
                     <p class="info-card-text">
-                        Actualizar el modelo dinámicamente con feedback humano o datos nuevos 
-                        sin catastrophic forgetting.
+                        Update the model dynamically with human feedback or new data 
+                        without catastrophic forgetting.
                     </p>
                 </article>
             </div>
@@ -228,37 +228,88 @@
     <!-- Sección: Desafíos -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Desafíos Actuales</h2>
+            <h2 class="section-title">Current Challenges</h2>
             <p class="section-intro">
-                Problemas abiertos en robustez
+                Open problems in robustness
             </p>
             
             <div class="challenge-list">
                 <div class="challenge-item">
                     <span class="challenge-number">01</span>
-                    <h3 class="challenge-title">Robustez Certificable</h3>
+                    <h3 class="challenge-title">Certified Robustness</h3>
                     <p class="challenge-desc">
-                        Es difícil garantizar formalmente que un modelo es robusto. Buscamos métodos de verificación 
-                        que proporcionen certificados de robustez.
+                        It is difficult to formally guarantee that a model is robust. We seek verification methods 
+                        that provide robustness certificates.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">02</span>
-                    <h3 class="challenge-title">Trade-off Robustez-Utilidad</h3>
+                    <h3 class="challenge-title">Robustness-Utility Trade-off</h3>
                     <p class="challenge-desc">
-                        Mejorar robustez a menudo reduce precisión en datos normales. Investigamos 
-                        métodos que equilibran ambos objetivos.
+                        Improving robustness often reduces accuracy on normal data. We research 
+                        methods that balance both objectives.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">03</span>
-                    <h3 class="challenge-title">Escalabilidad</h3>
+                    <h3 class="challenge-title">Scalability</h3>
                     <p class="challenge-desc">
-                        Los métodos de robustez son computacionalmente costosos. Necesitamos técnicas 
-                        que escalen a modelos grandes.
+                        Robustness methods are computationally expensive. We need techniques 
+                        that scale to large models.
                     </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Divisor de sección -->
+    <div class="section-divider"></div>
+
+    <!-- Nuestra investigación -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Our Research</h2>
+            <div class="content-text">
+                <p>
+                    In the <strong class="text-highlight">Robustness and OOD</strong> line of the Trustworthy AI group at IAFER, 
+                    we are investigating systems that maintain reliable performance beyond their training distribution,
+                    critical for safety-critical applications.
+                </p>
+                <h3 class="highlight-title">🚀 Active Research Lines</h3>
+                <ul class="feature-list">
+                    <li><strong>Explainable Out-of-Distribution Detection:</strong> Statistical methods that identify anomalous samples in a transparent and certifiable manner</li>
+                    <li><strong>Robustness to perturbations:</strong> Techniques to train models resistant to adversarial attacks and domain changes</li>
+                    <li><strong>Robustness evaluation in biomedical images:</strong> Validation of computer vision systems in medical contexts with quality guarantees</li>
+                    <li><strong>Generation of robust representations:</strong> Learning methods that produce features invariant to irrelevant variations</li>
+                </ul>
+            </div>
+            <div class="highlight-box">
+                <h3 class="highlight-title">📚 Publicaciones</h3>
+                <div class="publications-container">
+                    <!-- Publicación 1 -->
+                    <article class="publication-card">
+                        <div class="publication-image-wrapper">
+                            <img src="../../images/trustworthy/ood_detection_1.png" 
+                                 alt="STOOD-X: Explainable OOD Detection"
+                                 class="publication-image">
+                            <span class="publication-badge">2026</span>
+                        </div>
+                        <div class="publication-content">
+                            <p class="publication-abstract">
+                                STOOD-X presents a method to detect out-of-distribution samples in an explainable manner 
+                                using non-parametric statistical tests. This approach combines statistical rigor with scalability 
+                                to large data volumes, providing transparent explanations about detected anomalies.
+                            </p>
+                            <p class="publication-authors">
+                                Sevillano-García, I., Luengo, J., & Herrera, F. · Pattern Recognition · 2026
+                            </p>
+                            <p class="publication-venue">
+                                <a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" class="venue-link">🔗 Pattern Recognition</a>
+                            </p>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -271,7 +322,7 @@
     <footer class="footer">
         <div class="container">
             <p class="footer-text">
-                <strong>Robustez & OOD</strong> - Trustworthy AI
+                <strong>Robustness & OOD</strong> - Trustworthy AI
                 <span aria-hidden="true">•</span>
                 <a href="../index.html" class="footer-link">Cátedra ENIA IAFER 2026</a>
             </p>

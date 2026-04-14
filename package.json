@@ -1,0 +1,14 @@
+{
+  "name": "iafer-website",
+  "version": "1.0.0",
+  "description": "IAFER Research Group Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^2.1.104",
+    "express": "^4.18.2"
+  }
+}

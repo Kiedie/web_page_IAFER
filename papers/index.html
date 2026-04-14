@@ -402,13 +402,32 @@
         /* ── Load data ── */
         async function loadPapers() {
             try {
-                const res = await fetch('../data/papers.json');
-                if (!res.ok) throw new Error(res.status);
-                const data = await res.json();
-                papers = (data.papers || []).sort((a, b) => b.year - a.year);
-            } catch (e) {
-                console.error('Error loading papers:', e);
-                papers = [];
+                // Intenta primero la API
+                console.log('📚 Intentando cargar desde API /api/papers...');
+                const apiRes = await fetch('/api/papers', { 
+                    signal: AbortSignal.timeout(3000) 
+                });
+                
+                if (apiRes.ok) {
+                    const data = await apiRes.json();
+                    papers = (data.papers || []).sort((a, b) => b.year - a.year);
+                    console.log('✓ Papers cargados desde API dinámicamente:', papers.length);
+                } else {
+                    throw new Error('API no disponible');
+                }
+            } catch (apiError) {
+                // Fallback a JSON estático
+                console.warn('⚠️ API no disponible, usando fallback a JSON estático:', apiError.message);
+                try {
+                    const res = await fetch('../data/papers.json');
+                    if (!res.ok) throw new Error(res.status);
+                    const data = await res.json();
+                    papers = (data.papers || []).sort((a, b) => b.year - a.year);
+                    console.log('✓ Papers cargados desde JSON estático:', papers.length);
+                } catch (e) {
+                    console.error('❌ Error cargando papers:', e);
+                    papers = [];
+                }
             }
 
             // Collect unique tags

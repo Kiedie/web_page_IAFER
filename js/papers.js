@@ -14,7 +14,7 @@ class PapersManager {
   }
 
   /**
-   * Carga la lista de papers desde el JSON maestro o datos embebidos
+   * Carga la lista de papers dinámicamente desde la API o datos embebidos
    */
   async loadPapers() {
     try {
@@ -28,19 +28,35 @@ class PapersManager {
         return this.papers;
       }
 
-      // Si no hay datos embebidos, intenta cargar desde JSON
+      // Intenta cargar desde API (si hay servidor ejecutándose)
+      try {
+        const url = '/api/papers';
+        console.log('🌐 Cargando papers desde API:', url);
+        const response = await fetch(url);
+        if (response.ok) {
+          const data = await response.json();
+          this.papers = data.papers || [];
+          this.loaded = true;
+          console.log('✓ Papers cargados desde API:', this.papers.length);
+          return this.papers;
+        }
+      } catch (apiError) {
+        console.warn('API no disponible, intentando fallback a JSON estático...');
+      }
+
+      // Si no hay API, intenta cargar desde JSON estático
       const url = `${this.basePath}data/papers.json`;
-      console.log('Cargando papers desde:', url);
+      console.log('📄 Cargando papers desde:', url);
       const response = await fetch(url);
       if (!response.ok) throw new Error(`HTTP Error: ${response.status}`);
       
       const data = await response.json();
       this.papers = data.papers || [];
       this.loaded = true;
-      console.log('Papers cargados:', this.papers.length);
+      console.log('✓ Papers cargados:', this.papers.length);
       return this.papers;
     } catch (error) {
-      console.error('Error loading papers:', error);
+      console.error('❌ Error loading papers:', error);
       return [];
     }
   }

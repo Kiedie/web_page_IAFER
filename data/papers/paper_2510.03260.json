@@ -48,6 +48,7 @@
   "research_line": "Zero-Shot Learning",
   "image": "images/gpais/zero-shot_paper_5.png",
   "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:UeHWp8X0CEIC",
+  "github_url": "https://github.com/ggomez-trenado/semantic-zsl",
   "metadata": {
     "contributions": [
       "Propone un esquema de partición inductiva para refinar espacios semánticos",

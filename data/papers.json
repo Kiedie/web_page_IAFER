@@ -10,7 +10,9 @@
       "research_line": "Zero-Shot Learning",
       "image": "images/gpais/zero-shot_paper_5.png",
       "paper_url": "https://arxiv.org/abs/2510.03260",
+      "github_url": "https://github.com/ggomez-trenado/semantic-zsl",
       "venue": "IGPL",
+      "venue_url": "https://academic.oup.com/logcom/",
       "tags": ["Zero-Shot Learning", "Feature Selection", "GPAIS", "Evolutionary Computation"]
     },
     {
@@ -23,7 +25,9 @@
       "research_line": "Zero-Shot Learning",
       "image": "images/gpais/zero-shot_paper_4.png",
       "paper_url": "",
+      "github_url": "",
       "venue": "CEC",
+      "venue_url": "https://2025.ieee-cec.org/",
       "tags": ["Zero-Shot Learning", "Genetic Algorithm", "GPAIS", "Semantic Spaces"]
     },
     {
@@ -36,7 +40,9 @@
       "research_line": "Zero-Shot Learning",
       "image": "images/gpais/zero-shot_paper_3.png",
       "paper_url": "",
+      "github_url": "",
       "venue": "HAIS",
+      "venue_url": "https://hais.aitec.es/",
       "tags": ["Zero-Shot Learning", "GPAIS", "Preprocessing", "Semantic Spaces"]
     },
     {
@@ -49,10 +55,12 @@
       "research_line": "Zero-Shot Learning",
       "image": "images/gpais/zero-shot_paper_2.png",
       "paper_url": "",
+      "github_url": "",
       "venue": "CAEPIA",
+      "venue_url": "https://caepia.convencias.es/",
       "tags": ["Zero-Shot Learning", "GPAIS", "Survey", "Preprocessing"]
-    }
-    ,{
+    },
+    {
       "id": "kristina_2025_cl",
       "file": "paper_kristina_2025.json",
       "title": "Frequency-Aware Contrastive Learning for Self-Supervised EEG Seizure Detection",
@@ -62,13 +70,15 @@
       "research_line": "Contrastive Learning",
       "image": "images/gpais/contrastive_learning/Kristina_paper_1.png",
       "paper_url": "",
+      "github_url": "",
       "venue": "IJCNN",
+      "venue_url": "https://www.ijcnn.org/",
       "tags": ["Contrastive Learning", "Self-Supervised Learning", "GPAIS", "EEG"]
     }
   ],
   "metadata": {
     "total": 5,
-    "last_updated": "2025-04-13",
+    "last_updated": "2025-04-14",
     "research_areas": ["gpais"],
     "research_lines": ["Zero-Shot Learning", "Contrastive Learning"]
   }
