@@ -21,7 +21,7 @@
     {
       "name": "Isaac Triguero",
       "affiliation": "University of Granada"
-    }
+    ,"github_url": ""}
   ],
   "year": 2025,
   "month": "Jul",
@@ -62,5 +62,5 @@
       "Two-shot adaptation workflow for domain generalization",
       "Benchmark dataset for cabinet stock detection"
     ]
-  }
-}
+  ,"github_url": ""}
+,"github_url": ""}

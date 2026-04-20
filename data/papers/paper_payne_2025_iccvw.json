@@ -21,7 +21,7 @@
     {
       "name": "M. P. Pound",
       "affiliation": ""
-    }
+    ,"github_url": ""}
   ],
   "year": 2025,
   "month": "Oct",
@@ -61,5 +61,5 @@
       "Performance improvement in agricultural vision tasks",
       "Robustness to lighting variations"
     ]
-  }
-}
+  ,"github_url": ""}
+,"github_url": ""}

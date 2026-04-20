@@ -13,7 +13,7 @@
     {
       "name": "Francisco Herrera",
       "affiliation": "University of Granada"
-    }
+    ,"github_url": ""}
   ],
   "year": 2026,
   "month": "Apr",
@@ -52,5 +52,5 @@
       "Nonparametric statistical approach",
       "Scalability to large datasets"
     ]
-  }
-}
+  ,"github_url": ""}
+,"github_url": ""}

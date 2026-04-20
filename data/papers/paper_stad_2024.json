@@ -13,7 +13,7 @@
     {
       "name": "Francisco Herrera",
       "affiliation": "Universidad de Granada"
-    }
+    ,"github_url": ""}
   ],
   "year": 2024,
   "month": "Nov",
@@ -49,5 +49,5 @@
       "Actualiza la clasificación de espacios semánticos en 'explícitos' e 'implícitos'",
       "Demuestra que con LLMs se pueden mejorar significativamente los espacios semánticos"
     ]
-  }
-}
+  ,"github_url": ""}
+,"github_url": ""}

@@ -13,7 +13,7 @@
     {
       "name": "Elisa Ficarra",
       "affiliation": ""
-    }
+    ,"github_url": ""}
   ],
   "year": 2025,
   "month": "Jan",
@@ -51,5 +51,5 @@
       "Vision-language embedding analysis",
       "Fairness in multimodal AI"
     ]
-  }
-}
+  ,"github_url": ""}
+,"github_url": ""}

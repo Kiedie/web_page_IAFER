@@ -9,7 +9,7 @@
     {
       "name": "Isaac Triguero",
       "affiliation": "University of Granada"
-    }
+    ,"github_url": "https://github.com/daniicereezzo/BenchmarkPCG"}
   ],
   "year": 2025,
   "month": "Oct",
@@ -49,5 +49,5 @@
       "GPT-based game level generation",
       "Evaluation metrics for procedural content"
     ]
-  }
-}
+  ,"github_url": "https://github.com/daniicereezzo/BenchmarkPCG"}
+,"github_url": "https://github.com/daniicereezzo/BenchmarkPCG"}

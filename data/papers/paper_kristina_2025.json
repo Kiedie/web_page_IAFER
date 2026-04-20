@@ -5,7 +5,7 @@
     {
       "name": "Kristina Stemikovskaya",
       "affiliation": "TECNALIA Research & Innovation"
-    }
+    ,"github_url": ""}
   ],
   "year": 2025,
   "title_es": "Aprendizaje Contrastivo Consciente de Frecuencia para Detección Auto-Supervisada de Convulsiones en EEG",
@@ -40,5 +40,5 @@
       "Detección auto-supervisada de crisis epilépticas sin etiquetas",
       "Mejora de la generalización entre pacientes sin reentrenamiento"
     ]
-  }
-}
+  ,"github_url": ""}
+,"github_url": ""}

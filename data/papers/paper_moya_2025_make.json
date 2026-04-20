@@ -17,7 +17,7 @@
     {
       "name": "Julián Luengo",
       "affiliation": ""
-    }
+    ,"github_url": ""}
   ],
   "year": 2025,
   "month": "Dec",
@@ -58,5 +58,5 @@
       "Improved time series forecasting performance",
       "Domain-specific architecture design"
     ]
-  }
-}
+  ,"github_url": ""}
+,"github_url": ""}
