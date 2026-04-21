@@ -43,6 +43,7 @@
   "research_line": "Zero-Shot Learning",
   "image": "images/gpais/zero-shot_paper_2.png",
   "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:qjMakFHDy7sC",
+  "github_url": "https://github.com/Kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning",
   "metadata": {
     "contributions": [
       "Presenta una revisión integral del estado del arte en GZSL",

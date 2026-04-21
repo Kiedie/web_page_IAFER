@@ -45,6 +45,7 @@
   "research_line": "Explicabilidad y Modelos Generativos",
   "image": "images/gpais/bias_detection_1.png",
   "google_scholar_url": "",
+  "github_url": "https://github.com/david-mnd/CUBIC",
   "metadata": {
     "contributions": [
       "Unsupervised bias detection methodology",

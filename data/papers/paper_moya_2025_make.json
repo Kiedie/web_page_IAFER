@@ -17,7 +17,7 @@
     {
       "name": "Julián Luengo",
       "affiliation": ""
-    ,"github_url": ""}
+    }
   ],
   "year": 2025,
   "month": "Dec",
@@ -52,11 +52,12 @@
   "research_line": "Robustness in Deep Learning",
   "image": "images/gpais/transformers_ts_1.png",
   "google_scholar_url": "",
+  "github_url": "https://github.com/ari-dasci/S-WinStat",
   "metadata": {
     "contributions": [
       "Novel trainable positional encodings for transformers",
       "Improved time series forecasting performance",
       "Domain-specific architecture design"
     ]
-  ,"github_url": ""}
-,"github_url": ""}
+  }
+}

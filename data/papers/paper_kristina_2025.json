@@ -34,6 +34,7 @@
   "research_area": "gpais",
   "research_line": "Contrastive Learning",
   "image": "images/gpais/contrastive_learning/Kristina_paper_1.png",
+  "github_url": "https://github.com/kristinaste/FA-NT-Xent",
   "metadata": {
     "contributions": [
       "Función de pérdida contrastiva consciente de las bandas de frecuencia EEG",

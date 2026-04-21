@@ -259,10 +259,22 @@ class PapersManager {
   createCitationModal(paper, citations) {
     const modal = document.createElement('div');
     modal.className = 'citation-modal-overlay';
-    
+
     const bibtex = citations.bibtex || 'No disponible';
     const apa = citations.apa || 'No disponible';
     const mla = citations.mla || 'No disponible';
+    const githubUrl = paper.github_url || '';
+    const hasGithub = githubUrl && githubUrl.trim() !== '';
+
+    // Construir tabs dinamicamente
+    let tabsHtml = `
+      <button class="citation-tab active" data-format="bibtex">BibTeX</button>
+      <button class="citation-tab" data-format="apa">APA</button>
+      <button class="citation-tab" data-format="mla">MLA</button>
+    `;
+    if (hasGithub) {
+      tabsHtml += `<button class="citation-tab" data-format="github">GitHub</button>`;
+    }
 
     modal.innerHTML = `
       <div class="citation-modal">
@@ -271,11 +283,9 @@ class PapersManager {
           <button class="citation-modal__close" aria-label="Cerrar">&times;</button>
         </div>
         <div class="citation-modal__tabs">
-          <button class="citation-tab active" data-format="bibtex">BibTeX</button>
-          <button class="citation-tab" data-format="apa">APA</button>
-          <button class="citation-tab" data-format="mla">MLA</button>
+          ${tabsHtml}
         </div>
-        <div class="citation-modal__content">
+        <div class="citation-modal__content" id="citation-content">
           <textarea class="citation-textarea" readonly id="citation-text">${bibtex}</textarea>
         </div>
         <button class="btn btn-primary" id="copy-citation">Copiar cita</button>
@@ -290,7 +300,8 @@ class PapersManager {
 
     // Cambiar formato
     const tabs = modal.querySelectorAll('.citation-tab');
-    const textarea = modal.querySelector('.citation-textarea');
+    const contentDiv = modal.querySelector('#citation-content');
+    const copyBtn = modal.querySelector('#copy-citation');
     const citationData = { bibtex, apa, mla };
 
     tabs.forEach(tab => {
@@ -298,15 +309,32 @@ class PapersManager {
         tabs.forEach(t => t.classList.remove('active'));
         tab.classList.add('active');
         const format = tab.dataset.format;
-        textarea.value = citationData[format];
+
+        if (format === 'github' && hasGithub) {
+          contentDiv.innerHTML = `
+            <div class="citation-github">
+              <p>Este artículo tiene código disponible en GitHub:</p>
+              <a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="github-link">
+                ${githubUrl}
+              </a>
+            </div>
+          `;
+          copyBtn.style.display = 'none';
+        } else {
+          contentDiv.innerHTML = `<textarea class="citation-textarea" readonly id="citation-text">${citationData[format]}</textarea>`;
+          copyBtn.style.display = 'block';
+        }
       });
     });
 
     // Copiar cita
-    modal.querySelector('#copy-citation').addEventListener('click', () => {
-      textarea.select();
-      document.execCommand('copy');
-      alert('Cita copiada al portapapeles');
+    copyBtn.addEventListener('click', () => {
+      const textarea = modal.querySelector('.citation-textarea');
+      if (textarea) {
+        textarea.select();
+        document.execCommand('copy');
+        alert('Cita copiada al portapapeles');
+      }
     });
 
     return modal;
