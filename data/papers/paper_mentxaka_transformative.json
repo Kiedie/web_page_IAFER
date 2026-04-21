@@ -1,0 +1,61 @@
+{
+  "id": "mentxaka_transformative",
+  "title": "Transformative AI in Critical Infrastructures: Safe, Secure and Governable Systems",
+  "authors": [
+    {
+      "name": "Oier Mentxaka",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "E. Nuñez",
+      "affiliation": ""
+    },
+    {
+      "name": "E. Gomez",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo examina los requisitos de seguridad y gobernanza para el despliegue de sistemas de IA transformadora en infraestructuras críticas.",
+  "publication": {
+    "type": "journal",
+    "venue": "Under Review",
+    "year": 2026
+  },
+  "abstract": "Transformative AI systems deployed in critical infrastructures require rigorous safety, security, and governance frameworks. This paper identifies key challenges and proposes architectural requirements for deploying AI systems in safety-critical domains such as energy, transportation, and healthcare infrastructure.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "transformative AI",
+    "critical infrastructure",
+    "AI safety",
+    "AI security",
+    "AI governance"
+  ],
+  "citations": {
+    "bibtex": "@article{mentxaka2026transformative,\n  title={Transformative AI in Critical Infrastructures: Safe, Secure and Governable Systems},\n  author={Mentxaka, Oier and Nu{\\~n}ez, E. and Gomez, E. and Herrera, Francisco},\n  journal={Under Review},\n  year={2026}\n}",
+    "apa": "Mentxaka, O., Nuñez, E., Gomez, E., & Herrera, F. (2026). Transformative AI in Critical Infrastructures: Safe, Secure and Governable Systems. (Under Review).",
+    "mla": "Mentxaka, Oier, E. Nuñez, E. Gomez, and Francisco Herrera. \"Transformative AI in Critical Infrastructures: Safe, Secure and Governable Systems.\" (Under Review), 2026."
+  },
+  "tags": [
+    "Governance & Regulation",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Critical infrastructure AI requirements",
+      "Safety-security-governance framework",
+      "Transformative AI deployment guidelines"
+    ]
+  }
+}

@@ -43,7 +43,6 @@
                         <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
                         <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
                         <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
                         <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
@@ -287,104 +286,9 @@
                 </p>
                 <div class="highlight-box">
                     <h3 class="highlight-title">📚 Publicaciones</h3>
-                    
-                    <div class="publications-container">
-                        <!-- Publicación 1 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_2.png" 
-                                     alt="Portada del artículo sobre Semantic-Inductive Attribute Selection"
-                                     class="publication-image">
-                                <span class="publication-badge">2024</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    This work updates the state of the art in Generalized Zero-Shot Learning (GZSL) by integrating 
-                                    Large Language Models and proposing a new classification of semantic spaces into 
-                                    "explicit" and "implicit" types. Additionally, it presents a preliminary experiment demonstrating that 
-                                    reducing semantic attributes through feature selection increases model accuracy.
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
-                                </p>
-                                <p class="publication-venue">
-                                    <a href="https://hais.aitec.es/" target="_blank" class="venue-link">🔗 HAIS 2024</a>
-                                </p>
-                            </div>
-                        </article>
 
-                        <!-- Publicación 2 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_3.png" 
-                                     alt="Portada del artículo sobre Ranking Feature Selection en ZSL"
-                                     class="publication-image">
-                                <span class="publication-badge">2024</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    This study presents a technical method to "clean" the semantic space before training. 
-                                    It implements a cross-validation scheme that uses embedded feature selection algorithms 
-                                    to identify and discard irrelevant or noisy attributes, thus improving generalization 
-                                    capability on unseen classes.
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
-                                </p>
-                                <p class="publication-venue">
-                                    <a href="https://hais.aitec.es/" target="_blank" class="venue-link">🔗 HAIS 2024</a>
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Publicación 3 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_4.png" 
-                                     alt="Portada del artículo sobre preprocesamiento del espacio semántico"
-                                     class="publication-image">
-                                <span class="publication-badge">2025</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    This work introduces GAZeLa, a genetic algorithm that optimizes the semantic space by simulating 
-                                    unseen classes during training itself. Unlike previous methods, 
-                                    it automatically selects the most relevant attributes without requiring manual configuration, 
-                                    achieving superior accuracy with significantly fewer features.
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
-                                </p>
-                                <p class="publication-venue">
-                                    <a href="https://caepia.convencias.es/" target="_blank" class="venue-link">🔗 CAEPIA 2025</a>
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Publicación 4 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_5.png" 
-                                     alt="Portada del artículo sobre ZSL con lógica difusa"
-                                     class="publication-image">
-                                <span class="publication-badge">2026</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    To combat noise in ZSL semantic spaces, we propose an inductive partitioning scheme 
-                                    that filters irrelevant attributes. By comparing ranking methods (RFS) 
-                                    against evolutionary algorithms (GA), we demonstrate that removing redundancy not only simplifies 
-                                    the model, but consistently improves its accuracy, validating the effectiveness of semantic refinement.
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Gomez-Trenado, G., Triguero, I., Herrera, F.
-                                </p>
-                                <p class="publication-venue">
-                                    <a href="https://academic.oup.com/logcom/" target="_blank" class="venue-link">🔗 IGPL 2026</a>
-                                </p>
-                            </div>
-                        </article>
-
+                    <div class="publications-container" id="research-line-papers" data-research-line="Zero-Shot Learning">
+                        <p class="loading-message">Loading publications...</p>
                     </div>
                 </div>
             </div>
@@ -431,6 +335,9 @@
         </div>
     </footer>
 
+
+    <!-- Research Line Paper Loader -->
+    <script src="../js/research-line.js"></script>
 
     <!-- Navbar -->
     <script src="../js/base.js"></script>

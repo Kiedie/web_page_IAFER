@@ -25,7 +25,6 @@
   ],
   "year": 2025,
   "month": "Nov",
-  "title_es": "AutoEnergy: un algoritmo de ingeniería automática de características para predicción de consumo de energía con AutoML",
   "description_es": "Este trabajo introduce AutoEnergy, un algoritmo de ingeniería automática de características específicamente diseñado para tareas de predicción de consumo de energía.",
   "publication": {
     "type": "journal",
@@ -51,10 +50,12 @@
     "apa": "Alkhulaifi, N., Bowler, A. L., Pekaslan, D., Watson, N. J., & Triguero, I. (2025). AutoEnergy: An automated feature engineering algorithm for energy consumption forecasting with AutoML. Knowledge-Based Systems, 329, 114300.",
     "mla": "Alkhulaifi, Nasser, et al. \"AutoEnergy: An automated feature engineering algorithm for energy consumption forecasting with AutoML.\" Knowledge-Based Systems, vol. 329, 2025, p. 114300."
   },
-  "tags": ["AutoML", "Feature Engineering", "Energy Forecasting", "Time Series", "GPAIS"],
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
   "research_area": "gpais",
-  "research_line": "AutoML y Few-shot Learning",
-  "image": "images/gpais/automl_energy_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "github_url": "https://github.com/Nasser-Alkhulaifi/AutoEnergy",
   "metadata": {

@@ -1,0 +1,61 @@
+{
+  "id": "rodriguez_barroso_cim_2026",
+  "title": "Do Deep Learning Models Keep a Privacy Signature? Auditing Differential Privacy from Weights",
+  "authors": [
+    {
+      "name": "Nuria Rodríguez-Barroso",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "D. Jiménez-López",
+      "affiliation": ""
+    },
+    {
+      "name": "María Victoria Luzón",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo investiga si los modelos de aprendizaje profundo entrenados con privacidad diferencial conservan una firma detectable en sus pesos que permita auditar el nivel de privacidad aplicado.",
+  "publication": {
+    "type": "journal",
+    "venue": "IEEE Computational Intelligence Magazine",
+    "year": 2026
+  },
+  "abstract": "Differential privacy provides theoretical guarantees but verifying its application post-training remains challenging. This paper investigates whether deep learning models trained with differential privacy retain an identifiable signature in their weight distributions. We propose methods for auditing DP compliance from model weights alone, enabling verification of privacy claims without access to training data or process.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "differential privacy",
+    "privacy auditing",
+    "deep learning",
+    "model weights",
+    "privacy verification"
+  ],
+  "citations": {
+    "bibtex": "@article{rodriguezbarroso2026signature,\n  title={Do Deep Learning Models Keep a Privacy Signature? Auditing Differential Privacy from Weights},\n  author={Rodr{\\'i}guez-Barroso, Nuria and Jim{\\'e}nez-L{\\'o}pez, D. and Luz{\\'o}n, Mar{\\'i}a Victoria and Herrera, Francisco},\n  journal={IEEE Computational Intelligence Magazine},\n  year={2026},\n  publisher={IEEE}\n}",
+    "apa": "Rodríguez-Barroso, N., Jiménez-López, D., Luzón, M. V., & Herrera, F. (2026). Do Deep Learning Models Keep a Privacy Signature? Auditing Differential Privacy from Weights. IEEE Computational Intelligence Magazine.",
+    "mla": "Rodríguez-Barroso, Nuria, D. Jiménez-López, María Victoria Luzón, and Francisco Herrera. \"Do Deep Learning Models Keep a Privacy Signature? Auditing Differential Privacy from Weights.\" IEEE Computational Intelligence Magazine, 2026."
+  },
+  "tags": [
+    "Privacy & Federated Learning",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Privacy signature detection",
+      "DP auditing from weights",
+      "Privacy verification methodology"
+    ]
+  }
+}

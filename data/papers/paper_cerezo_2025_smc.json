@@ -8,12 +8,12 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Granada"
-    ,"github_url": "https://github.com/daniicereezzo/BenchmarkPCG"}
+      "affiliation": "University of Granada",
+      "github_url": "https://github.com/daniicereezzo/BenchmarkPCG"
+    }
   ],
   "year": 2025,
   "month": "Oct",
-  "title_es": "De métodos tradicionales a modelos basados en GPT para generación procedural de niveles de videojuegos 2D: un estudio empírico",
   "description_es": "Este estudio empírico compara métodos tradicionales de generación de contenido con modelos GPT modernos para crear niveles de videojuegos.",
   "publication": {
     "type": "conference",
@@ -38,16 +38,20 @@
     "apa": "Cerezo, D., & Triguero, I. (2025). From Traditional Methods to GPT-based Models for 2D Video Game Level Procedural Content Generation: An Empirical Study. In 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 3260-3267). IEEE.",
     "mla": "Cerezo, David, and Isaac Triguero. \"From Traditional Methods to GPT-based Models for 2D Video Game Level Procedural Content Generation: An Empirical Study.\" 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC), IEEE, 2025, pp. 3260-3267."
   },
-  "tags": ["Procedural Content Generation", "GPT Models", "Game Design", "Generative AI", "GPAIS"],
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
   "research_area": "gpais",
-  "research_line": "Algoritmos de IAPG para aprender a explicar",
-  "image": "images/gpais/pcg_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Empirical comparison of PCG methods",
       "GPT-based game level generation",
       "Evaluation metrics for procedural content"
-    ]
-  ,"github_url": "https://github.com/daniicereezzo/BenchmarkPCG"}
-,"github_url": "https://github.com/daniicereezzo/BenchmarkPCG"}
+    ],
+    "github_url": "https://github.com/daniicereezzo/BenchmarkPCG"
+  },
+  "github_url": "https://github.com/daniicereezzo/BenchmarkPCG"
+}

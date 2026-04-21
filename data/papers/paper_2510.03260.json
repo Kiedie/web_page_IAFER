@@ -21,7 +21,6 @@
   ],
   "year": 2025,
   "month": "Sep",
-  "title_es": "Selección Inductiva de Atributos Semánticos para Zero-Shot Learning",
   "description_es": "Este trabajo introduce una metodología para refinar espacios semánticos en ZSL mediante selección automática de atributos. Compara métodos de selección de características embebidas (RFS) frente a algoritmos evolutivos (GA), demostrando que eliminar redundancia mejora consistentemente la precisión en clases no vistas. Propone un esquema de partición inductiva que simula condiciones de clases desconocidas durante el entrenamiento.",
   "publication": {
     "type": "preprint",
@@ -45,7 +44,6 @@
     "mla": "Herrera-Aranda, Juan Jose, et al. \"Semantic-Inductive Attribute Selection for Zero-Shot Learning.\" arXiv preprint arXiv:2510.03260 (2025)."
   },
   "research_area": "gpais",
-  "research_line": "Zero-Shot Learning",
   "image": "images/gpais/zero-shot_paper_5.png",
   "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:UeHWp8X0CEIC",
   "github_url": "https://github.com/Kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning",
@@ -55,6 +53,16 @@
       "Compara métodos de selección de características (RFS) con algoritmos genéticos (GA)",
       "Demuestra que reducir redundancia mejora consistentemente la precisión en clases no vistas"
     ],
-    "datasets": ["AWA2", "CUB", "SUN", "aPY", "FLO"]
-  }
+    "datasets": [
+      "AWA2",
+      "CUB",
+      "SUN",
+      "aPY",
+      "FLO"
+    ]
+  },
+  "tags": [
+    "GPAIS",
+    "Zero-Shot Learning"
+  ]
 }

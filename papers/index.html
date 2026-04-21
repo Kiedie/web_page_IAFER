@@ -319,7 +319,6 @@
                         <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
                         <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
                         <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
                         <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
@@ -471,7 +470,7 @@
                     ${linkClose}
                     <p class="paper-authors">${highlightMatch(p.authors, searchQuery)}</p>
                     <div class="paper-tags">${tagsHtml}</div>
-                    ${p.github_url ? `<a href="${p.github_url}" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--small github-btn"><span aria-hidden="true">⇧</span> Repositorio</a>` : ''}
+                    ${p.github_url ? `<a href="${p.github_url}" target="_blank" rel="noopener noreferrer" class="btn btn--outline btn--small github-btn"><img src="./images/github-logo.svg" alt="GitHub" style="width:14px;height:14px;vertical-align:middle;margin-right:4px;">Repositorio</a>` : ''}
                 </div>`;
             }).join('');
 

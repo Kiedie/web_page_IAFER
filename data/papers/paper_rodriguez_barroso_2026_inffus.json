@@ -1,0 +1,63 @@
+{
+  "id": "rodriguez_barroso_2026_inffus",
+  "title": "From Privacy to Trust in the Agentic Era: A Taxonomy of Challenges in Trustworthy Federated Learning Through the Lens of Trust Report 2.0",
+  "authors": [
+    {
+      "name": "Nuria Rodríguez-Barroso",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Mario García-Márquez",
+      "affiliation": ""
+    },
+    {
+      "name": "María Victoria Luzón",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Feb",
+  "description_es": "Este artículo presenta una taxonomía de desafíos en el aprendizaje federado confiable, examinando los problemas de privacidad y confianza en el contexto de la era de los agentes de IA y el Trust Report 2.0.",
+  "publication": {
+    "type": "journal",
+    "venue": "Information Fusion",
+    "volume": "132",
+    "pages": "104236",
+    "year": 2026
+  },
+  "abstract": "As we enter the agentic era of AI, federated learning faces new challenges in balancing privacy and trust. This paper presents a comprehensive taxonomy of challenges in trustworthy federated learning, examined through the lens of Trust Report 2.0. We identify key privacy-preserving mechanisms, trust calibration requirements, and governance frameworks necessary for deploying federated learning systems in sensitive domains.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1016/j.inffus.2026.104236",
+  "keywords": [
+    "federated learning",
+    "privacy",
+    "trustworthy AI",
+    "trust calibration",
+    "AI governance"
+  ],
+  "citations": {
+    "bibtex": "@article{rodriguezbarroso2026privacy,\n  title={From Privacy to Trust in the Agentic Era: A Taxonomy of Challenges in Trustworthy Federated Learning Through the Lens of Trust Report 2.0},\n  author={Rodr{\\'i}guez-Barroso, Nuria and Garc{\\'i}a-M{\\'a}rquez, Mario and Luz{\\'o}n, Mar{\\'i}a Victoria and Herrera, Francisco},\n  journal={Information Fusion},\n  volume={132},\n  pages={104236},\n  year={2026},\n  publisher={Elsevier}\n}",
+    "apa": "Rodríguez-Barroso, N., García-Márquez, M., Luzón, M. V., & Herrera, F. (2026). From Privacy to Trust in the Agentic Era: A Taxonomy of Challenges in Trustworthy Federated Learning Through the Lens of Trust Report 2.0. Information Fusion, 132, 104236.",
+    "mla": "Rodríguez-Barroso, Nuria, Mario García-Márquez, María Victoria Luzón, and Francisco Herrera. \"From Privacy to Trust in the Agentic Era: A Taxonomy of Challenges in Trustworthy Federated Learning Through the Lens of Trust Report 2.0.\" Information Fusion, vol. 132, 2026, p. 104236."
+  },
+  "tags": [
+    "Privacy & Federated Learning",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Taxonomy of FL trust challenges",
+      "Trust Report 2.0 analysis",
+      "Agentic era privacy framework"
+    ]
+  }
+}

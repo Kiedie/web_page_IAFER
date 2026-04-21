@@ -12,12 +12,12 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2025,
   "month": "Jun",
-  "title_es": "Adopción de inteligencia artificial en PYMEs: encuesta basada en marco TOE–DOI, metodología primaria y desafíos",
   "description_es": "Este artículo proporciona una encuesta comprensiva sobre la adopción de IA en pequeñas y medianas empresas, analizando factores tecnológicos, organizacionales y ambientales.",
   "publication": {
     "type": "journal",
@@ -43,9 +43,11 @@
     "apa": "Sánchez, E., Calderón, R., & Herrera, F. (2025). Artificial Intelligence Adoption in SMEs: Survey Based on TOE–DOI Framework, Primary Methodology and Challenges. Applied Sciences, 15(12), 6465.",
     "mla": "Sánchez, Esther, et al. \"Artificial Intelligence Adoption in SMEs: Survey Based on TOE–DOI Framework, Primary Methodology and Challenges.\" Applied Sciences, vol. 15, no. 12, 2025, p. 6465."
   },
-  "tags": ["AI Adoption", "SMEs", "Digital Transformation", "Governance", "Trustworthy AI"],
+  "tags": [
+    "Governance & Regulation",
+    "Trustworthy AI"
+  ],
   "research_area": "trustworthy",
-  "research_line": "Explicabilidad y Gobernanza de la IA",
   "image": "images/trustworthy/sme_ai_adoption_1.png",
   "google_scholar_url": "",
   "metadata": {
@@ -53,6 +55,8 @@
       "Comprehensive AI adoption framework for SMEs",
       "Identification of organizational barriers",
       "Practical implementation roadmap"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

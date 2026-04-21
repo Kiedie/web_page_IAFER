@@ -1,0 +1,51 @@
+{
+  "id": "lara_2026_aiethics",
+  "title": "Personal Autonomy as an Ethical Foundation for Opaque Algorithmic Decision Systems",
+  "authors": [
+    {
+      "name": "Francisco Lara",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este artículo examina la autonomía personal como base ética fundamental para sistemas de decisión algorítmica opacos, proponiendo principios para preservar la agencia humana en contextos de IA.",
+  "publication": {
+    "type": "journal",
+    "venue": "AI Ethics",
+    "volume": "6",
+    "pages": "14",
+    "year": 2026
+  },
+  "abstract": "As algorithmic decision systems become increasingly opaque, preserving personal autonomy becomes a critical ethical concern. This paper argues that personal autonomy should serve as the foundational ethical principle for designing and deploying opaque algorithmic systems. We propose a framework for maintaining human agency and meaningful choice in AI-mediated decision contexts.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1007/s43681-025-00889-0",
+  "keywords": [
+    "personal autonomy",
+    "algorithmic decision-making",
+    "AI ethics",
+    "opaque systems",
+    "human agency"
+  ],
+  "citations": {
+    "bibtex": "@article{lara2026personal,\n  title={Personal Autonomy as an Ethical Foundation for Opaque Algorithmic Decision Systems},\n  author={Lara, Francisco},\n  journal={AI Ethics},\n  volume={6},\n  pages={14},\n  year={2026},\n  publisher={Springer}\n}",
+    "apa": "Lara, F. (2026). Personal Autonomy as an Ethical Foundation for Opaque Algorithmic Decision Systems. AI Ethics, 6, 14.",
+    "mla": "Lara, Francisco. \"Personal Autonomy as an Ethical Foundation for Opaque Algorithmic Decision Systems.\" AI Ethics, vol. 6, 2026, p. 14."
+  },
+  "tags": [
+    "Fairness & Bias",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Autonomy-based ethical framework",
+      "Analysis of opaque decision systems",
+      "Human agency preservation principles"
+    ]
+  }
+}

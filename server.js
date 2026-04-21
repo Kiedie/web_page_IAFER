@@ -20,6 +20,76 @@ console.log('Server starting...');
 console.log('Serving static files from:', process.cwd());
 
 /**
+ * Generar data/papers.json dinámicamente desde data/papers/
+ */
+function generatePapersJson() {
+  const papersDir = path.join(__dirname, 'data', 'papers');
+  const outputFile = path.join(__dirname, 'data', 'papers.json');
+
+  try {
+    const files = fs.readdirSync(papersDir).filter(f => f.startsWith('paper_') && f.endsWith('.json'));
+    const papers = [];
+    const researchAreas = new Set();
+    const researchLines = new Set();
+
+    files.forEach(file => {
+      const filePath = path.join(papersDir, file);
+      const content = fs.readFileSync(filePath, 'utf-8');
+      const paper = JSON.parse(content);
+
+      let authors = 'Autores no disponibles';
+      if (paper.authors && Array.isArray(paper.authors)) {
+        authors = paper.authors
+          .map(a => typeof a === 'string' ? a : a.name || '')
+          .filter(a => a)
+          .join(', ');
+      }
+
+      const paperEntry = {
+        id: paper.id,
+        file: file,
+        title: paper.title || '',
+        year: paper.year || 0,
+        authors: authors,
+        research_area: paper.research_area || 'other',
+        image: paper.image || '',
+        paper_url: paper.paper_url || paper.arxiv_url || '',
+        venue: paper.publication?.venue || '',
+        tags: paper.tags || [],
+        github_url: paper.github_url || ''
+      };
+
+      papers.push(paperEntry);
+      if (paperEntry.research_area) researchAreas.add(paperEntry.research_area);
+      (paper.tags || []).forEach(tag => researchLines.add(tag));
+    });
+
+    // Ordenar por año descendente
+    papers.sort((a, b) => (-a.year || 0) - (-b.year || 0));
+
+    const output = {
+      papers,
+      metadata: {
+        total: papers.length,
+        last_updated: new Date().toISOString().split('T')[0],
+        research_areas: Array.from(researchAreas).sort(),
+        research_lines: Array.from(researchLines).sort()
+      }
+    };
+
+    fs.writeFileSync(outputFile, JSON.stringify(output, null, 2), 'utf-8');
+    console.log(`✓ Generated data/papers.json with ${papers.length} papers`);
+    return papers.length;
+  } catch (error) {
+    console.error('✗ Error generating papers.json:', error.message);
+    return 0;
+  }
+}
+
+// Generar papers.json al iniciar el servidor
+generatePapersJson();
+
+/**
  * API: GET /api/papers
  * Lee dinámicamente todos los JSON de data/papers/ y devuelve su índice
  */
@@ -51,20 +121,20 @@ app.get('/api/papers', (req, res) => {
           id: paper.id,
           file: file,
           title: paper.title || '',
-          title_es: paper.title_es || '',
           year: paper.year || 0,
           authors: authors,
           research_area: paper.research_area || 'other',
-          research_line: paper.research_line || '',
           image: paper.image || '',
           paper_url: paper.paper_url || paper.arxiv_url || '',
           venue: paper.publication?.venue || '',
-          tags: (paper.keywords || []).slice(0, 5)
+          tags: paper.tags || [],
+          github_url: paper.github_url || ''
         };
 
         papers.push(paperEntry);
         if (paperEntry.research_area) researehAreas.add(paperEntry.research_area);
-        if (paperEntry.research_line) researchLines.add(paperEntry.research_line);
+        // Añadir tags a researchLines para compatibilidad
+        (paper.tags || []).forEach(tag => researchLines.add(tag));
       } catch (e) {
         console.error(`Error leyendo ${file}:`, e.message);
       }

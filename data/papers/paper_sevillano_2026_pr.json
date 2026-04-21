@@ -12,12 +12,12 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2026,
   "month": "Apr",
-  "title_es": "STOOD-X: Detección explicable de distribución fuera de distribución mediante pruebas estadísticas no paramétricas en conjuntos de datos grandes",
   "description_es": "Este trabajo presenta STOOD-X, un método para detectar muestras fuera de distribución de manera explicable usando pruebas estadísticas no paramétricas.",
   "publication": {
     "type": "journal",
@@ -41,17 +41,21 @@
     "apa": "Sevillano-García, I., Luengo, J., & Herrera, F. (2026). STOOD-X: Explainable Out-of-Distribution Detection via Nonparametric Statistical Testing on Large-Scale Datasets. Pattern Recognition, 113254.",
     "mla": "Sevillano-García, Iván, et al. \"STOOD-X: Explainable Out-of-Distribution Detection via Nonparametric Statistical Testing on Large-Scale Datasets.\" Pattern Recognition, 2026, p. 113254."
   },
-  "tags": ["OOD Detection", "Explainability", "Statistical Testing", "Robustness", "Trustworthy AI"],
+  "tags": [
+    "Explainability (XAI)",
+    "Robustness & OOD",
+    "Trustworthy AI"
+  ],
   "research_area": "trustworthy",
-  "research_line": "Explicabilidad y Robustez",
   "image": "images/trustworthy/ood_detection_1.png",
   "google_scholar_url": "",
-  "github_url": "https://github.com/ari-dasci/S-STOOD-X",
+  "github_url": "",
   "metadata": {
     "contributions": [
       "Explainable OOD detection methodology",
       "Nonparametric statistical approach",
       "Scalability to large datasets"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  }
+}

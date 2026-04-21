@@ -1,0 +1,65 @@
+{
+  "id": "triguero_lorca_2026",
+  "title": "Fine-Grained Distillation via Intermediate Homogeneous Block Leverage: A Paradigm for Efficient Learning with Scarce Data",
+  "authors": [
+    {
+      "name": "Irene Triguero-Lorca",
+      "affiliation": ""
+    },
+    {
+      "name": "Leonardo Concepción",
+      "affiliation": ""
+    },
+    {
+      "name": "Christian Wagner",
+      "affiliation": ""
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Daniel Molina",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo presenta un nuevo paradigma de destilación de conocimiento que aprovecha bloques homogéneos intermedios para lograr aprendizaje eficiente en escenarios con datos limitados.",
+  "publication": {
+    "type": "conference",
+    "venue": "Under Review",
+    "year": 2026
+  },
+  "abstract": "Knowledge distillation enables efficient model compression but struggles with scarce data scenarios. This paper introduces Fine-Grained Distillation via Intermediate Homogeneous Block Leverage, a novel paradigm that exploits intermediate layer homogeneity for more effective knowledge transfer. Our approach demonstrates significant improvements in data-efficient learning scenarios, enabling student models to achieve competitive performance with limited training samples.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "knowledge distillation",
+    "fine-grained learning",
+    "few-shot learning",
+    "model compression",
+    "efficient learning"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{triguerolorca2026finegrained,\n  title={Fine-Grained Distillation via Intermediate Homogeneous Block Leverage: A Paradigm for Efficient Learning with Scarce Data},\n  author={Triguero-Lorca, Irene and Concepci{\\'o}n, Leonardo and Wagner, Christian and Triguero, Isaac and Molina, Daniel},\n  booktitle={Under Review},\n  year={2026}\n}",
+    "apa": "Triguero-Lorca, I., Concepción, L., Wagner, C., Triguero, I., & Molina, D. (2026). Fine-Grained Distillation via Intermediate Homogeneous Block Leverage: A Paradigm for Efficient Learning with Scarce Data. (Under Review).",
+    "mla": "Triguero-Lorca, Irene, Leonardo Concepción, Christian Wagner, Isaac Triguero, and Daniel Molina. \"Fine-Grained Distillation via Intermediate Homogeneous Block Leverage: A Paradigm for Efficient Learning with Scarce Data.\" (Under Review), 2026."
+  },
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Intermediate homogeneous block leverage",
+      "Fine-grained distillation framework",
+      "Data-efficient learning paradigm"
+    ]
+  }
+}

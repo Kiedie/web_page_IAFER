@@ -12,12 +12,12 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2025,
   "month": "Jun",
-  "title_es": "Perturbaciones dirigidas para aprendizaje eficiente de pérdidas subrogadas",
   "description_es": "Este trabajo presenta un método novedoso para aprender pérdidas subrogadas de manera eficiente mediante perturbaciones dirigidas en redes neuronales.",
   "publication": {
     "type": "conference",
@@ -40,16 +40,20 @@
     "apa": "Cargan, T. R., Landa-Silva, D., & Triguero, I. (2025). Directed Perturbations for Efficient Learning of Surrogate Losses. In 2025 International Joint Conference on Neural Networks (IJCNN). IEEE.",
     "mla": "Cargan, Tyler R., et al. \"Directed Perturbations for Efficient Learning of Surrogate Losses.\" 2025 International Joint Conference on Neural Networks (IJCNN), IEEE, 2025."
   },
-  "tags": ["Loss Function Learning", "Neural Networks", "Optimization", "Deep Learning", "GPAIS"],
+  "tags": [
+    "GPAIS",
+    "Robustness in Deep Learning"
+  ],
   "research_area": "gpais",
-  "research_line": "Robustness in Deep Learning",
-  "image": "images/gpais/loss_learning_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Novel surrogate loss learning method",
       "Directed perturbation approach",
       "Efficient optimization technique"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

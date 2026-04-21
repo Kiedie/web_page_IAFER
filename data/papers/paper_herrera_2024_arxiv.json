@@ -4,12 +4,12 @@
   "authors": [
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2024,
   "month": "Feb",
-  "title_es": "Una descripción general completa del aprendizaje automático moderno: de la teoría a la práctica",
   "description_es": "Una revisión comprehensiva que cubre tópicos modernos en aprendizaje automático desde perspectiva teórica y práctica.",
   "publication": {
     "type": "preprint",
@@ -32,16 +32,20 @@
     "apa": "Herrera, F. (2024). A Comprehensive Overview of Modern Machine Learning: From Theory to Practice. arXiv preprint arXiv:2402.xxxxx.",
     "mla": "Herrera, Francisco. \"A Comprehensive Overview of Modern Machine Learning: From Theory to Practice.\" arXiv preprint arXiv:2402.xxxxx, 2024."
   },
-  "tags": ["Deep Learning", "Neural Networks", "Survey", "GPAIS"],
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
   "research_area": "gpais",
-  "research_line": "Revisiones y Perspectivas Generales",
-  "image": "images/gpais/ml_overview_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Comprehensive ML overview",
       "Theory and practice integration",
       "Modern technique coverage"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

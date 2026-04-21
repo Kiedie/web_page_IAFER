@@ -20,12 +20,12 @@
     },
     {
       "name": "M. P. Pound",
-      "affiliation": ""
-    ,"github_url": ""}
+      "affiliation": "",
+      "github_url": ""
+    }
   ],
   "year": 2025,
   "month": "Oct",
-  "title_es": "Un caso para el uso de representaciones de color cartesianas de croma para clasificación de imágenes en dominios basados en plantas",
   "description_es": "Este trabajo demuestra la efectividad de las representaciones de color Cartesianas de croma para la clasificación de imágenes en aplicaciones agrícolas.",
   "publication": {
     "type": "conference",
@@ -50,16 +50,20 @@
     "apa": "Payne, J. S., Hopkins, G., Gowda, S. N., Triguero, I., & Pound, M. P. (2025). A Case for the Use of Chroma Cartesian Colour Representations for Image Classification on Plant-Based Domains. In 2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW) (pp. 7187-7196). IEEE.",
     "mla": "Payne, J. S., et al. \"A Case for the Use of Chroma Cartesian Colour Representations for Image Classification on Plant-Based Domains.\" 2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW), IEEE, 2025, pp. 7187-7196."
   },
-  "tags": ["Image Classification", "Color Representations", "Plant Phenotyping", "Computer Vision", "GPAIS"],
+  "tags": [
+    "GPAIS",
+    "Robustness in Deep Learning"
+  ],
   "research_area": "gpais",
-  "research_line": "Robustness in Deep Learning",
-  "image": "images/gpais/plant_classification_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Novel color representation for plant image classification",
       "Performance improvement in agricultural vision tasks",
       "Robustness to lighting variations"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

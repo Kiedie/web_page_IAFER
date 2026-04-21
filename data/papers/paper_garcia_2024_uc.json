@@ -12,12 +12,12 @@
     },
     {
       "name": "Julián Luengo",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2024,
   "month": "Mar",
-  "title_es": "Implementación y evaluación de técnicas de aprendizaje automático en minería de datos educativos",
   "description_es": "Este trabajo presenta la implementación y evaluación de técnicas modernas de aprendizaje automático aplicadas a minería de datos educativos.",
   "publication": {
     "type": "conference/workshop",
@@ -41,16 +41,20 @@
     "apa": "García-Gil, D., Triguero, I., & Luengo, J. (2024). Implementation and Evaluation of Machine Learning Techniques in Educational Data Mining. Universidad de Córdoba Workshop, Córdoba, Spain.",
     "mla": "García-Gil, David, et al. \"Implementation and Evaluation of Machine Learning Techniques in Educational Data Mining.\" Universidad de Córdoba Workshop, Córdoba, Spain, 2024."
   },
-  "tags": ["Educational Data Mining", "Student Performance", "Classification", "GPAIS"],
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
   "research_area": "gpais",
-  "research_line": "Aplicaciones de Aprendizaje Automático",
-  "image": "images/gpais/educational_data_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "ML implementation for education",
       "Student performance prediction",
       "Educational data analysis"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

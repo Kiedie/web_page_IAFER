@@ -12,12 +12,12 @@
     },
     {
       "name": "Elisa Ficarra",
-      "affiliation": ""
-    ,"github_url": ""}
+      "affiliation": "",
+      "github_url": ""
+    }
   ],
   "year": 2025,
   "month": "Jan",
-  "title_es": "CUBIC: Detección no supervisada de sesgos conceptuales mediante incrustaciones visión-lenguaje",
   "description_es": "Este trabajo presenta un enfoque novedoso para detectar sesgos conceptuales en modelos de visión por computadora utilizando representaciones de visión-lenguaje.",
   "publication": {
     "type": "journal",
@@ -40,17 +40,21 @@
     "apa": "Méndez, D., Bontempo, G., & Ficarra, E. (2025). CUBIC: Unsupervised Detection of Conceptual Biases via Vision-Language Embeddings. Information Systems Frontiers.",
     "mla": "Méndez, David, et al. \"CUBIC: Unsupervised Detection of Conceptual Biases via Vision-Language Embeddings.\" Information Systems Frontiers, 2025."
   },
-  "tags": ["Bias Detection", "Vision-Language Models", "Explainability", "Fairness", "GPAIS"],
+  "tags": [
+    "Explainability (XAI)",
+    "Self-Supervised Learning",
+    "GPAIS"
+  ],
   "research_area": "gpais",
-  "research_line": "Explicabilidad y Modelos Generativos",
-  "image": "images/gpais/bias_detection_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
-  "github_url": "https://github.com/david-mnd/CUBIC",
+  "github_url": "",
   "metadata": {
     "contributions": [
       "Unsupervised bias detection methodology",
       "Vision-language embedding analysis",
       "Fairness in multimodal AI"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  }
+}

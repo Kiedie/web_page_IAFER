@@ -99,7 +99,7 @@ class PapersManager {
     const year = paper.year || 'N/A';
     const authors = paper.authors || 'Autores no disponibles';
     const paperUrl = paper.paper_url || '#';
-    const title = paper.title_es || paper.title || 'Sin título';
+    const title = paper.title || 'Untitled';
     const imagePath = paper.image || '';
     const gradient = this.getGradientForPaper(paper.id);
     const backgroundStyle = imagePath 

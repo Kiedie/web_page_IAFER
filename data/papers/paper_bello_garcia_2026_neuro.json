@@ -25,7 +25,6 @@
   ],
   "year": 2026,
   "month": "",
-  "title_es": "RADAR: Detección y reconocimiento robusto de anomalías. Un marco unificado y reproducible para datos tabulares, series temporales y federados",
   "description_es": "Este trabajo presenta RADAR, un marco unificado para la detección y reconocimiento de anomalías que funciona con datos tabulares, series temporales y datos federados.",
   "publication": {
     "type": "journal",
@@ -49,8 +48,7 @@
     "mla": "Bello-García, M., et al. \"RADAR: Robust anomaly detection and recognition. A unified and reproducible framework across tabular, time-series, and federated data.\" Neurocomputing, 2026."
   },
   "research_area": "trustworthy",
-  "research_line": "Proporcionando robustez a modelos de deep learning",
-  "image": "images/trustworthy/radar_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "github_url": "https://github.com/ari-dasci/S-RADAR-API",
   "metadata": {
@@ -59,5 +57,10 @@
       "Soporte para datos tabulares, series temporales y federados",
       "Reproducibilidad en diferentes entornos de datos"
     ]
-  }
+  },
+  "tags": [
+    "Robustness & OOD",
+    "Privacy & Federated Learning",
+    "Trustworthy AI"
+  ]
 }

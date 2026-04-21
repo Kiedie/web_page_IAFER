@@ -45,7 +45,6 @@
                         <li><a href="../../trustworthy/robustness/index.html">Robustness</a></li>
                         <li><a href="../../trustworthy/privacy/index.html">Privacy</a></li>
                         <li><a href="../../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../../trustworthy/automl/index.html">AutoML</a></li>
                         <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
@@ -287,11 +286,9 @@
             </div>
             <div class="highlight-box">
                 <h3 class="highlight-title">📚 Publicaciones</h3>
-                <div class="publications-container">
-                    <p style="text-align: center; color: #888; padding: 2rem;">
-                        Research in bias detection and mitigation in progress. 
-                        Upcoming publications will document new methods for fairness auditing.
-                    </p>
+                <div class="publications-container" id="research-line-papers" data-research-line="Fairness & Bias">
+                    <!-- Papers cargados dinámicamente -->
+                    <p class="loading-message">Loading publications...</p>
                 </div>
             </div>
         </section>
@@ -316,6 +313,9 @@
 
     <!-- Navbar -->
     <script src="../../js/base.js"></script>
+
+    <!-- Research Line Paper Loader -->
+    <script src="../../js/research-line.js"></script>
     <script>
     (function() {
         const toggle = document.getElementById('navbar-toggle');

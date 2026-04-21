@@ -1,0 +1,79 @@
+{
+  "id": "padilla_2025_fnins",
+  "title": "In Silico Prediction of the Impact of Genomic Variations in the Small Conductance Calcium Activated Potassium Channel SK3 Structure and Function",
+  "authors": [
+    {
+      "name": "L. Padilla",
+      "affiliation": ""
+    },
+    {
+      "name": "C. del Val",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "D. B. Neidre",
+      "affiliation": ""
+    },
+    {
+      "name": "A. S. Kokenge",
+      "affiliation": ""
+    },
+    {
+      "name": "J. E. Martinez",
+      "affiliation": ""
+    },
+    {
+      "name": "A. L. Teixeira",
+      "affiliation": ""
+    },
+    {
+      "name": "I. Zwir",
+      "affiliation": ""
+    },
+    {
+      "name": "G. A. de Erausquin",
+      "affiliation": ""
+    }
+  ],
+  "year": 2025,
+  "month": "Oct",
+  "description_es": "Este estudio utiliza herramientas de IA como AlphaFold2 y ColabFold para modelar estructuras proteicas de variantes del gen KCNN3, analizando las consecuencias estructurales y funcionales de variaciones genéticas del canal SK3 relacionadas con enfermedades neurodegenerativas y psiquiátricas.",
+  "publication": {
+    "type": "journal",
+    "venue": "Frontiers in Neuroscience",
+    "volume": "19",
+    "pages": "1631536",
+    "year": 2025
+  },
+  "abstract": "The small conductance calcium-activated potassium channel SK3 (KCNN3) plays a crucial role in neuronal excitability and has been implicated in various neuropsychiatric disorders. This study employs AI-based structure prediction tools (AlphaFold2, ColabFold) to model the structural and functional consequences of KCNN3 genetic variations. We identified four coding splice variants and 13 pathogenic missense mutations, providing insights into the molecular mechanisms underlying SK3-related neurological conditions.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.3389/fnins.2025.1631536",
+  "keywords": [
+    "SK3 channel",
+    "KCNN3",
+    "genomic variations",
+    "AlphaFold2",
+    "neurodegenerative diseases"
+  ],
+  "citations": {
+    "bibtex": "@article{padilla2025silico,\n  title={In Silico Prediction of the Impact of Genomic Variations in the Small Conductance Calcium Activated Potassium Channel SK3 Structure and Function},\n  author={Padilla, L. and del Val, C. and Neidre, D. B. and Kokenge, A. S. and Martinez, J. E. and Teixeira, A. L. and Zwir, I. and de Erausquin, G. A.},\n  journal={Frontiers in Neuroscience},\n  volume={19},\n  pages={1631536},\n  year={2025},\n  publisher={Frontiers}\n}",
+    "apa": "Padilla, L., del Val, C., Neidre, D. B., Kokenge, A. S., Martinez, J. E., Teixeira, A. L., Zwir, I., & de Erausquin, G. A. (2025). In Silico Prediction of the Impact of Genomic Variations in the Small Conductance Calcium Activated Potassium Channel SK3 Structure and Function. Frontiers in Neuroscience, 19, 1631536.",
+    "mla": "Padilla, L., et al. \"In Silico Prediction of the Impact of Genomic Variations in the Small Conductance Calcium Activated Potassium Channel SK3 Structure and Function.\" Frontiers in Neuroscience, vol. 19, 2025, p. 1631536."
+  },
+  "tags": [
+    "Critical Applications (Healthcare)",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "SK3 variant structure prediction",
+      "Pathogenic mutation analysis",
+      "Neurodegenerative disease mechanisms"
+    ]
+  }
+}

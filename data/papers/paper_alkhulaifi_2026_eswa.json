@@ -28,12 +28,12 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Granada"
-    ,"github_url": "https://github.com/Nasser-Alkhulaifi/DFL"}
+      "affiliation": "University of Granada",
+      "github_url": "https://github.com/Nasser-Alkhulaifi/DFL"
+    }
   ],
   "year": 2026,
   "month": "Mar",
-  "title_es": "Aprendizaje enfocado en decisiones mejorado por ingeniería automática de características para optimización de almacenamiento de energía",
   "description_es": "Este trabajo presenta un enfoque integrado de aprendizaje enfocado en decisiones mejorado con ingeniería de características automatizada para la optimización de sistemas de almacenamiento de energía.",
   "publication": {
     "type": "journal",
@@ -58,16 +58,20 @@
     "apa": "Alkhulaifi, N., Dogan, I. G., Cargan, T. R., Bowler, A. L., Pekaslan, D., Watson, N. J., & Triguero, I. (2026). Decision-focused learning enhanced by automated feature engineering for energy storage optimisation. Expert Systems with Applications, 302, 130554.",
     "mla": "Alkhulaifi, Nasser, et al. \"Decision-focused learning enhanced by automated feature engineering for energy storage optimisation.\" Expert Systems with Applications, vol. 302, 2026, p. 130554."
   },
-  "tags": ["AutoML", "Feature Engineering", "Energy Storage", "Decision-Focused Learning", "GPAIS"],
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
   "research_area": "gpais",
-  "research_line": "AutoML y Few-shot Learning",
-  "image": "images/gpais/automl_paper_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Automated feature engineering for energy optimization",
       "Decision-focused learning framework",
       "Energy storage system optimization"
-    ]
-  ,"github_url": "https://github.com/Nasser-Alkhulaifi/DFL"}
-,"github_url": "https://github.com/Nasser-Alkhulaifi/DFL"}
+    ],
+    "github_url": "https://github.com/Nasser-Alkhulaifi/DFL"
+  },
+  "github_url": "https://github.com/Nasser-Alkhulaifi/DFL"
+}

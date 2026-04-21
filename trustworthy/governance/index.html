@@ -45,7 +45,6 @@
                         <li><a href="../../trustworthy/robustness/index.html">Robustness</a></li>
                         <li><a href="../../trustworthy/privacy/index.html">Privacy</a></li>
                         <li><a href="../../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../../trustworthy/automl/index.html">AutoML</a></li>
                         <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
@@ -297,30 +296,9 @@
             </div>
             <div class="highlight-box">
                 <h3 class="highlight-title">📚 Publicaciones</h3>
-                <div class="publications-container">
-                    <!-- Publicación 1 -->
-                    <article class="publication-card">
-                        <div class="publication-image-wrapper">
-                            <img src="../../images/trustworthy/sme_ai_adoption_1.png" 
-                                 alt="AI Adoption in SMEs"
-                                 class="publication-image">
-                            <span class="publication-badge">2025</span>
-                        </div>
-                        <div class="publication-content">
-                            <p class="publication-abstract">
-                                This survey analyzes the technological, organizational and environmental factors that influence 
-                                AI adoption in small and medium-sized enterprises. It provides a TOE-DOI framework to 
-                                understand barriers and facilitators, along with a practical guide to AI adoption aligned 
-                                with responsible governance.
-                            </p>
-                            <p class="publication-authors">
-                                Sánchez, E., Calderón, R., & Herrera, F. · Applied Sciences, vol. 15, no. 12 · 2025
-                            </p>
-                            <p class="publication-venue">
-                                <a href="https://www.mdpi.com/journal/applsci" target="_blank" class="venue-link">🔗 Applied Sciences</a>
-                            </p>
-                        </div>
-                    </article>
+                <div class="publications-container" id="research-line-papers" data-research-line="Governance & Regulation">
+                    <!-- Papers cargados dinámicamente -->
+                    <p class="loading-message">Loading publications...</p>
                 </div>
             </div>
         </section>
@@ -345,6 +323,9 @@
 
     <!-- Navbar -->
     <script src="../../js/base.js"></script>
+
+    <!-- Research Line Paper Loader -->
+    <script src="../../js/research-line.js"></script>
     <script>
     (function() {
         const toggle = document.getElementById('navbar-toggle');

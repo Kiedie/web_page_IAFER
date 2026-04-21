@@ -1,0 +1,62 @@
+{
+  "id": "fernandez_gutierrez_2026_cai",
+  "title": "Low-Cost Concept-Based Localized Explanations: How Far Can We Get with Training-Free Approaches?",
+  "authors": [
+    {
+      "name": "Darian Fernández-Gutiérrez",
+      "affiliation": ""
+    },
+    {
+      "name": "Rafael Bello",
+      "affiliation": ""
+    },
+    {
+      "name": "Marilyn Bello",
+      "affiliation": ""
+    },
+    {
+      "name": "Natalia Díaz-Rodríguez",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo investiga el potencial de los enfoques de explicación basados en conceptos que no requieren entrenamiento, evaluando qué nivel de calidad explicativa se puede lograr sin coste computacional adicional.",
+  "publication": {
+    "type": "conference",
+    "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
+    "year": 2026
+  },
+  "abstract": "Concept-based explanations provide interpretable insights into model decisions but often require additional training. This paper explores the capabilities of training-free approaches for generating concept-based localized explanations. We evaluate how far pre-trained models and off-the-shelf concept detectors can go in providing meaningful explanations without additional training overhead, establishing baselines for low-cost XAI.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "concept-based explanations",
+    "training-free",
+    "explainable AI",
+    "interpretability",
+    "low-cost XAI"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{fernandezgutierrez2026lowcost,\n  title={Low-Cost Concept-Based Localized Explanations: How Far Can We Get with Training-Free Approaches?},\n  author={Fern{\\'a}ndez-Guti{\\'e}rrez, Darian and Bello, Rafael and Bello, Marilyn and D{\\'i}az-Rodr{\\'i}guez, Natalia},\n  booktitle={2026 IEEE Conference on Artificial Intelligence (CAI)},\n  year={2026}\n}",
+    "apa": "Fernández-Gutiérrez, D., Bello, R., Bello, M., & Díaz-Rodríguez, N. (2026). Low-Cost Concept-Based Localized Explanations: How Far Can We Get with Training-Free Approaches?. In 2026 IEEE Conference on Artificial Intelligence (CAI).",
+    "mla": "Fernández-Gutiérrez, Darian, Rafael Bello, Marilyn Bello, and Natalia Díaz-Rodríguez. \"Low-Cost Concept-Based Localized Explanations: How Far Can We Get with Training-Free Approaches?\" 2026 IEEE Conference on Artificial Intelligence (CAI), 2026."
+  },
+  "tags": [
+    "Explainability (XAI)",
+    "Robustness & OOD",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Training-free concept explanation analysis",
+      "Low-cost XAI baselines",
+      "Pre-trained model interpretability"
+    ]
+  }
+}

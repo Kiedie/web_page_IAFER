@@ -1,0 +1,84 @@
+{
+  "id": "padial_fuillerat_2026_jpr",
+  "title": "Toward Robust Machine Learning Models for MALDI-TOF MS: Novel Approaches for Mycobacterium abscessus Subspecies Identification",
+  "authors": [
+    {
+      "name": "Erica Padial-Fuillerat",
+      "affiliation": "Clover Bioanalytical Software S.L"
+    },
+    {
+      "name": "José E. Martínez-Manjón",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Irving Zwir",
+      "affiliation": ""
+    },
+    {
+      "name": "M. J. Arroyo",
+      "affiliation": ""
+    },
+    {
+      "name": "M. Blázquez-Sánchez",
+      "affiliation": ""
+    },
+    {
+      "name": "D. Rodríguez-Temporal",
+      "affiliation": ""
+    },
+    {
+      "name": "B. Rodríguez",
+      "affiliation": ""
+    },
+    {
+      "name": "L. Mancera",
+      "affiliation": ""
+    },
+    {
+      "name": "C. del Val",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Mar",
+  "description_es": "Este trabajo presenta enfoques innovadores de aprendizaje automático para mejorar la identificación de subespecies de Mycobacterium abscessus usando espectrometría de masas MALDI-TOF.",
+  "publication": {
+    "type": "journal",
+    "venue": "Journal of Proteome Research",
+    "volume": "25",
+    "issue": "3",
+    "pages": "1305-1318",
+    "year": 2026
+  },
+  "abstract": "Matrix-Assisted Laser Desorption/Ionization Time-of-Flight Mass Spectrometry (MALDI-TOF MS) has revolutionized microbial identification. However, subspecies-level discrimination remains challenging. This study presents novel machine learning approaches for robust identification of Mycobacterium abscessus subspecies, addressing key challenges in data preprocessing, feature selection, and model generalization.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://pubs.acs.org/doi/10.1021/acs.jproteome.5c00534",
+  "keywords": [
+    "MALDI-TOF MS",
+    "machine learning",
+    "Mycobacterium abscessus",
+    "subspecies identification",
+    "mass spectrometry"
+  ],
+  "citations": {
+    "bibtex": "@article{padial2026toward,\n  title={Toward Robust Machine Learning Models for MALDI-TOF MS: Novel Approaches for Mycobacterium abscessus Subspecies Identification},\n  author={Padial-Fuillerat, Erica and Mart{\\'i}nez-Manj{\\'o}n, Jos{\\'e} E. and Zwir, Irving and Arroyo, M. J. and Bl{\\'a}zquez-S{\\'a}nchez, M. and Rodr{\\'i}guez-Temporal, D. and Rodr{\\'i}guez, B. and Mancera, L. and del Val, C.},\n  journal={Journal of Proteome Research},\n  volume={25},\n  number={3},\n  pages={1305--1318},\n  year={2026},\n  publisher={ACS}\n}",
+    "apa": "Padial-Fuillerat, E., Martínez-Manjón, J. E., Zwir, I., Arroyo, M. J., Blázquez-Sánchez, M., Rodríguez-Temporal, D., Rodríguez, B., Mancera, L., & del Val, C. (2026). Toward Robust Machine Learning Models for MALDI-TOF MS: Novel Approaches for Mycobacterium abscessus Subspecies Identification. Journal of Proteome Research, 25(3), 1305-1318.",
+    "mla": "Padial-Fuillerat, Erica, et al. \"Toward Robust Machine Learning Models for MALDI-TOF MS: Novel Approaches for Mycobacterium abscessus Subspecies Identification.\" Journal of Proteome Research, vol. 25, no. 3, 2026, pp. 1305-1318."
+  },
+  "tags": [
+    "Explainability (XAI)",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Novel ML approaches for MALDI-TOF MS analysis",
+      "Robust subspecies identification pipeline",
+      "Mycobacterium abscessus discrimination"
+    ]
+  }
+}

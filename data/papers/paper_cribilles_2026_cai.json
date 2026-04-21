@@ -1,0 +1,65 @@
+{
+  "id": "cribilles_2026_cai",
+  "title": "Prediction of Complications in Lung Biopsies with Artificial Intelligence: A Preliminary Study and Early Findings",
+  "authors": [
+    {
+      "name": "M. Cribillés Pérez",
+      "affiliation": ""
+    },
+    {
+      "name": "J. L. Suárez Díaz",
+      "affiliation": ""
+    },
+    {
+      "name": "G. Maldonado Vicente",
+      "affiliation": ""
+    },
+    {
+      "name": "J. L. Martín-Rodríguez",
+      "affiliation": ""
+    },
+    {
+      "name": "F. Herrera Triguero",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este estudio preliminar investiga el uso de modelos de inteligencia artificial para predecir complicaciones en biopsias pulmonares, proporcionando hallazgos tempranos sobre la viabilidad de este enfoque.",
+  "publication": {
+    "type": "conference",
+    "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
+    "year": 2026
+  },
+  "abstract": "Lung biopsy complications can have serious clinical consequences. This preliminary study explores the use of artificial intelligence models for predicting complications in lung biopsy procedures. Our early findings suggest that machine learning approaches can identify risk factors and patient characteristics associated with adverse outcomes, potentially enabling proactive intervention strategies.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "lung biopsy",
+    "complication prediction",
+    "medical AI",
+    "clinical decision support",
+    "healthcare"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{cribilles2026prediction,\n  title={Prediction of Complications in Lung Biopsies with Artificial Intelligence: A Preliminary Study and Early Findings},\n  author={Cribill{\\'e}s P{\\'e}rez, M. and Su{\\'a}rez D{\\'i}az, J. L. and Maldonado Vicente, G. and Mart{\\'i}n-Rodr{\\'i}guez, J. L. and Herrera Triguero, F.},\n  booktitle={2026 IEEE Conference on Artificial Intelligence (CAI)},\n  year={2026}\n}",
+    "apa": "Cribillés Pérez, M., Suárez Díaz, J. L., Maldonado Vicente, G., Martín-Rodríguez, J. L., & Herrera Triguero, F. (2026). Prediction of Complications in Lung Biopsies with Artificial Intelligence: A Preliminary Study and Early Findings. In 2026 IEEE Conference on Artificial Intelligence (CAI).",
+    "mla": "Cribillés Pérez, M., J. L. Suárez Díaz, G. Maldonado Vicente, J. L. Martín-Rodríguez, and F. Herrera Triguero. \"Prediction of Complications in Lung Biopsies with Artificial Intelligence: A Preliminary Study and Early Findings.\" 2026 IEEE Conference on Artificial Intelligence (CAI), 2026."
+  },
+  "tags": [
+    "Critical Applications (Healthcare)",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Preliminary AI model for complication prediction",
+      "Risk factor identification",
+      "Clinical decision support framework"
+    ]
+  }
+}

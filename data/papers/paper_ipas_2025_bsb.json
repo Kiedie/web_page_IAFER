@@ -1,0 +1,66 @@
+{
+  "id": "ipas_2025_bsb",
+  "title": "Exploring TabPFNv2 as a Novel Baseline for ADMET Prediction in Drug Discovery",
+  "authors": [
+    {
+      "name": "Oroel Ipas",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Ignacio S. Martín",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Guillermo Gomez-Trenado",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Rocío Romero-Zaliz",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "Aug",
+  "description_es": "Este trabajo explora el uso de TabPFNv2, un modelo foundation para datos tabulares, como método baseline para predicción de propiedades ADMET en el descubrimiento temprano de fármacos.",
+  "publication": {
+    "type": "conference",
+    "venue": "XVIII Brazilian Symposium on Bioinformatics (BSB 2025)",
+    "location": "Brazil",
+    "year": 2025
+  },
+  "abstract": "ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) prediction is crucial in early drug discovery. This work explores TabPFNv2, a foundation model for tabular data, as a novel baseline for ADMET prediction tasks. Our results demonstrate competitive performance with minimal hyperparameter tuning, establishing TabPFNv2 as a strong baseline for small-data drug discovery problems.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://bsb.sbc.org.br/2025/wp-content/uploads/sites/9/2025/09/Exploring-TabPFNv2-as-a-Novel-Baseline-for-ADMET-Prediction-in-Drug-Discovery.pdf",
+  "keywords": [
+    "TabPFN",
+    "ADMET prediction",
+    "drug discovery",
+    "foundation models",
+    "tabular learning"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{ipas2025exploring,\n  title={Exploring TabPFNv2 as a Novel Baseline for ADMET Prediction in Drug Discovery},\n  author={Ipas, Oroel and Mart{\\'i}n, Ignacio S. and Gomez-Trenado, Guillermo and Triguero, Isaac and Romero-Zaliz, Roc{\\'i}o},\n  booktitle={XVIII Brazilian Symposium on Bioinformatics (BSB 2025)},\n  year={2025}\n}",
+    "apa": "Ipas, O., Martín, I. S., Gomez-Trenado, G., Triguero, I., & Romero-Zaliz, R. (2025). Exploring TabPFNv2 as a Novel Baseline for ADMET Prediction in Drug Discovery. In XVIII Brazilian Symposium on Bioinformatics (BSB 2025).",
+    "mla": "Ipas, Oroel, et al. \"Exploring TabPFNv2 as a Novel Baseline for ADMET Prediction in Drug Discovery.\" XVIII Brazilian Symposium on Bioinformatics (BSB 2025), 2025."
+  },
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "TabPFNv2 evaluation for ADMET tasks",
+      "Novel baseline for drug discovery",
+      "Small-data learning analysis"
+    ]
+  }
+}

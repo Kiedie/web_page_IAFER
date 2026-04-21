@@ -45,7 +45,6 @@
                         <li><a href="../../trustworthy/robustness/index.html">Robustness</a></li>
                         <li><a href="../../trustworthy/privacy/index.html">Privacy</a></li>
                         <li><a href="../../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../../trustworthy/automl/index.html">AutoML</a></li>
                         <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
@@ -287,29 +286,9 @@
             </div>
             <div class="highlight-box">
                 <h3 class="highlight-title">📚 Publicaciones</h3>
-                <div class="publications-container">
-                    <!-- Publicación 1 -->
-                    <article class="publication-card">
-                        <div class="publication-image-wrapper">
-                            <img src="../../images/trustworthy/ood_detection_1.png" 
-                                 alt="STOOD-X: Explainable OOD Detection"
-                                 class="publication-image">
-                            <span class="publication-badge">2026</span>
-                        </div>
-                        <div class="publication-content">
-                            <p class="publication-abstract">
-                                STOOD-X presents a method to detect out-of-distribution samples in an explainable manner 
-                                using non-parametric statistical tests. This approach combines statistical rigor with scalability 
-                                to large data volumes, providing transparent explanations about detected anomalies.
-                            </p>
-                            <p class="publication-authors">
-                                Sevillano-García, I., Luengo, J., & Herrera, F. · Pattern Recognition · 2026
-                            </p>
-                            <p class="publication-venue">
-                                <a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" class="venue-link">🔗 Pattern Recognition</a>
-                            </p>
-                        </div>
-                    </article>
+                <div class="publications-container" id="research-line-papers" data-research-line="Robustness in Deep Learning">
+                    <!-- Papers cargados dinámicamente -->
+                    <p class="loading-message">Loading publications...</p>
                 </div>
             </div>
         </section>
@@ -334,6 +313,9 @@
 
     <!-- Navbar -->
     <script src="../../js/base.js"></script>
+
+    <!-- Research Line Paper Loader -->
+    <script src="../../js/research-line.js"></script>
     <script>
     (function() {
         const toggle = document.getElementById('navbar-toggle');

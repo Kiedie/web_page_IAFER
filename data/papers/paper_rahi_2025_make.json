@@ -20,12 +20,12 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2025,
   "month": "Jul",
-  "title_es": "Generalización de detección de inventario en armarios minoristas con datos mínimos usando un conjunto DenseNet y Vision Transformer",
   "description_es": "Este artículo presenta un enfoque innovador para la detección de niveles de inventario en armarios minoristas combinando arquitecturas DenseNet-201 y Vision Transformer-B/8.",
   "publication": {
     "type": "journal",
@@ -51,16 +51,20 @@
     "apa": "Rahi, B., Sagmanli, D., Oppong, F., Pekaslan, D., & Triguero, I. (2025). Generalising Stock Detection in Retail Cabinets with Minimal Data Using a DenseNet and Vision Transformer Ensemble. Machine Learning and Knowledge Extraction, 7(3), 66.",
     "mla": "Rahi, Babak, et al. \"Generalising Stock Detection in Retail Cabinets with Minimal Data Using a DenseNet and Vision Transformer Ensemble.\" Machine Learning and Knowledge Extraction, vol. 7, no. 3, 2025, p. 66."
   },
-  "tags": ["Few-Shot Learning", "Ensemble Learning", "Vision Transformers", "Domain Adaptation", "GPAIS"],
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
   "research_area": "gpais",
-  "research_line": "Few-shot Learning y Adaptación de Dominio",
-  "image": "images/gpais/ensemble_learning_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "CNN-ViT feature-level fusion for robust classification",
       "Two-shot adaptation workflow for domain generalization",
       "Benchmark dataset for cabinet stock detection"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

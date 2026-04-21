@@ -4,12 +4,12 @@
   "authors": [
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2025,
   "month": "Sep",
-  "title_es": "Reflexiones y atención en inteligencia artificial explicable (XAI): el viaje desde críticas hacia colaboración humano-IA",
   "description_es": "Este trabajo proporciona una reflexión profunda y crítica sobre el estado actual de la IA explicable, analizando desafíos, oportunidades y direcciones futuras.",
   "publication": {
     "type": "journal",
@@ -34,9 +34,11 @@
     "apa": "Herrera, F. (2025). Reflections and attentiveness on eXplainable Artificial Intelligence (XAI): The journey ahead from criticisms to human–AI collaboration. Information Fusion, 121, 103133.",
     "mla": "Herrera, Francisco. \"Reflections and attentiveness on eXplainable Artificial Intelligence (XAI): The journey ahead from criticisms to human–AI collaboration.\" Information Fusion, vol. 121, 2025, p. 103133."
   },
-  "tags": ["XAI", "Explainability", "Human-AI Collaboration", "Trustworthy AI", "Governance"],
+  "tags": [
+    "Governance & Regulation",
+    "Trustworthy AI"
+  ],
   "research_area": "trustworthy",
-  "research_line": "Explicabilidad y Gobernanza de la IA",
   "image": "images/trustworthy/xai_reflection_1.png",
   "google_scholar_url": "",
   "metadata": {
@@ -44,6 +46,8 @@
       "Comprehensive XAI framework analysis",
       "Maturity evaluation dimensions",
       "Human-AI collaboration strategies"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

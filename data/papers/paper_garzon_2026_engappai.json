@@ -1,0 +1,59 @@
+{
+  "id": "garzon_2026_engappai",
+  "title": "A Task-Oriented Few-Shot Spectroscopy Benchmark: Empirical Evaluation of Meta-Learning Approaches",
+  "authors": [
+    {
+      "name": "Iván Garzón",
+      "affiliation": "Universidad de Granada"
+    },
+    {
+      "name": "Guillermo Gomez-Trenado",
+      "affiliation": "Universidad de Granada"
+    },
+    {
+      "name": "Sergio Damas",
+      "affiliation": "Universidad de Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este artículo introduce un benchmark unificado para espectroscopía few-shot que consolida nueve conjuntos de datos espectrales con una pipeline de preprocesamiento consistente para evaluar métodos de meta-aprendizaje.",
+  "publication": {
+    "type": "journal",
+    "venue": "Engineering Applications of Artificial Intelligence",
+    "volume": "167",
+    "pages": "113593",
+    "year": 2026
+  },
+  "abstract": "Spectroscopic analysis often faces the challenge of limited labeled samples. This paper introduces a unified, task-oriented benchmark for few-shot spectroscopy that consolidates nine open-access spectral datasets with a consistent preprocessing pipeline. Our empirical evaluation demonstrates that meta-learning approaches outperform traditional transfer learning across both heterogeneous and homogeneous tasks, with more structured cross-task embedding geometry.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1016/j.engappai.2025.113593",
+  "keywords": [
+    "meta-learning",
+    "few-shot learning",
+    "spectroscopy",
+    "smart agriculture",
+    "transfer learning"
+  ],
+  "citations": {
+    "bibtex": "@article{garzon2026task,\n  title={A Task-Oriented Few-Shot Spectroscopy Benchmark: Empirical Evaluation of Meta-Learning Approaches},\n  author={Garz{\\'o}n, Iv{\\'a}n and Gomez-Trenado, Guillermo and Damas, Sergio},\n  journal={Engineering Applications of Artificial Intelligence},\n  volume={167},\n  pages={113593},\n  year={2026},\n  publisher={Elsevier}\n}",
+    "apa": "Garzón, I., Gomez-Trenado, G., & Damas, S. (2026). A Task-Oriented Few-Shot Spectroscopy Benchmark: Empirical Evaluation of Meta-Learning Approaches. Engineering Applications of Artificial Intelligence, 167, 113593.",
+    "mla": "Garzón, Iván, Guillermo Gomez-Trenado, and Sergio Damas. \"A Task-Oriented Few-Shot Spectroscopy Benchmark: Empirical Evaluation of Meta-Learning Approaches.\" Engineering Applications of Artificial Intelligence, vol. 167, 2026, p. 113593."
+  },
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Unified few-shot spectroscopy benchmark",
+      "Meta-learning evaluation framework",
+      "Latent-space analysis of meta-learned representations"
+    ]
+  }
+}

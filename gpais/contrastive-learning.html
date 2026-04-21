@@ -43,7 +43,6 @@
                         <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
                         <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
                         <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
                         <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
@@ -306,35 +305,8 @@
 
             <div class="highlight-box">
                 <h3 class="highlight-title">📚 Publicaciones</h3>
-                <div class="publications-container">
-
-                    <!-- Publicación 1 -->
-                    <article class="publication-card">
-                        <div class="publication-image-wrapper">
-                            <img src="../images/gpais/contrastive_learning/Kristina_paper_1.png"
-                                 alt="Frequency-Aware Contrastive Learning para EEG - Stemikovskaya et al. 2025"
-                                 style="width:100%; border-radius:0.75rem; display:block;">
-                            <span class="publication-badge">2025</span>
-                        </div>
-                        <div class="publication-content">
-                            <p class="publication-abstract">
-                                This paper proposes a <strong>frequency-aware contrastive loss function</strong>
-                                for self-supervised detection of seizures in EEG. Unlike standard contrastive
-                                frameworks that treat all signal transformations symmetrically, this approach
-                                explicitly incorporates knowledge that different EEG frequency bands
-                                (delta, theta, alpha, beta, gamma) encode differentiated neurological information. The result is a system
-                                capable of learning clinically useful representations from unlabeled recordings, with
-                                significant improvements in cross-patient evaluations.
-                            </p>
-                            <p class="publication-authors">
-                                Stemikovskaya, K. et al. · TECNALIA Research &amp; Innovation · 2025
-                            </p>
-                            <p class="publication-venue">
-                                <a href="https://www.ijcnn.org/" target="_blank" class="venue-link">🔗 IJCNN 2025</a>
-                            </p>
-                        </div>
-                    </article>
-
+                <div class="publications-container" id="research-line-papers" data-research-line="Contrastive Learning">
+                    <p class="loading-message">Loading publications...</p>
                 </div>
             </div>
         </section>
@@ -378,6 +350,9 @@
         </div>
     </footer>
 
+
+    <!-- Research Line Paper Loader -->
+    <script src="../js/research-line.js"></script>
 
     <!-- Navbar -->
     <script src="../js/base.js"></script>

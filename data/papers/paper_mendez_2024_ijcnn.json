@@ -12,12 +12,12 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2024,
   "month": "Jun",
-  "title_es": "Metanol y soluciones renovables para transporte: análisis de predicción integral para planificación energética",
   "description_es": "Este trabajo propone métodos de predicción exhaustivos para evaluar el potencial del metanol y soluciones renovables en sistemas de transporte.",
   "publication": {
     "type": "conference",
@@ -41,16 +41,20 @@
     "apa": "Méndez, D., González, J. J., & Herrera, F. (2024). Methanol and Renewable Solutions for Transportation: Comprehensive Forecasting Analysis for Energy Planning. In 2024 International Joint Conference on Neural Networks (IJCNN). IEEE.",
     "mla": "Méndez, David, et al. \"Methanol and Renewable Solutions for Transportation: Comprehensive Forecasting Analysis for Energy Planning.\" 2024 International Joint Conference on Neural Networks (IJCNN), IEEE, 2024."
   },
-  "tags": ["Energy Forecasting", "Renewable Energy", "Transportation", "Neural Networks", "GPAIS"],
+  "tags": [
+    "Critical Applications (Environment)",
+    "GPAIS"
+  ],
   "research_area": "gpais",
-  "research_line": "Aplicaciones de Aprendizaje Automático",
-  "image": "images/gpais/methanol_forecasting_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Forecasting models for alternative fuels",
       "Energy planning insights",
       "Renewable energy analysis"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

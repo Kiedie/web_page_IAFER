@@ -21,7 +21,6 @@
   ],
   "year": 2025,
   "month": "Dec",
-  "title_es": "WinStat: Una familia de codificaciones posicionales entrenables para transformers en predicción de series temporales",
   "description_es": "Este trabajo introduce codificaciones posicionales innovadoras y entrenables específicamente diseñadas para mejorar el rendimiento de transformers en predicción de series temporales.",
   "publication": {
     "type": "journal",
@@ -47,10 +46,12 @@
     "apa": "Moya-Mota, C., Aguilera-Martos, I., García-Gil, D., & Luengo, J. (2025). WinStat: A family of trainable positional encodings for transformers in time series forecasting. Machine Learning and Knowledge Extraction, 8(1), 78.",
     "mla": "Moya-Mota, Constanza, et al. \"WinStat: A family of trainable positional encodings for transformers in time series forecasting.\" Machine Learning and Knowledge Extraction, vol. 8, no. 1, 2025, p. 78."
   },
-  "tags": ["Transformers", "Time Series Forecasting", "Positional Encodings", "Deep Learning", "GPAIS"],
+  "tags": [
+    "GPAIS",
+    "Robustness in Deep Learning"
+  ],
   "research_area": "gpais",
-  "research_line": "Robustness in Deep Learning",
-  "image": "images/gpais/transformers_ts_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "github_url": "https://github.com/ari-dasci/S-WinStat",
   "metadata": {

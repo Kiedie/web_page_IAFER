@@ -45,7 +45,6 @@
                         <li><a href="../../trustworthy/robustness/index.html">Robustness</a></li>
                         <li><a href="../../trustworthy/privacy/index.html">Privacy</a></li>
                         <li><a href="../../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../../trustworthy/automl/index.html">AutoML</a></li>
                         <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
@@ -282,54 +281,9 @@
             </div>
             <div class="highlight-box">
                 <h3 class="highlight-title">📚 Publicaciones</h3>
-                <div class="publications-container">
-                    <!-- Publicación 1 -->
-                    <article class="publication-card">
-                        <div class="publication-image-wrapper">
-                            <img src="../../images/trustworthy/xai_reflection_1.png" 
-                                 alt="Reflections and attentiveness on XAI"
-                                 class="publication-image">
-                            <span class="publication-badge">2025</span>
-                        </div>
-                        <div class="publication-content">
-                            <p class="publication-abstract">
-                                This work provides deep reflection on the current state of XAI, examining its role in 
-                                human-AI collaboration. It proposes frameworks to assess XAI maturity in practical dimensions, 
-                                audit and governance, being fundamental to understanding current limitations and future directions 
-                                of explainability in AI systems.
-                            </p>
-                            <p class="publication-authors">
-                                Herrera, F. · Information Fusion, vol. 121, pp. 103133 · 2025
-                            </p>
-                            <p class="publication-venue">
-                                <a href="https://www.sciencedirect.com/journal/information-fusion" target="_blank" class="venue-link">🔗 Information Fusion</a>
-                            </p>
-                        </div>
-                    </article>
-
-                    <!-- Publicación 2 -->
-                    <article class="publication-card">
-                        <div class="publication-image-wrapper">
-                            <img src="../../images/trustworthy/ood_detection_1.png" 
-                                 alt="STOOD-X: Explainable OOD Detection"
-                                 class="publication-image">
-                            <span class="publication-badge">2026</span>
-                        </div>
-                        <div class="publication-content">
-                            <p class="publication-abstract">
-                                STOOD-X presents a novel method to detect out-of-distribution samples in an explainable manner 
-                                through non-parametric statistical tests. This approach combines the robustness of classical statistical methods 
-                                with the ability to scale to large data volumes, providing transparent explanations 
-                                about why a sample is considered anomalous with respect to the training distribution.
-                            </p>
-                            <p class="publication-authors">
-                                Sevillano-García, I., Luengo, J., & Herrera, F. · Pattern Recognition · 2026
-                            </p>
-                            <p class="publication-venue">
-                                <a href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" class="venue-link">🔗 Pattern Recognition</a>
-                            </p>
-                        </div>
-                    </article>
+                <div class="publications-container" id="research-line-papers" data-research-line="Explainability (XAI)">
+                    <!-- Papers cargados dinámicamente -->
+                    <p class="loading-message">Loading publications...</p>
                 </div>
             </div>
         </section>
@@ -352,6 +306,9 @@
 
     <!-- Navbar -->
     <script src="../../js/base.js"></script>
+
+    <!-- Research Line Paper Loader -->
+    <script src="../../js/research-line.js"></script>
     <script>
     (function() {
         const toggle = document.getElementById('navbar-toggle');

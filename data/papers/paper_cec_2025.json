@@ -12,12 +12,12 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Nottingham"
-    ,"github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning"}
+      "affiliation": "University of Nottingham",
+      "github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning"
+    }
   ],
   "year": 2025,
   "month": "Jun",
-  "title_es": "GAZeLa: Optimización del Espacio Semántico mediante Algoritmo Genético",
   "description_es": "Este trabajo introduce GAZeLa, un algoritmo genético que optimiza el espacio semántico simulando clases desconocidas durante el propio entrenamiento. A diferencia de métodos anteriores, selecciona automáticamente los atributos más relevantes sin requerir configuración manual, logrando superar la precisión de los modelos previos con un número significativamente menor de características.",
   "publication": {
     "type": "conference",
@@ -41,7 +41,6 @@
     "mla": "Herrera, JJ, et al. \"A first approach to refine semantic spaces in zero-shot learning with a genetic algorithm.\" 2025 IEEE Congress on Evolutionary Computation (CEC). IEEE, 2025. 1-4."
   },
   "research_area": "gpais",
-  "research_line": "Zero-Shot Learning",
   "image": "images/gpais/zero-shot_paper_4.png",
   "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:2osOgNQ5qMEC",
   "metadata": {
@@ -49,6 +48,12 @@
       "Introduce un algoritmo genético para optimizar el espacio semántico en ZSL",
       "Simula clases desconocidas durante el entrenamiento",
       "Selecciona automáticamente atributos relevantes sin configuración manual"
-    ]
-  ,"github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning"}
-,"github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning"}
+    ],
+    "github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning"
+  },
+  "github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning",
+  "tags": [
+    "GPAIS",
+    "Zero-Shot Learning"
+  ]
+}

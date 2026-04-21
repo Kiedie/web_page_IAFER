@@ -8,12 +8,12 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2024,
   "month": "Nov",
-  "title_es": "Selección adaptativa de características con estrategias evolutivas para clasificación multiobjetivo",
   "description_es": "Este trabajo propone un método adaptativo para la selección de características utilizando estrategias evolutivas en problemas de clasificación multiobjetivo.",
   "publication": {
     "type": "conference",
@@ -24,7 +24,7 @@
   },
   "abstract": "Feature selection is critical for efficient classification in high-dimensional spaces. This paper introduces an adaptive evolutionary strategy that optimizes feature selection considering multiple classification objectives simultaneously.",
   "pdf_url": "",
-      "arxiv_url": "",
+  "arxiv_url": "",
   "paper_url": "https://ieeexplore.ieee.org/document/10741234",
   "keywords": [
     "feature selection",
@@ -38,16 +38,20 @@
     "apa": "Molina, M., & Herrera, F. (2024). Adaptive Feature Selection with Evolutionary Strategies for Multi-Objective Classification. In 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 3105-3112). IEEE.",
     "mla": "Molina, María, and Francisco Herrera. \"Adaptive Feature Selection with Evolutionary Strategies for Multi-Objective Classification.\" 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), IEEE, 2024, pp. 3105-3112."
   },
-  "tags": ["Feature Selection", "Evolutionary Computation", "Multi-Objective", "GPAIS", "Classification"],
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
   "research_area": "gpais",
-  "research_line": "Algoritmos de IAPG",
-  "image": "images/gpais/feature_selection_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Adaptive evolutionary feature selection",
       "Multi-objective classification framework",
       "Improved classification efficiency"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

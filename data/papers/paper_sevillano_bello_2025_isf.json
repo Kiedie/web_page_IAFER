@@ -1,0 +1,61 @@
+{
+  "id": "sevillano_bello_2025_isf",
+  "title": "A Three-Level Framework for LLM-Enhanced Explainable AI: From Technical Explanations to Natural Language",
+  "authors": [
+    {
+      "name": "Marilyn Bello",
+      "affiliation": ""
+    },
+    {
+      "name": "Rafael Bello",
+      "affiliation": ""
+    },
+    {
+      "name": "María M. García",
+      "affiliation": ""
+    },
+    {
+      "name": "Iván Sevillano-García",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "Dec",
+  "description_es": "Este trabajo presenta un marco de tres niveles para integrar modelos de lenguaje grande (LLM) en sistemas de IA explicable, facilitando la traducción de explicaciones técnicas a lenguaje natural comprensible.",
+  "publication": {
+    "type": "journal",
+    "venue": "Information Systems Frontiers",
+    "year": 2025
+  },
+  "abstract": "Large Language Models (LLMs) offer unprecedented opportunities for generating human-understandable explanations from technical AI outputs. This paper presents a three-level framework for LLM-enhanced Explainable AI, bridging the gap between technical explanations and natural language communication. We demonstrate how LLMs can translate complex model internals into accessible explanations for diverse stakeholder groups.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1007/s10796-025-10668-1",
+  "keywords": [
+    "LLM",
+    "explainable AI",
+    "natural language explanations",
+    "XAI framework",
+    "human-AI interaction"
+  ],
+  "citations": {
+    "bibtex": "@article{bello2025threelevel,\n  title={A Three-Level Framework for LLM-Enhanced Explainable AI: From Technical Explanations to Natural Language},\n  author={Bello, Marilyn and Bello, Rafael and Garc{\\'i}a, Mar{\\'i}a M. and Sevillano-Garc{\\'i}a, Iv{\\'a}n},\n  journal={Information Systems Frontiers},\n  year={2025},\n  publisher={Springer}\n}",
+    "apa": "Bello, M., Bello, R., García, M. M., & Sevillano-García, I. (2025). A Three-Level Framework for LLM-Enhanced Explainable AI: From Technical Explanations to Natural Language. Information Systems Frontiers.",
+    "mla": "Bello, Marilyn, Rafael Bello, María M. García, and Iván Sevillano-García. \"A Three-Level Framework for LLM-Enhanced Explainable AI: From Technical Explanations to Natural Language.\" Information Systems Frontiers, 2025."
+  },
+  "tags": [
+    "Explainability (XAI)",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Three-level LLM-XAI framework",
+      "Technical-to-natural language translation",
+      "Stakeholder-specific explanations"
+    ]
+  }
+}

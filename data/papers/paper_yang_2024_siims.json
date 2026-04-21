@@ -8,12 +8,12 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Granada"
-    ,"github_url": ""}
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
   ],
   "year": 2024,
   "month": "Jul",
-  "title_es": "Evaluación de calidad de imagen robusta usando grafos de conocimiento incierto y características multimodales",
   "description_es": "Este trabajo presenta un método robusto para la evaluación de calidad de imagen combinando grafos de conocimiento con características multimodales.",
   "publication": {
     "type": "journal",
@@ -39,16 +39,20 @@
     "apa": "Yang, Q., & Triguero, I. (2024). Robust Image Quality Assessment using Uncertain Knowledge Graphs and Multi-Modal Features. SIAM Journal on Imaging Sciences, 17(3), 1589-1618.",
     "mla": "Yang, Qian, and Isaac Triguero. \"Robust Image Quality Assessment using Uncertain Knowledge Graphs and Multi-Modal Features.\" SIAM Journal on Imaging Sciences, vol. 17, no. 3, 2024, pp. 1589-1618."
   },
-  "tags": ["Image Quality Assessment", "Knowledge Graphs", "Multi-Modal Learning", "Robustness", "GPAIS"],
+  "tags": [
+    "GPAIS",
+    "Robustness in Deep Learning"
+  ],
   "research_area": "gpais",
-  "research_line": "Robustness in Deep Learning",
-  "image": "images/gpais/image_quality_1.png",
+  "image": "images/placeholder.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Knowledge graph-based image assessment",
       "Multi-modal feature integration",
       "Uncertainty quantification"
-    ]
-  ,"github_url": ""}
-,"github_url": ""}
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}
