@@ -10,7 +10,7 @@
       "research_line": "Zero-Shot Learning",
       "image": "images/gpais/zero-shot_paper_5.png",
       "paper_url": "https://arxiv.org/abs/2510.03260",
-      "github_url": "https://github.com/ggomez-trenado/semantic-zsl",
+      "github_url": "https://github.com/Kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning",
       "venue": "IGPL",
       "venue_url": "https://academic.oup.com/logcom/",
       "tags": ["Zero-Shot Learning", "Feature Selection", "GPAIS", "Evolutionary Computation"]
@@ -25,7 +25,7 @@
       "research_line": "Zero-Shot Learning",
       "image": "images/gpais/zero-shot_paper_4.png",
       "paper_url": "",
-      "github_url": "",
+      "github_url": "https://github.com/Kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning",
       "venue": "CEC",
       "venue_url": "https://2025.ieee-cec.org/",
       "tags": ["Zero-Shot Learning", "Genetic Algorithm", "GPAIS", "Semantic Spaces"]
@@ -40,7 +40,7 @@
       "research_line": "Zero-Shot Learning",
       "image": "images/gpais/zero-shot_paper_3.png",
       "paper_url": "",
-      "github_url": "",
+      "github_url": "https://kiedie.github.io/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning/",
       "venue": "HAIS",
       "venue_url": "https://hais.aitec.es/",
       "tags": ["Zero-Shot Learning", "GPAIS", "Preprocessing", "Semantic Spaces"]
@@ -70,7 +70,7 @@
       "research_line": "Robustness in Deep Learning",
       "image": "images/trustworthy/radar_1.png",
       "paper_url": "",
-      "github_url": "",
+      "github_url": "https://github.com/ari-dasci/S-RADAR-API",
       "venue": "Neurocomputing",
       "venue_url": "",
       "tags": ["Anomaly Detection", "Federated Learning", "Time Series", "Trustworthy AI"]
@@ -242,7 +242,7 @@
     }
   ],
   "metadata": {
-    "total": 16,
+    "total": 17,
     "last_updated": "2026-04-21",
     "research_areas": ["gpais", "trustworthy"],
     "research_lines": ["Zero-Shot Learning", "Contrastive Learning", "AutoML y Few-shot Learning", "Robustness in Deep Learning", "Explicabilidad y Gobernanza de la IA"]
