@@ -1,9 +1,9 @@
 {
   "id": "bello_garcia_2026_neuro",
-  "title": "RADAR: Robust anomaly detection and recognition. A unified and reproducible framework across tabular, time-series, and federated data",
+  "title": "RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data",
   "authors": [
     {
-      "name": "M. Bello-García",
+      "name": "B. Bello-García",
       "affiliation": ""
     },
     {
@@ -15,7 +15,7 @@
       "affiliation": ""
     },
     {
-      "name": "Francisco Herrera",
+      "name": "F. Herrera",
       "affiliation": "University of Granada"
     },
     {
@@ -24,43 +24,44 @@
     }
   ],
   "year": 2026,
-  "month": "",
-  "description_es": "Este trabajo presenta RADAR, un marco unificado para la detección y reconocimiento de anomalías que funciona con datos tabulares, series temporales y datos federados.",
+  "month": "Jan",
   "publication": {
     "type": "journal",
     "venue": "Neurocomputing",
     "year": 2026
   },
-  "abstract": "This paper presents RADAR, a unified and reproducible framework for robust anomaly detection and recognition across different data types including tabular data, time-series, and federated data environments.",
+  "abstract": "Anomaly detection is a critical task across multiple domains. This paper presents RADAR, a unified and reproducible framework for robust anomaly detection and recognition that handles tabular data, time-series, and federated learning scenarios. Our framework provides standardized evaluation protocols and benchmarking capabilities for comparing anomaly detection methods across diverse data types.",
   "pdf_url": "",
   "arxiv_url": "",
   "paper_url": "",
   "keywords": [
     "anomaly detection",
-    "tabular data",
-    "time-series",
+    "robustness",
     "federated learning",
-    "robustness"
+    "time series",
+    "tabular data"
   ],
   "citations": {
-    "bibtex": "@article{bellogarcia2026radar,\n  title={RADAR: Robust anomaly detection and recognition. A unified and reproducible framework across tabular, time-series, and federated data},\n  author={Bello-García, M. and Aguilera-Martos, I. and Rodríguez-Barroso, N. and Herrera, Francisco and Luengo, J.},\n  journal={Neurocomputing},\n  year={2026}\n}",
-    "apa": "Bello-García, M., Aguilera-Martos, I., Rodríguez-Barroso, N., Herrera, F., & Luengo, J. (2026). RADAR: Robust anomaly detection and recognition. A unified and reproducible framework across tabular, time-series, and federated data. Neurocomputing.",
-    "mla": "Bello-García, M., et al. \"RADAR: Robust anomaly detection and recognition. A unified and reproducible framework across tabular, time-series, and federated data.\" Neurocomputing, 2026."
+    "bibtex": "@article{bellogarcia2026radar,\n  title={RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data},\n  author={Bello-Garc{\\'i}a, B. and Aguilera-Martos, I. and Rodr{\\'i}guez-Barroso, N. and Herrera, F. and Luengo, J.},\n  journal={Neurocomputing},\n  year={2026},\n  publisher={Elsevier}\n}",
+    "apa": "Bello-García, B., Aguilera-Martos, I., Rodríguez-Barroso, N., Herrera, F., & Luengo, J. (2026). RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data. Neurocomputing.",
+    "mla": "Bello-García, B., I. Aguilera-Martos, N. Rodríguez-Barroso, F. Herrera, and J. Luengo. \"RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data.\" Neurocomputing, 2026."
   },
+  "tags": [
+    "Robustness & OOD",
+    "Privacy & Federated Learning",
+    "Trustworthy AI"
+  ],
   "research_area": "trustworthy",
   "image": "images/placeholder.png",
   "google_scholar_url": "",
   "github_url": "https://github.com/ari-dasci/S-RADAR-API",
   "metadata": {
     "contributions": [
-      "Marco unificado para detección de anomalías",
-      "Soporte para datos tabulares, series temporales y federados",
-      "Reproducibilidad en diferentes entornos de datos"
+      "Unified anomaly detection framework",
+      "Cross-domain evaluation protocol",
+      "Federated anomaly detection",
+      "Standardized evaluation protocols",
+      "Benchmarking capabilities across diverse data types"
     ]
-  },
-  "tags": [
-    "Robustness & OOD",
-    "Privacy & Federated Learning",
-    "Trustworthy AI"
-  ]
+  }
 }

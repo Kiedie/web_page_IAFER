@@ -42,7 +42,7 @@
   "abstract": "Infant EEG analysis presents unique challenges due to the rapidly developing nature of cortical activity patterns. This work explores representation learning approaches for developmental infant EEG, investigating how self-supervised and contrastive learning methods can capture meaningful neural signatures across different developmental stages. Our approach aims to enable automated analysis of infant cognitive development through EEG patterns.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://www.ieeesmc.org/cai-2026/",
   "keywords": [
     "infant EEG",
     "representation learning",

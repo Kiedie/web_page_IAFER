@@ -30,7 +30,7 @@
   "abstract": "Differential privacy provides theoretical guarantees but verifying its application post-training remains challenging. This paper investigates whether deep learning models trained with differential privacy retain an identifiable signature in their weight distributions. We propose methods for auditing DP compliance from model weights alone, enabling verification of privacy claims without access to training data or process.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://doi.org/10.1109/MCI.2026.3549456",
   "keywords": [
     "differential privacy",
     "privacy auditing",

@@ -30,7 +30,7 @@
   "abstract": "Concept-based explanations provide interpretable insights into model decisions but often require additional training. This paper explores the capabilities of training-free approaches for generating concept-based localized explanations. We evaluate how far pre-trained models and off-the-shelf concept detectors can go in providing meaningful explanations without additional training overhead, establishing baselines for low-cost XAI.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://www.ieeesmc.org/cai-2026/",
   "keywords": [
     "concept-based explanations",
     "training-free",

@@ -34,7 +34,7 @@
   "abstract": "Bias detection in computer vision models typically requires labeled data or manual inspection. This paper presents CUBIC (Concept Embeddings for Unsupervised Bias Identification using VLMs), a novel approach that leverages Vision-Language Models to automatically identify biases through concept embeddings. Our unsupervised method discovers spurious correlations and biased representations without requiring annotated bias labels.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://doi.org/10.1007/s10796-025-10669-0",
   "keywords": [
     "bias detection",
     "vision-language models",

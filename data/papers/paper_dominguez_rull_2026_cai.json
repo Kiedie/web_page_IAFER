@@ -26,7 +26,7 @@
   "abstract": "Post-fire vegetation recovery monitoring is crucial for agricultural land management. This paper presents an ExG-supervised U-Net approach for predictive mapping of vineyard post-fire dynamics using ultra-high-resolution RGB UAV imagery. Our method combines vegetation index supervision with deep learning segmentation to accurately track vineyard recovery patterns after wildfire events, enabling precision agriculture interventions.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://www.ieeesmc.org/cai-2026/",
   "keywords": [
     "vineyard monitoring",
     "post-fire dynamics",

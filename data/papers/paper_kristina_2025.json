@@ -18,7 +18,7 @@
   "abstract": "This work proposes a frequency-aware contrastive loss for self-supervised seizure detection in EEG. Unlike standard contrastive frameworks that treat all signal transformations symmetrically, this approach explicitly incorporates the knowledge that different EEG frequency bands (delta, theta, alpha, beta, gamma) encode differentiated neurological information. The result is a system capable of learning clinically useful representations from unlabeled recordings, with significant performance improvements in cross-patient evaluations.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://ieeexplore.ieee.org/document/11228031",
   "keywords": [
     "Contrastive Learning",
     "Self-Supervised Learning",

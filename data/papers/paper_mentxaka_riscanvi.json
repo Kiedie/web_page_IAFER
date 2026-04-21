@@ -34,7 +34,7 @@
   "abstract": "AI governance systems in critical domains require explainability for accountability and trust. This paper analyzes the problems arising from lack of explainability in AI governance through the RisCanvi case study - a risk assessment system used in judicial contexts. We identify key explainability gaps and propose requirements for governable AI systems in sensitive applications.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://doi.org/10.1007/s00146-026-02442-x",
   "keywords": [
     "AI governance",
     "explainability",

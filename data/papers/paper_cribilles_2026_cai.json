@@ -34,7 +34,7 @@
   "abstract": "Lung biopsy complications can have serious clinical consequences. This preliminary study explores the use of artificial intelligence models for predicting complications in lung biopsy procedures. Our early findings suggest that machine learning approaches can identify risk factors and patient characteristics associated with adverse outcomes, potentially enabling proactive intervention strategies.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://www.ieeesmc.org/cai-2026/",
   "keywords": [
     "lung biopsy",
     "complication prediction",

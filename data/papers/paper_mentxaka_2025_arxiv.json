@@ -46,7 +46,7 @@
   "abstract": "As AI systems become increasingly integrated into democratic processes, understanding both their potential benefits and risks is crucial. This paper presents a dual taxonomy framework: AIPD (AI's Positive Contributions to Democracy) covering seven categories where AI can strengthen democracy, and AIRD (AI Risks to Democracy) identifying seven risk categories. We map each AIRD risk to specific Trustworthy AI requirements for mitigation, finding that Transparency and Societal Wellbeing are transversal requirements affecting most democratic risks.",
   "pdf_url": "",
   "arxiv_url": "https://arxiv.org/abs/2505.13565",
-  "paper_url": "https://arxiv.org/abs/2505.13565",
+  "paper_url": "https://doi.org/10.48550/arXiv.2505.13565",
   "keywords": [
     "trustworthy AI",
     "democracy",

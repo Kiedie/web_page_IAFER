@@ -64,7 +64,8 @@
       const paperUrl = paper.paper_url || '#';
       const title = paper.title || 'Untitled';
       const imagePath = paper.image || '';
-      const hasGithub = paper.github_url && paper.github_url.trim() !== '';
+      const githubUrl = paper.github_url || paper.metadata?.github_url;
+      const hasGithub = githubUrl && githubUrl.trim() !== '';
 
       return `
         <article class="publication-card">
@@ -88,7 +89,7 @@
                 </a>
               ` : ''}
               ${hasGithub ? `
-                <a href="${paper.github_url}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary github-btn">
+                <a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary github-btn">
                   <img src="../../images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
                 </a>
               ` : ''}

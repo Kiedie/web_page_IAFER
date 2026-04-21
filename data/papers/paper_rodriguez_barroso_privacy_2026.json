@@ -30,7 +30,7 @@
   "abstract": "Federated learning promises privacy-preserving distributed training, but trustworthiness extends beyond privacy alone. This paper presents a comprehensive taxonomy of challenges in building trustworthy federated learning systems and provides a blueprint for addressing them. We examine privacy, security, fairness, and governance dimensions, offering practical guidance for deploying FL in sensitive domains.",
   "pdf_url": "",
   "arxiv_url": "",
-  "paper_url": "",
+  "paper_url": "https://doi.org/10.1016/j.inffus.2026.103948",
   "keywords": [
     "federated learning",
     "privacy",
