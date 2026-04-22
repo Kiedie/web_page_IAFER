@@ -13,6 +13,7 @@
     {
       "name": "Francisco Herrera",
       "affiliation": "Universidad de Granada"
+    }
   ],
   "year": 2024,
   "month": "Nov",
@@ -38,7 +39,7 @@
     "mla": "Triguero, Isaac, et al. \"Aprendizaje Generalizado de Cero Ejemplos: Revisión de Estado del Arte y Estudio Preliminar de la Influencia del Preprocesamiento.\" XI Simposio Teoría y Aplicaciones de Minería de Datos, 2024."
   },
   "research_area": "gpais",
-  "image": "images/gpais/zero-shot_paper_2.png",
+  "image": "images/paper_pdfs/paper_stad_2024_preview.png",
   "google_scholar_url": "https://scholar.google.es/citations?view_op=view_citation&hl=es&user=LDsT_WYAAAAJ&sortby=pubdate&citation_for_view=LDsT_WYAAAAJ:qjMakFHDy7sC",
   "github_url": "",
   "metadata": {

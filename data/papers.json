@@ -14,7 +14,7 @@
         "GPAIS",
         "Robustness in Deep Learning"
       ],
-      "github_url": ""
+      "github_url": "https://github.com/ari-dasci/S-LAM"
     },
     {
       "id": "alkhulaifi_2026_eswa",
@@ -39,7 +39,7 @@
       "year": 2026,
       "authors": "B. Bello-García, I. Aguilera-Martos, N. Rodríguez-Barroso, F. Herrera, J. Luengo",
       "research_area": "trustworthy",
-      "image": "images/placeholder.png",
+      "image": "images/paper_pdfs/paper_bello_garcia_2026_neuro_preview.png",
       "paper_url": "",
       "venue": "Neurocomputing",
       "tags": [
@@ -321,7 +321,7 @@
         "Robustness & OOD",
         "Trustworthy AI"
       ],
-      "github_url": ""
+      "github_url": "https://github.com/ari-dasci/S-STOOD-X"
     },
     {
       "id": "triguero_lorca_2026",
@@ -363,7 +363,7 @@
       "year": 2025,
       "authors": "Juan Jose Herrera-Aranda, Guillermo Gomez-Trenado, Francisco Herrera, Isaac Triguero",
       "research_area": "gpais",
-      "image": "images/gpais/zero-shot_paper_5.png",
+      "image": "images/paper_pdfs/paper_2510.03260_preview.png",
       "paper_url": "https://arxiv.org/abs/2510.03260",
       "venue": "arXiv",
       "tags": [
@@ -427,7 +427,7 @@
       "year": 2025,
       "authors": "David Cerezo, Isaac Triguero",
       "research_area": "gpais",
-      "image": "images/placeholder.png",
+      "image": "images/paper_pdfs/paper_cerezo_2025_smc_preview.png",
       "paper_url": "https://www.ieeesmc2025.org/files/content/SMC25-Handbook.pdf",
       "venue": "2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
       "tags": [
@@ -510,7 +510,7 @@
       "year": 2025,
       "authors": "Oier Mentxaka, Natalia Díaz-Rodríguez, Mark Coeckelbergh, Marcos López de Prado, Emilia Gómez, David Fernández Llorca, Enrique Herrera-Viedma, Francisco Herrera",
       "research_area": "trustworthy",
-      "image": "images/placeholder.png",
+      "image": "images/paper_pdfs/paper_mentxaka_2025_arxiv_preview.png",
       "paper_url": "https://doi.org/10.48550/arXiv.2505.13565",
       "venue": "arXiv preprint",
       "tags": [
@@ -558,7 +558,7 @@
       "year": 2025,
       "authors": "L. Padilla, C. del Val, D. B. Neidre, A. S. Kokenge, J. E. Martinez, A. L. Teixeira, I. Zwir, G. A. de Erausquin",
       "research_area": "trustworthy",
-      "image": "images/placeholder.png",
+      "image": "images/paper_pdfs/paper_padilla_2025_fnins_preview.png",
       "paper_url": "https://doi.org/10.3389/fnins.2025.1631536",
       "venue": "Frontiers in Neuroscience",
       "tags": [
@@ -574,7 +574,7 @@
       "year": 2025,
       "authors": "J. S Payne, G. Hopkins, S. N. Gowda, Isaac Triguero, M. P. Pound",
       "research_area": "gpais",
-      "image": "images/placeholder.png",
+      "image": "images/paper_pdfs/paper_payne_2025_iccvw_preview.png",
       "paper_url": "https://openaccess.thecvf.com/content/ICCV2025W/CVPPA/html/Payne_A_Case_for_the_Use_of_Chroma_Cartesian_Colour_Representations_ICCVW_2025_paper.html",
       "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
       "tags": [
@@ -670,7 +670,7 @@
       "year": 2024,
       "authors": "Francisco Herrera",
       "research_area": "gpais",
-      "image": "images/placeholder.png",
+      "image": "images/paper_pdfs/paper_herrera_2024_arxiv_preview.png",
       "paper_url": "https://arxiv.org/abs/2402.xxxxx",
       "venue": "arXiv",
       "tags": [
@@ -750,7 +750,7 @@
       "year": 2024,
       "authors": "Isaac Triguero, Juan José Herrera, Francisco Herrera",
       "research_area": "gpais",
-      "image": "images/gpais/zero-shot_paper_2.png",
+      "image": "images/paper_pdfs/paper_stad_2024_preview.png",
       "paper_url": "https://academica-e.unavarra.es/server/api/core/bitstreams/a3b019d8-4c47-44fd-87d3-80c3c7098fb9/content",
       "venue": "XI Simposio Teoría y Aplicaciones de Minería de Datos (STAD)",
       "tags": [
@@ -778,7 +778,7 @@
   ],
   "metadata": {
     "total": 48,
-    "last_updated": "2026-04-21",
+    "last_updated": "2026-04-22",
     "research_areas": [
       "gpais",
       "trustworthy"
