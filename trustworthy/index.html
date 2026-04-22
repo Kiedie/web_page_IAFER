@@ -32,6 +32,7 @@
                         <li><a href="../gpais/contrastive-learning.html">Contrastive Learning</a></li>
                         <li><a href="../gpais/self-supervised.html">Self-Supervised Learning</a></li>
                         <li><a href="../gpais/zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="../gpais/automl.html">AutoML & Few-Shot Learning</a></li>
                         <li><a href="../gpais/agentic-ai.html">Agentic AI</a></li>
                     </ul>
                 </li>
@@ -40,12 +41,12 @@
                 <li class="navbar__item navbar__item--dropdown">
                     <a href="../trustworthy/index.html" class="navbar__link">Trustworthy</a>
                     <ul class="navbar__dropdown">
-                        <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
-                        <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
+                        <li><a href="explainability/index.html">Explainability (XAI)</a></li>
+                        <li><a href="fairness/index.html">Fairness &amp; Bias</a></li>
+                        <li><a href="robustness/index.html">Robustness &amp; OOD</a></li>
+                        <li><a href="privacy/index.html">Privacy &amp; Federated Learning</a></li>
+                        <li><a href="governance/index.html">Governance &amp; Regulation</a></li>
+                        <li><a href="critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
 
@@ -190,7 +191,7 @@
                     <article class="research-card">
                         <span class="research-badge">Research Focus</span>
                         <div class="research-icon" aria-hidden="true">🔍</div>
-                        <h3 class="research-card-title">Useful and Verifiable Explainability</h3>
+                        <h3 class="research-card-title">Explainability (XAI)</h3>
                         <p class="research-card-desc">
                             Verifiable interpretability methods that go beyond visualizations: auditable and verifiable explanations.
                         </p>
@@ -203,7 +204,7 @@
                     <article class="research-card">
                         <span class="research-badge">Research Focus</span>
                         <div class="research-icon" aria-hidden="true">🔐</div>
-                        <h3 class="research-card-title">Privacy + Trust in Federated Learning</h3>
+                        <h3 class="research-card-title">Privacy & Federated Learning</h3>
                         <p class="research-card-desc">
                             Federated learning with differential privacy guarantees and distributed trust mechanisms.
                         </p>
@@ -216,7 +217,7 @@
                     <article class="research-card">
                         <span class="research-badge">Research Focus</span>
                         <div class="research-icon" aria-hidden="true">⚖️</div>
-                        <h3 class="research-card-title">Fairness, Bias and Human Autonomy</h3>
+                        <h3 class="research-card-title">Fairness & Bias</h3>
                         <p class="research-card-desc">
                             Bias detection and mitigation, fairness metrics, and preservation of human decision-making.
                         </p>
@@ -229,7 +230,7 @@
                     <article class="research-card">
                         <span class="research-badge">Research Focus</span>
                         <div class="research-icon" aria-hidden="true">🛡️</div>
-                        <h3 class="research-card-title">Robustness and Out-of-Distribution</h3>
+                        <h3 class="research-card-title">Robustness & OOD</h3>
                         <p class="research-card-desc">
                             Systems resilient to out-of-distribution data, adversaries and changes in operating environment.
                         </p>
@@ -255,7 +256,7 @@
                     <article class="research-card">
                         <span class="research-badge">Research Focus</span>
                         <div class="research-icon" aria-hidden="true">📋</div>
-                        <h3 class="research-card-title">Governance and Regulation</h3>
+                        <h3 class="research-card-title">Governance & Regulation</h3>
                         <p class="research-card-desc">
                             Operational frameworks aligned with the European AI Act and best practices in responsible governance.
                         </p>
@@ -280,47 +281,6 @@
 
     <!-- Scripts -->
     <script src="../js/sidebar.js"></script>
-
-    <!-- Navbar -->
     <script src="../js/base.js"></script>
-    <script>
-    (function() {
-        const toggle = document.getElementById('navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-
-        toggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            menu.classList.toggle('open');
-        });
-
-        if ('ontouchstart' in window || window.innerWidth <= 768) {
-            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        this.parentElement.classList.toggle('open');
-                    }
-                });
-            });
-        }
-
-        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-            });
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
-                    item.classList.remove('open');
-                });
-            }
-        });
-    })();
-    </script>
 </body>
 </html>

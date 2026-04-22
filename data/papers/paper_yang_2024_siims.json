@@ -8,8 +8,7 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Granada",
-      "github_url": ""
+      "affiliation": "University of Granada"
     }
   ],
   "year": 2024,
@@ -51,8 +50,7 @@
       "Knowledge graph-based image assessment",
       "Multi-modal feature integration",
       "Uncertainty quantification"
-    ],
-    "github_url": ""
+    ]
   },
   "github_url": ""
 }

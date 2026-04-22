@@ -20,8 +20,7 @@
     },
     {
       "name": "Isaac Triguero",
-      "affiliation": "University of Granada",
-      "github_url": ""
+      "affiliation": "University of Granada"
     }
   ],
   "year": 2025,
@@ -63,8 +62,7 @@
       "CNN-ViT feature-level fusion for robust classification",
       "Two-shot adaptation workflow for domain generalization",
       "Benchmark dataset for cabinet stock detection"
-    ],
-    "github_url": ""
+    ]
   },
   "github_url": ""
 }

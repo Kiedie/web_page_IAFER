@@ -4,8 +4,7 @@
   "authors": [
     {
       "name": "Kristina Stemikovskaya",
-      "affiliation": "TECNALIA Research & Innovation",
-      "github_url": ""
+      "affiliation": "TECNALIA Research & Innovation"
     }
   ],
   "year": 2025,
@@ -39,8 +38,7 @@
       "Función de pérdida contrastiva consciente de las bandas de frecuencia EEG",
       "Detección auto-supervisada de crisis epilépticas sin etiquetas",
       "Mejora de la generalización entre pacientes sin reentrenamiento"
-    ],
-    "github_url": ""
+    ]
   },
   "tags": [
     "Contrastive Learning",

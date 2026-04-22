@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Useful and Evaluable Explainability - Trustworthy AI | IAFER</title>
+    <title>Explainability (XAI) - Trustworthy AI | IAFER</title>
     <meta name="description" content="Research in explainability and interpretability of AI systems: evaluable methods, audit, and traceability.">
     
     <!-- Fonts -->
@@ -83,7 +83,7 @@
                 </div>
 
                 <!-- Título principal -->
-                <h1 class="hero-title">Useful and Evaluable Explainability</h1>
+                <h1 class="hero-title">Explainability (XAI)</h1>
                 <p class="hero-subtitle">Verifiable interpretability of AI systems through formal and auditable methods</p>
 
                 <!-- Botones de acción -->
@@ -294,7 +294,7 @@
     <footer class="footer">
         <div class="container">
             <p class="footer-text">
-                <strong>Explainability</strong> - Trustworthy AI
+                <strong>Explainability (XAI)</strong> - Trustworthy AI
                 <span aria-hidden="true">•</span>
                 <a href="../index.html" class="footer-link">ENIA IAFER Chair 2026</a>
             </p>
@@ -303,50 +303,7 @@
 
     <!-- Scripts -->
     <script src="../../js/sidebar.js"></script>
-
-    <!-- Navbar -->
     <script src="../../js/base.js"></script>
-
-    <!-- Research Line Paper Loader -->
     <script src="../../js/research-line.js"></script>
-    <script>
-    (function() {
-        const toggle = document.getElementById('navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-
-        toggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            menu.classList.toggle('open');
-        });
-
-        if ('ontouchstart' in window || window.innerWidth <= 768) {
-            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        this.parentElement.classList.toggle('open');
-                    }
-                });
-            });
-        }
-
-        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-            });
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
-                    item.classList.remove('open');
-                });
-            }
-        });
-    })();
-    </script>
 </body>
 </html>

@@ -8,8 +8,7 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada",
-      "github_url": ""
+      "affiliation": "University of Granada"
     }
   ],
   "year": 2024,
@@ -48,8 +47,7 @@
       "Hybrid evolutionary-logic programming framework",
       "Complex optimization solutions",
       "Benchmark performance improvements"
-    ],
-    "github_url": ""
+    ]
   },
   "github_url": ""
 }

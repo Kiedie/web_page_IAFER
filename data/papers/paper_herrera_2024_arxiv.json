@@ -4,8 +4,7 @@
   "authors": [
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada",
-      "github_url": ""
+      "affiliation": "University of Granada"
     }
   ],
   "year": 2024,
@@ -37,15 +36,14 @@
     "Generative AI"
   ],
   "research_area": "gpais",
-  "image": "images/placeholder.png",
+  "image": "images/paper_pdfs/paper_herrera_2024_arxiv_preview.png",
   "google_scholar_url": "",
   "metadata": {
     "contributions": [
       "Comprehensive ML overview",
       "Theory and practice integration",
       "Modern technique coverage"
-    ],
-    "github_url": ""
+    ]
   },
   "github_url": ""
 }

@@ -12,8 +12,7 @@
     },
     {
       "name": "Elisa Ficarra",
-      "affiliation": "",
-      "github_url": ""
+      "affiliation": ""
     }
   ],
   "year": 2025,
@@ -54,7 +53,6 @@
       "Unsupervised bias detection methodology",
       "Vision-language embedding analysis",
       "Fairness in multimodal AI"
-    ],
-    "github_url": ""
+    ]
   }
 }
