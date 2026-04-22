@@ -12,8 +12,7 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada",
-      "github_url": ""
+      "affiliation": "University of Granada"
     }
   ],
   "year": 2025,
@@ -55,8 +54,7 @@
       "Comprehensive AI adoption framework for SMEs",
       "Identification of organizational barriers",
       "Practical implementation roadmap"
-    ],
-    "github_url": ""
+    ]
   },
   "github_url": ""
 }

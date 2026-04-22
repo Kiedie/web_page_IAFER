@@ -12,8 +12,7 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada",
-      "github_url": ""
+      "affiliation": "University of Granada"
     }
   ],
   "year": 2026,
@@ -55,7 +54,6 @@
       "Explainable OOD detection methodology",
       "Nonparametric statistical approach",
       "Scalability to large datasets"
-    ],
-    "github_url": ""
+    ]
   }
 }

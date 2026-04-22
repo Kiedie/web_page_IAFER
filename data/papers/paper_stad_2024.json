@@ -12,9 +12,7 @@
     },
     {
       "name": "Francisco Herrera",
-      "affiliation": "Universidad de Granada",
-      "github_url": ""
-    }
+      "affiliation": "Universidad de Granada"
   ],
   "year": 2024,
   "month": "Nov",
@@ -48,8 +46,7 @@
       "Presenta una revisión integral del estado del arte en GZSL",
       "Actualiza la clasificación de espacios semánticos en 'explícitos' e 'implícitos'",
       "Demuestra que con LLMs se pueden mejorar significativamente los espacios semánticos"
-    ],
-    "github_url": ""
+    ]
   },
   "tags": [
     "GPAIS",

@@ -13,7 +13,6 @@
     {
       "name": "Isaac Triguero",
       "affiliation": "University of Nottingham",
-      "github_url": ""
     }
   ],
   "year": 2024,
@@ -49,8 +48,7 @@
       "Presenta un método técnico para 'limpiar' el espacio semántico antes del entrenamiento",
       "Implementa esquema de validación cruzada con selección de características embebida",
       "Identifica y descarta atributos irrelevantes o ruidosos"
-    ],
-    "github_url": ""
+    ]
   },
   "tags": [
     "GPAIS",

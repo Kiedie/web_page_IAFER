@@ -4,8 +4,7 @@
   "authors": [
     {
       "name": "Francisco Herrera",
-      "affiliation": "University of Granada",
-      "github_url": ""
+      "affiliation": "University of Granada"
     }
   ],
   "year": 2025,
@@ -46,8 +45,7 @@
       "Comprehensive XAI framework analysis",
       "Maturity evaluation dimensions",
       "Human-AI collaboration strategies"
-    ],
-    "github_url": ""
+    ]
   },
   "github_url": ""
 }
