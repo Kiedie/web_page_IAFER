@@ -50,8 +50,7 @@
       "Empirical comparison of PCG methods",
       "GPT-based game level generation",
       "Evaluation metrics for procedural content"
-    ],
-    "github_url": "https://github.com/daniicereezzo/BenchmarkPCG"
+    ]
   },
   "github_url": "https://github.com/daniicereezzo/BenchmarkPCG"
 }

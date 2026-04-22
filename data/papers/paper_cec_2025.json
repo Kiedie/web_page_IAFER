@@ -48,8 +48,7 @@
       "Introduce un algoritmo genético para optimizar el espacio semántico en ZSL",
       "Simula clases desconocidas durante el entrenamiento",
       "Selecciona automáticamente atributos relevantes sin configuración manual"
-    ],
-    "github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning"
+    ]
   },
   "github_url": "https://github.com/kiedie/Semantic-Inductive-Attribute-Selection-for-Zero-Shot-Learning",
   "tags": [
