@@ -49,7 +49,7 @@
   "research_area": "trustworthy",
   "image": "images/trustworthy/ood_detection_1.png",
   "google_scholar_url": "",
-  "github_url": "",
+  "github_url": "https://github.com/ari-dasci/S-STOOD-X",
   "metadata": {
     "contributions": [
       "Explainable OOD detection methodology",
