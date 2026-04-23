@@ -348,7 +348,7 @@
         }
         async loadPapers() {
           try {
-            const response = await fetch('../../data/papers.json?v=3');
+            const response = await fetch('../../../data/papers.json?v=3');
             if (!response.ok) throw new Error('Could not load papers.json');
             const data = await response.json();
             this.papers = data.papers || [];
@@ -386,7 +386,7 @@
           const hasGithub = githubUrl && githubUrl.trim() !== '';
           return `<article class="publication-card">
             <div class="publication-image-wrapper">
-              <img src="../../${imagePath}" alt="${title}" class="publication-image" onerror="this.src='../../images/placeholder.png'">
+              <img src="../../../${imagePath}" alt="${title}" class="publication-image" onerror="this.src='../../images/placeholder.png'">
               <span class="publication-badge">${year}</span>
             </div>
             <div class="publication-content">
