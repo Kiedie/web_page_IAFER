@@ -8,9 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="../css/agentic-ai.css">
-    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/agentic-ai.css">
+    <link rel="stylesheet" href="../../css/navbar.css">
 </head>
 <body id="top">
     <!-- ==============================
@@ -18,12 +18,12 @@
     ============================== -->
     <nav class="navbar" aria-label="Main navigation">
         <div class="navbar__inner">
-            <a href="../index.html" class="navbar__brand">IAFER</a>
+            <a href="../../index.html" class="navbar__brand">IAFER</a>
 
             <ul class="navbar__menu" id="navbar-menu">
                 <!-- GPAIS -->
                 <li class="navbar__item navbar__item--dropdown">
-                    <a href="index.html" class="navbar__link">GPAIS</a>
+                    <a href="../../index.html" class="navbar__link">GPAIS</a>
                     <ul class="navbar__dropdown">
                         <li><a href="contrastive-learning.html">Contrastive Learning</a></li>
                         <li><a href="self-supervised.html">Self-Supervised Learning</a></li>
@@ -83,7 +83,7 @@
                 </li>
                 <li class="nav-item sidebar-section">
                     <span class="sidebar-section-title">GPAIS</span>
-                    <a href="index.html" class="tree-item"><span class="tree-icon">📘</span><span>Overview</span></a>
+                    <a href="../../index.html" class="tree-item"><span class="tree-icon">📘</span><span>Overview</span></a>
                     <a href="contrastive-learning.html" class="tree-item"><span class="tree-icon">🔗</span><span>Contrastive Learning</span></a>
                     <a href="self-supervised.html" class="tree-item"><span class="tree-icon">🎯</span><span>Self-Supervised</span></a>
                     <a href="zero-shot.html" class="tree-item"><span class="tree-icon">⚡</span><span>Zero-Shot Learning</span></a>
@@ -99,7 +99,7 @@
             </ul>
         </nav>
         <div class="sidebar-actions">
-            <a href="index.html" class="sidebar-action-btn">GPAIS</a>
+            <a href="../../index.html" class="sidebar-action-btn">GPAIS</a>
             <a href="../trustworthy/index.html" class="sidebar-action-btn">Trustworthy</a>
         </div>
     </aside>
@@ -122,7 +122,7 @@
                 <p class="hero-subtitle">Autonomous systems based on LLMs for complex environments</p>
                 <div class="hero-actions">
                     <a href="#fundamentos" class="btn btn-primary"><span>Explore content</span><span aria-hidden="true">→</span></a>
-                    <a href="index.html" class="btn btn-secondary"><span aria-hidden="true">←</span><span>Back to GPAIS</span></a>
+                    <a href="../../index.html" class="btn btn-secondary"><span aria-hidden="true">←</span><span>Back to GPAIS</span></a>
                 </div>
                 <div class="hero-divider"></div>
                 <section id="fundamentos" class="content-section">
@@ -316,9 +316,9 @@
             <p class="footer-text">
                 <strong>Agentic AI</strong> — GPAIS Research Area
                 <span aria-hidden="true">•</span>
-                <a href="index.html" class="footer-link">Back to GPAIS</a>
+                <a href="../../index.html" class="footer-link">Back to GPAIS</a>
                 <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">IAFER Project 2026</a>
+                <a href="../../index.html" class="footer-link">IAFER Project 2026</a>
             </p>
         </div>
     </footer>
@@ -334,7 +334,7 @@
         });
     </script>
 
-    <script src="../js/base.js"></script>
+    <script src="../../js/base.js"></script>
 </body>
 </html>    <!-- Scripts Inline v1 -->
     <script>
@@ -348,7 +348,7 @@
         }
         async loadPapers() {
           try {
-            const response = await fetch('../../data/papers.json?v=3');
+            const response = await fetch('../../../data/papers.json?v=3');
             if (!response.ok) throw new Error('Could not load papers.json');
             const data = await response.json();
             this.papers = data.papers || [];
@@ -386,7 +386,7 @@
           const hasGithub = githubUrl && githubUrl.trim() !== '';
           return `<article class="publication-card">
             <div class="publication-image-wrapper">
-              <img src="../../${imagePath}" alt="${title}" class="publication-image" onerror="this.src='../../images/placeholder.png'">
+              <img src="../../../${imagePath}" alt="${title}" class="publication-image" onerror="this.src='../../../images/placeholder.png'">
               <span class="publication-badge">${year}</span>
             </div>
             <div class="publication-content">
@@ -394,7 +394,7 @@
               <p class="publication-venue-info">${venue ? `<span class="venue">${venue}</span>` : ''} <span class="year">${year}</span></p>
               <div class="publication-actions">
                 ${paperUrl !== '#' ? `<a href="${paperUrl}" target="_blank" class="btn btn-small btn-primary">View Paper</a>` : ''}
-                ${hasGithub ? `<a href="${githubUrl}" target="_blank" class="btn btn-small btn-secondary" style="background:#f5f5f5;color:#333;border-color:#ddd;"><img src="../../images/github-logo.svg" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub</a>` : ''}
+                ${hasGithub ? `<a href="${githubUrl}" target="_blank" class="btn btn-small btn-secondary" style="background:#f5f5f5;color:#333;border-color:#ddd;"><img src="../../../images/github-logo.svg" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub</a>` : ''}
               </div>
             </div>
           </article>`;
@@ -412,6 +412,6 @@
       }
     })();
     </script>
-    <script src="../js/base.js"></script>
+    <script src="../../js/base.js"></script>
 </body>
 </html>
