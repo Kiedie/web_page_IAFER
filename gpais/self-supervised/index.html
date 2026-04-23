@@ -468,7 +468,7 @@
         }
         async loadPapers() {
           try {
-            const response = await fetch('../../../data/papers.json?v=3');
+            const response = await fetch('../../data/papers.json?v=3');
             if (!response.ok) throw new Error('Could not load papers.json');
             const data = await response.json();
             this.papers = data.papers || [];
