@@ -15,40 +15,41 @@
     }
 
     getBasePath() {
-      // Detectar si estamos en GitHub Pages (subdirectorio) o en local (raíz)
+      // Detectar ruta base usando document.currentScript (donde está este archivo JS)
+      // pub-loader.js está siempre en /js/ desde la raíz del proyecto
+      const scriptPath = document.currentScript ? document.currentScript.src : '';
+      if (scriptPath) {
+        // Ej: http://localhost:8888/js/pub-loader.js o https://kiedie.github.io/web_page_IAFER/js/pub-loader.js
+        const baseUrl = scriptPath.substring(0, scriptPath.lastIndexOf('/js/'));
+        if (baseUrl) {
+          const basePath = baseUrl.replace(window.location.origin, '');
+          return basePath + '/';
+        }
+      }
+
+      // Fallback: detectar por estructura de URL
       const path = window.location.pathname;
-      // En GitHub Pages: /web_page_IAFER/gpais/automl/index.html
-      // En local: /gpais/automl/index.html
       const parts = path.split('/').filter(p => p.length > 0);
 
-      // Buscar el índice de 'gpais' o 'trustworthy' para encontrar la raíz del proyecto
-      let rootIndex = -1;
-      for (let i = 0; i < parts.length; i++) {
-        if (parts[i] === 'gpais' || parts[i] === 'trustworthy' || parts[i] === 'data' || parts[i] === 'papers') {
-          rootIndex = i;
+      // Encontrar el directorio raíz buscando gpais/trustworthy/papers
+      let depth = 0;
+      for (let i = parts.length - 1; i >= 0; i--) {
+        if (['gpais', 'trustworthy', 'papers'].includes(parts[i])) {
+          depth = parts.length - i;
           break;
         }
       }
 
-      if (rootIndex > 0) {
-        // Estamos en un subdirectorio (ej: /web_page_IAFER/gpais/...)
-        // Subir hasta la raíz del proyecto
-        return '../'.repeat(parts.length - rootIndex);
-      } else if (rootIndex === 0) {
-        // Estamos en la raíz (ej: /gpais/...)
-        return '../'.repeat(parts.length - 1);
-      }
-
-      // Fallback: calcular basado en profundidad
-      return '../'.repeat(parts.length - 1);
+      return '../'.repeat(depth);
     }
 
     async loadPapers() {
       try {
         console.log('Loading papers for research line:', this.researchLine);
+        console.log('Current pathname:', window.location.pathname);
         const basePath = this.getBasePath();
         const papersPath = basePath + 'data/papers.json?v=3';
-        console.log('Fetching from:', papersPath);
+        console.log('Calculated papersPath:', papersPath);
 
         const response = await fetch(papersPath, {
           signal: AbortSignal.timeout(5000)
@@ -110,9 +111,9 @@
       const githubUrl = paper.github_url || paper.metadata?.github_url;
       const hasGithub = githubUrl && githubUrl.trim() !== '';
 
-      // Calcular prefijo para imágenes (un nivel más que papers.json)
+      // Calcular prefijo para imágenes (misma raíz que papers.json)
       const basePath = this.getBasePath();
-      const imagePrefix = basePath + '../';
+      const imagePrefix = basePath;
 
       return `
         <article class="publication-card">

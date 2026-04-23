@@ -15,28 +15,31 @@
     }
 
     getBasePath() {
-      // Detectar si estamos en GitHub Pages (subdirectorio) o en local (raíz)
+      // Detectar ruta base usando document.currentScript (donde está este archivo JS)
+      // papers-loader.js está siempre en /js/ desde la raíz del proyecto
+      const scriptPath = document.currentScript ? document.currentScript.src : '';
+      if (scriptPath) {
+        // Ej: http://localhost:8888/js/papers-loader.js o https://kiedie.github.io/web_page_IAFER/js/papers-loader.js
+        const baseUrl = scriptPath.substring(0, scriptPath.lastIndexOf('/js/'));
+        if (baseUrl) {
+          const basePath = baseUrl.replace(window.location.origin, '');
+          return basePath + '/';
+        }
+      }
+
+      // Fallback: detectar por estructura de URL
       const path = window.location.pathname;
       const parts = path.split('/').filter(p => p.length > 0);
 
-      // Buscar el índice de 'gpais' o 'trustworthy' para encontrar la raíz del proyecto
-      let rootIndex = -1;
-      for (let i = 0; i < parts.length; i++) {
-        if (parts[i] === 'gpais' || parts[i] === 'trustworthy' || parts[i] === 'data' || parts[i] === 'papers') {
-          rootIndex = i;
+      let depth = 0;
+      for (let i = parts.length - 1; i >= 0; i--) {
+        if (['gpais', 'trustworthy', 'papers'].includes(parts[i])) {
+          depth = parts.length - i;
           break;
         }
       }
 
-      if (rootIndex > 0) {
-        // Estamos en un subdirectorio (ej: /web_page_IAFER/gpais/...)
-        return '../'.repeat(parts.length - rootIndex);
-      } else if (rootIndex === 0) {
-        // Estamos en la raíz (ej: /gpais/...)
-        return '../'.repeat(parts.length - 1);
-      }
-
-      return '../'.repeat(parts.length - 1);
+      return '../'.repeat(depth);
     }
 
     async loadPapers() {
@@ -104,7 +107,7 @@
       const githubUrl = paper.github_url || paper.metadata?.github_url;
       const hasGithub = githubUrl && githubUrl.trim() !== '';
       const basePath = this.getBasePath();
-      const imagePrefix = basePath + '../';
+      const imagePrefix = basePath;
 
       return `
         <article class="publication-card">
