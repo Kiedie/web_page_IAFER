@@ -27,11 +27,16 @@
         console.log('Total papers loaded:', this.papers.length);
 
         // Para Critical Applications, incluir tanto Healthcare como Environment
+        // Para Agentic AI, mapear a Generative AI
         let filteredPapers;
         if (this.researchLine === 'Critical Applications') {
           filteredPapers = this.papers.filter(p =>
             (p.tags || []).includes('Critical Applications (Healthcare)') ||
             (p.tags || []).includes('Critical Applications (Environment)')
+          );
+        } else if (this.researchLine === 'Agentic AI') {
+          filteredPapers = this.papers.filter(p =>
+            (p.tags || []).includes('Generative AI')
           );
         } else {
           // Filtrar papers que tienen el tag de esta research line
