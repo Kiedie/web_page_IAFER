@@ -12,7 +12,6 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/gpais.css">
-    <link rel="stylesheet" href="../../css/responsive.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 </head>
 <body id="top">
@@ -28,11 +27,11 @@
                 <li class="navbar__item navbar__item--dropdown">
                     <a href="../../index.html" class="navbar__link">GPAIS</a>
                     <ul class="navbar__dropdown">
-                        <li><a href="../contrastive-learning/">Contrastive Learning</a></li>
-                        <li><a href="../self-supervised/">Self-Supervised Learning</a></li>
-                        <li><a href="../zero-shot/">Zero-Shot Learning</a></li>
-                        <li><a href="../automl/">AutoML & Few-Shot Learning</a></li>
-                        <li><a href="../agentic-ai/">Agentic AI</a></li>
+                        <li><a href="../contrastive-learning/index.html">Contrastive Learning</a></li>
+                        <li><a href="../self-supervised/index.html">Self-Supervised Learning</a></li>
+                        <li><a href="../zero-shot/index.html">Zero-Shot Learning</a></li>
+                        <li><a href="../automl/index.html">AutoML & Few-Shot Learning</a></li>
+                        <li><a href="../agentic-ai/index.html">Agentic AI</a></li>
                     </ul>
                 </li>
 
@@ -321,85 +320,8 @@
         </div>
     </footer>
 
-    <script src="../../js/base.js"></script>
-</body>
-</html>
-    <!-- Scripts Inline v1 -->
-    <script>
-    (function() {
-      'use strict';
-      class ResearchLinePaperLoader {
-        constructor(containerId, researchLine) {
-          this.container = document.getElementById(containerId);
-          this.researchLine = researchLine;
-          this.papers = [];
-        }
-        async loadPapers() {
-          try {
-            const response = await fetch('../../data/papers.json?v=3');
-            if (!response.ok) throw new Error('Could not load papers.json');
-            const data = await response.json();
-            this.papers = data.papers || [];
-            let filteredPapers;
-            if (this.researchLine === 'Critical Applications') {
-              filteredPapers = this.papers.filter(p =>
-                (p.tags || []).includes('Critical Applications (Healthcare)') ||
-                (p.tags || []).includes('Critical Applications (Environment)')
-              );
-            } else if (this.researchLine === 'Agentic AI') {
-              filteredPapers = this.papers.filter(p => (p.tags || []).includes('Generative AI'));
-            } else {
-              filteredPapers = this.papers.filter(p => (p.tags || []).includes(this.researchLine));
-            }
-            this.renderPapers(filteredPapers);
-          } catch (error) {
-            this.container.innerHTML = '<p class="error-message">Unable to load publications.</p>';
-          }
-        }
-        renderPapers(papers) {
-          if (papers.length === 0) {
-            this.container.innerHTML = '<div class="empty-state"><p>No publications available.</p></div>';
-            return;
-          }
-          const html = papers.map(paper => this.generatePaperCard(paper)).join('');
-          this.container.innerHTML = html;
-        }
-        generatePaperCard(paper) {
-          const year = paper.year || 'N/A';
-          const venue = paper.venue || '';
-          const paperUrl = paper.paper_url || '#';
-          const title = paper.title || 'Untitled';
-          const imagePath = paper.image || '';
-          const githubUrl = paper.github_url;
-          const hasGithub = githubUrl && githubUrl.trim() !== '';
-          return `<article class="publication-card">
-            <div class="publication-image-wrapper">
-              <img src="../../../${imagePath}" alt="${title}" class="publication-image" onerror="this.src='../../../images/placeholder.png'">
-              <span class="publication-badge">${year}</span>
-            </div>
-            <div class="publication-content">
-              <h4 class="publication-title">${title}</h4>
-              <p class="publication-venue-info">${venue ? `<span class="venue">${venue}</span>` : ''} <span class="year">${year}</span></p>
-              <div class="publication-actions">
-                ${paperUrl !== '#' ? `<a href="${paperUrl}" target="_blank" class="btn btn-small btn-primary">View Paper</a>` : ''}
-                ${hasGithub ? `<a href="${githubUrl}" target="_blank" class="btn btn-small btn-secondary" style="background:#f5f5f5;color:#333;border-color:#ddd;"><img src="../../../images/github-logo.svg" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub</a>` : ''}
-              </div>
-            </div>
-          </article>`;
-        }
-      }
-      function init() {
-        document.querySelectorAll('[data-research-line]').forEach(container => {
-          new ResearchLinePaperLoader(container.id, container.getAttribute('data-research-line')).loadPapers();
-        });
-      }
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', init);
-      } else {
-        init();
-      }
-    })();
-    </script>
+    <!-- Scripts -->
+    <script src="../../js/pub-loader.js?v=3"></script>
     <script src="../../js/base.js"></script>
 </body>
 </html>

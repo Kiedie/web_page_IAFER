@@ -12,15 +12,37 @@
       this.container = document.getElementById(containerId);
       this.researchLine = researchLine;
       this.papers = [];
+      // Detectar la profundidad de la ruta actual
+      this.depth = this.calculateDepth();
+    }
+
+    calculateDepth() {
+      const path = window.location.pathname;
+      const parts = path.split('/').filter(p => p.length > 0);
+      // Si estamos en gpais/zero-shot/index.html, parts = ['gpais', 'zero-shot', 'index.html']
+      // La profundidad es parts.length - 1 (porque index.html es el archivo)
+      return parts.length - 1;
+    }
+
+    getBasePath() {
+      // Construir el prefijo de ruta basado en la profundidad
+      // depth 1 (gpais/index.html) -> ../
+      // depth 2 (gpais/zero-shot/index.html) -> ../../
+      // depth 2 (trustworthy/explainability/index.html) -> ../../
+      return '../'.repeat(this.depth);
     }
 
     async loadPapers() {
       try {
         console.log('Loading papers for research line:', this.researchLine);
-        // Cargar desde archivo JSON estático - ruta relativa desde cualquier nivel
-        // Desde gpais/*.html o trustworthy/*/index.html -> subir 2 niveles
-        const response = await fetch('../../data/papers.json?v=2');
-        console.log('Response status:', response.status);
+        const basePath = this.getBasePath();
+        const papersPath = basePath + 'data/papers.json?v=3';
+        console.log('Fetching from:', papersPath);
+
+        const response = await fetch(papersPath, {
+          signal: AbortSignal.timeout(5000)
+        });
+
         if (!response.ok) throw new Error('Could not load papers.json');
 
         const data = await response.json();
@@ -77,13 +99,16 @@
       const githubUrl = paper.github_url || paper.metadata?.github_url;
       const hasGithub = githubUrl && githubUrl.trim() !== '';
 
+      // Ajustar la profundidad para las imágenes (una nivel más profundo que papers.json)
+      const imagePrefix = '../'.repeat(this.depth + 1);
+
       return `
         <article class="publication-card">
           <div class="publication-image-wrapper">
-            <img src="../../${imagePath}"
+            <img src="${imagePrefix}${imagePath}"
                  alt="${title}"
                  class="publication-image"
-                 onerror="this.src='../../images/placeholder.png'">
+                 onerror="this.src='${imagePrefix}images/placeholder.png'">
             <span class="publication-badge">${year}</span>
           </div>
           <div class="publication-content">
@@ -100,7 +125,7 @@
               ` : ''}
               ${hasGithub ? `
                 <a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary github-btn" style="background-color: #f5f5f5; color: #333; border-color: #ddd;">
-                  <img src="../../images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
+                  <img src="${imagePrefix}images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
                 </a>
               ` : ''}
             </div>
