@@ -16,20 +16,33 @@
       this.depth = this.calculateDepth();
     }
 
-    calculateDepth() {
-      const path = window.location.pathname;
-      const parts = path.split('/').filter(p => p.length > 0);
-      // Si estamos en gpais/zero-shot/index.html, parts = ['gpais', 'zero-shot', 'index.html']
-      // La profundidad es parts.length - 1 (porque index.html es el archivo)
-      return parts.length - 1;
-    }
-
     getBasePath() {
-      // Construir el prefijo de ruta basado en la profundidad
-      // depth 1 (gpais/index.html) -> ../
-      // depth 2 (gpais/zero-shot/index.html) -> ../../
-      // depth 2 (trustworthy/explainability/index.html) -> ../../
-      return '../'.repeat(this.depth);
+      // Detectar si estamos en GitHub Pages (subdirectorio) o en local (raíz)
+      const path = window.location.pathname;
+      // En GitHub Pages: /web_page_IAFER/gpais/automl/index.html
+      // En local: /gpais/automl/index.html
+      const parts = path.split('/').filter(p => p.length > 0);
+
+      // Buscar el índice de 'gpais' o 'trustworthy' para encontrar la raíz del proyecto
+      let rootIndex = -1;
+      for (let i = 0; i < parts.length; i++) {
+        if (parts[i] === 'gpais' || parts[i] === 'trustworthy' || parts[i] === 'data' || parts[i] === 'papers') {
+          rootIndex = i;
+          break;
+        }
+      }
+
+      if (rootIndex > 0) {
+        // Estamos en un subdirectorio (ej: /web_page_IAFER/gpais/...)
+        // Subir hasta la raíz del proyecto
+        return '../'.repeat(parts.length - rootIndex);
+      } else if (rootIndex === 0) {
+        // Estamos en la raíz (ej: /gpais/...)
+        return '../'.repeat(parts.length - 1);
+      }
+
+      // Fallback: calcular basado en profundidad
+      return '../'.repeat(parts.length - 1);
     }
 
     async loadPapers() {

@@ -14,12 +14,39 @@
       this.papers = [];
     }
 
+    getBasePath() {
+      // Detectar si estamos en GitHub Pages (subdirectorio) o en local (raíz)
+      const path = window.location.pathname;
+      const parts = path.split('/').filter(p => p.length > 0);
+
+      // Buscar el índice de 'gpais' o 'trustworthy' para encontrar la raíz del proyecto
+      let rootIndex = -1;
+      for (let i = 0; i < parts.length; i++) {
+        if (parts[i] === 'gpais' || parts[i] === 'trustworthy' || parts[i] === 'data' || parts[i] === 'papers') {
+          rootIndex = i;
+          break;
+        }
+      }
+
+      if (rootIndex > 0) {
+        // Estamos en un subdirectorio (ej: /web_page_IAFER/gpais/...)
+        return '../'.repeat(parts.length - rootIndex);
+      } else if (rootIndex === 0) {
+        // Estamos en la raíz (ej: /gpais/...)
+        return '../'.repeat(parts.length - 1);
+      }
+
+      return '../'.repeat(parts.length - 1);
+    }
+
     async loadPapers() {
       try {
         console.log('Loading papers for research line:', this.researchLine);
-        // Cargar desde archivo JSON estático - ruta relativa desde cualquier nivel
-        // Desde gpais/*.html o trustworthy/*/index.html -> subir 2 niveles
-        const response = await fetch('../../data/papers.json?v=2');
+        const basePath = this.getBasePath();
+        const papersPath = basePath + 'data/papers.json?v=2';
+        console.log('Fetching papers from:', papersPath);
+
+        const response = await fetch(papersPath);
         console.log('Response status:', response.status);
         if (!response.ok) throw new Error('Could not load papers.json');
 
@@ -76,14 +103,16 @@
       const imagePath = paper.image || '';
       const githubUrl = paper.github_url || paper.metadata?.github_url;
       const hasGithub = githubUrl && githubUrl.trim() !== '';
+      const basePath = this.getBasePath();
+      const imagePrefix = basePath + '../';
 
       return `
         <article class="publication-card">
           <div class="publication-image-wrapper">
-            <img src="../../${imagePath}"
+            <img src="${imagePrefix}${imagePath}"
                  alt="${title}"
                  class="publication-image"
-                 onerror="this.src='../../images/placeholder.png'">
+                 onerror="this.src='${imagePrefix}images/placeholder.png'">
             <span class="publication-badge">${year}</span>
           </div>
           <div class="publication-content">
@@ -100,7 +129,7 @@
               ` : ''}
               ${hasGithub ? `
                 <a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary github-btn" style="background-color: #f5f5f5; color: #333; border-color: #ddd;">
-                  <img src="../../images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
+                  <img src="${imagePrefix}images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
                 </a>
               ` : ''}
             </div>
