@@ -15,6 +15,16 @@ Thumbs.db
 # Node modules (si decides usar npm)
 node_modules/
 
-# Files
+# Archivos locales (no necesarios para la web)
+.claude/
+private/
+
+# Scripts y documentación local (mantener solo README.md)
+*.py
+!README.md
+*.md
+!README.md
+
+# Archivos antiguos
 Agentic_AI_GPAIS_IAFER.html
 pagina.html
