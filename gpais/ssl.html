@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Supervised Learning - GPAIS | IAFER</title>
+    <meta name="description" content="Self-Supervised Learning: what it is, types of methods, Contrastive Learning and SSL for tabular data. GPAIS Research at IAFER.">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/gpais.css">
+    <link rel="stylesheet" href="../css/self-supervised.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body id="top">
+    <!-- ==============================
+         MAIN NAVBAR
+    ============================== -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar__inner">
+            <a href="../index.html" class="navbar__brand">IAFER</a>
+
+            <ul class="navbar__menu" id="navbar-menu">
+                <!-- GPAIS -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="index.html" class="navbar__link">GPAIS</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="automl.html">AutoML & Few-Shot Learning</a></li>
+                        <li><a href="agentic-ai.html">Agentic AI</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="../trustworthy/index.html" class="navbar__link">Trustworthy</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
+                        <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
+                        <li><a href="../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
+                        <li><a href="../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
+                        <li><a href="../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
+                        <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
+                    </ul>
+                </li>
+
+                <!-- Results -->
+                <li class="navbar__item">
+                    <a href="../papers/index.html" class="navbar__link">Results</a>
+                </li>
+            </ul>
+
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <div class="hero-badge">
+                    <span aria-hidden="true">🔁</span>
+                    <span>Research Focus</span>
+                </div>
+
+                <h1 class="hero-title">Self-Supervised Learning</h1>
+                <p class="hero-subtitle">Learning general representations from unlabeled data</p>
+
+                <div class="hero-actions">
+                    <a href="#tipos" class="btn btn-primary">
+                        <span>Explore content</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Back to GPAIS</span>
+                    </a>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <!-- What is SSL -->
+                <section id="fundamentos" class="content-section">
+                    <h2 class="section-title" style="text-align:left;">What is Self-Supervised Learning?</h2>
+                    <div class="content-text">
+                        <p>
+                            <strong class="text-highlight">Self-supervised learning (SSL)</strong> is a paradigm
+                            in which AI models leverage large volumes of unlabeled data by learning
+                            directly from <strong>the inherent structure of the data itself</strong>. Rather than
+                            depending on human annotations, models solve <em>auxiliary tasks</em> automatically generated
+                            that allow them to acquire general and transferable representations.
+                        </p>
+                        <p>
+                            This approach is fundamental to the development of <strong>Foundation Models</strong>
+                            and constitutes a key piece in the evolution of General Purpose AI
+                            Systems (GPAIS). The key is that the learned representations are not
+                            task-specific, but rather capture reusable semantic structure in multiple
+                            contexts with minimal subsequent supervision.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Types of SSL methods -->
+    <div class="section-divider"></div>
+    <div class="container">
+        <section id="tipos" class="content-section">
+            <h2 class="section-title">Types of methods</h2>
+            <p class="section-intro">
+                SSL methods are organized around different strategies for generating
+                the supervision signal directly from the data
+            </p>
+
+            <div class="research-cards">
+                <article class="research-card">
+                    <span class="research-badge">Joint Embedding</span>
+                    <div class="research-icon" aria-hidden="true">🔗</div>
+                    <h3 class="research-card-title">Contrastive Learning</h3>
+                    <p class="research-card-desc">
+                        Models learn by bringing similar views of the same data close in vector space
+                        (<em>positive pairs</em>) and pushing apart views from different data (<em>negative pairs</em>).
+                        One of the most influential SSL paradigms and the core of models like <strong>SimCLR</strong>, <strong>MoCo</strong> or <strong>DINOv2</strong>.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <article class="research-card">
+                    <span class="research-badge">Reconstruction</span>
+                    <div class="research-icon" aria-hidden="true">🧹</div>
+                    <h3 class="research-card-title">Masked Modeling</h3>
+                    <p class="research-card-desc">
+                        Models learn to reconstruct parts that are deleted or masked from a sample.
+                        Inspired by <strong>BERT</strong>, this technique does not require defining data
+                        augmentations and is very effective for learning rich representations in both image and text.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <article class="research-card">
+                    <span class="research-badge">Tabular</span>
+                    <div class="research-icon" aria-hidden="true">📊</div>
+                    <h3 class="research-card-title">SSL for Tabular</h3>
+                    <p class="research-card-desc">
+                        Applying SSL to tabular data is an open challenge given its heterogeneous nature:
+                        mix of numeric, categorical, and ordinal variables. The representations
+                        obtained are key for knowledge fusion and cross-domain generalization.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Our research lines -->
+    <div class="section-divider"></div>
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Our research lines</h2>
+            <p class="section-intro">
+                In the group we work on two complementary SSL lines, each oriented to a data type
+                where traditional supervised methods find their limits
+            </p>
+
+            <div class="content-grid">
+
+                <!-- Line 1: Contrastive Learning -->
+                <article class="info-card ssl-line-card ssl-line-card--contrastive">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔗</span>
+                        Contrastive Learning for biomedical signals
+                    </h3>
+                    <p class="info-card-text">
+                        We apply Contrastive Learning to problems where labeled data is scarce
+                        and variability between subjects is high. The central idea: two distinct augmentations
+                        of the same signal should produce close representations, while signals
+                        from different sources should be separated in the latent space.
+                    </p>
+                    <p class="info-card-text" style="margin-top:0.8rem;">
+                        Our main focus is <strong>EEG signals</strong>, where we have developed
+                        <em>frequency-aware</em> contrastive loss functions that incorporate knowledge
+                        of brain frequency bands (delta, theta, alpha, beta, gamma) to learn
+                        more transferable representations in epileptic seizure detection.
+                    </p>
+                    <ul class="ssl-line-list">
+                        <li>Frequency-Aware Contrastive Learning for EEG</li>
+                        <li>Generalization across patients without retraining</li>
+                        <li>Federated Contrastive Learning with privacy</li>
+                    </ul>
+                </article>
+
+                <!-- Line 2: SSL Tabular -->
+                <article class="info-card ssl-line-card ssl-line-card--tabular">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">📋</span>
+                        SSL for tabular data
+                    </h3>
+                    <p class="info-card-text">
+                        Most advances in SSL have occurred in image and text. Applying it to tabular data
+                        —present in industry, health, and finance— remains an open challenge due
+                        to its heterogeneous nature: columns with very different types, scales, and semantics.
+                    </p>
+                    <p class="info-card-text" style="margin-top:0.8rem;">
+                        Models like <strong>TabPFN</strong> have demonstrated the potential of tabular
+                        foundation models, but they require labeled data. Our research
+                        seeks to obtain general purpose representations that serve as a basis for tasks
+                        like knowledge fusion, data reduction, and adaptation with minimal supervision.
+                    </p>
+                    <ul class="ssl-line-list ssl-line-list--tabular">
+                        <li>Unsupervised representations for tabular data</li>
+                        <li>Model fusion and generalization across domains</li>
+                        <li>Reducing human annotation effort</li>
+                    </ul>
+                </article>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- Contrastive Mechanism: pairs and loss -->
+    <div class="section-divider"></div>
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">How Contrastive Learning Works</h2>
+            <p class="section-intro">
+                Contrastive learning is structured around the construction and comparison of pairs,
+                guided by a specific loss function
+            </p>
+            <div class="research-cards">
+                <article class="research-card">
+                    <span class="research-badge">Similarity</span>
+                    <div class="research-icon" aria-hidden="true">🔗</div>
+                    <h3 class="research-card-title">Positive Pair</h3>
+                    <p class="research-card-desc">
+                        Two views of the <strong>same example</strong> obtained through transformations
+                        or data augmentations. The model learns to produce close representations,
+                        capturing invariance to irrelevant changes for the task.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <article class="research-card">
+                    <span class="research-badge">Contrast</span>
+                    <div class="research-icon" aria-hidden="true">↔️</div>
+                    <h3 class="research-card-title">Negative Pair</h3>
+                    <p class="research-card-desc">
+                        Views from <strong>different examples</strong>. The model learns to
+                        separate them in vector space, forcing representations to capture
+                        semantically significant differences between instances.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <article class="research-card">
+                    <span class="research-badge">Objective</span>
+                    <div class="research-icon" aria-hidden="true">🎯</div>
+                    <h3 class="research-card-title">InfoNCE Loss</h3>
+                    <p class="research-card-desc">
+                        The most commonly used loss function maximizes similarity between positive pairs
+                        relative to negative ones. Variants such as <em>NT-Xent</em> and the
+                        <em>frequency-aware</em> loss for EEG extend this framework to specific domains.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+
+            <!-- Main algorithms -->
+            <div style="margin-top: 2rem;">
+                <h3 class="section-title" style="font-size:1.2rem; margin-bottom:0.8rem;">Reference Algorithms</h3>
+                <div class="content-grid">
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🌐</span>SimCLR</h3>
+                    </article>
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🔁</span>MoCo</h3>
+                    </article>
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🤝</span>BYOL &amp; SimSiam</h3>
+                    </article>
+                    <article class="info-card">
+                        <h3 class="info-card-title"><span class="info-card-icon" aria-hidden="true">🧬</span>Frequency-Aware CL</h3>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Current challenges (merged) -->
+    <div class="section-divider"></div>
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Current Challenges</h2>
+            <p class="section-intro">
+                In both biomedical signals and tabular data, SSL faces a series of
+                open challenges that define the frontiers of research
+            </p>
+
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span class="challenge-number">01</span>
+                    <h3 class="challenge-title">Selection and quality of contrastive pairs</h3>
+                    <p class="challenge-desc">
+                        Negatives that are too easy provide no learning signal; <em>false</em> negatives
+                        —semantically similar instances treated as distinct— degrade
+                        representations. Defining appropriate augmentations for temporal signals or EEG
+                        requires deep domain knowledge.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">02</span>
+                    <h3 class="challenge-title">Design of auxiliary tasks for tabular data</h3>
+                    <p class="challenge-desc">
+                        Unlike images or text, tabular data mix numeric, categorical, and ordinal variables
+                        with very different semantics across columns. Designing effective self-supervised
+                        objectives in this context remains an open problem.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">03</span>
+                    <h3 class="challenge-title">Representation collapse</h3>
+                    <p class="challenge-desc">
+                        Without careful selection of negatives or with inadequate architectures, the model
+                        can collapse and assign the same representation to all examples, losing
+                        all discriminative capacity.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">04</span>
+                    <h3 class="challenge-title">Scarcity of large heterogeneous datasets</h3>
+                    <p class="challenge-desc">
+                        Tabular data are difficult to homogenize for training foundation models
+                        at scale, unlike what happens in image or text. The lack of common benchmarks
+                        makes it difficult to compare methods.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">05</span>
+                    <h3 class="challenge-title">Generalization and fusion across domains</h3>
+                    <p class="challenge-desc">
+                        Self-supervised representations must be sufficiently general to
+                        transfer across patients, facilities, or datasets. <em>Domain
+                        shift</em> is one of the main obstacles for clinical and industrial deployment.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">06</span>
+                    <h3 class="challenge-title">Computational cost and limited resources</h3>
+                    <p class="challenge-desc">
+                        Contrastive Learning requires large batches or extensive queues of negatives.
+                        Adapting these frameworks to federated environments —where clinical data cannot
+                        be centralized— adds additional memory and communication constraints.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Our research (merged) -->
+    <div class="section-divider"></div>
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Our Research</h2>
+            <div class="content-text">
+                <p>
+                    In the <strong class="text-highlight">GPAIS</strong> group at the IAFER research chair, we are
+                    leading research in SSL applied to two domains where labeled data is scarce
+                    and generalization is critical: <strong>biomedical signals</strong>
+                    and <strong>heterogeneous tabular data</strong>.
+                </p>
+            </div>
+
+            <div style="margin-top:1.5rem;">
+                <h3 class="highlight-title">🚀 Active Research Lines</h3>
+                <ul class="feature-list">
+                    <li><strong>Frequency-Aware Contrastive Learning for EEG:</strong> loss functions that incorporate brain frequency bands to detect epileptic seizures without labels</li>
+                    <li><strong>Generalization across patients:</strong> methods that reduce clinical <em>domain shift</em> to deploy models without retraining per subject</li>
+                    <li><strong>Federated Contrastive Learning:</strong> adaptation to environments where data cannot be centralized due to privacy constraints</li>
+                    <li><strong>Unsupervised tabular representations:</strong> leveraging unlabeled data to improve classification tasks, anomaly detection, and model fusion</li>
+                    <li><strong>Annotation effort reduction:</strong> SSL techniques as a foundation to decrease necessary supervision without sacrificing performance</li>
+                    <li><strong>SSL as a transversal component of GPAIS:</strong> self-supervised representations reusable across multiple general-purpose AI tasks</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box" style="margin-top:2rem;">
+                <h3 class="highlight-title">📚 Publications</h3>
+                <div class="publications-container" id="research-line-papers" data-research-line="Self-Supervised Learning">
+                    <p class="loading-message">Loading publications...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Practical applications (merged) -->
+    <div class="section-divider"></div>
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Practical Applications</h2>
+            <div class="content-text">
+                <p>
+                    SSL has a transversal impact in domains where unlabeled data abound
+                    but annotations are expensive, scarce, or inaccessible:
+                </p>
+                <ul class="feature-list">
+                    <li><strong>Biomedical signals and EEG:</strong> epileptic seizure detection, brain-computer interfaces, and analysis of physiological time series without labels</li>
+                    <li><strong>Medical diagnosis:</strong> learning clinical representations from unlabeled records to detect rare pathologies</li>
+                    <li><strong>Fraud detection:</strong> identification of anomalous patterns in financial transactions without prior labeled examples</li>
+                    <li><strong>Industry 4.0:</strong> predictive maintenance and fault detection in machinery from unsupervised sensor data</li>
+                    <li><strong>Multimodal learning:</strong> alignment of representations across modalities (image-text, audio-video), as in CLIP</li>
+                    <li><strong>Computer vision and language:</strong> foundation for foundational models like DINOv2, MAE, BERT, and GPT, reusable across multiple tasks</li>
+                    <li><strong>Health sciences:</strong> analysis of omics and clinical data with minimal supervision for biomarker discovery</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <strong>Self-Supervised Learning</strong> — GPAIS Research Area
+                <span aria-hidden="true">•</span>
+                <a href="index.html" class="footer-link">Back to GPAIS</a>
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">IAFER Project 2026 - v4</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="../js/base.js"></script>
+</body>
+</html>
+    <!-- Scripts Inline v1 -->
+    <script>
+    (function() {
+      'use strict';
+      class ResearchLinePaperLoader {
+        constructor(containerId, researchLine) {
+          this.container = document.getElementById(containerId);
+          this.researchLine = researchLine;
+          this.papers = [];
+        }
+        async loadPapers() {
+          try {
+            const response = await fetch('../../data/papers.json?v=3');
+            if (!response.ok) throw new Error('Could not load papers.json');
+            const data = await response.json();
+            this.papers = data.papers || [];
+            let filteredPapers;
+            if (this.researchLine === 'Critical Applications') {
+              filteredPapers = this.papers.filter(p =>
+                (p.tags || []).includes('Critical Applications (Healthcare)') ||
+                (p.tags || []).includes('Critical Applications (Environment)')
+              );
+            } else if (this.researchLine === 'Agentic AI') {
+              filteredPapers = this.papers.filter(p => (p.tags || []).includes('Generative AI'));
+            } else {
+              filteredPapers = this.papers.filter(p => (p.tags || []).includes(this.researchLine));
+            }
+            this.renderPapers(filteredPapers);
+          } catch (error) {
+            this.container.innerHTML = '<p class="error-message">Unable to load publications.</p>';
+          }
+        }
+        renderPapers(papers) {
+          if (papers.length === 0) {
+            this.container.innerHTML = '<div class="empty-state"><p>No publications available.</p></div>';
+            return;
+          }
+          const html = papers.map(paper => this.generatePaperCard(paper)).join('');
+          this.container.innerHTML = html;
+        }
+        generatePaperCard(paper) {
+          const year = paper.year || 'N/A';
+          const venue = paper.venue || '';
+          const paperUrl = paper.paper_url || '#';
+          const title = paper.title || 'Untitled';
+          const imagePath = paper.image || '';
+          const githubUrl = paper.github_url;
+          const hasGithub = githubUrl && githubUrl.trim() !== '';
+          return `<article class="publication-card">
+            <div class="publication-image-wrapper">
+              <img src="../../${imagePath}" alt="${title}" class="publication-image" onerror="this.src='../../images/placeholder.png'">
+              <span class="publication-badge">${year}</span>
+            </div>
+            <div class="publication-content">
+              <h4 class="publication-title">${title}</h4>
+              <p class="publication-venue-info">${venue ? `<span class="venue">${venue}</span>` : ''} <span class="year">${year}</span></p>
+              <div class="publication-actions">
+                ${paperUrl !== '#' ? `<a href="${paperUrl}" target="_blank" class="btn btn-small btn-primary">View Paper</a>` : ''}
+                ${hasGithub ? `<a href="${githubUrl}" target="_blank" class="btn btn-small btn-secondary" style="background:#f5f5f5;color:#333;border-color:#ddd;"><img src="../../images/github-logo.svg" alt="GitHub" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub</a>` : ''}
+              </div>
+            </div>
+          </article>`;
+        }
+      }
+      function init() {
+        document.querySelectorAll('[data-research-line]').forEach(container => {
+          new ResearchLinePaperLoader(container.id, container.getAttribute('data-research-line')).loadPapers();
+        });
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', init);
+      } else {
+        init();
+      }
+    })();
+    </script>
+    <script src="../js/base.js"></script>
+</body>
+</html>
