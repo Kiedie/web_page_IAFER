@@ -12,7 +12,7 @@
       "venue": "Machine Intelligence Research",
       "tags": [
         "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD"
       ],
       "github_url": "https://github.com/ari-dasci/S-LAM"
     },
@@ -77,7 +77,8 @@
       "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
       "tags": [
         "Critical Applications (Environment)",
-        "GPAIS"
+        "GPAIS",
+        "Robustness & OOD"
       ],
       "github_url": ""
     },
@@ -254,7 +255,8 @@
       "venue": "The Photogrammetric Record",
       "tags": [
         "Critical Applications (Environment)",
-        "GPAIS"
+        "GPAIS",
+        "Robustness & OOD"
       ],
       "github_url": ""
     },
@@ -351,7 +353,6 @@
       "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
       "tags": [
         "GPAIS",
-        "Representation Learning",
         "Self-Supervised Learning"
       ],
       "github_url": ""
@@ -400,7 +401,7 @@
       "venue": "2025 International Joint Conference on Neural Networks",
       "tags": [
         "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD"
       ],
       "github_url": ""
     },
@@ -531,7 +532,7 @@
       "venue": "Machine Learning and Knowledge Extraction",
       "tags": [
         "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD"
       ],
       "github_url": "https://github.com/ari-dasci/S-WinStat"
     },
@@ -579,7 +580,7 @@
       "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
       "tags": [
         "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD"
       ],
       "github_url": ""
     },
@@ -691,7 +692,7 @@
       "venue": "Information Sciences",
       "tags": [
         "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD"
       ],
       "github_url": ""
     },
@@ -707,7 +708,8 @@
       "venue": "2024 International Joint Conference on Neural Networks (IJCNN)",
       "tags": [
         "Critical Applications (Environment)",
-        "GPAIS"
+        "GPAIS",
+        "Robustness & OOD"
       ],
       "github_url": ""
     },
@@ -771,7 +773,7 @@
       "venue": "SIAM Journal on Imaging Sciences",
       "tags": [
         "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD"
       ],
       "github_url": ""
     }
