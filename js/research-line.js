@@ -17,9 +17,8 @@
     async loadPapers() {
       try {
         console.log('Loading papers for research line:', this.researchLine);
-        // Cargar desde archivo JSON estático - ruta relativa para funcionar en GitHub Pages
-        const basePath = window.location.pathname.includes('/web_page_IAFER/') ? '/web_page_IAFER' : '';
-        const response = await fetch(`${basePath}/data/papers.json`);
+        // Cargar desde archivo JSON estático - ruta relativa desde cualquier nivel
+        const response = await fetch('../../../data/papers.json');
         console.log('Response status:', response.status);
         if (!response.ok) throw new Error('Could not load papers.json');
 
@@ -76,15 +75,14 @@
       const imagePath = paper.image || '';
       const githubUrl = paper.github_url || paper.metadata?.github_url;
       const hasGithub = githubUrl && githubUrl.trim() !== '';
-      const basePath = window.location.pathname.includes('/web_page_IAFER/') ? '/web_page_IAFER' : '';
 
       return `
         <article class="publication-card">
           <div class="publication-image-wrapper">
-            <img src="${basePath}/${imagePath}"
+            <img src="../../../${imagePath}"
                  alt="${title}"
                  class="publication-image"
-                 onerror="this.src='${basePath}/images/placeholder.png'">
+                 onerror="this.src='../../../images/placeholder.png'">
             <span class="publication-badge">${year}</span>
           </div>
           <div class="publication-content">
@@ -100,8 +98,8 @@
                 </a>
               ` : ''}
               ${hasGithub ? `
-                <a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary github-btn">
-                  <img src="${basePath}/images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
+                <a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary github-btn" style="background-color: #f5f5f5; color: #333; border-color: #ddd;">
+                  <img src="../../../images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
                 </a>
               ` : ''}
             </div>
