@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPAIS – General Purpose Artificial Intelligence Systems | IAFER</title>
-    <meta name="description" content="GPAIS: investigación en Zero-Shot, Self-Supervised y Contrastive Learning, y Agentic AI. Sistemas de IA que generalizan con menos supervisión. Cátedra ENIA IAFER.">
+    <meta name="description" content="GPAIS: research in Zero-Shot, Self-Supervised and Contrastive Learning, and Agentic AI. AI systems that generalize with less supervision. ENIA IAFER Chair.">
     
-    <!-- Fuentes -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Estilos -->
+    <!-- Styles -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body id="top">
     <!-- ==============================
-         NAVBAR PRINCIPAL
+         MAIN NAVBAR
     ============================== -->
-    <nav class="navbar" aria-label="Navegacion principal">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="navbar__inner">
             <a href="../index.html" class="navbar__brand">IAFER</a>
 
             <ul class="navbar__menu" id="navbar-menu">
                 <!-- GPAIS -->
                 <li class="navbar__item navbar__item--dropdown">
-                    <a href="../gpais/index.html" class="navbar__link">GPAIS</a>
+                    <a href="index.html" class="navbar__link">GPAIS</a>
                     <ul class="navbar__dropdown">
-                        <li><a href="../gpais/contrastive-learning.html">Contrastive Learning</a></li>
-                        <li><a href="../gpais/self-supervised.html">Self-Supervised Learning</a></li>
-                        <li><a href="../gpais/zero-shot.html">Zero-Shot Learning</a></li>
-                        <li><a href="../gpais/agentic-ai.html">Agentic AI</a></li>
+                        <li><a href="contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="automl.html">AutoML & Few-Shot Learning</a></li>
+                        <li><a href="agentic-ai.html">Agentic AI</a></li>
                     </ul>
                 </li>
 
@@ -40,21 +41,20 @@
                     <ul class="navbar__dropdown">
                         <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
                         <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
+                        <li><a href="../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
+                        <li><a href="../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
+                        <li><a href="../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
                         <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
 
-                <!-- Resultados -->
+                <!-- Results -->
                 <li class="navbar__item">
-                    <a href="../papers/index.html" class="navbar__link">Resultados</a>
+                    <a href="../papers/index.html" class="navbar__link">Results</a>
                 </li>
             </ul>
 
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -65,9 +65,9 @@
 
     
 
-    <!-- Hero Section / Tarjeta Principal -->
+    <!-- Hero Section / Main Card -->
     <div class="hero-wrapper">
-        <!-- Partículas de fondo -->
+        <!-- Background particles -->
         <div class="hero-particles">
             <div class="particle particle-1"></div>
             <div class="particle particle-2"></div>
@@ -78,42 +78,42 @@
 
         <main class="container">
             <section class="hero-card">
-                <!-- Badge superior -->
+                <!-- Upper badge -->
                 <div class="hero-badge">
                     <span aria-hidden="true">🧠</span>
                     <span>GPAIS Core</span>
                 </div>
 
-                <!-- Título principal -->
+                <!-- Main title -->
                 <h1 class="hero-title">General Purpose Artificial Intelligence</h1>
-                <p class="hero-subtitle">IA que aprende a generalizar: menos supervisión, más alcance</p>
+                <p class="hero-subtitle">AI that learns to generalize: less supervision, greater reach</p>
 
-                <!-- Botones de acción -->
+                <!-- Action buttons -->
                 <div class="hero-actions">
                     <a href="#research-areas" class="btn btn-primary">
-                        <span>Explorar ramas</span>
+                        <span>Explore research lines</span>
                         <span aria-hidden="true">→</span>
                     </a>
                     <a href="../index.html" class="btn btn-secondary">
                         <span aria-hidden="true">←</span>
-                        <span>Volver a inicio</span>
+                        <span>Back to home</span>
                     </a>
                 </div>
 
-                <!-- Divisor decorativo -->
+                <!-- Decorative divider -->
                 <div class="hero-divider"></div>
 
-                <!-- Sección: ¿Qué es GPAIS? -->
+                <!-- Section: What are GPAIs? -->
                 <section id="research-areas" class="gpais-about-section" aria-labelledby="research-title">
-                    <h2 id="research-title" class="research-title">¿Qué son?</h2>
+                    <h2 id="research-title" class="research-title">What are GPAIs?</h2>
 
                     <div class="content-text" style="max-width:800px; margin:0 auto;">
                             <p>
-                            La mayoría de los sistemas actuales funcionan bien dentro del dominio para el que fueron entrenados.
-                            Cuando se topan con algo fuera de ese margen —una clase que nunca vieron, un dominio distinto,
-                            una tarea para la que no hay ejemplos— su rendimiento cae. Los GPAIs son
-                            sistemas de IA capaces de generalizar con menos datos etiquetados, menos supervisión
-                            y mayor capacidad de adaptarse a contextos nuevos.
+                            Most current systems work well within the domain they were trained for.
+                            When they encounter something outside that scope—a class they never saw, a different domain,
+                            a task for which there are no examples—their performance drops. GPAIs are
+                            AI systems capable of generalizing with less labeled data, less supervision,
+                            and greater ability to adapt to new contexts.
                         </p>
                     </div>
                 </section>
@@ -121,44 +121,43 @@
         </main>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Section divider -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Mundo Cerrado vs Mundo Abierto -->
+    <!-- Section: Open-World and Closed-World GPAIs -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">GPAIs de mundo abierto y cerrado</h2>
+            <h2 class="section-title">Open-World and Closed-World GPAIs</h2>
             <p class="section-intro">
-                Los GPAIs se categorizan en dos enfoques principales
+                GPAIs are categorized into two main approaches
             </p>
 
             <div class="content-grid">
 
-                <!-- Mundo Cerrado -->
+                <!-- Closed World -->
                 <article class="info-card">
                     <h3 class="info-card-title">
                         <span class="info-card-icon" aria-hidden="true">🔒</span>
-                        Mundo Cerrado
+                        Closed World
                     </h3>
                     <p class="info-card-text">
-                       En el mundo cerrado (closed world), el sistema opera sobre un conjunto de 
-                       tareas conocido y delimitado de antemano. Puede abordar varias tareas, 
-                       pero todas forman parte del escenario previsto durante su diseño y entrenamiento, 
-                       por lo que su capacidad de actuación queda ligada a ese marco definido.
+                       In the closed world, the system operates on a known and predefined set of 
+                       tasks. It can address various tasks, but all are part of the scenario anticipated 
+                       during its design and training, so its ability to act is tied to that defined framework.
                     </p>
                 </article>
 
-                <!-- Mundo Abierto -->
+                <!-- Open World -->
                 <article class="info-card">
                     <h3 class="info-card-title">
                         <span class="info-card-icon" aria-hidden="true">🌐</span>
-                        Mundo Abierto
+                        Open World
                     </h3>
                     <p class="info-card-text">
-                        En el mundo abierto (open world), el sistema actúa en un entorno dinámico y cambiante, 
-                        donde pueden aparecer nuevas tareas, datos o situaciones no previstas inicialmente. 
-                        Por eso, además de resolver lo ya conocido, debe mostrar mayor capacidad de generalización, 
-                        adaptación y respuesta ante lo desconocido.
+                        In the open world, the system operates in a dynamic and changing environment, 
+                        where new tasks, data, or unforeseen situations may emerge. Therefore, beyond solving 
+                        what is already known, it must demonstrate greater generalization capacity, 
+                        adaptation, and response to the unknown.
                     </p>
                 </article>
 
@@ -166,16 +165,16 @@
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Section divider -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Áreas de Investigación -->
+    <!-- Section: Research Areas -->
     <div class="container">
         <section class="research-areas-section">
-            <h2 class="section-title" id="research-areas">Áreas de Investigación</h2>
+            <h2 class="section-title" id="research-areas">Research Areas</h2>
             <p class="section-intro">
-                Tres líneas de investigación que el grupo trabaja en paralelo,
-                con aplicaciones en salud, industria y entorno rural
+                Three research lines that the group works on in parallel,
+                with applications in health, industry, and rural environments
             </p>
             
             <div class="research-cards">
@@ -186,7 +185,7 @@
                         <div class="research-icon" aria-hidden="true">🎯</div>
                         <h3 class="research-card-title">Zero-Shot Learning</h3>
                         <p class="research-card-desc">
-                            Aprendizaje sin ejemplos previos mediante transferencia de conocimiento semántico.
+                            Learning without prior examples through semantic knowledge transfer.
                         </p>
                         <div class="research-card-glow"></div>
                     </article>
@@ -199,8 +198,8 @@
                         <div class="research-icon" aria-hidden="true">🔁</div>
                         <h3 class="research-card-title">Self-Supervised Learning</h3>
                         <p class="research-card-desc">
-                            Dos líneas complementarias: <strong>Contrastive Learning</strong> para señales biomédicas
-                            y <strong>SSL para datos tabulares</strong> en entornos de alta complejidad.
+                            Two complementary lines: <strong>Contrastive Learning</strong> for biomedical signals
+                            and <strong>SSL for tabular data</strong> in highly complex environments.
                         </p>
                         <div class="research-card-glow"></div>
                     </article>
@@ -213,7 +212,7 @@
                         <div class="research-icon" aria-hidden="true">🤖</div>
                         <h3 class="research-card-title">Agentic AI</h3>
                         <p class="research-card-desc">
-                            Sistemas autónomos con capacidad de toma de decisiones y planificación estratégica.
+                            Autonomous systems with decision-making and strategic planning capabilities.
                         </p>
                         <div class="research-card-glow"></div>
                     </article>
@@ -222,13 +221,13 @@
         </section>
     </div>
 
-    <!-- Footer minimalista -->
+    <!-- Minimalist footer -->
     <footer class="footer">
         <div class="container">
             <p class="footer-text">
                 <strong>GPAIS</strong> - General Purpose Artificial Intelligence Systems
-                <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">Cátedra ENIA IAFER 2026</a>
+                <span aria-hidden="true">\u2022</span>
+                <a href="../index.html" class="footer-link">ENIA IAFER Chair 2026</a>
             </p>
         </div>
     </footer>
@@ -236,44 +235,5 @@
 
     <!-- Navbar -->
     <script src="../js/base.js"></script>
-    <script>
-    (function() {
-        const toggle = document.getElementById('navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-
-        toggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            menu.classList.toggle('open');
-        });
-
-        if ('ontouchstart' in window || window.innerWidth <= 768) {
-            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        this.parentElement.classList.toggle('open');
-                    }
-                });
-            });
-        }
-
-        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-            });
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
-                    item.classList.remove('open');
-                });
-            }
-        });
-    })();
-    </script>
 </body>
 </html>

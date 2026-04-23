@@ -52,7 +52,3 @@ web_page_IAFER/
 [] Poner barra scrolleable para los papers y dejarlo de la manera en la que lo tengo yo
 
 
-
-## Trustworthy
-
-[] Ver lineas que hay de Trustworthy

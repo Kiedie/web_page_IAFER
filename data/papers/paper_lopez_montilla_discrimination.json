@@ -1,0 +1,57 @@
+{
+  "id": "lopez_montilla_discrimination",
+  "title": "The Paradigmatic Crisis of AI Discrimination: A Thousand Variables and No Protected Groups",
+  "authors": [
+    {
+      "name": "Jesús López-Montilla",
+      "affiliation": ""
+    },
+    {
+      "name": "Alberto Fernández",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Lara",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo aborda la crisis paradigmática en la detección y mitigación de discriminación en sistemas de IA, donde la ausencia de grupos protegidos explícitos dificulta la identificación de sesgos discriminatorios.",
+  "publication": {
+    "type": "journal",
+    "venue": "AI & Society",
+    "year": 2026
+  },
+  "abstract": "AI discrimination detection faces a fundamental paradox: while systems process thousands of variables, protected group information is often unavailable or implicit. This paper examines the paradigmatic crisis in AI fairness, proposing approaches for identifying and mitigating discrimination without explicit protected group attributes. We analyze the implications for algorithmic accountability and fairness auditing.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "AI discrimination",
+    "fairness",
+    "protected groups",
+    "algorithmic bias",
+    "AI ethics"
+  ],
+  "citations": {
+    "bibtex": "@article{lopezmontilla2026paradigmatic,\n  title={The Paradigmatic Crisis of AI Discrimination: A Thousand Variables and No Protected Groups},\n  author={L{\\'o}pez-Montilla, Jes{\\'u}s and Fern{\\'a}ndez, Alberto and Lara, Francisco},\n  journal={AI & Society},\n  year={2026},\n  publisher={Springer}\n}",
+    "apa": "López-Montilla, J., Fernández, A., & Lara, F. (2026). The Paradigmatic Crisis of AI Discrimination: A Thousand Variables and No Protected Groups. AI & Society.",
+    "mla": "López-Montilla, Jesús, Alberto Fernández, and Francisco Lara. \"The Paradigmatic Crisis of AI Discrimination: A Thousand Variables and No Protected Groups.\" AI & Society, 2026."
+  },
+  "tags": [
+    "Fairness & Bias",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Analysis of discrimination detection challenges",
+      "Protected group inference approaches",
+      "Fairness auditing framework"
+    ]
+  }
+}

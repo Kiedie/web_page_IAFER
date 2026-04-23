@@ -1,0 +1,63 @@
+{
+  "id": "luengo_2024_tsc",
+  "title": "Machine Learning for Time Series Classification: Challenges, Solutions, and Opportunities",
+  "authors": [
+    {
+      "name": "Julián Luengo",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "David García-Gil",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2024,
+  "month": "Sep",
+  "description_es": "Un enfoque comprehensivo sobre técnicas modernas de aprendizaje automático para clasificación de series temporales, incluyendo desafíos prácticos y soluciones innovadoras.",
+  "publication": {
+    "type": "journal",
+    "venue": "Information Sciences",
+    "volume": "681",
+    "pages": "121098",
+    "year": 2024
+  },
+  "abstract": "Time series classification remains a challenging task in machine learning. This comprehensive review examines state-of-the-art ML approaches, identifies key challenges, proposes solutions, and discusses future opportunities in the field.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1016/j.ins.2024.121098",
+  "keywords": [
+    "time series classification",
+    "machine learning",
+    "deep learning",
+    "neural networks",
+    "temporal data"
+  ],
+  "citations": {
+    "bibtex": "@article{luengo2024machine,\n  title={Machine Learning for Time Series Classification: Challenges, Solutions, and Opportunities},\n  author={Luengo, Julián and García-Gil, David and Triguero, Isaac and Herrera, Francisco},\n  journal={Information Sciences},\n  volume={681},\n  pages={121098},\n  year={2024},\n  publisher={Elsevier}\n}",
+    "apa": "Luengo, J., García-Gil, D., Triguero, I., & Herrera, F. (2024). Machine Learning for Time Series Classification: Challenges, Solutions, and Opportunities. Information Sciences, 681, 121098.",
+    "mla": "Luengo, Julián, et al. \"Machine Learning for Time Series Classification: Challenges, Solutions, and Opportunities.\" Information Sciences, vol. 681, 2024, p. 121098."
+  },
+  "tags": [
+    "GPAIS",
+    "Robustness in Deep Learning"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Comprehensive TSC review",
+      "Challenge analysis and solutions",
+      "Future research directions"
+    ]
+  },
+  "github_url": ""
+}

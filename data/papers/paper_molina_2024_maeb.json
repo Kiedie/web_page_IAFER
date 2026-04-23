@@ -1,0 +1,53 @@
+{
+  "id": "molina_2024_maeb",
+  "title": "Hybrid Evolutionary Assessment based on Logic Programming: A Novel Approach for Complex Problem Solving",
+  "authors": [
+    {
+      "name": "María Molina",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2024,
+  "month": "Oct",
+  "description_es": "Este trabajo presenta un enfoque híbrido que combina computación evolutiva con programación lógica para abordar problemas de optimización complejos.",
+  "publication": {
+    "type": "conference",
+    "venue": "Proceedings MAEB 2024",
+    "year": 2024
+  },
+  "abstract": "Complex optimization problems often require innovative hybrid approaches. This paper proposes a hybrid evolutionary algorithm enhanced with logic programming mechanisms, demonstrating superior performance on challenging benchmark problems.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "evolutionary computation",
+    "logic programming",
+    "hybrid algorithms",
+    "optimization",
+    "complex problems"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{molina2024hybrid,\n  title={Hybrid Evolutionary Assessment based on Logic Programming: A Novel Approach for Complex Problem Solving},\n  author={Molina, María and Herrera, Francisco},\n  booktitle={Proceedings MAEB 2024},\n  year={2024}\n}",
+    "apa": "Molina, M., & Herrera, F. (2024). Hybrid Evolutionary Assessment based on Logic Programming: A Novel Approach for Complex Problem Solving. Proceedings MAEB 2024.",
+    "mla": "Molina, María, and Francisco Herrera. \"Hybrid Evolutionary Assessment based on Logic Programming: A Novel Approach for Complex Problem Solving.\" Proceedings MAEB 2024, 2024."
+  },
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Hybrid evolutionary-logic programming framework",
+      "Complex optimization solutions",
+      "Benchmark performance improvements"
+    ]
+  },
+  "github_url": ""
+}

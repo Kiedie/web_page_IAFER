@@ -1,0 +1,74 @@
+{
+  "id": "ucleces_2026_cai",
+  "title": "Exploring Representation Learning for Developmental Infant EEG",
+  "authors": [
+    {
+      "name": "Jaime Uclés",
+      "affiliation": ""
+    },
+    {
+      "name": "Kristina Stemikovskaya",
+      "affiliation": "TECNALIA"
+    },
+    {
+      "name": "Ángeles Ballesteros-Duperón",
+      "affiliation": ""
+    },
+    {
+      "name": "Lina M. Cómbita",
+      "affiliation": ""
+    },
+    {
+      "name": "Rosario Rueda",
+      "affiliation": ""
+    },
+    {
+      "name": "Alberto Fernández",
+      "affiliation": ""
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo explora métodos de aprendizaje de representaciones para analizar datos de EEG en infantes, considerando los patrones únicos de actividad eléctrica cortical durante el desarrollo temprano.",
+  "publication": {
+    "type": "conference",
+    "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
+    "year": 2026
+  },
+  "abstract": "Infant EEG analysis presents unique challenges due to the rapidly developing nature of cortical activity patterns. This work explores representation learning approaches for developmental infant EEG, investigating how self-supervised and contrastive learning methods can capture meaningful neural signatures across different developmental stages. Our approach aims to enable automated analysis of infant cognitive development through EEG patterns.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://www.ieeesmc.org/cai-2026/",
+  "keywords": [
+    "infant EEG",
+    "representation learning",
+    "developmental neuroscience",
+    "self-supervised learning",
+    "brain-computer interface"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{ucleces2026exploring,\n  title={Exploring Representation Learning for Developmental Infant EEG},\n  author={Ucl{\\'e}s, Jaime and Stemikovskaya, Kristina and Ballesteros-Duper{\\'o}n, {\\'A}ngeles and C{\\'o}mbita, Lina M. and Rueda, Rosario and Fern{\\'a}ndez, Alberto and Triguero, Isaac},\n  booktitle={2026 IEEE Conference on Artificial Intelligence (CAI)},\n  year={2026}\n}",
+    "apa": "Uclés, J., Stemikovskaya, K., Ballesteros-Duperón, A., Cómbita, L. M., Rueda, R., Fernández, A., & Triguero, I. (2026). Exploring Representation Learning for Developmental Infant EEG. In 2026 IEEE Conference on Artificial Intelligence (CAI).",
+    "mla": "Uclés, Jaime, et al. \"Exploring Representation Learning for Developmental Infant EEG.\" 2026 IEEE Conference on Artificial Intelligence (CAI), 2026."
+  },
+  "tags": [
+    "GPAIS",
+    "Representation Learning",
+    "Self-Supervised Learning"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Representation learning for infant EEG",
+      "Developmental pattern analysis",
+      "Self-supervised EEG encoding"
+    ]
+  }
+}

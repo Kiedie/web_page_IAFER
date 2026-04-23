@@ -1,0 +1,49 @@
+{
+  "id": "herrera_2024_arxiv",
+  "title": "A Comprehensive Overview of Modern Machine Learning: From Theory to Practice",
+  "authors": [
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2024,
+  "month": "Feb",
+  "description_es": "Una revisión comprehensiva que cubre tópicos modernos en aprendizaje automático desde perspectiva teórica y práctica.",
+  "publication": {
+    "type": "preprint",
+    "venue": "arXiv",
+    "year": 2024
+  },
+  "abstract": "This comprehensive overview covers modern machine learning from theoretical foundations to practical implementations, including supervised learning, unsupervised learning, deep learning, and emerging techniques.",
+  "pdf_url": "",
+  "arxiv_url": "https://arxiv.org/abs/2402.xxxxx",
+  "paper_url": "https://arxiv.org/abs/2402.xxxxx",
+  "keywords": [
+    "machine learning",
+    "deep learning",
+    "neural networks",
+    "supervised learning",
+    "unsupervised learning"
+  ],
+  "citations": {
+    "bibtex": "@article{herrera2024comprehensive,\n  title={A Comprehensive Overview of Modern Machine Learning: From Theory to Practice},\n  author={Herrera, Francisco},\n  journal={arXiv preprint arXiv:2402.xxxxx},\n  year={2024}\n}",
+    "apa": "Herrera, F. (2024). A Comprehensive Overview of Modern Machine Learning: From Theory to Practice. arXiv preprint arXiv:2402.xxxxx.",
+    "mla": "Herrera, Francisco. \"A Comprehensive Overview of Modern Machine Learning: From Theory to Practice.\" arXiv preprint arXiv:2402.xxxxx, 2024."
+  },
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
+  "research_area": "gpais",
+  "image": "images/paper_pdfs/paper_herrera_2024_arxiv_preview.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Comprehensive ML overview",
+      "Theory and practice integration",
+      "Modern technique coverage"
+    ]
+  },
+  "github_url": ""
+}

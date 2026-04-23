@@ -1,0 +1,65 @@
+{
+  "id": "mendez_2026_cai",
+  "title": "CUBIC: Concept Embeddings for Unsupervised Bias Identification using VLMs",
+  "authors": [
+    {
+      "name": "David Mendez",
+      "affiliation": ""
+    },
+    {
+      "name": "Gianpaolo Bontempo",
+      "affiliation": ""
+    },
+    {
+      "name": "Elisa Ficarra",
+      "affiliation": ""
+    },
+    {
+      "name": "Roberto Confalonieri",
+      "affiliation": ""
+    },
+    {
+      "name": "Natalia Díaz-Rodríguez",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo presenta CUBIC, un método para identificar sesgos en modelos de visión por computador de manera no supervisada utilizando embeddings de conceptos de modelos de visión-lenguaje (VLM).",
+  "publication": {
+    "type": "conference",
+    "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
+    "year": 2026
+  },
+  "abstract": "Bias detection in computer vision models typically requires labeled data or manual inspection. This paper presents CUBIC (Concept Embeddings for Unsupervised Bias Identification using VLMs), a novel approach that leverages Vision-Language Models to automatically identify biases through concept embeddings. Our unsupervised method discovers spurious correlations and biased representations without requiring annotated bias labels.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1007/s10796-025-10669-0",
+  "keywords": [
+    "bias detection",
+    "vision-language models",
+    "concept embeddings",
+    "unsupervised learning",
+    "fairness"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{mendez2026cubic,\n  title={CUBIC: Concept Embeddings for Unsupervised Bias Identification using VLMs},\n  author={Mendez, David and Bontempo, Gianpaolo and Ficarra, Elisa and Confalonieri, Roberto and D{\\'i}az-Rodr{\\'i}guez, Natalia},\n  booktitle={2026 IEEE Conference on Artificial Intelligence (CAI)},\n  year={2026}\n}",
+    "apa": "Mendez, D., Bontempo, G., Ficarra, E., Confalonieri, R., & Díaz-Rodríguez, N. (2026). CUBIC: Concept Embeddings for Unsupervised Bias Identification using VLMs. In 2026 IEEE Conference on Artificial Intelligence (CAI).",
+    "mla": "Mendez, David, Gianpaolo Bontempo, Elisa Ficarra, Roberto Confalonieri, and Natalia Díaz-Rodríguez. \"CUBIC: Concept Embeddings for Unsupervised Bias Identification using VLMs.\" 2026 IEEE Conference on Artificial Intelligence (CAI), 2026."
+  },
+  "tags": [
+    "Fairness & Bias",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Unsupervised bias identification method",
+      "VLM-based concept embeddings",
+      "Spurious correlation detection"
+    ]
+  }
+}

@@ -1,34 +1,35 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agentic AI — GPAIS | IAFER</title>
-    <meta name="description" content="IA Agéntica para instalaciones científicas complejas y críticas">
+    <meta name="description" content="Agentic AI for complex and critical scientific facilities">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Estilos -->
+    <!-- Styles -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/agentic-ai.css">
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body id="top">
     <!-- ==============================
-         NAVBAR PRINCIPAL
+         MAIN NAVBAR
     ============================== -->
-    <nav class="navbar" aria-label="Navegacion principal">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="navbar__inner">
             <a href="../index.html" class="navbar__brand">IAFER</a>
 
             <ul class="navbar__menu" id="navbar-menu">
                 <!-- GPAIS -->
                 <li class="navbar__item navbar__item--dropdown">
-                    <a href="../gpais/index.html" class="navbar__link">GPAIS</a>
+                    <a href="index.html" class="navbar__link">GPAIS</a>
                     <ul class="navbar__dropdown">
-                        <li><a href="../gpais/contrastive-learning.html">Contrastive Learning</a></li>
-                        <li><a href="../gpais/self-supervised.html">Self-Supervised Learning</a></li>
-                        <li><a href="../gpais/zero-shot.html">Zero-Shot Learning</a></li>
-                        <li><a href="../gpais/agentic-ai.html">Agentic AI</a></li>
+                        <li><a href="contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="automl.html">AutoML & Few-Shot Learning</a></li>
+                        <li><a href="agentic-ai.html">Agentic AI</a></li>
                     </ul>
                 </li>
 
@@ -38,21 +39,20 @@
                     <ul class="navbar__dropdown">
                         <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
                         <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
+                        <li><a href="../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
+                        <li><a href="../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
+                        <li><a href="../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
                         <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
 
-                <!-- Resultados -->
+                <!-- Results -->
                 <li class="navbar__item">
-                    <a href="../papers/index.html" class="navbar__link">Resultados</a>
+                    <a href="../papers/index.html" class="navbar__link">Results</a>
                 </li>
             </ul>
 
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -63,23 +63,23 @@
 
 
     <!-- Sidebar Toggle -->
-    <button class="sidebar-toggle" aria-label="Alternar navegación" onclick="document.getElementById('page-sidebar').classList.toggle('open')">☰</button>
+    <button class="sidebar-toggle" aria-label="Toggle navigation" onclick="document.getElementById('page-sidebar').classList.toggle('open')">☰</button>
 
     <!-- Sidebar -->
-    <aside id="page-sidebar" class="page-sidebar" aria-label="Navegación del sitio">
+    <aside id="page-sidebar" class="page-sidebar" aria-label="Site Navigation">
         <div class="sidebar-header">
             <h2 class="sidebar-title">
                 <span class="sidebar-title__icon">🗂️</span>
-                <span>Navegación</span>
+                <span>Navigation</span>
             </h2>
         </div>
         <nav>
             <ul class="nav-tree">
                 <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Inicio</span>
-                    <a href="../#top" class="tree-item"><span class="tree-icon">🏠</span><span>Inicio</span></a>
-                    <a href="../#lineas" class="tree-item"><span class="tree-icon">📍</span><span>Líneas Investigación</span></a>
-                    <a href="../#equipo" class="tree-item"><span class="tree-icon">👥</span><span>Equipo</span></a>
+                    <span class="sidebar-section-title">Home</span>
+                    <a href="../#top" class="tree-item"><span class="tree-icon">🏠</span><span>Home</span></a>
+                    <a href="../#lineas" class="tree-item"><span class="tree-icon">📍</span><span>Research Lines</span></a>
+                    <a href="../#equipo" class="tree-item"><span class="tree-icon">👥</span><span>Team</span></a>
                 </li>
                 <li class="nav-item sidebar-section">
                     <span class="sidebar-section-title">GPAIS</span>
@@ -119,24 +119,24 @@
             <section class="hero-card">
                 <div class="hero-badge"><span aria-hidden="true">🤖</span><span>Research Focus</span></div>
                 <h1 class="hero-title">Agentic AI</h1>
-                <p class="hero-subtitle">Sistemas autónomos basados en LLMs para entornos complejos</p>
+                <p class="hero-subtitle">Autonomous systems based on LLMs for complex environments</p>
                 <div class="hero-actions">
-                    <a href="#fundamentos" class="btn btn-primary"><span>Explorar contenido</span><span aria-hidden="true">→</span></a>
-                    <a href="index.html" class="btn btn-secondary"><span aria-hidden="true">←</span><span>Volver a GPAIS</span></a>
+                    <a href="#fundamentos" class="btn btn-primary"><span>Explore content</span><span aria-hidden="true">→</span></a>
+                    <a href="index.html" class="btn btn-secondary"><span aria-hidden="true">←</span><span>Back to GPAIS</span></a>
                 </div>
                 <div class="hero-divider"></div>
                 <section id="fundamentos" class="content-section">
-                    <h2 class="section-title">¿Qué es la IA Agéntica?</h2>
+                    <h2 class="section-title">What is Agentic AI?</h2>
                     <div class="content-text">
                         <p>
-                            <strong class="text-highlight">Agentic AI</strong> es el paradigma en el que grandes modelos del lenguaje (LLMs)
-                            dejan de actuar como simples generadores de texto para convertirse en <strong>agentes autónomos</strong>
-                            capaces de planificar, razonar, usar herramientas y ejecutar tareas complejas en múltiples pasos.
+                            <strong class="text-highlight">Agentic AI</strong> is the paradigm in which large language models (LLMs)
+                            stop acting as simple text generators to become <strong>autonomous agents</strong>
+                            capable of planning, reasoning, using tools, and executing complex multi-step tasks.
                         </p>
                         <p>
-                            El término <em>Agentic</em> es el adjetivo que engloba a todos los agentes con distinto grado de
-                            autonomía, desde asistentes que solicitan confirmación en cada paso hasta sistemas completamente
-                            autónomos. Este espectro de autonomía hace de la IA Agéntica una estrategia especialmente poderosa en entornos complejos.
+                            The term <em>Agentic</em> is the adjective that encompasses all agents with varying degrees of
+                            autonomy, from assistants requesting confirmation at each step to fully autonomous systems.
+                            This spectrum of autonomy makes Agentic AI a particularly powerful strategy in complex environments.
                         </p>
                     </div>
                 </section>
@@ -148,23 +148,22 @@
     <div class="section-divider"></div>
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Workflows agénticos vs. no agénticos</h2>
-            <p class="section-intro">La diferencia fundamental radica en cómo se organiza la interacción con el modelo.</p>
+            <h2 class="section-title">Agentic vs. Non-Agentic Workflows</h2>
+            <p class="section-intro">The fundamental difference lies in how the interaction with the model is organized.</p>
             <div class="content-grid">
                 <article class="info-card">
-                    <h3 class="info-card-title"><span class="info-card-icon">➡️</span>Workflow No Agéntico</h3>
+                    <h3 class="info-card-title"><span class="info-card-icon">➡️</span>Non-Agentic Workflow</h3>
                     <p class="info-card-text">
-                        El modelo recibe una consulta y produce una respuesta sin posibilidad
-                        de revisar, reflexionar ni interactuar con herramientas externas por sí mismo . Adecuado para tareas
-                        simples y bien delimitadas.
+                        The model receives a query and produces a response without the ability
+                        to review, reflect, or interact with external tools on its own. Suitable for simple and well-defined tasks.
                     </p>
                 </article>
                 <article class="info-card">
-                    <h3 class="info-card-title"><span class="info-card-icon">🔄</span>Workflow Agéntico</h3>
+                    <h3 class="info-card-title"><span class="info-card-icon">🔄</span>Agentic Workflow</h3>
                     <p class="info-card-text">
-                        El modelo opera en bucles iterativos: planifica, actúa, observa resultados y revisa su
-                        plan. Puede descomponerse en subagentes especializados y delegar tareas, asemejándose
-                        al trabajo de un equipo humano experto.
+                        The model operates in iterative loops: it plans, acts, observes results, and revises its
+                        plan. It can decompose into specialized sub-agents and delegate tasks, resembling
+                        the work of an expert human team.
                     </p>
                 </article>
             </div>
@@ -175,38 +174,37 @@
     <div class="section-divider"></div>
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Grados de autonomía</h2>
-            <p class="section-intro">Los sistemas agénticos no son todo o nada: existen múltiples niveles según cuánto control conserva el operador humano.</p>
+            <h2 class="section-title">Degrees of Autonomy</h2>
+            <p class="section-intro">Agentic systems are not all-or-nothing: there are multiple levels depending on how much control the human operator retains.</p>
             <div class="research-cards">
                 <article class="research-card">
-                    <span class="research-badge">Bajo</span>
+                    <span class="research-badge">Low</span>
                     <div class="research-icon" aria-hidden="true">🧑‍💼</div>
                     <h3 class="research-card-title">Human-in-the-Loop</h3>
                     <p class="research-card-desc">
-                        El operador humano aprueba cada acción significativa. Máxima seguridad pero menor
-                        eficiencia. Apropiado para entornos de alta criticidad donde un error puede ser
+                        The human operator approves each significant action. Maximum safety but lower
+                        efficiency. Appropriate for high-criticality environments where an error can be
                         irreversible.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
                 <article class="research-card">
-                    <span class="research-badge accent">Medio</span>
+                    <span class="research-badge accent">Medium</span>
                     <div class="research-icon" aria-hidden="true">⚙️</div>
-                    <h3 class="research-card-title">Supervisión Selectiva</h3>
+                    <h3 class="research-card-title">Selective Oversight</h3>
                     <p class="research-card-desc">
-                        El agente actúa de forma autónoma en tareas rutinarias y escala a revisión humana
-                        sólo ante situaciones de baja confianza o alto impacto. Balance entre eficiencia
-                        y seguridad.
+                        The agent acts autonomously in routine tasks and escalates to human review
+                        only for low-confidence or high-impact situations. Balance between efficiency and safety.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
                 <article class="research-card">
-                    <span class="research-badge success">Alto</span>
+                    <span class="research-badge success">High</span>
                     <div class="research-icon" aria-hidden="true">🚀</div>
-                    <h3 class="research-card-title">Autonomía Plena</h3>
+                    <h3 class="research-card-title">Full Autonomy</h3>
                     <p class="research-card-desc">
-                        El sistema gestiona ciclos completos sin intervención humana. Requiere garantías
-                        sólidas de seguridad, trazabilidad y robustez. Todavía un objetivo a largo plazo.
+                        The system manages complete cycles without human intervention. Requires
+                        solid guarantees of safety, traceability, and robustness. Still a long-term objective.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -218,65 +216,76 @@
     <div class="section-divider"></div>
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">¿Por qué fallan los LLMs?</h2>
+            <h2 class="section-title">Why Do LLMs Fail?</h2>
             <p class="section-intro">
-                Entender los límites de los LLMs es el punto de partida para construir sistemas agénticos fiables en entornos complejos.
+                Understanding the limits of LLMs is the starting point for building reliable agentic systems in complex environments.
             </p>
             <div class="challenge-list">
                 <div class="challenge-item">
                     <span class="challenge-number">01</span>
-                    <h3 class="challenge-title">Falta de razonamiento</h3>
+                    <h3 class="challenge-title">Lack of Reasoning</h3>
                     <p class="challenge-desc">
-                        Los LLMs aprenden correlaciones estadísticas, no relaciones de causa-efecto. Siguiendo
-                        la <em>escalera de causalidad</em>, operan principalmente en un nivel de
-                        asociación, sin capacidad innata de razonar sobre intervenciones
-                        ni contrafactuales.
+                        LLMs learn statistical correlations, not cause-effect relationships. Following
+                        the <em>causal ladder</em>, they operate primarily at an association level,
+                        without innate ability to reason about interventions or counterfactuals.
                     </p>
                 </div>
                 <div class="challenge-item">
                     <span class="challenge-number">02</span>
-                    <h3 class="challenge-title">Alucinaciones y factualidad</h3>
+                    <h3 class="challenge-title">Hallucinations and Factuality</h3>
                     <p class="challenge-desc">
-                        Los modelos pueden generar respuestas plausibles pero incorrectas con alta confianza.
-                        En instalaciones críticas, una respuesta fabricada puede derivar en
-                        decisiones operativas peligrosas, lo que convierte la factualidad
-                        en un requisito no negociable.
+                        Models can generate plausible but incorrect responses with high confidence.
+                        In critical facilities, a fabricated response can lead to dangerous operational
+                        decisions, making factuality a non-negotiable requirement.
                     </p>
                 </div>
                 <div class="challenge-item">
                     <span class="challenge-number">03</span>
-                    <h3 class="challenge-title">Conocimiento estático</h3>
+                    <h3 class="challenge-title">Static Knowledge</h3>
                     <p class="challenge-desc">
-                        Los LLMs tienen una fecha de corte de entrenamiento y no acceden a datos en tiempo
-                        real. En instalaciones complejas y críticas, los parámetros operativos y la documentación
-                        técnica cambian continuamente, requiriendo estrategias de contextualización dinámica.
+                        LLMs have a training cutoff date and don't access real-time data. In complex and critical
+                        facilities, operational parameters and technical documentation change continuously,
+                        requiring dynamic contextualization strategies.
                     </p>
                 </div>
                 <div class="challenge-item">
                     <span class="challenge-number">04</span>
-                    <h3 class="challenge-title">Dominio altamente especializado</h3>
+                    <h3 class="challenge-title">Highly Specialized Domain</h3>
                     <p class="challenge-desc">
-                        El vocabulario técnico, las relaciones conceptuales y los protocolos de seguridad
-                        de una instalación crítica son escasos en los datos de preentrenamiento
-                        de los LLMs generales, lo que degrada su rendimiento.
+                        The technical vocabulary, conceptual relationships, and safety protocols
+                        of a critical facility are scarce in the pretraining data of general LLMs,
+                        degrading their performance.
                     </p>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Nuestra investigación -->
+    <!-- Our Research -->
     <div class="section-divider"></div>
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Nuestra Investigación</h2>
+            <h2 class="section-title">Our Research</h2>
             <div class="content-text">
                 <p>
-                    En el grupo <strong class="text-highlight">GPAIS</strong> de la cátedra IAFER, trabajamos en la
-                    intersección entre IA Agéntica y las necesidades reales de instalaciones científicas críticas.
-                    La sinergia entre inteligencia artificial y entornos científicos de alta complejidad representa
-                    una oportunidad única para avanzar en ambos campos.
+                    In the <strong class="text-highlight">GPAIS</strong> group at IAFER chair, we work at the
+                    intersection of Agentic AI and the real needs of critical scientific facilities.
+                    The synergy between artificial intelligence and highly complex scientific environments represents
+                    a unique opportunity to advance both fields.
                 </p>
+                <h3 class="highlight-title">🚀 Active Research Lines</h3>
+                <ul class="feature-list">
+                    <li><strong>Tool-augmented reasoning:</strong> Integration of symbolic reasoning systems with LLMs for verifiable decision-making in critical facilities</li>
+                    <li><strong>Grounding and retrieval-augmented generation (RAG):</strong> Methods to ground LLM outputs in domain-specific documentation, ensuring factuality and traceability</li>
+                    <li><strong>Agent planning and multi-step reasoning:</strong> Decomposition of complex tasks into subtasks with explicit verification and rollback mechanisms</li>
+                    <li><strong>Safety and auditing:</strong> Mechanisms to ensure agent decisions are transparent, auditable, and compliant with operational safety protocols</li>
+                </ul>
+            </div>
+            <div class="highlight-box">
+                <h3 class="highlight-title">📚 Publications</h3>
+                <div class="publications-container" id="research-line-papers" data-research-line="Agentic AI">
+                    <p class="loading-message">Loading publications...</p>
+                </div>
             </div>
         </section>
     </div>
@@ -285,17 +294,17 @@
     <div class="section-divider"></div>
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Aplicaciones en Instalaciones Críticas</h2>
+            <h2 class="section-title">Applications in Critical Facilities</h2>
             <div class="content-text">
                 <p>
-                    La IA Agéntica tiene un impacto significativo en entornos donde la complejidad técnica y
-                    los requisitos de seguridad hacen inviable una operación puramente manual. Nuestra investigación tiene un impacto directo en:
+                    Agentic AI has a significant impact in environments where technical complexity and
+                    safety requirements make purely manual operation infeasible. Our research has direct impact on:
                 </p>
                 <ul class="feature-list" style="margin-top:1rem;">
-                    <li><strong>Asistencia a operadores:</strong> Consulta en lenguaje natural de manuales, protocolos y registros históricos de la instalación</li>
-                    <li><strong>Gestión del conocimiento:</strong> Indexación y recuperación eficiente de la documentación técnica en constante evolución</li>
-                    <li><strong>Apoyo a la toma de decisiones:</strong> Sistemas expertos que sintetizan información de múltiples fuentes para recomendar acciones a los operadores</li>
-                    <li><strong>Verificación de procedimientos:</strong> Agentes que comprueban la consistencia y factualidad de los procedimientos operativos estándar</li>
+                    <li><strong>Operator Assistance:</strong> Natural language queries of manuals, protocols, and historical facility records</li>
+                    <li><strong>Knowledge Management:</strong> Efficient indexing and retrieval of constantly evolving technical documentation</li>
+                    <li><strong>Decision Support:</strong> Expert systems that synthesize information from multiple sources to recommend actions to operators</li>
+                    <li><strong>Procedure Verification:</strong> Agents that check consistency and factuality of standard operating procedures</li>
                 </ul>
             </div>
         </section>
@@ -307,7 +316,7 @@
             <p class="footer-text">
                 <strong>Agentic AI</strong> — GPAIS Research Area
                 <span aria-hidden="true">•</span>
-                <a href="index.html" class="footer-link">Volver a GPAIS</a>
+                <a href="index.html" class="footer-link">Back to GPAIS</a>
                 <span aria-hidden="true">•</span>
                 <a href="../index.html" class="footer-link">IAFER Project 2026</a>
             </p>
@@ -325,46 +334,8 @@
         });
     </script>
 
-    <!-- Navbar -->
+    <!-- Scripts -->
+    <script src="../js/research-line.js"></script>
     <script src="../js/base.js"></script>
-    <script>
-    (function() {
-        const toggle = document.getElementById('navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-
-        toggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            menu.classList.toggle('open');
-        });
-
-        if ('ontouchstart' in window || window.innerWidth <= 768) {
-            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        this.parentElement.classList.toggle('open');
-                    }
-                });
-            });
-        }
-
-        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-            });
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
-                    item.classList.remove('open');
-                });
-            }
-        });
-    })();
-    </script>
 </body>
 </html>

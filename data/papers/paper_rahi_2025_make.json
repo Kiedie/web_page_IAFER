@@ -1,0 +1,68 @@
+{
+  "id": "rahi_2025_make",
+  "title": "Generalising Stock Detection in Retail Cabinets with Minimal Data Using a DenseNet and Vision Transformer Ensemble",
+  "authors": [
+    {
+      "name": "Babak Rahi",
+      "affiliation": "Unilever PLC"
+    },
+    {
+      "name": "Deniz Sagmanli",
+      "affiliation": "University of Nottingham"
+    },
+    {
+      "name": "Felix Oppong",
+      "affiliation": "Unilever PLC"
+    },
+    {
+      "name": "Direnc Pekaslan",
+      "affiliation": "University of Nottingham"
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "Jul",
+  "description_es": "Este artículo presenta un enfoque innovador para la detección de niveles de inventario en armarios minoristas combinando arquitecturas DenseNet-201 y Vision Transformer-B/8.",
+  "publication": {
+    "type": "journal",
+    "venue": "Machine Learning and Knowledge Extraction",
+    "volume": "7",
+    "issue": "3",
+    "pages": "66",
+    "year": 2025
+  },
+  "abstract": "Generalising deep-learning models to perform well on unseen data domains with minimal retraining remains a significant challenge in computer vision. This work proposes a novel ensemble combining DenseNet-201 and Vision Transformer (ViT-B/8) architectures that achieves high accuracy for stock-level classification in retail cabinets using only two images per class for fine-tuning.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.3390/make7030066",
+  "keywords": [
+    "ensemble learning",
+    "vision transformers",
+    "few-shot learning",
+    "retail automation",
+    "domain adaptation"
+  ],
+  "citations": {
+    "bibtex": "@article{rahi2025generalising,\n  title={Generalising Stock Detection in Retail Cabinets with Minimal Data Using a DenseNet and Vision Transformer Ensemble},\n  author={Rahi, Babak and Sagmanli, Deniz and Oppong, Felix and Pekaslan, Direnc and Triguero, Isaac},\n  journal={Machine Learning and Knowledge Extraction},\n  volume={7},\n  number={3},\n  pages={66},\n  year={2025},\n  publisher={MDPI}\n}",
+    "apa": "Rahi, B., Sagmanli, D., Oppong, F., Pekaslan, D., & Triguero, I. (2025). Generalising Stock Detection in Retail Cabinets with Minimal Data Using a DenseNet and Vision Transformer Ensemble. Machine Learning and Knowledge Extraction, 7(3), 66.",
+    "mla": "Rahi, Babak, et al. \"Generalising Stock Detection in Retail Cabinets with Minimal Data Using a DenseNet and Vision Transformer Ensemble.\" Machine Learning and Knowledge Extraction, vol. 7, no. 3, 2025, p. 66."
+  },
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "CNN-ViT feature-level fusion for robust classification",
+      "Two-shot adaptation workflow for domain generalization",
+      "Benchmark dataset for cabinet stock detection"
+    ]
+  },
+  "github_url": ""
+}

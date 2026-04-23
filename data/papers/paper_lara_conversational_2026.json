@@ -1,0 +1,53 @@
+{
+  "id": "lara_conversational_2026",
+  "title": "Are You Sure This is What You Really Want? Conversational Recommender Systems for Enhancing Human Autonomy",
+  "authors": [
+    {
+      "name": "Francisco Lara",
+      "affiliation": ""
+    },
+    {
+      "name": "J. I. del Valle",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo examina cómo los sistemas de recomendación conversacionales pueden diseñarse para mejorar la autonomía humana en lugar de simplemente optimizar la satisfacción del usuario.",
+  "publication": {
+    "type": "journal",
+    "venue": "Science and Engineering Ethics",
+    "year": 2026
+  },
+  "abstract": "Conversational recommender systems have the potential to enhance human autonomy by engaging users in reflective dialogue about their preferences. This paper explores how CRS can be designed to support authentic preference formation rather than mere preference satisfaction. We propose design principles for autonomy-enhancing conversational agents that help users articulate and refine their true desires.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "conversational recommender systems",
+    "human autonomy",
+    "preference formation",
+    "AI ethics",
+    "human-AI interaction"
+  ],
+  "citations": {
+    "bibtex": "@article{lara2026conversational,\n  title={Are You Sure This is What You Really Want? Conversational Recommender Systems for Enhancing Human Autonomy},\n  author={Lara, Francisco and del Valle, J. I.},\n  journal={Science and Engineering Ethics},\n  year={2026},\n  publisher={Springer}\n}",
+    "apa": "Lara, F., & del Valle, J. I. (2026). Are You Sure This is What You Really Want? Conversational Recommender Systems for Enhancing Human Autonomy. Science and Engineering Ethics.",
+    "mla": "Lara, Francisco, and J. I. del Valle. \"Are You Sure This is What You Really Want? Conversational Recommender Systems for Enhancing Human Autonomy.\" Science and Engineering Ethics, 2026."
+  },
+  "tags": [
+    "Fairness & Bias",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Autonomy-enhancing CRS framework",
+      "Reflective preference formation",
+      "Ethical conversational agent design"
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "mentxaka_riscanvi",
+  "title": "The Problems Arising from the Lack of Explainability in AI Governance: The RisCanvi Use Case",
+  "authors": [
+    {
+      "name": "Oier Mentxaka",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Jesús López-Montilla",
+      "affiliation": ""
+    },
+    {
+      "name": "D. Urrutia-Onate",
+      "affiliation": ""
+    },
+    {
+      "name": "H. Almazrouei",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este artículo examina los problemas que surgen de la falta de explicabilidad en sistemas de IA para gobernanza, utilizando el sistema RisCanvi de evaluación de riesgo como caso de estudio.",
+  "publication": {
+    "type": "journal",
+    "venue": "AI & Society",
+    "year": 2026
+  },
+  "abstract": "AI governance systems in critical domains require explainability for accountability and trust. This paper analyzes the problems arising from lack of explainability in AI governance through the RisCanvi case study - a risk assessment system used in judicial contexts. We identify key explainability gaps and propose requirements for governable AI systems in sensitive applications.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1007/s00146-026-02442-x",
+  "keywords": [
+    "AI governance",
+    "explainability",
+    "risk assessment",
+    "judicial AI",
+    "accountability"
+  ],
+  "citations": {
+    "bibtex": "@article{mentxaka2026riscanvi,\n  title={The Problems Arising from the Lack of Explainability in AI Governance: The RisCanvi Use Case},\n  author={Mentxaka, Oier and L{\\'o}pez-Montilla, Jes{\\'u}s and Urrutia-Onate, D. and Almazrouei, H. and Herrera, Francisco},\n  journal={AI & Society},\n  year={2026},\n  publisher={Springer}\n}",
+    "apa": "Mentxaka, O., López-Montilla, J., Urrutia-Onate, D., Almazrouei, H., & Herrera, F. (2026). The Problems Arising from the Lack of Explainability in AI Governance: The RisCanvi Use Case. AI & Society.",
+    "mla": "Mentxaka, Oier, Jesús López-Montilla, D. Urrutia-Onate, H. Almazrouei, and Francisco Herrera. \"The Problems Arising from the Lack of Explainability in AI Governance: The RisCanvi Use Case.\" AI & Society, 2026."
+  },
+  "tags": [
+    "Governance & Regulation",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "RisCanvi case study analysis",
+      "Explainability requirements for governance AI",
+      "Judicial AI accountability framework"
+    ]
+  }
+}

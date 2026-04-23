@@ -1,0 +1,67 @@
+{
+  "id": "bello_garcia_2026_neuro",
+  "title": "RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data",
+  "authors": [
+    {
+      "name": "B. Bello-García",
+      "affiliation": ""
+    },
+    {
+      "name": "I. Aguilera-Martos",
+      "affiliation": ""
+    },
+    {
+      "name": "N. Rodríguez-Barroso",
+      "affiliation": ""
+    },
+    {
+      "name": "F. Herrera",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "J. Luengo",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "publication": {
+    "type": "journal",
+    "venue": "Neurocomputing",
+    "year": 2026
+  },
+  "abstract": "Anomaly detection is a critical task across multiple domains. This paper presents RADAR, a unified and reproducible framework for robust anomaly detection and recognition that handles tabular data, time-series, and federated learning scenarios. Our framework provides standardized evaluation protocols and benchmarking capabilities for comparing anomaly detection methods across diverse data types.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "anomaly detection",
+    "robustness",
+    "federated learning",
+    "time series",
+    "tabular data"
+  ],
+  "citations": {
+    "bibtex": "@article{bellogarcia2026radar,\n  title={RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data},\n  author={Bello-Garc{\\'i}a, B. and Aguilera-Martos, I. and Rodr{\\'i}guez-Barroso, N. and Herrera, F. and Luengo, J.},\n  journal={Neurocomputing},\n  year={2026},\n  publisher={Elsevier}\n}",
+    "apa": "Bello-García, B., Aguilera-Martos, I., Rodríguez-Barroso, N., Herrera, F., & Luengo, J. (2026). RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data. Neurocomputing.",
+    "mla": "Bello-García, B., I. Aguilera-Martos, N. Rodríguez-Barroso, F. Herrera, and J. Luengo. \"RADAR: Robust Anomaly Detection and Recognition. A Unified and Reproducible Framework Across Tabular, Time-Series, and Federated Data.\" Neurocomputing, 2026."
+  },
+  "tags": [
+    "Robustness & OOD",
+    "Privacy & Federated Learning",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/paper_pdfs/paper_bello_garcia_2026_neuro_preview.png",
+  "google_scholar_url": "",
+  "github_url": "https://github.com/ari-dasci/S-RADAR-API",
+  "metadata": {
+    "contributions": [
+      "Unified anomaly detection framework",
+      "Cross-domain evaluation protocol",
+      "Federated anomaly detection",
+      "Standardized evaluation protocols",
+      "Benchmarking capabilities across diverse data types"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "dominguez_rull_2026_cai",
+  "title": "Predictive Mapping of Vineyard Post-Fire Dynamics Using ExG-Supervised U-Net and Ultra-High-Resolution RGB UAV Imagery",
+  "authors": [
+    {
+      "name": "J. Domínguez-Rull",
+      "affiliation": ""
+    },
+    {
+      "name": "J. Rodrigo-Comino",
+      "affiliation": ""
+    },
+    {
+      "name": "F. Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este trabajo presenta un enfoque basado en U-Net supervisado con índice ExG (Excess Green) para mapear y predecir la dinámica de recuperación de viñedos después de incendios usando imágenes UAV RGB de ultra alta resolución.",
+  "publication": {
+    "type": "conference",
+    "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
+    "year": 2026
+  },
+  "abstract": "Post-fire vegetation recovery monitoring is crucial for agricultural land management. This paper presents an ExG-supervised U-Net approach for predictive mapping of vineyard post-fire dynamics using ultra-high-resolution RGB UAV imagery. Our method combines vegetation index supervision with deep learning segmentation to accurately track vineyard recovery patterns after wildfire events, enabling precision agriculture interventions.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://www.ieeesmc.org/cai-2026/",
+  "keywords": [
+    "vineyard monitoring",
+    "post-fire dynamics",
+    "U-Net",
+    "UAV imagery",
+    "precision agriculture"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{dominguezrull2026predictive,\n  title={Predictive Mapping of Vineyard Post-Fire Dynamics Using ExG-Supervised U-Net and Ultra-High-Resolution RGB UAV Imagery},\n  author={Dom{\\'i}nguez-Rull, J. and Rodrigo-Comino, J. and Herrera, F.},\n  booktitle={2026 IEEE Conference on Artificial Intelligence (CAI)},\n  year={2026}\n}",
+    "apa": "Domínguez-Rull, J., Rodrigo-Comino, J., & Herrera, F. (2026). Predictive Mapping of Vineyard Post-Fire Dynamics Using ExG-Supervised U-Net and Ultra-High-Resolution RGB UAV Imagery. In 2026 IEEE Conference on Artificial Intelligence (CAI).",
+    "mla": "Domínguez-Rull, J., J. Rodrigo-Comino, and F. Herrera. \"Predictive Mapping of Vineyard Post-Fire Dynamics Using ExG-Supervised U-Net and Ultra-High-Resolution RGB UAV Imagery.\" 2026 IEEE Conference on Artificial Intelligence (CAI), 2026."
+  },
+  "tags": [
+    "Critical Applications (Environment)",
+    "GPAIS"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "ExG-supervised U-Net architecture",
+      "Post-fire vineyard dynamics mapping",
+      "UAV-based precision agriculture"
+    ]
+  }
+}

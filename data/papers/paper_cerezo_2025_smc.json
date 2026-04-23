@@ -1,0 +1,56 @@
+{
+  "id": "cerezo_2025_smc",
+  "title": "From Traditional Methods to GPT-based Models for 2D Video Game Level Procedural Content Generation: An Empirical Study",
+  "authors": [
+    {
+      "name": "David Cerezo",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada",
+      "github_url": "https://github.com/daniicereezzo/BenchmarkPCG"
+    }
+  ],
+  "year": 2025,
+  "month": "Oct",
+  "description_es": "Este estudio empírico compara métodos tradicionales de generación de contenido con modelos GPT modernos para crear niveles de videojuegos.",
+  "publication": {
+    "type": "conference",
+    "venue": "2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+    "location": "Vienna, Austria",
+    "pages": "3260-3267",
+    "year": 2025
+  },
+  "abstract": "Procedural content generation (PCG) for video games has evolved significantly. This paper provides an empirical comparison between traditional methods and modern GPT-based approaches for generating 2D game levels, evaluating their effectiveness and applicability.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://www.ieeesmc2025.org/files/content/SMC25-Handbook.pdf",
+  "keywords": [
+    "procedural content generation",
+    "game level design",
+    "GPT models",
+    "generative AI",
+    "empirical study"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{cerezo2025traditional,\n  title={From Traditional Methods to GPT-based Models for 2D Video Game Level Procedural Content Generation: An Empirical Study},\n  author={Cerezo, David and Triguero, Isaac},\n  booktitle={2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},\n  pages={3260--3267},\n  year={2025},\n  organization={IEEE}\n}",
+    "apa": "Cerezo, D., & Triguero, I. (2025). From Traditional Methods to GPT-based Models for 2D Video Game Level Procedural Content Generation: An Empirical Study. In 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 3260-3267). IEEE.",
+    "mla": "Cerezo, David, and Isaac Triguero. \"From Traditional Methods to GPT-based Models for 2D Video Game Level Procedural Content Generation: An Empirical Study.\" 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC), IEEE, 2025, pp. 3260-3267."
+  },
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
+  "research_area": "gpais",
+  "image": "images/paper_pdfs/paper_cerezo_2025_smc_preview.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Empirical comparison of PCG methods",
+      "GPT-based game level generation",
+      "Evaluation metrics for procedural content"
+    ]
+  },
+  "github_url": "https://github.com/daniicereezzo/BenchmarkPCG"
+}

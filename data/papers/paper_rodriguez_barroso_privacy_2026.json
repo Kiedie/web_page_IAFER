@@ -1,0 +1,61 @@
+{
+  "id": "rodriguez_barroso_privacy_2026",
+  "title": "From Privacy to Trust: Challenges Taxonomy and Blueprint for Trustworthy Federated Learning",
+  "authors": [
+    {
+      "name": "Nuria Rodríguez-Barroso",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Mario García-Márquez",
+      "affiliation": ""
+    },
+    {
+      "name": "María Victoria Luzón",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este artículo presenta una taxonomía de desafíos y un plan de acción para desarrollar sistemas de aprendizaje federado que sean no solo privados sino también confiables en un sentido más amplio.",
+  "publication": {
+    "type": "journal",
+    "venue": "Information Fusion",
+    "year": 2026
+  },
+  "abstract": "Federated learning promises privacy-preserving distributed training, but trustworthiness extends beyond privacy alone. This paper presents a comprehensive taxonomy of challenges in building trustworthy federated learning systems and provides a blueprint for addressing them. We examine privacy, security, fairness, and governance dimensions, offering practical guidance for deploying FL in sensitive domains.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1016/j.inffus.2026.103948",
+  "keywords": [
+    "federated learning",
+    "privacy",
+    "trustworthy AI",
+    "challenges taxonomy",
+    "distributed learning"
+  ],
+  "citations": {
+    "bibtex": "@article{rodriguezbarroso2026privacy,\n  title={From Privacy to Trust: Challenges Taxonomy and Blueprint for Trustworthy Federated Learning},\n  author={Rodr{\\'i}guez-Barroso, Nuria and Garc{\\'i}a-M{\\'a}rquez, Mario and Luz{\\'o}n, Mar{\\'i}a Victoria and Herrera, Francisco},\n  journal={Information Fusion},\n  year={2026},\n  publisher={Elsevier}\n}",
+    "apa": "Rodríguez-Barroso, N., García-Márquez, M., Luzón, M. V., & Herrera, F. (2026). From Privacy to Trust: Challenges Taxonomy and Blueprint for Trustworthy Federated Learning. Information Fusion.",
+    "mla": "Rodríguez-Barroso, Nuria, Mario García-Márquez, María Victoria Luzón, and Francisco Herrera. \"From Privacy to Trust: Challenges Taxonomy and Blueprint for Trustworthy Federated Learning.\" Information Fusion, 2026."
+  },
+  "tags": [
+    "Privacy & Federated Learning",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "FL trustworthiness taxonomy",
+      "Privacy-trust blueprint",
+      "Distributed learning governance"
+    ]
+  }
+}

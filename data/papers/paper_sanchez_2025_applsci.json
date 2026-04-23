@@ -1,0 +1,60 @@
+{
+  "id": "sanchez_2025_applsci",
+  "title": "Artificial Intelligence Adoption in SMEs: Survey Based on TOE–DOI Framework, Primary Methodology and Challenges",
+  "authors": [
+    {
+      "name": "Esther Sánchez",
+      "affiliation": "ESIC University"
+    },
+    {
+      "name": "Reyes Calderón",
+      "affiliation": "Pontifical Comillas University"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "Jun",
+  "description_es": "Este artículo proporciona una encuesta comprensiva sobre la adopción de IA en pequeñas y medianas empresas, analizando factores tecnológicos, organizacionales y ambientales.",
+  "publication": {
+    "type": "journal",
+    "venue": "Applied Sciences",
+    "volume": "15",
+    "issue": "12",
+    "pages": "6465",
+    "year": 2025
+  },
+  "abstract": "Small and medium-sized enterprises (SMEs) face unique challenges in adopting artificial intelligence. This survey analyzes AI adoption through the lens of the Technology-Organization-Environment (TOE) framework combined with diffusion of innovations (DOI) theory, providing actionable insights and a practical adoption roadmap for SMEs.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.3390/app15126465",
+  "keywords": [
+    "AI adoption",
+    "SMEs",
+    "TOE framework",
+    "digital transformation",
+    "organizational readiness"
+  ],
+  "citations": {
+    "bibtex": "@article{sanchez2025artificial,\n  title={Artificial Intelligence Adoption in SMEs: Survey Based on TOE–DOI Framework, Primary Methodology and Challenges},\n  author={Sánchez, Esther and Calderón, Reyes and Herrera, Francisco},\n  journal={Applied Sciences},\n  volume={15},\n  number={12},\n  pages={6465},\n  year={2025},\n  publisher={MDPI}\n}",
+    "apa": "Sánchez, E., Calderón, R., & Herrera, F. (2025). Artificial Intelligence Adoption in SMEs: Survey Based on TOE–DOI Framework, Primary Methodology and Challenges. Applied Sciences, 15(12), 6465.",
+    "mla": "Sánchez, Esther, et al. \"Artificial Intelligence Adoption in SMEs: Survey Based on TOE–DOI Framework, Primary Methodology and Challenges.\" Applied Sciences, vol. 15, no. 12, 2025, p. 6465."
+  },
+  "tags": [
+    "Governance & Regulation",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/trustworthy/sme_ai_adoption_1.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Comprehensive AI adoption framework for SMEs",
+      "Identification of organizational barriers",
+      "Practical implementation roadmap"
+    ]
+  },
+  "github_url": ""
+}

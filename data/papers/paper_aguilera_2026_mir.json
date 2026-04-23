@@ -1,0 +1,61 @@
+{
+  "id": "aguilera_2026_mir",
+  "title": "Local Attention Mechanism: Boosting the Transformer Architecture for Long-Sequence Time Series Forecasting",
+  "authors": [
+    {
+      "name": "Ignacio Aguilera-Martos",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Andrés Herrera-Poyatos",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Julián Luengo",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Mar",
+  "description_es": "Este trabajo presenta un mecanismo de atención local eficiente que explota las propiedades de continuidad de las series temporales para mejorar el rendimiento de transformers en predicción de largo plazo.",
+  "publication": {
+    "type": "journal",
+    "venue": "Machine Intelligence Research",
+    "year": 2026
+  },
+  "abstract": "Transformer architectures have shown great potential for time series forecasting. However, standard attention mechanisms suffer from quadratic complexity and may not fully exploit the temporal continuity properties of time series data. This paper introduces a Local Attention Mechanism (LAM) that runs in O(n log n) time and memory complexity while achieving superior performance on long-sequence forecasting tasks.",
+  "pdf_url": "",
+  "arxiv_url": "https://arxiv.org/abs/2410.03805",
+  "paper_url": "https://doi.org/10.1007/s11633-026-1660-y",
+  "keywords": [
+    "transformers",
+    "time series forecasting",
+    "attention mechanism",
+    "deep learning",
+    "long-sequence prediction"
+  ],
+  "citations": {
+    "bibtex": "@article{aguilera2026local,\n  title={Local Attention Mechanism: Boosting the Transformer Architecture for Long-Sequence Time Series Forecasting},\n  author={Aguilera-Martos, Ignacio and Herrera-Poyatos, Andr{\\'e}s and Luengo, Juli{\\'a}n and Herrera, Francisco},\n  journal={Machine Intelligence Research},\n  year={2026},\n  publisher={Springer}\n}",
+    "apa": "Aguilera-Martos, I., Herrera-Poyatos, A., Luengo, J., & Herrera, F. (2026). Local Attention Mechanism: Boosting the Transformer Architecture for Long-Sequence Time Series Forecasting. Machine Intelligence Research.",
+    "mla": "Aguilera-Martos, Ignacio, et al. \"Local Attention Mechanism: Boosting the Transformer Architecture for Long-Sequence Time Series Forecasting.\" Machine Intelligence Research, 2026."
+  },
+  "tags": [
+    "GPAIS",
+    "Robustness in Deep Learning"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "https://github.com/ari-dasci/S-LAM",
+  "metadata": {
+    "contributions": [
+      "Local Attention Mechanism for time series",
+      "O(n log n) complexity attention",
+      "Improved long-sequence forecasting"
+    ]
+  }
+}

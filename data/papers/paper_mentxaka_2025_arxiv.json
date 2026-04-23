@@ -1,0 +1,77 @@
+{
+  "id": "mentxaka_2025_arxiv",
+  "title": "Aligning Trustworthy AI with Democracy: A Dual Taxonomy of Opportunities and Risks",
+  "authors": [
+    {
+      "name": "Oier Mentxaka",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Natalia Díaz-Rodríguez",
+      "affiliation": ""
+    },
+    {
+      "name": "Mark Coeckelbergh",
+      "affiliation": ""
+    },
+    {
+      "name": "Marcos López de Prado",
+      "affiliation": ""
+    },
+    {
+      "name": "Emilia Gómez",
+      "affiliation": ""
+    },
+    {
+      "name": "David Fernández Llorca",
+      "affiliation": ""
+    },
+    {
+      "name": "Enrique Herrera-Viedma",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "May",
+  "description_es": "Este trabajo presenta una doble taxonomía que mapea las contribuciones positivas de la IA a la democracia (AIPD) y los riesgos de la IA para la democracia (AIRD), proporcionando un marco para alinear la IA confiable con los principios democráticos.",
+  "publication": {
+    "type": "article",
+    "venue": "arXiv preprint",
+    "year": 2025
+  },
+  "abstract": "As AI systems become increasingly integrated into democratic processes, understanding both their potential benefits and risks is crucial. This paper presents a dual taxonomy framework: AIPD (AI's Positive Contributions to Democracy) covering seven categories where AI can strengthen democracy, and AIRD (AI Risks to Democracy) identifying seven risk categories. We map each AIRD risk to specific Trustworthy AI requirements for mitigation, finding that Transparency and Societal Wellbeing are transversal requirements affecting most democratic risks.",
+  "pdf_url": "",
+  "arxiv_url": "https://arxiv.org/abs/2505.13565",
+  "paper_url": "https://doi.org/10.48550/arXiv.2505.13565",
+  "keywords": [
+    "trustworthy AI",
+    "democracy",
+    "AI governance",
+    "AI ethics",
+    "risk taxonomy"
+  ],
+  "citations": {
+    "bibtex": "@article{mentxaka2025aligning,\n  title={Aligning Trustworthy AI with Democracy: A Dual Taxonomy of Opportunities and Risks},\n  author={Mentxaka, Oier and D{\\'i}az-Rodr{\\'i}guez, Natalia and Coeckelbergh, Mark and L{\\'o}pez de Prado, Marcos and G{\\'o}mez, Emilia and Fern{\\'a}ndez Llorca, David and Herrera-Viedma, Enrique and Herrera, Francisco},\n  journal={arXiv preprint arXiv:2505.13565},\n  year={2025}\n}",
+    "apa": "Mentxaka, O., Díaz-Rodríguez, N., Coeckelbergh, M., López de Prado, M., Gómez, E., Fernández Llorca, D., Herrera-Viedma, E., & Herrera, F. (2025). Aligning Trustworthy AI with Democracy: A Dual Taxonomy of Opportunities and Risks. arXiv preprint arXiv:2505.13565.",
+    "mla": "Mentxaka, Oier, et al. \"Aligning Trustworthy AI with Democracy: A Dual Taxonomy of Opportunities and Risks.\" arXiv preprint arXiv:2505.13565 (2025)."
+  },
+  "tags": [
+    "Fairness & Bias",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/paper_pdfs/paper_mentxaka_2025_arxiv_preview.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Dual taxonomy of AI-democracy relationships",
+      "Mapping of risks to trustworthy AI requirements",
+      "Framework for democratic AI governance"
+    ]
+  }
+}

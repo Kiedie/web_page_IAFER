@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero-Shot Learning - GPAIS | IAFER</title>
-    <meta name="description" content="Aprende sobre Zero-Shot Learning: técnicas de aprendizaje sin ejemplos previos mediante transferencia de conocimiento semántico">
+    <meta name="description" content="Learn about Zero-Shot Learning: learning techniques without previous examples through semantic knowledge transfer.">
     
-    <!-- Fuentes -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
-    <!-- Estilos -->
+    <!-- Styles -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body id="top">
     <!-- ==============================
-         NAVBAR PRINCIPAL
+         MAIN NAVBAR
     ============================== -->
-    <nav class="navbar" aria-label="Navegacion principal">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="navbar__inner">
             <a href="../index.html" class="navbar__brand">IAFER</a>
 
             <ul class="navbar__menu" id="navbar-menu">
                 <!-- GPAIS -->
                 <li class="navbar__item navbar__item--dropdown">
-                    <a href="../gpais/index.html" class="navbar__link">GPAIS</a>
+                    <a href="index.html" class="navbar__link">GPAIS</a>
                     <ul class="navbar__dropdown">
-                        <li><a href="../gpais/contrastive-learning.html">Contrastive Learning</a></li>
-                        <li><a href="../gpais/self-supervised.html">Self-Supervised Learning</a></li>
-                        <li><a href="../gpais/zero-shot.html">Zero-Shot Learning</a></li>
-                        <li><a href="../gpais/agentic-ai.html">Agentic AI</a></li>
+                        <li><a href="contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="automl.html">AutoML & Few-Shot Learning</a></li>
+                        <li><a href="agentic-ai.html">Agentic AI</a></li>
                     </ul>
                 </li>
 
@@ -40,21 +41,20 @@
                     <ul class="navbar__dropdown">
                         <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
                         <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
+                        <li><a href="../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
+                        <li><a href="../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
+                        <li><a href="../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
                         <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
 
-                <!-- Resultados -->
+                <!-- Results -->
                 <li class="navbar__item">
-                    <a href="../papers/index.html" class="navbar__link">Resultados</a>
+                    <a href="../papers/index.html" class="navbar__link">Results</a>
                 </li>
             </ul>
 
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -77,43 +77,43 @@
 
         <main class="container">
             <section class="hero-card">
-                <!-- Badge superior -->
+                <!-- Upper badge -->
                 <div class="hero-badge">
                     <span aria-hidden="true">🎯</span>
                     <span>Research Focus</span>
                 </div>
 
-                <!-- Título principal -->
+                <!-- Main title -->
                 <h1 class="hero-title">Zero-Shot Learning</h1>
-                <p class="hero-subtitle">Aprendizaje sin ejemplos mediante transferencia de conocimiento semántico</p>
+                <p class="hero-subtitle">Learning without examples through semantic knowledge transfer</p>
 
-                <!-- Botones de acción -->
+                <!-- Action buttons -->
                 <div class="hero-actions">
                     <a href="#fundamentos" class="btn btn-primary">
-                        <span>Explorar contenido</span>
+                        <span>Explore content</span>
                         <span aria-hidden="true">→</span>
                     </a>
                     <a href="index.html" class="btn btn-secondary">
                         <span aria-hidden="true">←</span>
-                        <span>Volver a GPAIS</span>
+                        <span>Back to GPAIS</span>
                     </a>
                 </div>
 
                 <div class="hero-divider"></div>
 
-                <!-- Introducción -->
+                <!-- Introduction -->
                 <section id="fundamentos" class="content-section">
-                    <h2 class="section-title">¿Qué es Zero-Shot Learning?</h2>
+                    <h2 class="section-title">What is Zero-Shot Learning?</h2>
                     <div class="content-text">
                         <p>
-                            <strong class="text-highlight">Zero-Shot Learning (ZSL)</strong> es un paradigma de aprendizaje automático 
-                            que permite a los modelo clasificar objetos que nunca han visto durante el entrenamiento. Para ello, se basa en 
-                            la <strong>transferencia de conocimiento semántico</strong>, utilizando descripciones de alto nivel (atributos, 
-                            embeddings de texto, o grafos de conocimiento) para relacionar clases conocidas con clases desconocidas. 
-                            semánticas que relacionan las clases conocidas con las desconocidas. 
+                            <strong class="text-highlight">Zero-Shot Learning (ZSL)</strong> is a machine learning paradigm
+                            that enables models to classify objects that they have never seen during training. To do this, it is based on
+                            the <strong>transfer of semantic knowledge</strong>, using high-level descriptions (attributes,
+                            text embeddings, or knowledge graphs) to relate known classes to unknown classes.
+                            semantic relationships that link known classes with unknown ones.
                         </p>
                         <p>
-                            El conjunto de todas esas descripciones conforman el componente clave, el <strong>espacio semántico</strong>.  
+                            The set of all those descriptions makes up the key component, the <strong>semantic space</strong>.
                         </p>
                     </div>
                 </section>
@@ -123,50 +123,50 @@
         </main>
     </div>
 
-    <!-- Divisor de sección -->
+<!-- Divider section -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Cómo Funciona -->
+    <!-- Section: How It Works -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">¿Tipos de espacio semántico?</h2>
+            <h2 class="section-title">Types of semantic space?</h2>
             <p class="section-intro">
-                Según su naturaleza, los espacios semánticos se pueden clasificar en: 
+                According to its nature, semantic spaces can be classified as:
             </p>
             
             <div class="research-cards">
-                <!-- Componente 1 -->
+                <!-- Component 1 -->
                 <article class="research-card">
-                    <span class="research-badge">Implícitos</span>
+                    <span class="research-badge">Implicit</span>
                     <div class="research-icon" aria-hidden="true">🤖</div>
-                    <h3 class="research-card-title">Implícito</h3>
+                    <h3 class="research-card-title">Implicit</h3>
                     <p class="research-card-desc">
-                        Es el espacio semántico que viene implícito en los grandes modelos de lenguaje. Es un espacio originado a partir de la 
-                        ingente cantidad de datos con los que estos modelos ha sido entrenados. Es un espacio muy rico en conocimiento, pero difícil de interpretar.
+                        It is the semantic space that comes implicit in large language models. It is a space originated from the
+                        vast amount of data with which these models have been trained. It is a space very rich in knowledge, but difficult to interpret.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Componente 2 -->
+                <!-- Component 2 -->
                 <article class="research-card">
-                    <span class="research-badge">Explícitos</span>
+                    <span class="research-badge">Explicit</span>
                     <div class="research-icon" aria-hidden="true">✍️</div>
-                    <h3 class="research-card-title">Manuales</h3>
+                    <h3 class="research-card-title">Manual</h3>
                     <p class="research-card-desc">
-                        Es un espacio semántico definido manualmente por expertos humanos. Consiste en atributos que describen a las imágenes, e.g., "tiene alas", 
-                        "es de color rojo", etc. Este tipo de espacio es interpretable pero costoso de generar.
+                        It is a semantic space defined manually by human experts. It consists of attributes that describe images, e.g., "has wings",
+                        "is red", etc. This type of space is interpretable but costly to generate.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Componente 3 -->
+                <!-- Component 3 -->
                 <article class="research-card">
-                    <span class="research-badge">Explícitos</span>
+                    <span class="research-badge">Explicit</span>
                     <div class="research-icon" aria-hidden="true">🧠</div>
-                    <h3 class="research-card-title">Aprendidos</h3>
+                    <h3 class="research-card-title">Learned</h3>
                     <p class="research-card-desc">
-                        Espacios semánticos generados por la salida de un modelo de aprendizaje automático. Son más flexibles y fáciles de generar, 
-                        pero pueden carecer de interpretabilidad y precisión.
+                        Semantic spaces generated by the output of a machine learning model. They are more flexible and easier to generate,
+                        but may lack interpretability and precision.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -174,26 +174,26 @@
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Section divider -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Tipos de ZSL -->
+    <!-- Section: ZSL Types -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Tipos de métodos</h2>
+            <h2 class="section-title">Types of Methods</h2>
             <p class="section-intro">
-                Hay dos principales enfoques para abordar tareas de ZSL:
+                There are two main approaches to addressing ZSL tasks:
             </p>
             <div class="content-grid">
                 <!-- Classical ZSL -->
                 <article class="info-card">
                     <h3 class="info-card-title">
                         <span class="info-card-icon" aria-hidden="true">✨🎨</span>
-                        Métodos Generativos
+                        Generative Methods
                     </h3>
                     <p class="info-card-text">
-                        Se generan muestras sintéticas de las clases no vistas condicionando un modelo generativo al espacio semántico de esas clases. 
-                        Posteriormente, se entrena un clasificador supervisado con las muestras reales y sintéticas.
+                        Synthetic samples of unseen classes are generated by conditioning a generative model on the semantic space of those classes.
+                        Subsequently, a supervised classifier is trained with both real and synthetic samples.
                     </p>
                 </article>
 
@@ -201,11 +201,11 @@
                 <article class="info-card">
                     <h3 class="info-card-title">
                         <span class="info-card-icon" aria-hidden="true">🔍👁️</span>
-                        Métodos basados en Atención
+                        Attention-based Methods
                     </h3>
                     <p class="info-card-text">
-                        Mediante mecanismos de atención el modelo aprende a identificar los atributos del espacio semántico en la imagen.
-                        Esa información es utilizadada para realizar la clasificación de las instancias de las clases no vistas.
+                        Through attention mechanisms, the model learns to identify attributes from the semantic space in the image.
+                        This information is then used to classify instances of unseen classes.
                     </p>
                 </article>
             </div>
@@ -218,13 +218,13 @@
 
 
 
-    <!-- Sección: Desafíos -->
+    <!-- Section: Challenges -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Desafíos Actuales</h2>
+            <h2 class="section-title">Current Challenges</h2>
             <p class="section-intro">
-                A pesar de sus avances, el Zero-Shot Learning enfrenta varios desafíos fundamentales que 
-                definen las líneas de investigación actuales
+                Despite its progress, Zero-Shot Learning faces several fundamental challenges that
+                define current research lines
             </p>
             
             <div class="challenge-list">
@@ -232,8 +232,8 @@
                     <span class="challenge-number">01</span>
                     <h3 class="challenge-title">Domain Shift</h3>
                     <p class="challenge-desc">
-                        Discrepancia entre la distribución de clases vistas y no vistas, causando que el modelo 
-                        tienda a predecir clases vistas incluso para instancias de clases no vistas.
+                        Discrepancy between the distribution of seen and unseen classes, causing the model
+                        to tend to predict seen classes even for instances of unseen classes.
                     </p>
                 </div>
 
@@ -241,26 +241,26 @@
                     <span class="challenge-number">02</span>
                     <h3 class="challenge-title">Hubness Problem</h3>
                     <p class="challenge-desc">
-                        En espacios de alta dimensionalidad, ciertos puntos ("hubs") se convierten en vecinos 
-                        frecuentes de muchos otros, generando clasificaciones sesgadas.
+                        In high-dimensional spaces, certain points ("hubs") become frequent
+                        neighbors of many others, generating biased classifications.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">03</span>
-                    <h3 class="challenge-title">Calidad del Espacio Semántico</h3>
+                    <h3 class="challenge-title">Semantic Space Quality</h3>
                     <p class="challenge-desc">
-                        La efectividad del ZSL depende críticamente de la calidad de las descripciones semánticas, 
-                        que pueden ser ruidosas, incompletas o subjetivas.
+                        The effectiveness of ZSL critically depends on the quality of semantic descriptions,
+                        which can be noisy, incomplete, or subjective.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">04</span>
-                    <h3 class="challenge-title">Bias en GZSL</h3>
+                    <h3 class="challenge-title">Bias in GZSL</h3>
                     <p class="challenge-desc">
-                        Los modelos tienden a favorecer fuertemente las clases vistas sobre las no vistas, 
-                        dificultando el rendimiento equilibrado en escenarios generalizados.
+                        Models tend to strongly favor seen classes over unseen ones,
+                        making balanced performance in generalized scenarios difficult.
                     </p>
                 </div>
             </div>
@@ -270,111 +270,25 @@
     <!-- Divisor de sección -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Investigación en IAFER -->
+    <!-- Section: Research at IAFER -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Nuestra Investigación</h2>
+            <h2 class="section-title">Our Research</h2>
             <div class="content-text">
                 <p>
-                    
-                    En el grupo <strong class="text-highlight">GPAIS</strong> de la cátedra IAFER, estamos trabajando 
-                    en técnicas innovadoras de Zero-Shot Learning que abordan estos desafíos fundamentales:
-                    <h3 class="highlight-title">🚀 Líneas de Investigación Activas</h3>
+                    In the <strong class="text-highlight">GPAIS</strong> group at IAFER Chair, we are working
+                    on innovative Zero-Shot Learning techniques that address these fundamental challenges:
+                    <h3 class="highlight-title">🚀 Active Research Lines</h3>
                     <ul class="feature-list">
-                        <li><strong>Preprocesamiento del espacio Semántico:</strong> Técnicas para limpiar y mejorar la calidad del espacio semántico utilizado en ZSL</li>
-                        <li><strong>ZSL usando lógica difusa:</strong> Uso de lógica difusa para manejar la incertidumbre y la ambigüedad en la clasificación zero-shot</li>
+                        <li><strong>Semantic Space Preprocessing:</strong> Techniques to clean and improve the quality of the semantic space used in ZSL</li>
+                        <li><strong>ZSL using Fuzzy Logic:</strong> Using fuzzy logic to handle uncertainty and ambiguity in zero-shot classification</li>
                     </ul>
                 </p>
                 <div class="highlight-box">
-                    <h3 class="highlight-title">📚 Publicaciones</h3>
-                    
-                    <div class="publications-container">
-                        <!-- Publicación 1 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_2.png" 
-                                     alt="Portada del artículo sobre Semantic-Inductive Attribute Selection"
-                                     class="publication-image">
-                                <span class="publication-badge">2024</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    Este trabajo actualiza el estado del arte del Aprendizaje de Cero Ejemplos Generalizado (GZSL) integrando los 
-                                    LLMs y proponiendo una nueva clasificación de espacios semánticos en 
-                                    "explícitos" e "implícitos". Además, realiza un experimento preliminar que demuestra que reducir la cantidad de 
-                                    atributos semánticos mediante selección de características aumenta la precisión del modelo
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
-                                </p>
-                            </div>
-                        </article>
+                    <h3 class="highlight-title">📚 Publications</h3>
 
-                        <!-- Publicación 2 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_3.png" 
-                                     alt="Portada del artículo sobre Ranking Feature Selection en ZSL"
-                                     class="publication-image">
-                                <span class="publication-badge">2024</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    Este estudio presenta un método técnico para "limpiar" el espacio semántico antes del entrenamiento. 
-                                    Implementa un esquema de validación cruzada que utiliza algoritmos de selección de características embebidos
-                                    para identificar y descartar atributos irrelevantes o ruidosos, logrando así mejorar la capacidad de
-                                    generalización en clases nunca vistas.
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Publicación 3 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_4.png" 
-                                     alt="Portada del artículo sobre preprocesamiento del espacio semántico"
-                                     class="publication-image">
-                                <span class="publication-badge">2025</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    Este trabajo introduce GAZeLa, un algoritmo genético que optimiza el espacio semántico simulando 
-                                    clases desconocidas durante el propio entrenamiento. A diferencia de los métodos anteriores, 
-                                    selecciona automáticamente los atributos más relevantes sin requerir configuración manual, 
-                                    logrando superar la precisión de los modelos previos con un número significativamente menor de 
-                                    características.
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Triguero, I., Herrera, F.
-                                </p>
-                            </div>
-                        </article>
-
-                        <!-- Publicación 4 -->
-                        <article class="publication-card">
-                            <div class="publication-image-wrapper">
-                                <img src="../images/gpais/zero-shot_paper_5.png" 
-                                     alt="Portada del artículo sobre ZSL con lógica difusa"
-                                     class="publication-image">
-                                <span class="publication-badge">2026</span>
-                            </div>
-                            <div class="publication-content">
-                                <p class="publication-abstract">
-                                    Para combatir el ruido en los espacios semánticos de ZSL, proponemos un esquema de partición 
-                                    inductiva que permite filtrar atributos irrelevantes. Al contrastar métodos de ranking (RFS) 
-                                    frente a algoritmos evolutivos (GA), demostramos que eliminar la redundancia no solo simplifica 
-                                    el modelo, sino que mejora consistentemente su precisión, validando la eficacia del refinamiento 
-                                    semántico.
-                                </p>
-                                <p class="publication-authors">
-                                    Herrera-Aranda, JJ., Gomez-Trenado, G., Triguero, I., Herrera, F.
-                                </p>
-                            </div>
-                        </article>
-
+                    <div class="publications-container" id="research-line-papers" data-research-line="Zero-Shot Learning">
+                        <p class="loading-message">Loading publications...</p>
                     </div>
                 </div>
             </div>
@@ -384,25 +298,25 @@
 
 
     
-    <!-- Divisor de sección -->
+    <!-- Section divider -->
     <div class="section-divider"></div>
-    <!-- Sección: Aplicaciones -->
+    <!-- Section: Applications -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Aplicaciones Prácticas</h2>
+            <h2 class="section-title">Practical Applications</h2>
             <div class="content-text">
                 <p>
-                    El Zero-Shot Learning tiene un impacto significativo en múltiples dominios donde es imposible 
-                    o impracticable obtener ejemplos de entrenamiento para todas las categorías posibles:
+                    Zero-Shot Learning has a significant impact in multiple domains where it is impossible
+                    or impractical to obtain training examples for all possible categories:
                 </p>
-                
+
                 <ul class="feature-list">
-                    <li><strong>Reconocimiento de especies raras:</strong> Clasificación de animales en peligro de extinción sin fotografías abundantes</li>
-                    <li><strong>Diagnóstico médico:</strong> Identificación de enfermedades raras con pocos casos documentados</li>
-                    <li><strong>Reconocimiento de objetos en e-commerce:</strong> Clasificación de millones de productos sin etiquetar manualmente cada categoría</li>
-                    <li><strong>Detección de actividades:</strong> Reconocimiento de acciones humanas complejas o inusuales en video vigilancia</li>
-                    <li><strong>Búsqueda de imágenes semántica:</strong> Encontrar imágenes basándose en descripciones textuales sin ejemplos previos</li>
-                    <li><strong>Robótica y manipulación de objetos:</strong> Robots que reconocen y manipulan objetos nuevos sin reentrenamiento</li>
+                    <li><strong>Rare species recognition:</strong> Classification of endangered animals without abundant photographs</li>
+                    <li><strong>Medical diagnosis:</strong> Identification of rare diseases with few documented cases</li>
+                    <li><strong>Object recognition in e-commerce:</strong> Classification of millions of products without manually labeling each category</li>
+                    <li><strong>Activity detection:</strong> Recognition of complex or unusual human actions in video surveillance</li>
+                    <li><strong>Semantic image search:</strong> Finding images based on textual descriptions without prior examples</li>
+                    <li><strong>Robotics and object manipulation:</strong> Robots that recognize and manipulate new objects without retraining</li>
                 </ul>
             </div>
         </section>
@@ -422,46 +336,8 @@
     </footer>
 
 
-    <!-- Navbar -->
+    <!-- Scripts -->
+    <script src="../js/research-line.js"></script>
     <script src="../js/base.js"></script>
-    <script>
-    (function() {
-        const toggle = document.getElementById('navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-
-        toggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            menu.classList.toggle('open');
-        });
-
-        if ('ontouchstart' in window || window.innerWidth <= 768) {
-            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        this.parentElement.classList.toggle('open');
-                    }
-                });
-            });
-        }
-
-        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-            });
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
-                    item.classList.remove('open');
-                });
-            }
-        });
-    })();
-    </script>
 </body>
 </html>

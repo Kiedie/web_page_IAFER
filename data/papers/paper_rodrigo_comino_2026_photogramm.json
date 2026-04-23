@@ -1,0 +1,69 @@
+{
+  "id": "rodrigo_comino_2026_photogramm",
+  "title": "Hybrid Interpretable-Deep Learning Workflow for Vineyard Wildfire Damage Mapping from UAV-RGB Imagery",
+  "authors": [
+    {
+      "name": "J. Rodrigo-Comino",
+      "affiliation": ""
+    },
+    {
+      "name": "J. Domínguez-Rull",
+      "affiliation": ""
+    },
+    {
+      "name": "C. Xouris",
+      "affiliation": ""
+    },
+    {
+      "name": "A. Kalogeras",
+      "affiliation": ""
+    },
+    {
+      "name": "A. Cerdà",
+      "affiliation": ""
+    },
+    {
+      "name": "F. Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2026,
+  "month": "Mar",
+  "description_es": "Este trabajo presenta un flujo de trabajo híbrido que combina métodos interpretables con deep learning para mapear daños por incendios en viñedos usando imágenes RGB de drones.",
+  "publication": {
+    "type": "journal",
+    "venue": "The Photogrammetric Record",
+    "year": 2026
+  },
+  "abstract": "Wildfire damage assessment in agricultural areas requires accurate and interpretable methods. This paper presents a hybrid interpretable-deep learning workflow for mapping vineyard wildfire damage from UAV-RGB imagery. Our approach combines the accuracy of deep learning with the transparency of interpretable methods, enabling both precise damage quantification and understandable results for stakeholders and insurance assessment.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "wildfire damage",
+    "vineyard monitoring",
+    "UAV imagery",
+    "interpretable deep learning",
+    "precision agriculture"
+  ],
+  "citations": {
+    "bibtex": "@article{rodrigocomino2026hybrid,\n  title={Hybrid Interpretable-Deep Learning Workflow for Vineyard Wildfire Damage Mapping from UAV-RGB Imagery},\n  author={Rodrigo-Comino, J. and Dom{\\'i}nguez-Rull, J. and Xouris, C. and Kalogeras, A. and Cerd{\\'a}, A. and Herrera, F.},\n  journal={The Photogrammetric Record},\n  year={2026},\n  publisher={Wiley}\n}",
+    "apa": "Rodrigo-Comino, J., Domínguez-Rull, J., Xouris, C., Kalogeras, A., Cerdà, A., & Herrera, F. (2026). Hybrid Interpretable-Deep Learning Workflow for Vineyard Wildfire Damage Mapping from UAV-RGB Imagery. The Photogrammetric Record.",
+    "mla": "Rodrigo-Comino, J., J. Domínguez-Rull, C. Xouris, A. Kalogeras, A. Cerdà, and F. Herrera. \"Hybrid Interpretable-Deep Learning Workflow for Vineyard Wildfire Damage Mapping from UAV-RGB Imagery.\" The Photogrammetric Record, 2026."
+  },
+  "tags": [
+    "Critical Applications (Environment)",
+    "GPAIS"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "Hybrid interpretable-DL workflow",
+      "Wildfire damage mapping",
+      "UAV-based agricultural assessment"
+    ]
+  }
+}

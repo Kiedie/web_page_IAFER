@@ -1,0 +1,64 @@
+{
+  "id": "munoz_2025_intjis",
+  "title": "A Maturity Model for Practical Explainability in Artificial Intelligence-Based Applications: Integrating Analysis and Evaluation (MM4XAI-AE) Models",
+  "authors": [
+    {
+      "name": "Julián Muñoz-Ordóñez",
+      "affiliation": ""
+    },
+    {
+      "name": "Carlos Cobos",
+      "affiliation": ""
+    },
+    {
+      "name": "Juan Carlos Vidal-Rojas",
+      "affiliation": ""
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "Jan",
+  "description_es": "Este artículo presenta MM4XAI-AE, un modelo de madurez para evaluar y caracterizar el nivel de implementación de explicabilidad en aplicaciones de IA, con indicadores binarios evaluados mediante revisión de documentación.",
+  "publication": {
+    "type": "journal",
+    "venue": "International Journal of Intelligent Systems",
+    "volume": "2025",
+    "issue": "1",
+    "pages": "4934696",
+    "year": 2025
+  },
+  "abstract": "As AI systems become more prevalent in critical applications, the need for practical explainability assessment grows. This paper presents MM4XAI-AE, a maturity model that integrates Analysis and Evaluation approaches for characterizing explainability in AI-based applications. The model uses binary indicators assessed through documentation review, making it well-suited for retrospective audits and compliance verification.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1155/int/4934696",
+  "keywords": [
+    "explainability",
+    "maturity model",
+    "XAI evaluation",
+    "AI governance",
+    "trustworthy AI"
+  ],
+  "citations": {
+    "bibtex": "@article{munoz2025maturity,\n  title={A Maturity Model for Practical Explainability in Artificial Intelligence-Based Applications: Integrating Analysis and Evaluation (MM4XAI-AE) Models},\n  author={Mu{\\~n}ez-Ord{\\'o}{\\~n}ez, Juli{\\'a}n and Cobos, Carlos and Vidal-Rojas, Juan Carlos and Herrera, Francisco},\n  journal={International Journal of Intelligent Systems},\n  volume={2025},\n  number={1},\n  pages={4934696},\n  year={2025},\n  publisher={Wiley}\n}",
+    "apa": "Muñoz-Ordóñez, J., Cobos, C., Vidal-Rojas, J. C., & Herrera, F. (2025). A Maturity Model for Practical Explainability in Artificial Intelligence-Based Applications: Integrating Analysis and Evaluation (MM4XAI-AE) Models. International Journal of Intelligent Systems, 2025(1), 4934696.",
+    "mla": "Muñoz-Ordóñez, Julián, Carlos Cobos, Juan Carlos Vidal-Rojas, and Francisco Herrera. \"A Maturity Model for Practical Explainability in Artificial Intelligence-Based Applications: Integrating Analysis and Evaluation (MM4XAI-AE) Models.\" International Journal of Intelligent Systems, vol. 2025, no. 1, 2025, p. 4934696."
+  },
+  "tags": [
+    "Explainability (XAI)",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "MM4XAI-AE maturity model",
+      "Binary indicator framework",
+      "Documentation-based audit approach"
+    ]
+  }
+}

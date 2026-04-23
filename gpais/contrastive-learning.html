@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrastive Learning - GPAIS | IAFER</title>
-    <meta name="description" content="Aprende sobre Contrastive Learning: aprendizaje de representaciones mediante comparación de pares de ejemplos similares y disimilares">
+    <meta name="description" content="Learn about Contrastive Learning: learning representations by comparing pairs of similar and dissimilar examples">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -16,21 +16,22 @@
 </head>
 <body id="top">
     <!-- ==============================
-         NAVBAR PRINCIPAL
+         MAIN NAVBAR
     ============================== -->
-    <nav class="navbar" aria-label="Navegacion principal">
+    <nav class="navbar" aria-label="Main navigation">
         <div class="navbar__inner">
             <a href="../index.html" class="navbar__brand">IAFER</a>
 
             <ul class="navbar__menu" id="navbar-menu">
                 <!-- GPAIS -->
                 <li class="navbar__item navbar__item--dropdown">
-                    <a href="../gpais/index.html" class="navbar__link">GPAIS</a>
+                    <a href="index.html" class="navbar__link">GPAIS</a>
                     <ul class="navbar__dropdown">
-                        <li><a href="../gpais/contrastive-learning.html">Contrastive Learning</a></li>
-                        <li><a href="../gpais/self-supervised.html">Self-Supervised Learning</a></li>
-                        <li><a href="../gpais/zero-shot.html">Zero-Shot Learning</a></li>
-                        <li><a href="../gpais/agentic-ai.html">Agentic AI</a></li>
+                        <li><a href="contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="automl.html">AutoML & Few-Shot Learning</a></li>
+                        <li><a href="agentic-ai.html">Agentic AI</a></li>
                     </ul>
                 </li>
 
@@ -40,21 +41,20 @@
                     <ul class="navbar__dropdown">
                         <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
                         <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../trustworthy/automl/index.html">AutoML</a></li>
+                        <li><a href="../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
+                        <li><a href="../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
+                        <li><a href="../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
                         <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
                     </ul>
                 </li>
 
-                <!-- Resultados -->
+                <!-- Results -->
                 <li class="navbar__item">
-                    <a href="../papers/index.html" class="navbar__link">Resultados</a>
+                    <a href="../papers/index.html" class="navbar__link">Results</a>
                 </li>
             </ul>
 
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Abrir menu">
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -85,17 +85,17 @@
 
                 <!-- Título principal -->
                 <h1 class="hero-title">Contrastive Learning</h1>
-                <p class="hero-subtitle">Aprendizaje de representaciones mediante la comparación de pares similares y disimilares</p>
+                <p class="hero-subtitle">Learning representations by comparing pairs of similar and dissimilar examples</p>
 
-                <!-- Botones de acción -->
+                <!-- Action buttons -->
                 <div class="hero-actions">
                     <a href="#fundamentos" class="btn btn-primary">
-                        <span>Explorar contenido</span>
+                        <span>Explore content</span>
                         <span aria-hidden="true">→</span>
                     </a>
                     <a href="index.html" class="btn btn-secondary">
                         <span aria-hidden="true">←</span>
-                        <span>Volver a GPAIS</span>
+                        <span>Back to GPAIS</span>
                     </a>
                 </div>
 
@@ -103,23 +103,23 @@
 
                 <!-- Introducción -->
                 <section id="fundamentos" class="content-section">
-                    <h2 class="section-title">¿Qué es Contrastive Learning?</h2>
+                    <h2 class="section-title">What is Contrastive Learning?</h2>
                     <div class="content-text">
                         <p>
-                            <strong class="text-highlight">Contrastive Learning</strong> es un paradigma de aprendizaje
-                            automático que entrena modelos aprendiendo a <strong>comparar ejemplos</strong>: acercando
-                            en el espacio vectorial aquellas representaciones que deben ser similares
-                            (<em>pares positivos</em>) y alejando las que deben ser distintas (<em>pares negativos</em>).
-                            Este enfoque permite que el modelo descubra estructuras útiles en los datos
-                            <strong>sin necesidad de etiquetas manuales</strong>, convirtiéndose en uno de
-                            los pilares del aprendizaje auto-supervisado moderno.
+                            <strong class="text-highlight">Contrastive Learning</strong> is a machine
+                            learning paradigm that trains models by learning to <strong>compare examples</strong>: bringing
+                            closer together in vector space those representations that should be similar
+                            (<em>positive pairs</em>) and pushing apart those that should be distinct (<em>negative pairs</em>).
+                            This approach allows the model to discover useful structures in the data
+                            <strong>without the need for manual labels</strong>, becoming one of
+                            the pillars of modern self-supervised learning.
                         </p>
                         <p>
-                            La idea central puede resumirse con una analogía intuitiva: el modelo aprende
-                            que dos augmentaciones distintas de la misma imagen deben producir representaciones
-                            cercanas entre sí, mientras que representaciones de imágenes diferentes deben
-                            estar alejadas. El componente clave es la <strong>función de pérdida contrastiva</strong>,
-                            que guía este proceso de organización del espacio latente.
+                            The central idea can be summarized with an intuitive analogy: the model learns
+                            that two different augmentations of the same image should produce close representations
+                            to each other, while representations of different images should
+                            be far apart. The key component is the <strong>contrastive loss function</strong>,
+                            which guides this process of organizing the latent space.
                         </p>
                     </div>
                 </section>
@@ -128,56 +128,56 @@
         </main>
     </div>
 
-    <!-- Divisor de sección -->
+<!-- Divider section -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Tipos de pares -->
+    <!-- Section: Types of pairs -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">¿Qué son los pares contrastivos?</h2>
+            <h2 class="section-title">What are contrastive pairs?</h2>
             <p class="section-intro">
-                El aprendizaje contrastivo se estructura en torno a la construcción y comparación de dos tipos de pares
+                Contrastive learning is structured around the construction and comparison of two types of pairs
             </p>
 
             <div class="research-cards">
                 <!-- Par positivo -->
                 <article class="research-card">
-                    <span class="research-badge">Similitud</span>
+                    <span class="research-badge">Similarity</span>
                     <div class="research-icon" aria-hidden="true">🔗</div>
-                    <h3 class="research-card-title">Par Positivo</h3>
+                    <h3 class="research-card-title">Positive Pair</h3>
                     <p class="research-card-desc">
-                        Dos vistas del <strong>mismo ejemplo</strong> generadas mediante transformaciones
-                        o aumentaciones de datos. El modelo aprende a producir representaciones
-                        cercanas para estos pares, capturando la invarianza ante transformaciones irrelevantes.
+                        Two views of the <strong>same example</strong> generated through transformations
+                        or data augmentations. The model learns to produce close representations
+                        for these pairs, capturing invariance under irrelevant transformations.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
                 <!-- Par negativo -->
                 <article class="research-card">
-                    <span class="research-badge">Contraste</span>
+                    <span class="research-badge">Contrast</span>
                     <div class="research-icon" aria-hidden="true">↔️</div>
-                    <h3 class="research-card-title">Par Negativo</h3>
+                    <h3 class="research-card-title">Negative Pair</h3>
                     <p class="research-card-desc">
-                        Vistas procedentes de <strong>ejemplos distintos</strong> del conjunto de datos.
-                        El modelo aprende a separarlas en el espacio vectorial, lo que obliga a las
-                        representaciones internas a capturar diferencias semánticamente significativas
-                        entre instancias.
+                        Views from <strong>different examples</strong> in the dataset.
+                        The model learns to separate them in the vector space, forcing
+                        internal representations to capture semantically significant differences
+                        between instances.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
-                <!-- Función de pérdida -->
+                <!-- Loss Function -->
                 <article class="research-card">
-                    <span class="research-badge">Objetivo</span>
+                    <span class="research-badge">Objective</span>
                     <div class="research-icon" aria-hidden="true">🎯</div>
-                    <h3 class="research-card-title">Pérdida Contrastiva</h3>
+                    <h3 class="research-card-title">Contrastive Loss</h3>
                     <p class="research-card-desc">
-                        La función de pérdida más empleada es la <strong>InfoNCE</strong> (Noise-Contrastive
-                        Estimation), que maximiza la similitud entre pares positivos respecto a los negativos. 
-                        Variantes como la <em>NT-Xent loss</em>
-                        y la pérdida <em>frequency-aware</em> para señales biométricas extienden este
-                        marco a dominios específicos.
+                        The most commonly used loss function is <strong>InfoNCE</strong> (Noise-Contrastive
+                        Estimation), which maximizes the similarity between positive pairs relative to negative ones.
+                        Variants such as <em>NT-Xent loss</em>
+                        and the <em>frequency-aware</em> loss for biometric signals extend this
+                        framework to specific domains.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -185,15 +185,15 @@
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Divider section -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Métodos principales -->
+    <!-- Section: Main methods -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Métodos principales</h2>
+            <h2 class="section-title">Main Methods</h2>
             <p class="section-intro">
-                Cuatro familias de algoritmos que han definido el estado del arte en aprendizaje contrastivo
+                Four families of algorithms that have defined the state of the art in contrastive learning
             </p>
             <div class="content-grid">
 
@@ -229,53 +229,53 @@
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Divider section -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Desafíos -->
+    <!-- Section: Challenges -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Desafíos Actuales</h2>
+            <h2 class="section-title">Current Challenges</h2>
             <p class="section-intro">
-                A pesar de sus avances, el Contrastive Learning enfrenta retos fundamentales
-                que definen las líneas de investigación activas en el campo
+                Despite its progress, Contrastive Learning faces fundamental challenges
+                that define active research lines in the field
             </p>
 
             <div class="challenge-list">
 
                 <div class="challenge-item">
                     <span class="challenge-number">01</span>
-                    <h3 class="challenge-title">Selección de ejemplos negativos</h3>
+                    <h3 class="challenge-title">Selection of negative examples</h3>
                     <p class="challenge-desc">
-                        Negativos demasiado fáciles no aportan aprendizaje; negativos <em>falsos</em>
-                        (instancias similares tratadas como distintas) deterioran las representaciones.
+                        Too-easy negatives don't provide learning; false <em>negatives</em>
+                        (similar instances treated as different) degrade representations.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">02</span>
-                    <h3 class="challenge-title">Colapso de representaciones</h3>
+                    <h3 class="challenge-title">Collapse of representations</h3>
                     <p class="challenge-desc">
-                        Sin negativos o con arquitecturas inadecuadas, el modelo puede colapsar y asignar
-                        la misma representación a todos los ejemplos.
+                        Without negatives or with inappropriate architectures, the model can collapse and assign
+                        the same representation to all examples.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">03</span>
-                    <h3 class="challenge-title">Aumentaciones dependientes del dominio</h3>
+                    <h3 class="challenge-title">Domain-dependent augmentations</h3>
                     <p class="challenge-desc">
-                        Las transformaciones válidas para imágenes no sirven en señales temporales o EEG;
-                        definir cuáles preservan la información relevante requiere conocimiento del dominio.
+                        Transformations valid for images don't work on time series or EEG; defining which
+                        preserve relevant information requires domain knowledge.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">04</span>
-                    <h3 class="challenge-title">Coste computacional</h3>
+                    <h3 class="challenge-title">Computational cost</h3>
                     <p class="challenge-desc">
-                        Requiere baches grandes o colas de negativos extensas, lo que limita su uso
-                        directo en entornos con recursos restringidos.
+                        Requires large batches or extensive queues of negatives, limiting direct use
+                        in resource-constrained environments.
                     </p>
                 </div>
 
@@ -283,82 +283,56 @@
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Divider section -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Nuestra Investigación -->
+    <!-- Section: Our Research -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Nuestra Investigación</h2>
+            <h2 class="section-title">Our Research</h2>
             <div class="content-text">
                 <p>
-                    En el grupo <strong class="text-highlight">GPAIS</strong> de la cátedra IAFER,
-                    aplicamos Contrastive Learning a problemas donde los datos etiquetados son escasos
-                    y la variabilidad entre sujetos es alta, con especial énfasis en señales biomédicas:
+                    In the <strong class="text-highlight">GPAIS</strong> group at IAFER chair,
+                    we apply Contrastive Learning to problems where labeled data is scarce
+                    and between-subject variability is high, with special focus on biomedical signals:
                 </p>
-                <h3 class="highlight-title">🚀 Líneas de Investigación Activas</h3>
+                <h3 class="highlight-title">🚀 Active Research Lines</h3>
                 <ul class="feature-list">
-                    <li><strong>Frequency-Aware Contrastive Learning para EEG:</strong> Diseño de funciones de pérdida contrastiva que incorporan el conocimiento de las bandas de frecuencia cerebrales para aprender representaciones más transferibles en detección de crisis epilépticas.</li>
-                    <li><strong>Generalización entre pacientes:</strong> Métodos contrastivos que reducen el <em>domain shift</em> entre pacientes, clave para desplegar modelos en entornos clínicos reales sin reentrenamiento por paciente.</li>
-                    <li><strong>Contrastive Learning federado:</strong> Adaptación de marcos contrastivos a entornos de aprendizaje federado donde los datos clínicos no pueden centralizarse por restricciones de privacidad.</li>
+                    <li><strong>Frequency-Aware Contrastive Learning for EEG:</strong> Design of contrastive loss functions that incorporate knowledge of brain frequency bands for learning more transferable representations in seizure detection.</li>
+                    <li><strong>Cross-patient generalization:</strong> Contrastive methods that reduce <em>domain shift</em> between patients, key for deploying models in real clinical environments without per-patient retraining.</li>
+                    <li><strong>Federated contrastive learning:</strong> Adaptation of contrastive frameworks to federated learning environments where clinical data cannot be centralized due to privacy restrictions.</li>
                 </ul>
             </div>
 
             <div class="highlight-box">
-                <h3 class="highlight-title">📚 Publicaciones</h3>
-                <div class="publications-container">
-
-                    <!-- Publicación 1 -->
-                    <article class="publication-card">
-                        <div class="publication-image-wrapper">
-                            <img src="../images/gpais/contrastive_learning/Kristina_paper_1.png"
-                                 alt="Frequency-Aware Contrastive Learning para EEG - Stemikovskaya et al. 2025"
-                                 style="width:100%; border-radius:0.75rem; display:block;">
-                            <span class="publication-badge">2025</span>
-                        </div>
-                        <div class="publication-content">
-                            <p class="publication-abstract">
-                                Este trabajo propone una <strong>función de pérdida contrastiva consciente de
-                                la frecuencia</strong> para la detección auto-supervisada de convulsiones en EEG.
-                                A diferencia de los marcos contrastivos estándar, que tratan todas las
-                                transformaciones de la señal de forma simétrica, este enfoque incorpora
-                                explícitamente el conocimiento de que las distintas bandas de frecuencia
-                                del EEG (delta, theta, alpha, beta, gamma) codifican información neurológica
-                                diferenciada. El resultado es un sistema capaz de aprender representaciones
-                                clínicamente útiles a partir de grabaciones no etiquetadas, con mejoras
-                                significativas de rendimiento en evaluaciones cruzadas entre pacientes.
-                            </p>
-                            <p class="publication-authors">
-                                Stemikovskaya, K. et al. · TECNALIA Research &amp; Innovation · 2025
-                            </p>
-                        </div>
-                    </article>
-
+                <h3 class="highlight-title">📚 Publications</h3>
+                <div class="publications-container" id="research-line-papers" data-research-line="Contrastive Learning">
+                    <p class="loading-message">Loading publications...</p>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Divisor de sección -->
+    <!-- Divider section -->
     <div class="section-divider"></div>
 
-    <!-- Sección: Aplicaciones Prácticas -->
+    <!-- Section: Practical Applications -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Aplicaciones Prácticas</h2>
+            <h2 class="section-title">Practical Applications</h2>
             <div class="content-text">
                 <p>
-                    El Contrastive Learning tiene un impacto creciente en múltiples dominios
-                    donde los datos no etiquetados son abundantes pero las anotaciones son costosas o escasas:
+                    Contrastive Learning has growing impact in multiple domains
+                    where unlabeled data is abundant but annotations are costly or scarce:
                 </p>
 
                 <ul class="feature-list">
-                    <li><strong>Visión por computador:</strong> Pre-entrenamiento de modelos de representación visual sin anotaciones, con posterior fine-tuning en tareas de clasificación, detección o segmentación con pocos ejemplos etiquetados.</li>
-                    <li><strong>Procesamiento del lenguaje natural:</strong> Aprendizaje de embeddings de oraciones y documentos que capturan similitud semántica, usados en recuperación de información y clasificación de texto.</li>
-                    <li><strong>Señales biomédicas y EEG:</strong> Detección automática de crisis epilépticas, codificación de señales cerebrales para interfaces cerebro-computadora y análisis de series temporales fisiológicas sin etiquetas.</li>
-                    <li><strong>Aprendizaje multimodal:</strong> Alineación de representaciones de diferentes modalidades (imagen-texto, audio-vídeo), como en CLIP, permitiendo búsqueda y comprensión cruzada entre modalidades.</li>
-                    <li><strong>Sistemas de recomendación:</strong> Aprendizaje de representaciones de usuarios e ítems a partir de interacciones implícitas, mejorando la personalización sin necesidad de ratings explícitos.</li>
-                    <li><strong>Robótica y control:</strong> Pre-entrenamiento de políticas de control mediante observaciones no supervisadas del entorno, facilitando la transferencia a nuevas tareas con pocos ejemplos de demostración.</li>
+                    <li><strong>Computer Vision:</strong> Pre-training of visual representation models without annotations, with subsequent fine-tuning on classification, detection, or segmentation tasks with few labeled examples.</li>
+                    <li><strong>Natural Language Processing:</strong> Learning of sentence and document embeddings that capture semantic similarity, used in information retrieval and text classification.</li>
+                    <li><strong>Biomedical Signals and EEG:</strong> Automatic seizure detection, brain signal encoding for brain-computer interfaces, and analysis of physiological time series without labels.</li>
+                    <li><strong>Multimodal Learning:</strong> Alignment of representations from different modalities (image-text, audio-video), as in CLIP, enabling cross-modal search and understanding.</li>
+                    <li><strong>Recommendation Systems:</strong> Learning of user and item representations from implicit interactions, improving personalization without the need for explicit ratings.</li>
+                    <li><strong>Robotics and Control:</strong> Pre-training of control policies through unsupervised environment observations, facilitating transfer to new tasks with few demonstration examples.</li>
                 </ul>
             </div>
         </section>
@@ -370,7 +344,7 @@
             <p class="footer-text">
                 <strong>Contrastive Learning</strong> - GPAIS Research Area
                 <span aria-hidden="true">•</span>
-                <a href="index.html" class="footer-link">Volver a GPAIS</a>
+                <a href="index.html" class="footer-link">Back to GPAIS</a>
                 <span aria-hidden="true">•</span>
                 <a href="../index.html" class="footer-link">IAFER Project 2026</a>
             </p>
@@ -378,46 +352,8 @@
     </footer>
 
 
-    <!-- Navbar -->
+    <!-- Scripts -->
+    <script src="../js/research-line.js"></script>
     <script src="../js/base.js"></script>
-    <script>
-    (function() {
-        const toggle = document.getElementById('navbar-toggle');
-        const menu = document.getElementById('navbar-menu');
-
-        toggle.addEventListener('click', function() {
-            this.classList.toggle('active');
-            menu.classList.toggle('open');
-        });
-
-        if ('ontouchstart' in window || window.innerWidth <= 768) {
-            document.querySelectorAll('.navbar__item--dropdown > .navbar__link').forEach(function(link) {
-                link.addEventListener('click', function(e) {
-                    if (window.innerWidth <= 768) {
-                        e.preventDefault();
-                        this.parentElement.classList.toggle('open');
-                    }
-                });
-            });
-        }
-
-        document.querySelectorAll('.navbar__dropdown a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-            });
-        });
-
-        window.addEventListener('resize', function() {
-            if (window.innerWidth > 768) {
-                menu.classList.remove('open');
-                toggle.classList.remove('active');
-                document.querySelectorAll('.navbar__item--dropdown').forEach(function(item) {
-                    item.classList.remove('open');
-                });
-            }
-        });
-    })();
-    </script>
 </body>
 </html>

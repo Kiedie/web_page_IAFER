@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoML & Few-Shot Learning - GPAIS | IAFER</title>
+    <meta name="description" content="Automated Machine Learning that preserves explainability, fairness, and robustness.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/gpais.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body id="top">
+    <!-- ==============================
+         MAIN NAVBAR
+    ============================== -->
+    <nav class="navbar" aria-label="Main navigation">
+        <div class="navbar__inner">
+            <a href="index.html" class="navbar__brand">IAFER</a>
+
+            <ul class="navbar__menu" id="navbar-menu">
+                <!-- GPAIS -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="index.html" class="navbar__link">GPAIS</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="contrastive-learning.html">Contrastive Learning</a></li>
+                        <li><a href="self-supervised.html">Self-Supervised Learning</a></li>
+                        <li><a href="zero-shot.html">Zero-Shot Learning</a></li>
+                        <li><a href="automl.html">AutoML & Few-Shot Learning</a></li>
+                        <li><a href="agentic-ai.html">Agentic AI</a></li>
+                    </ul>
+                </li>
+
+                <!-- Trustworthy -->
+                <li class="navbar__item navbar__item--dropdown">
+                    <a href="../trustworthy/index.html" class="navbar__link">Trustworthy</a>
+                    <ul class="navbar__dropdown">
+                        <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
+                        <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
+                        <li><a href="../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
+                        <li><a href="../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
+                        <li><a href="../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
+                        <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
+                    </ul>
+                </li>
+
+                <!-- Results -->
+                <li class="navbar__item">
+                    <a href="../../papers/index.html" class="navbar__link">Results</a>
+                </li>
+            </ul>
+
+            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <div class="hero-particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+
+        <main class="container">
+            <section class="hero-card">
+                <!-- Badge superior -->
+                <div class="hero-badge">
+                    <span aria-hidden="true">🚀</span>
+                    <span>Research Focus</span>
+                </div>
+
+                <!-- Main title -->
+                <h1 class="hero-title">AutoML & Few-Shot Learning</h1>
+                <p class="hero-subtitle">Automated Machine Learning that preserves explainability, fairness, and robustness</p>
+
+                <!-- Action buttons -->
+                <div class="hero-actions">
+                    <a href="#fundamentals" class="btn btn-primary">
+                        <span>Explore content</span>
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="../index.html" class="btn btn-secondary">
+                        <span aria-hidden="true">←</span>
+                        <span>Back to GPAIS</span>
+                    </a>
+                </div>
+
+                <div class="hero-divider"></div>
+
+                <!-- Introduction -->
+                <section id="fundamentals" class="content-section">
+                    <h2 class="section-title">What is Trustworthy AutoML?</h2>
+                    <div class="content-text">
+                        <p>
+                            AutoML accelerates development: it selects models, optimizes hyperparameters, and performs
+                            feature engineering automatically. But accelerating without care produces AI that is <em>opaque</em>,
+                            <em>unfair</em>, and <em>fragile</em>.
+                        </p>
+                        <p>
+                            Our focus: <strong>AutoML that verifies explainability throughout the pipeline,
+                            detects and mitigates biases during automation, and builds robustness by design</strong>.
+                            Automation without sacrificing trustworthiness.
+                        </p>
+                    </div>
+                </section>
+            </section>
+        </main>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Section: Pipeline Phases -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">AutoML Pipeline Phases</h2>
+            <p class="section-intro">
+                Stages where automation introduces trustworthiness risks
+            </p>
+
+            <div class="research-cards">
+                <!-- Phase 1 -->
+                <article class="research-card">
+                    <span class="research-badge">Data</span>
+                    <div class="research-icon" aria-hidden="true">📊</div>
+                    <h3 class="research-card-title">Automatic Preparation</h3>
+                    <p class="research-card-desc">
+                        Cleaning, imputation, normalization. Risks: hidden collection bias, missing data
+                        with causal meaning.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Phase 2 -->
+                <article class="research-card">
+                    <span class="research-badge">Selection</span>
+                    <div class="research-icon" aria-hidden="true">🔍</div>
+                    <h3 class="research-card-title">Feature Engineering</h3>
+                    <p class="research-card-desc">
+                        Automatic variable selection and creation. Risks: proxies of protected attributes,
+                        non-interpretable features.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Phase 3 -->
+                <article class="research-card">
+                    <span class="research-badge">Model</span>
+                    <div class="research-icon" aria-hidden="true">🧠</div>
+                    <h3 class="research-card-title">Neural Architecture Search</h3>
+                    <p class="research-card-desc">
+                        Automatic architecture selection and optimization. Risks: insufficiently
+                        explained complexity, non-verifiable models.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+
+                <!-- Phase 4 -->
+                <article class="research-card">
+                    <span class="research-badge">Validation</span>
+                    <div class="research-icon" aria-hidden="true">✅</div>
+                    <h3 class="research-card-title">Automated Evaluation</h3>
+                    <p class="research-card-desc">
+                        Automatic performance metrics. Risks: only optimizes accuracy, ignores fairness
+                        and robustness.
+                    </p>
+                    <div class="research-card-glow"></div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Section: Trustworthiness Mechanisms -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Trustworthiness Mechanisms in AutoML</h2>
+            <p class="section-intro">
+                How to preserve human values during automation
+            </p>
+            <div class="content-grid">
+                <!-- Mechanism 1 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🔐</span>
+                        Model Constraints
+                    </h3>
+                    <p class="info-card-text">
+                        Limit AutoML to interpretable models (decision trees, linear). Known accuracy
+                        vs. explainability trade-off.
+                    </p>
+                </article>
+
+                <!-- Mechanism 2 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">⚖️</span>
+                        Multi-Objective Optimization
+                    </h3>
+                    <p class="info-card-text">
+                        Simultaneously optimize accuracy, fairness, and robustness. Pareto frontiers of
+                        trustworthy models.
+                    </p>
+                </article>
+
+                <!-- Mechanism 3 -->
+                <article class="info-card">
+                    <h3 class="info-card-title">
+                        <span class="info-card-icon" aria-hidden="true">🛡️</span>
+                        Embedded Audit
+                    </h3>
+                    <p class="info-card-text">
+                        AutoML pipeline that automatically validates trust attributes. Bias detection
+                        during search.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Section: Challenges -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Challenges in Trustworthy AutoML</h2>
+            <p class="section-intro">
+                Tensions between automation and trustworthiness
+            </p>
+
+            <div class="challenge-list">
+                <div class="challenge-item">
+                    <span class="challenge-number">01</span>
+                    <h3 class="challenge-title">Accuracy-Interpretability Trade-off</h3>
+                    <p class="challenge-desc">
+                        Simple models are interpretable but less accurate. Complex models are
+                        more accurate but opaque. Non-trivial balance.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">02</span>
+                    <h3 class="challenge-title">Computational Scale</h3>
+                    <p class="challenge-desc">
+                        Searching for trustworthy models requires extended exploration. Substantial
+                        computational cost compared to unconstrained AutoML.
+                    </p>
+                </div>
+
+                <div class="challenge-item">
+                    <span class="challenge-number">03</span>
+                    <h3 class="challenge-title">Definition of Trust</h3>
+                    <p class="challenge-desc">
+                        What metric to optimize? Fairness has multiple definitions. Robustness depends
+                        on threat type. There is no universal answer.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Our Research -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Our Research</h2>
+            <div class="content-text">
+                <p>
+                    In the <strong class="text-highlight">AutoML & Few-Shot Learning</strong> line of the GPAIS group at IAFER,
+                    we automate the search for ML solutions that not only maximize accuracy,
+                    but also satisfy constraints on fairness, robustness, and explainability.
+                </p>
+                <h3 class="highlight-title">🚀 Active Research Lines</h3>
+                <ul class="feature-list">
+                    <li><strong>Multi-objective AutoML:</strong> Simultaneous optimization of accuracy, fairness, and robustness</li>
+                    <li><strong>Automatic feature engineering:</strong> Automatic search for features with trustworthiness guarantees</li>
+                    <li><strong>Automated few-shot learning:</strong> Models that generalize with few labeled examples</li>
+                    <li><strong>Embedded audit:</strong> Automatic validation of biases and robustness during search</li>
+                </ul>
+            </div>
+            <div class="highlight-box">
+                <h3 class="highlight-title">📚 Publications</h3>
+                <div class="publications-container" id="research-line-papers" data-research-line="AutoML & Few-Shot Learning">
+                    <p class="loading-message">Loading publications...</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Footer minimalista -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                <strong>AutoML & Few-Shot Learning</strong> - GPAIS Research Area
+                <span aria-hidden="true">•</span>
+                <a href="index.html" class="footer-link">Back to GPAIS</a>
+                <span aria-hidden="true">•</span>
+                <a href="../index.html" class="footer-link">IAFER Project 2026</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/research-line.js"></script>
+    <script src="../js/base.js"></script>
+</body>
+</html>

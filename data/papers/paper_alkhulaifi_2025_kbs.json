@@ -1,0 +1,68 @@
+{
+  "id": "alkhulaifi_2025_kbs",
+  "title": "AutoEnergy: An automated feature engineering algorithm for energy consumption forecasting with AutoML",
+  "authors": [
+    {
+      "name": "Nasser Alkhulaifi",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Alexander L. Bowler",
+      "affiliation": ""
+    },
+    {
+      "name": "Direnc Pekaslan",
+      "affiliation": ""
+    },
+    {
+      "name": "Nicholas J. Watson",
+      "affiliation": ""
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "Nov",
+  "description_es": "Este trabajo introduce AutoEnergy, un algoritmo de ingeniería automática de características específicamente diseñado para tareas de predicción de consumo de energía.",
+  "publication": {
+    "type": "journal",
+    "venue": "Knowledge-Based Systems",
+    "volume": "329",
+    "issue": "A",
+    "pages": "114300",
+    "year": 2025
+  },
+  "abstract": "Feature engineering plays a crucial role in machine learning pipelines, yet it remains a time-consuming process requiring domain expertise. This paper introduces AutoEnergy, a novel domain-aware feature engineering algorithm tailored for energy consumption forecasting. AutoEnergy automatically generates interpretable features through rule-based transformations, significantly improving predictive accuracy while reducing computational overhead.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1016/j.knosys.2025.114300",
+  "keywords": [
+    "automated feature engineering",
+    "energy forecasting",
+    "AutoML",
+    "machine learning",
+    "time series prediction"
+  ],
+  "citations": {
+    "bibtex": "@article{alkhulaifi2025autoenergy,\n  title={AutoEnergy: An automated feature engineering algorithm for energy consumption forecasting with AutoML},\n  author={Alkhulaifi, Nasser and Bowler, Alexander L and Pekaslan, Direnc and Watson, Nicholas J and Triguero, Isaac},\n  journal={Knowledge-Based Systems},\n  volume={329},\n  pages={114300},\n  year={2025},\n  publisher={Elsevier}\n}",
+    "apa": "Alkhulaifi, N., Bowler, A. L., Pekaslan, D., Watson, N. J., & Triguero, I. (2025). AutoEnergy: An automated feature engineering algorithm for energy consumption forecasting with AutoML. Knowledge-Based Systems, 329, 114300.",
+    "mla": "Alkhulaifi, Nasser, et al. \"AutoEnergy: An automated feature engineering algorithm for energy consumption forecasting with AutoML.\" Knowledge-Based Systems, vol. 329, 2025, p. 114300."
+  },
+  "tags": [
+    "AutoML & Few-Shot Learning",
+    "GPAIS"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "https://github.com/Nasser-Alkhulaifi/AutoEnergy",
+  "metadata": {
+    "contributions": [
+      "Automated feature engineering for energy prediction",
+      "Integration with AutoML pipelines",
+      "Domain-specific optimization"
+    ]
+  }
+}

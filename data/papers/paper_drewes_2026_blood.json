@@ -1,0 +1,97 @@
+{
+  "id": "drewes_2026_blood",
+  "title": "Chronic Lymphocytic Leukemia with IGH:BCL3-Translocation is Characterized by a Homogenous and Distinct Genetic and Epigenetic Landscape",
+  "authors": [
+    {
+      "name": "C. Drewes",
+      "affiliation": ""
+    },
+    {
+      "name": "C. López",
+      "affiliation": ""
+    },
+    {
+      "name": "J. E. Martinez-Manjón",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "N. Okeke",
+      "affiliation": ""
+    },
+    {
+      "name": "B. Jebaraj",
+      "affiliation": ""
+    },
+    {
+      "name": "S. Bens",
+      "affiliation": ""
+    },
+    {
+      "name": "B. Brändl",
+      "affiliation": ""
+    },
+    {
+      "name": "M. J. S. Dyer",
+      "affiliation": ""
+    },
+    {
+      "name": "A. Fischer",
+      "affiliation": ""
+    },
+    {
+      "name": "S. Glaser",
+      "affiliation": ""
+    },
+    {
+      "name": "S. Hillebrecht",
+      "affiliation": ""
+    },
+    {
+      "name": "R. Siebert",
+      "affiliation": ""
+    },
+    {
+      "name": "Coral",
+      "affiliation": ""
+    }
+  ],
+  "year": 2026,
+  "month": "Jan",
+  "description_es": "Este estudio caracteriza el paisaje genético y epigenético distintivo de la leucemia linfocítica crónica (CLL) con translocación IGH:BCL3, revelando un perfil homogéneo que diferencia estos casos de otras formas de CLL.",
+  "publication": {
+    "type": "journal",
+    "venue": "Blood",
+    "year": 2026
+  },
+  "abstract": "Chronic lymphocytic leukemia (CLL) with IGH:BCL3 translocation represents a distinct entity with unique clinical and biological features. This study comprehensively characterizes the genetic and epigenetic landscape of IGH:BCL3-positive CLL, revealing a homogenous pattern that distinguishes these cases from other CLL subtypes. Our findings have implications for risk stratification and targeted therapeutic approaches.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "",
+  "keywords": [
+    "chronic lymphocytic leukemia",
+    "IGH:BCL3 translocation",
+    "epigenetics",
+    "genetic landscape",
+    "hematological malignancy"
+  ],
+  "citations": {
+    "bibtex": "@article{drewes2026chronic,\n  title={Chronic Lymphocytic Leukemia with IGH:BCL3-Translocation is Characterized by a Homogenous and Distinct Genetic and Epigenetic Landscape},\n  author={Drewes, C. and L{\\'o}pez, C. and Martinez-Manj{\\'o}n, J. E. and Okeke, N. and Jebaraj, B. and Bens, S. and Br{\\\"a}ndl, B. and Dyer, M. J. S. and Fischer, A. and Glaser, S. and Hillebrecht, S. and Siebert, R.},\n  journal={Blood},\n  year={2026},\n  publisher={ASH}\n}",
+    "apa": "Drewes, C., López, C., Martinez-Manjón, J. E., Okeke, N., Jebaraj, B., Bens, S., Brändl, B., Dyer, M. J. S., Fischer, A., Glaser, S., Hillebrecht, S., & Siebert, R. (2026). Chronic Lymphocytic Leukemia with IGH:BCL3-Translocation is Characterized by a Homogenous and Distinct Genetic and Epigenetic Landscape. Blood.",
+    "mla": "Drewes, C., et al. \"Chronic Lymphocytic Leukemia with IGH:BCL3-Translocation is Characterized by a Homogenous and Distinct Genetic and Epigenetic Landscape.\" Blood, 2026."
+  },
+  "tags": [
+    "Critical Applications (Healthcare)",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "github_url": "",
+  "metadata": {
+    "contributions": [
+      "IGH:BCL3 CLL characterization",
+      "Epigenetic landscape analysis",
+      "Distinct genetic profile identification"
+    ]
+  }
+}

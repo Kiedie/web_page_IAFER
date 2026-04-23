@@ -1,0 +1,59 @@
+{
+  "id": "cargan_2025_ijcnn",
+  "title": "Directed Perturbations for Efficient Learning of Surrogate Losses",
+  "authors": [
+    {
+      "name": "Tyler R. Cargan",
+      "affiliation": ""
+    },
+    {
+      "name": "David Landa-Silva",
+      "affiliation": ""
+    },
+    {
+      "name": "Isaac Triguero",
+      "affiliation": "University of Granada",
+      "github_url": ""
+    }
+  ],
+  "year": 2025,
+  "month": "Jun",
+  "description_es": "Este trabajo presenta un método novedoso para aprender pérdidas subrogadas de manera eficiente mediante perturbaciones dirigidas en redes neuronales.",
+  "publication": {
+    "type": "conference",
+    "venue": "2025 International Joint Conference on Neural Networks",
+    "year": 2025
+  },
+  "abstract": "Learning effective surrogate loss functions is crucial for optimizing complex objectives. This paper introduces a novel approach using directed perturbations to efficiently learn surrogate losses that approximate original objectives with high fidelity.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://ieeexplore.ieee.org/document/11227956",
+  "keywords": [
+    "loss function learning",
+    "neural networks",
+    "optimization",
+    "deep learning",
+    "surrogate models"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{cargan2025directed,\n  title={Directed Perturbations for Efficient Learning of Surrogate Losses},\n  author={Cargan, Tyler R and Landa-Silva, David and Triguero, Isaac},\n  booktitle={2025 International Joint Conference on Neural Networks (IJCNN)},\n  year={2025},\n  organization={IEEE}\n}",
+    "apa": "Cargan, T. R., Landa-Silva, D., & Triguero, I. (2025). Directed Perturbations for Efficient Learning of Surrogate Losses. In 2025 International Joint Conference on Neural Networks (IJCNN). IEEE.",
+    "mla": "Cargan, Tyler R., et al. \"Directed Perturbations for Efficient Learning of Surrogate Losses.\" 2025 International Joint Conference on Neural Networks (IJCNN), IEEE, 2025."
+  },
+  "tags": [
+    "GPAIS",
+    "Robustness in Deep Learning"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Novel surrogate loss learning method",
+      "Directed perturbation approach",
+      "Efficient optimization technique"
+    ],
+    "github_url": ""
+  },
+  "github_url": ""
+}

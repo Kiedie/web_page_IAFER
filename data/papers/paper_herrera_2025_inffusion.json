@@ -1,0 +1,51 @@
+{
+  "id": "herrera_2025_inffusion",
+  "title": "Reflections and attentiveness on eXplainable Artificial Intelligence (XAI): The journey ahead from criticisms to human–AI collaboration",
+  "authors": [
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2025,
+  "month": "Sep",
+  "description_es": "Este trabajo proporciona una reflexión profunda y crítica sobre el estado actual de la IA explicable, analizando desafíos, oportunidades y direcciones futuras.",
+  "publication": {
+    "type": "journal",
+    "venue": "Information Fusion",
+    "volume": "121",
+    "pages": "103133",
+    "year": 2025
+  },
+  "abstract": "Explainable Artificial Intelligence (XAI) has emerged as a critical field addressing the opacity of complex AI models. This comprehensive reflection explores XAI from multiple perspectives, examining its role in human-AI collaboration, addressing criticisms, and proposing frameworks for evaluating XAI maturity across practical, auditable, and governance dimensions.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://doi.org/10.1016/j.inffus.2025.103133",
+  "keywords": [
+    "explainable AI",
+    "interpretability",
+    "human-AI collaboration",
+    "AI governance",
+    "trustworthy AI"
+  ],
+  "citations": {
+    "bibtex": "@article{herrera2025reflections,\n  title={Reflections and attentiveness on eXplainable Artificial Intelligence (XAI): The journey ahead from criticisms to human–AI collaboration},\n  author={Herrera, Francisco},\n  journal={Information Fusion},\n  volume={121},\n  pages={103133},\n  year={2025},\n  publisher={Elsevier}\n}",
+    "apa": "Herrera, F. (2025). Reflections and attentiveness on eXplainable Artificial Intelligence (XAI): The journey ahead from criticisms to human–AI collaboration. Information Fusion, 121, 103133.",
+    "mla": "Herrera, Francisco. \"Reflections and attentiveness on eXplainable Artificial Intelligence (XAI): The journey ahead from criticisms to human–AI collaboration.\" Information Fusion, vol. 121, 2025, p. 103133."
+  },
+  "tags": [
+    "Governance & Regulation",
+    "Trustworthy AI"
+  ],
+  "research_area": "trustworthy",
+  "image": "images/trustworthy/xai_reflection_1.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Comprehensive XAI framework analysis",
+      "Maturity evaluation dimensions",
+      "Human-AI collaboration strategies"
+    ]
+  },
+  "github_url": ""
+}

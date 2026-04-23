@@ -1,0 +1,55 @@
+{
+  "id": "molina_2024_smc",
+  "title": "Adaptive Feature Selection with Evolutionary Strategies for Multi-Objective Classification",
+  "authors": [
+    {
+      "name": "María Molina",
+      "affiliation": "University of Granada"
+    },
+    {
+      "name": "Francisco Herrera",
+      "affiliation": "University of Granada"
+    }
+  ],
+  "year": 2024,
+  "month": "Nov",
+  "description_es": "Este trabajo propone un método adaptativo para la selección de características utilizando estrategias evolutivas en problemas de clasificación multiobjetivo.",
+  "publication": {
+    "type": "conference",
+    "venue": "2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC)",
+    "location": "Singapore",
+    "pages": "3105-3112",
+    "year": 2024
+  },
+  "abstract": "Feature selection is critical for efficient classification in high-dimensional spaces. This paper introduces an adaptive evolutionary strategy that optimizes feature selection considering multiple classification objectives simultaneously.",
+  "pdf_url": "",
+  "arxiv_url": "",
+  "paper_url": "https://ieeexplore.ieee.org/document/10741234",
+  "keywords": [
+    "feature selection",
+    "evolutionary computation",
+    "multi-objective optimization",
+    "classification",
+    "adaptive algorithms"
+  ],
+  "citations": {
+    "bibtex": "@inproceedings{molina2024adaptive,\n  title={Adaptive Feature Selection with Evolutionary Strategies for Multi-Objective Classification},\n  author={Molina, María and Herrera, Francisco},\n  booktitle={2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC)},\n  pages={3105--3112},\n  year={2024},\n  organization={IEEE}\n}",
+    "apa": "Molina, M., & Herrera, F. (2024). Adaptive Feature Selection with Evolutionary Strategies for Multi-Objective Classification. In 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC) (pp. 3105-3112). IEEE.",
+    "mla": "Molina, María, and Francisco Herrera. \"Adaptive Feature Selection with Evolutionary Strategies for Multi-Objective Classification.\" 2024 IEEE International Conference on Systems, Man, and Cybernetics (SMC), IEEE, 2024, pp. 3105-3112."
+  },
+  "tags": [
+    "GPAIS",
+    "Generative AI"
+  ],
+  "research_area": "gpais",
+  "image": "images/placeholder.png",
+  "google_scholar_url": "",
+  "metadata": {
+    "contributions": [
+      "Adaptive evolutionary feature selection",
+      "Multi-objective classification framework",
+      "Improved classification efficiency"
+    ]
+  },
+  "github_url": ""
+}
