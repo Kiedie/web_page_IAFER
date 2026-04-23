@@ -9,7 +9,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../../css/base.css">
-    <link rel="stylesheet" href="../../css/agentic-ai.css">
+    <link rel="stylesheet" href="../../css/gpais.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 </head>
 <body id="top">
@@ -61,50 +61,6 @@
     </nav>
 
 
-
-    <!-- Sidebar Toggle -->
-    <button class="sidebar-toggle" aria-label="Toggle navigation" onclick="document.getElementById('page-sidebar').classList.toggle('open')">☰</button>
-
-    <!-- Sidebar -->
-    <aside id="page-sidebar" class="page-sidebar" aria-label="Site Navigation">
-        <div class="sidebar-header">
-            <h2 class="sidebar-title">
-                <span class="sidebar-title__icon">🗂️</span>
-                <span>Navigation</span>
-            </h2>
-        </div>
-        <nav>
-            <ul class="nav-tree">
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Home</span>
-                    <a href="../../index.html#top" class="tree-item"><span class="tree-icon">🏠</span><span>Home</span></a>
-                    <a href="../../index.html#lineas" class="tree-item"><span class="tree-icon">📍</span><span>Research Lines</span></a>
-                    <a href="../../index.html#equipo" class="tree-item"><span class="tree-icon">👥</span><span>Team</span></a>
-                </li>
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">GPAIS</span>
-                    <a href="../../index.html" class="tree-item"><span class="tree-icon">📘</span><span>Overview</span></a>
-                    <a href="../contrastive-learning/index.html" class="tree-item"><span class="tree-icon">🔗</span><span>Contrastive Learning</span></a>
-                    <a href="../self-supervised/index.html" class="tree-item"><span class="tree-icon">🎯</span><span>Self-Supervised</span></a>
-                    <a href="../zero-shot/index.html" class="tree-item"><span class="tree-icon">⚡</span><span>Zero-Shot Learning</span></a>
-                    <a href="../agentic-ai/index.html" class="tree-item active"><span class="tree-icon">🤖</span><span>Agentic AI</span></a>
-                </li>
-                <li class="nav-item sidebar-section">
-                    <span class="sidebar-section-title">Trustworthy AI</span>
-                    <a href="../../trustworthy/index.html" class="tree-item"><span class="tree-icon">📘</span><span>Overview</span></a>
-                    <a href="../../trustworthy/explainability/index.html" class="tree-item"><span class="tree-icon">👁️</span><span>Explainability</span></a>
-                    <a href="../../trustworthy/fairness/index.html" class="tree-item"><span class="tree-icon">⚖️</span><span>Fairness & Bias</span></a>
-                    <a href="../../trustworthy/robustness/index.html" class="tree-item"><span class="tree-icon">💪</span><span>Robustness</span></a>
-                </li>
-            </ul>
-        </nav>
-        <div class="sidebar-actions">
-            <a href="../../index.html" class="sidebar-action-btn">GPAIS</a>
-            <a href="../../trustworthy/index.html" class="sidebar-action-btn">Trustworthy</a>
-        </div>
-    </aside>
-
-    <!-- Breadcrumb -->
 
     <!-- Hero -->
     <div class="hero-wrapper">
@@ -326,15 +282,5 @@
     <!-- Scripts -->
     <script src="../../js/pub-loader.js?v=3"></script>
     <script src="../../js/base.js"></script>
-    <script>
-        // Close sidebar when clicking outside
-        document.addEventListener('click', (e) => {
-            const sidebar = document.getElementById('page-sidebar');
-            const toggle = document.querySelector('.sidebar-toggle');
-            if (sidebar.classList.contains('open') && !sidebar.contains(e.target) && !toggle.contains(e.target)) {
-                sidebar.classList.remove('open');
-            }
-        });
-    </script>
 </body>
 </html>
