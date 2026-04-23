@@ -12,8 +12,6 @@
       this.container = document.getElementById(containerId);
       this.researchLine = researchLine;
       this.papers = [];
-      // Detectar la profundidad de la ruta actual
-      this.depth = this.calculateDepth();
     }
 
     getBasePath() {
@@ -112,8 +110,9 @@
       const githubUrl = paper.github_url || paper.metadata?.github_url;
       const hasGithub = githubUrl && githubUrl.trim() !== '';
 
-      // Ajustar la profundidad para las imágenes (una nivel más profundo que papers.json)
-      const imagePrefix = '../'.repeat(this.depth + 1);
+      // Calcular prefijo para imágenes (un nivel más que papers.json)
+      const basePath = this.getBasePath();
+      const imagePrefix = basePath + '../';
 
       return `
         <article class="publication-card">
