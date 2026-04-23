@@ -19,7 +19,7 @@
         console.log('Loading papers for research line:', this.researchLine);
         // Cargar desde archivo JSON estático - ruta relativa desde cualquier nivel
         // Desde gpais/*.html o trustworthy/*/index.html -> subir 2 niveles
-        const response = await fetch('../../data/papers.json');
+        const response = await fetch('../../data/papers.json?v=2');
         console.log('Response status:', response.status);
         if (!response.ok) throw new Error('Could not load papers.json');
 
