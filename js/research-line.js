@@ -16,12 +16,15 @@
 
     async loadPapers() {
       try {
-        // Intentar cargar desde API
-        const response = await fetch('/api/papers');
-        if (!response.ok) throw new Error('API not available');
+        console.log('Loading papers for research line:', this.researchLine);
+        // Cargar desde archivo JSON estático
+        const response = await fetch('/data/papers.json');
+        console.log('Response status:', response.status);
+        if (!response.ok) throw new Error('Could not load papers.json');
 
         const data = await response.json();
         this.papers = data.papers || [];
+        console.log('Total papers loaded:', this.papers.length);
 
         // Para Critical Applications, incluir tanto Healthcare como Environment
         let filteredPapers;
@@ -36,6 +39,7 @@
             (p.tags || []).includes(this.researchLine)
           );
         }
+        console.log('Filtered papers for', this.researchLine, ':', filteredPapers.length);
 
         this.renderPapers(filteredPapers);
       } catch (error) {
