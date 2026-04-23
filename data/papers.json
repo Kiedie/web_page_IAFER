@@ -6,13 +6,13 @@
       "title": "Local Attention Mechanism: Boosting the Transformer Architecture for Long-Sequence Time Series Forecasting",
       "year": 2026,
       "authors": "Ignacio Aguilera-Martos, Andrés Herrera-Poyatos, Julián Luengo, Francisco Herrera",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "https://doi.org/10.1007/s11633-026-1660-y",
       "venue": "Machine Intelligence Research",
       "tags": [
-        "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": "https://github.com/ari-dasci/S-LAM"
     },
@@ -71,13 +71,14 @@
       "title": "Predictive Mapping of Vineyard Post-Fire Dynamics Using ExG-Supervised U-Net and Ultra-High-Resolution RGB UAV Imagery",
       "year": 2026,
       "authors": "J. Domínguez-Rull, J. Rodrigo-Comino, F. Herrera",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "https://www.ieeesmc.org/cai-2026/",
       "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
       "tags": [
         "Critical Applications (Environment)",
-        "GPAIS"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": ""
     },
@@ -248,13 +249,14 @@
       "title": "Hybrid Interpretable-Deep Learning Workflow for Vineyard Wildfire Damage Mapping from UAV-RGB Imagery",
       "year": 2026,
       "authors": "J. Rodrigo-Comino, J. Domínguez-Rull, C. Xouris, A. Kalogeras, A. Cerdà, F. Herrera",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "",
       "venue": "The Photogrammetric Record",
       "tags": [
         "Critical Applications (Environment)",
-        "GPAIS"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": ""
     },
@@ -351,7 +353,6 @@
       "venue": "2026 IEEE Conference on Artificial Intelligence (CAI)",
       "tags": [
         "GPAIS",
-        "Representation Learning",
         "Self-Supervised Learning"
       ],
       "github_url": ""
@@ -394,13 +395,13 @@
       "title": "Directed Perturbations for Efficient Learning of Surrogate Losses",
       "year": 2025,
       "authors": "Tyler R. Cargan, David Landa-Silva, Isaac Triguero",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "https://ieeexplore.ieee.org/document/11227956",
       "venue": "2025 International Joint Conference on Neural Networks",
       "tags": [
-        "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": ""
     },
@@ -525,13 +526,13 @@
       "title": "WinStat: A family of trainable positional encodings for transformers in time series forecasting",
       "year": 2025,
       "authors": "Constanza Moya-Mota, Iván Aguilera-Martos, Domingo García-Gil, Julián Luengo",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "https://doi.org/10.3390/make8010007",
       "venue": "Machine Learning and Knowledge Extraction",
       "tags": [
-        "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": "https://github.com/ari-dasci/S-WinStat"
     },
@@ -573,13 +574,13 @@
       "title": "A Case for the Use of Chroma Cartesian Colour Representations for Image Classification on Plant-Based Domains",
       "year": 2025,
       "authors": "J. S Payne, G. Hopkins, S. N. Gowda, Isaac Triguero, M. P. Pound",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/paper_pdfs/paper_payne_2025_iccvw_preview.png",
       "paper_url": "https://openaccess.thecvf.com/content/ICCV2025W/CVPPA/html/Payne_A_Case_for_the_Use_of_Chroma_Cartesian_Colour_Representations_ICCVW_2025_paper.html",
       "venue": "2025 IEEE/CVF International Conference on Computer Vision Workshops (ICCVW)",
       "tags": [
-        "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": ""
     },
@@ -685,13 +686,13 @@
       "title": "Machine Learning for Time Series Classification: Challenges, Solutions, and Opportunities",
       "year": 2024,
       "authors": "Julián Luengo, David García-Gil, Isaac Triguero, Francisco Herrera",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "https://doi.org/10.1016/j.ins.2024.121098",
       "venue": "Information Sciences",
       "tags": [
-        "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": ""
     },
@@ -701,13 +702,14 @@
       "title": "Methanol and Renewable Solutions for Transportation: Comprehensive Forecasting Analysis for Energy Planning",
       "year": 2024,
       "authors": "David Méndez, Juan Jesús González, Francisco Herrera",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "https://doi.org/10.1109/IJCNN60899.2024.10650789",
       "venue": "2024 International Joint Conference on Neural Networks (IJCNN)",
       "tags": [
         "Critical Applications (Environment)",
-        "GPAIS"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": ""
     },
@@ -765,13 +767,13 @@
       "title": "Robust Image Quality Assessment using Uncertain Knowledge Graphs and Multi-Modal Features",
       "year": 2024,
       "authors": "Yang Qian, Isaac Triguero",
-      "research_area": "gpais",
+      "research_area": "trustworthy",
       "image": "images/placeholder.png",
       "paper_url": "https://epubs.siam.org/doi/10.1137/23M1567894",
       "venue": "SIAM Journal on Imaging Sciences",
       "tags": [
-        "GPAIS",
-        "Robustness in Deep Learning"
+        "Robustness & OOD",
+        "Trustworthy AI"
       ],
       "github_url": ""
     }
