@@ -1,6 +1,6 @@
 /**
  * Research Line Paper Loader
- * Carga dinámicamente los papers filtrados por research line tag
+ * Carga dinamicamente los papers filtrados por research line tag
  * Uso: <div id="research-line-papers" data-research-line="Explainability (XAI)"></div>
  */
 
@@ -14,47 +14,13 @@
       this.papers = [];
     }
 
-    getBasePath() {
-      // Detectar ruta base usando document.currentScript (donde está este archivo JS)
-      // pub-loader.js está siempre en /js/ desde la raíz del proyecto
-      const scriptPath = document.currentScript ? document.currentScript.src : '';
-      if (scriptPath) {
-        // Ej: http://localhost:8888/js/pub-loader.js o https://kiedie.github.io/web_page_IAFER/js/pub-loader.js
-        const baseUrl = scriptPath.substring(0, scriptPath.lastIndexOf('/js/'));
-        if (baseUrl) {
-          const basePath = baseUrl.replace(window.location.origin, '');
-          return basePath + '/';
-        }
-      }
-
-      // Fallback: detectar por estructura de URL
-      const path = window.location.pathname;
-      const parts = path.split('/').filter(p => p.length > 0);
-
-      // Encontrar el directorio raíz buscando gpais/trustworthy/papers
-      let depth = 0;
-      for (let i = parts.length - 1; i >= 0; i--) {
-        if (['gpais', 'trustworthy', 'papers'].includes(parts[i])) {
-          depth = parts.length - i;
-          break;
-        }
-      }
-
-      return '../'.repeat(depth);
-    }
-
     async loadPapers() {
       try {
         console.log('Loading papers for research line:', this.researchLine);
-        console.log('Current pathname:', window.location.pathname);
-        const basePath = this.getBasePath();
-        const papersPath = basePath + 'data/papers.json?v=3';
-        console.log('Calculated papersPath:', papersPath);
-
-        const response = await fetch(papersPath, {
-          signal: AbortSignal.timeout(5000)
-        });
-
+        // Ruta relativa: desde gpais/automl/index.html o trustworthy/explainability/index.html
+        // subir 2 niveles llega a la raiz del proyecto
+        const response = await fetch('../../data/papers.json?v=4');
+        console.log('Response status:', response.status);
         if (!response.ok) throw new Error('Could not load papers.json');
 
         const data = await response.json();
@@ -111,17 +77,13 @@
       const githubUrl = paper.github_url || paper.metadata?.github_url;
       const hasGithub = githubUrl && githubUrl.trim() !== '';
 
-      // Calcular prefijo para imágenes (misma raíz que papers.json)
-      const basePath = this.getBasePath();
-      const imagePrefix = basePath;
-
       return `
         <article class="publication-card">
           <div class="publication-image-wrapper">
-            <img src="${imagePrefix}${imagePath}"
+            <img src="../../${imagePath}"
                  alt="${title}"
                  class="publication-image"
-                 onerror="this.src='${imagePrefix}images/placeholder.png'">
+                 onerror="this.src='../../images/placeholder.png'">
             <span class="publication-badge">${year}</span>
           </div>
           <div class="publication-content">
@@ -138,7 +100,7 @@
               ` : ''}
               ${hasGithub ? `
                 <a href="${githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-secondary github-btn" style="background-color: #f5f5f5; color: #333; border-color: #ddd;">
-                  <img src="${imagePrefix}images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
+                  <img src="../../images/github-logo.svg" alt="GitHub" class="github-icon" style="width:16px;height:16px;vertical-align:middle;margin-right:4px;">GitHub
                 </a>
               ` : ''}
             </div>
