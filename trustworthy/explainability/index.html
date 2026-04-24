@@ -16,55 +16,9 @@
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 </head>
-<body id="top">
-    <!-- ==============================
-         MAIN NAVBAR
-    ============================== -->
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="navbar__inner">
-            <a href="../../index.html" class="navbar__brand">IAFER</a>
-
-            <ul class="navbar__menu" id="navbar-menu">
-                <!-- GPAIS -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../gpais/index.html" class="navbar__link">GPAIS</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../../gpais/contrastive-learning/index.html">Contrastive Learning</a></li>
-                        <li><a href="../../gpais/self-supervised/index.html">Self-Supervised Learning</a></li>
-                        <li><a href="../../gpais/zero-shot/index.html">Zero-Shot Learning</a></li>
-                        <li><a href="../../gpais/agentic-ai/index.html">Agentic AI</a></li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../trustworthy/index.html" class="navbar__link">Trustworthy</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
-                        <li><a href="../../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
-                    </ul>
-                </li>
-
-                <!-- Results -->
-                <li class="navbar__item">
-                    <a href="../../papers/index.html" class="navbar__link">Results</a>
-                </li>
-            </ul>
-
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-
-    <!-- Hero Section -->
+<body data-page-title="Explainability (XAI)" id="top">
+<div id="navbar-root"></div>
+<!-- Hero Section -->
     <div class="hero-wrapper">
         <div class="hero-particles">
             <div class="particle particle-1"></div>
@@ -291,19 +245,12 @@
 
     <!-- Section divider -->
     <div class="section-divider"></div>
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                <strong>Explainability (XAI)</strong> - Trustworthy AI
-                <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">ENIA IAFER Chair 2026</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Scripts - v2 -->
-    <script src="../../js/sidebar.js"></script>
-    <script src="../../js/base.js"></script>
-    <script src="../../js/pub-loader.js?v=2"></script>
+    <div id="footer-root"></div>
+<!-- Scripts - v2 -->
+    <script src="../../js/site-config.js"></script>
+    <script src="../../js/components.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/base.js"></script>
+<script src="../../js/pub-loader.js?v=2"></script>
 </body>
 </html>

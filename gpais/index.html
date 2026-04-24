@@ -5,65 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPAIS – General Purpose Artificial Intelligence Systems | IAFER</title>
     <meta name="description" content="GPAIS: research in Zero-Shot, Self-Supervised and Contrastive Learning, and Agentic AI. AI systems that generalize with less supervision. ENIA IAFER Chair.">
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/gpais.css">
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body id="top">
-    <!-- ==============================
-         MAIN NAVBAR
-    ============================== -->
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="navbar__inner">
-            <a href="../index.html" class="navbar__brand">IAFER</a>
-
-            <ul class="navbar__menu" id="navbar-menu">
-                <!-- GPAIS -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="index.html" class="navbar__link">GPAIS</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="contrastive-learning/index.html">Contrastive Learning</a></li>
-                        <li><a href="self-supervised/index.html">Self-Supervised Learning</a></li>
-                        <li><a href="zero-shot/index.html">Zero-Shot Learning</a></li>
-                        <li><a href="automl/index.html">AutoML & Few-Shot Learning</a></li>
-                        <li><a href="agentic-ai/index.html">Agentic AI</a></li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../trustworthy/index.html" class="navbar__link">Trustworthy</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
-                        <li><a href="../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
-                        <li><a href="../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
-                        <li><a href="../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
-                        <li><a href="../trustworthy/critical-applications/index.html">Critical Applications</a></li>
-                    </ul>
-                </li>
-
-                <!-- Results -->
-                <li class="navbar__item">
-                    <a href="../papers/index.html" class="navbar__link">Results</a>
-                </li>
-            </ul>
-
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-
-    
+    <div id="navbar-root"></div>
 
     <!-- Hero Section / Main Card -->
     <div class="hero-wrapper">
@@ -141,8 +93,8 @@
                         Closed World
                     </h3>
                     <p class="info-card-text">
-                       In the closed world, the system operates on a known and predefined set of 
-                       tasks. It can address various tasks, but all are part of the scenario anticipated 
+                       In the closed world, the system operates on a known and predefined set of
+                       tasks. It can address various tasks, but all are part of the scenario anticipated
                        during its design and training, so its ability to act is tied to that defined framework.
                     </p>
                 </article>
@@ -154,9 +106,9 @@
                         Open World
                     </h3>
                     <p class="info-card-text">
-                        In the open world, the system operates in a dynamic and changing environment, 
-                        where new tasks, data, or unforeseen situations may emerge. Therefore, beyond solving 
-                        what is already known, it must demonstrate greater generalization capacity, 
+                        In the open world, the system operates in a dynamic and changing environment,
+                        where new tasks, data, or unforeseen situations may emerge. Therefore, beyond solving
+                        what is already known, it must demonstrate greater generalization capacity,
                         adaptation, and response to the unknown.
                     </p>
                 </article>
@@ -176,7 +128,7 @@
                 Four research lines that the group works on in parallel,
                 with applications in health, industry, and rural environments
             </p>
-            
+
             <div class="research-cards">
                 <!-- Tarjeta 1: Zero-Shot Learning -->
                 <a href="zero-shot/index.html" class="research-card-link">
@@ -234,19 +186,10 @@
         </section>
     </div>
 
-    <!-- Minimalist footer -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                <strong>GPAIS</strong> - General Purpose Artificial Intelligence Systems
-                <span aria-hidden="true">\u2022</span>
-                <a href="../index.html" class="footer-link">ENIA IAFER Chair 2026</a>
-            </p>
-        </div>
-    </footer>
+    <div id="footer-root"></div>
 
-
-    <!-- Navbar -->
+    <script src="../js/site-config.js"></script>
+    <script src="../js/components.js"></script>
     <script src="../js/base.js"></script>
 </body>
 </html>

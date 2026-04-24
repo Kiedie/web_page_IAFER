@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trustworthy AI | IAFER</title>
     <meta name="description" content="Trustworthy AI: Research in Explainability, Fairness, Robustness, Privacy, and Governance. Trustworthy and Ethical AI Systems. ENIA IAFER Chair.">
-    
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/trustworthy.css">
@@ -17,53 +17,7 @@
     <link rel="stylesheet" href="../css/navbar.css">
 </head>
 <body id="top">
-    <!-- ==============================
-         MAIN NAVBAR
-    ============================== -->
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="navbar__inner">
-            <a href="../index.html" class="navbar__brand">IAFER</a>
-
-            <ul class="navbar__menu" id="navbar-menu">
-                <!-- GPAIS -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../gpais/index.html" class="navbar__link">GPAIS</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../gpais/contrastive-learning/index.html">Contrastive Learning</a></li>
-                        <li><a href="../gpais/self-supervised/index.html">Self-Supervised Learning</a></li>
-                        <li><a href="../gpais/zero-shot/index.html">Zero-Shot Learning</a></li>
-                        <li><a href="../gpais/automl/index.html">AutoML & Few-Shot Learning</a></li>
-                        <li><a href="../gpais/agentic-ai/index.html">Agentic AI</a></li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../trustworthy/index.html" class="navbar__link">Trustworthy</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="explainability/index.html">Explainability (XAI)</a></li>
-                        <li><a href="fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="robustness/index.html">Robustness &amp; OOD</a></li>
-                        <li><a href="privacy/index.html">Privacy &amp; Federated Learning</a></li>
-                        <li><a href="governance/index.html">Governance &amp; Regulation</a></li>
-                        <li><a href="critical-applications/index.html">Critical Applications</a></li>
-                    </ul>
-                </li>
-
-                <!-- Results -->
-                <li class="navbar__item">
-                    <a href="../papers/index.html" class="navbar__link">Results</a>
-                </li>
-            </ul>
-
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
+    <div id="navbar-root"></div>
 
     <!-- Hero Section / Tarjeta Principal -->
     <div class="hero-wrapper">
@@ -184,7 +138,7 @@
             <p class="section-intro">
                 Seven research lines aligned with European regulations and the needs of critical domains
             </p>
-            
+
             <div class="research-cards">
                 <!-- Tarjeta 1: Explainability -->
                 <a href="explainability/index.html" class="research-card-link">
@@ -268,18 +222,10 @@
         </section>
     </div>
 
-    <!-- Footer minimalista -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                <strong>Trustworthy AI</strong> - Reliable, Explainable and Responsible AI
-                <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">ENIA Chair IAFER 2026</a>
-            </p>
-        </div>
-    </footer>
+    <div id="footer-root"></div>
 
-    <!-- Scripts -->
+    <script src="../js/site-config.js"></script>
+    <script src="../js/components.js"></script>
     <script src="../js/sidebar.js"></script>
     <script src="../js/base.js"></script>
 </body>
