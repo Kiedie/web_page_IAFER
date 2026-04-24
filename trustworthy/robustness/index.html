@@ -16,55 +16,9 @@
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 </head>
-<body id="top">
-    <!-- ==============================
-         MAIN NAVBAR
-    ============================== -->
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="navbar__inner">
-            <a href="../../index.html" class="navbar__brand">IAFER</a>
-
-            <ul class="navbar__menu" id="navbar-menu">
-                <!-- GPAIS -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../gpais/index.html" class="navbar__link">GPAIS</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../../gpais/contrastive-learning/index.html">Contrastive Learning</a></li>
-                        <li><a href="../../gpais/self-supervised/index.html">Self-Supervised Learning</a></li>
-                        <li><a href="../../gpais/zero-shot/index.html">Zero-Shot Learning</a></li>
-                        <li><a href="../../gpais/agentic-ai/index.html">Agentic AI</a></li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../trustworthy/index.html" class="navbar__link">Trustworthy</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
-                        <li><a href="../../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
-                    </ul>
-                </li>
-
-                <!-- Results -->
-                <li class="navbar__item">
-                    <a href="../../papers/index.html" class="navbar__link">Results</a>
-                </li>
-            </ul>
-
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-
-    <!-- Hero Section -->
+<body data-page-title="Robustness & OOD" id="top">
+<div id="navbar-root"></div>
+<!-- Hero Section -->
     <div class="hero-wrapper">
         <div class="hero-particles">
             <div class="particle particle-1"></div>
@@ -266,6 +220,29 @@
     <!-- Section divider -->
     <div class="section-divider"></div>
 
+    <!-- Section: Practical Applications -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Practical Applications</h2>
+            <p class="section-intro">
+                Domains where robustness and reliability are non-negotiable
+            </p>
+            <div class="content-text">
+                <ul class="feature-list">
+                    <li><strong>Autonomous Vehicles:</strong> Ensuring perception and control systems remain safe under adverse weather, sensor failure, and unexpected road conditions.</li>
+                    <li><strong>Healthcare Diagnostics:</strong> Building medical imaging and signal-analysis models that maintain accuracy when data distribution shifts across hospitals or equipment.</li>
+                    <li><strong>Financial Systems:</strong> Protecting fraud-detection and trading algorithms against adversarial manipulation and market anomalies.</li>
+                    <li><strong>Critical Infrastructure:</strong> Securing power grids, water networks, and transportation systems against AI-driven cyberattacks and sensor noise.</li>
+                    <li><strong>Robotics:</strong> Enabling robots to operate reliably in unstructured environments where training conditions differ from deployment scenarios.</li>
+                    <li><strong>Biometric Security:</strong> Defending face-recognition and fingerprint systems against spoofing attacks and out-of-distribution presentation attempts.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
     <!-- Our Research -->
     <div class="container">
         <section class="content-section">
@@ -298,19 +275,12 @@
     <div class="section-divider"></div>
 
     <!-- Footer minimalista -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                <strong>Robustness & OOD</strong> - Trustworthy AI
-                <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">ENIA IAFER Chair 2026</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/sidebar.js"></script>
-    <script src="../../js/base.js"></script>
-    <script src="../../js/pub-loader.js"></script>
+    <div id="footer-root"></div>
+<!-- Scripts -->
+    <script src="../../js/site-config.js"></script>
+    <script src="../../js/components.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/base.js"></script>
+<script src="../../js/pub-loader.js"></script>
 </body>
 </html>

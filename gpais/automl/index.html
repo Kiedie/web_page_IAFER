@@ -4,66 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AutoML & Few-Shot Learning - GPAIS | IAFER</title>
-    <meta name="description" content="Automated Machine Learning that preserves explainability, fairness, and robustness.">
-    
+    <meta name="description" content="Automated Machine Learning and Few-Shot Learning for AI systems that generalize with minimal supervision.">
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/gpais.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 </head>
-<body id="top">
-    <!-- ==============================
-         MAIN NAVBAR
-    ============================== -->
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="navbar__inner">
-            <a href="../../index.html" class="navbar__brand">IAFER</a>
-
-            <ul class="navbar__menu" id="navbar-menu">
-                <!-- GPAIS -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../index.html" class="navbar__link">GPAIS</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../contrastive-learning/index.html">Contrastive Learning</a></li>
-                        <li><a href="../self-supervised/index.html">Self-Supervised Learning</a></li>
-                        <li><a href="../zero-shot/index.html">Zero-Shot Learning</a></li>
-                        <li><a href="../automl/index.html">AutoML & Few-Shot Learning</a></li>
-                        <li><a href="../agentic-ai/index.html">Agentic AI</a></li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../trustworthy/index.html" class="navbar__link">Trustworthy</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
-                        <li><a href="../../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../../trustworthy/robustness/index.html">Robustness &amp; OOD</a></li>
-                        <li><a href="../../trustworthy/privacy/index.html">Privacy &amp; Federated Learning</a></li>
-                        <li><a href="../../trustworthy/governance/index.html">Governance &amp; Regulation</a></li>
-                        <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
-                    </ul>
-                </li>
-
-                <!-- Results -->
-                <li class="navbar__item">
-                    <a href="../../papers/index.html" class="navbar__link">Results</a>
-                </li>
-            </ul>
-
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-
-    <!-- Hero Section -->
+<body data-page-title="AutoML & Few-Shot Learning" id="top">
+<div id="navbar-root"></div>
+<!-- Hero Section -->
     <div class="hero-wrapper">
         <div class="hero-particles">
             <div class="particle particle-1"></div>
@@ -83,7 +36,7 @@
 
                 <!-- Main title -->
                 <h1 class="hero-title">AutoML & Few-Shot Learning</h1>
-                <p class="hero-subtitle">Automated Machine Learning that preserves explainability, fairness, and robustness</p>
+                <p class="hero-subtitle">Automating machine learning to build AI systems that adapt rapidly with minimal data</p>
 
                 <!-- Action buttons -->
                 <div class="hero-actions">
@@ -101,17 +54,17 @@
 
                 <!-- Introduction -->
                 <section id="fundamentals" class="content-section">
-                    <h2 class="section-title">What is Trustworthy AutoML?</h2>
+                    <h2 class="section-title">What is AutoML?</h2>
                     <div class="content-text">
                         <p>
-                            AutoML accelerates development: it selects models, optimizes hyperparameters, and performs
-                            feature engineering automatically. But accelerating without care produces AI that is <em>opaque</em>,
-                            <em>unfair</em>, and <em>fragile</em>.
+                            <strong>AutoML</strong> (Automated Machine Learning) aims to automate the end-to-end process of applying machine learning to real-world problems.
+                            From data preprocessing to model selection and hyperparameter tuning, AutoML reduces the need for manual intervention,
+                            making machine learning accessible to non-experts and accelerating experimentation for researchers.
                         </p>
                         <p>
-                            Our focus: <strong>AutoML that verifies explainability throughout the pipeline,
-                            detects and mitigates biases during automation, and builds robustness by design</strong>.
-                            Automation without sacrificing trustworthiness.
+                            <strong>Few-Shot Learning</strong> complements this by enabling models to generalize from very few labeled examples,
+                            mimicking human-like rapid adaptation. Together, they form a powerful toolkit for building
+                            <strong>versatile AI systems that learn quickly and deploy efficiently</strong>.
                         </p>
                     </div>
                 </section>
@@ -127,7 +80,7 @@
         <section class="content-section">
             <h2 class="section-title">AutoML Pipeline Phases</h2>
             <p class="section-intro">
-                Stages where automation introduces trustworthiness risks
+                Stages where automation accelerates the machine learning lifecycle
             </p>
 
             <div class="research-cards">
@@ -137,8 +90,8 @@
                     <div class="research-icon" aria-hidden="true">📊</div>
                     <h3 class="research-card-title">Automatic Preparation</h3>
                     <p class="research-card-desc">
-                        Cleaning, imputation, normalization. Risks: hidden collection bias, missing data
-                        with causal meaning.
+                        Cleaning, imputation, normalization, and feature engineering handled automatically
+                        to ensure models receive high-quality inputs without manual preprocessing.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -147,34 +100,34 @@
                 <article class="research-card">
                     <span class="research-badge">Selection</span>
                     <div class="research-icon" aria-hidden="true">🔍</div>
-                    <h3 class="research-card-title">Feature Engineering</h3>
+                    <h3 class="research-card-title">Architecture Search</h3>
                     <p class="research-card-desc">
-                        Automatic variable selection and creation. Risks: proxies of protected attributes,
-                        non-interpretable features.
+                        Automated exploration of model architectures and algorithms to find the best fit
+                        for the task, reducing the trial-and-error burden on practitioners.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
                 <!-- Phase 3 -->
                 <article class="research-card">
-                    <span class="research-badge">Model</span>
-                    <div class="research-icon" aria-hidden="true">🧠</div>
-                    <h3 class="research-card-title">Neural Architecture Search</h3>
+                    <span class="research-badge">Optimization</span>
+                    <div class="research-icon" aria-hidden="true">⚡</div>
+                    <h3 class="research-card-title">Hyperparameter Tuning</h3>
                     <p class="research-card-desc">
-                        Automatic architecture selection and optimization. Risks: insufficiently
-                        explained complexity, non-verifiable models.
+                        Intelligent search through hyperparameter spaces to maximize performance
+                        without exhaustive manual grid searches.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
 
                 <!-- Phase 4 -->
                 <article class="research-card">
-                    <span class="research-badge">Validation</span>
-                    <div class="research-icon" aria-hidden="true">✅</div>
-                    <h3 class="research-card-title">Automated Evaluation</h3>
+                    <span class="research-badge">Deployment</span>
+                    <div class="research-icon" aria-hidden="true">🚀</div>
+                    <h3 class="research-card-title">Rapid Adaptation</h3>
                     <p class="research-card-desc">
-                        Automatic performance metrics. Risks: only optimizes accuracy, ignores fairness
-                        and robustness.
+                        Few-shot techniques allow models to adapt to new tasks or domains with minimal
+                        additional training, enabling faster deployment in changing environments.
                     </p>
                     <div class="research-card-glow"></div>
                 </article>
@@ -185,47 +138,47 @@
     <!-- Section divider -->
     <div class="section-divider"></div>
 
-    <!-- Section: Trustworthiness Mechanisms -->
+    <!-- Section: Few-Shot Learning -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Trustworthiness Mechanisms in AutoML</h2>
+            <h2 class="section-title">Few-Shot Learning Foundations</h2>
             <p class="section-intro">
-                How to preserve human values during automation
+                Approaches to learning from minimal examples
             </p>
             <div class="content-grid">
-                <!-- Mechanism 1 -->
+                <!-- Foundation 1 -->
                 <article class="info-card">
                     <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🔐</span>
-                        Model Constraints
+                        <span class="info-card-icon" aria-hidden="true">🧠</span>
+                        Meta-Learning
                     </h3>
                     <p class="info-card-text">
-                        Limit AutoML to interpretable models (decision trees, linear). Known accuracy
-                        vs. explainability trade-off.
+                        Learning to learn: models acquire generalizable strategies across tasks
+                        so they can solve new problems from just a handful of examples.
                     </p>
                 </article>
 
-                <!-- Mechanism 2 -->
+                <!-- Foundation 2 -->
                 <article class="info-card">
                     <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">⚖️</span>
-                        Multi-Objective Optimization
+                        <span class="info-card-icon" aria-hidden="true">🔄</span>
+                        Transfer Learning
                     </h3>
                     <p class="info-card-text">
-                        Simultaneously optimize accuracy, fairness, and robustness. Pareto frontiers of
-                        trustworthy models.
+                        Leveraging pre-trained representations from large datasets to bootstrap
+                        learning on smaller, domain-specific tasks with limited annotations.
                     </p>
                 </article>
 
-                <!-- Mechanism 3 -->
+                <!-- Foundation 3 -->
                 <article class="info-card">
                     <h3 class="info-card-title">
-                        <span class="info-card-icon" aria-hidden="true">🛡️</span>
-                        Embedded Audit
+                        <span class="info-card-icon" aria-hidden="true">🎯</span>
+                        Prototypical Networks
                     </h3>
                     <p class="info-card-text">
-                        AutoML pipeline that automatically validates trust attributes. Bias detection
-                        during search.
+                        Metric-learning approaches that compare query examples to class prototypes
+                        learned from few samples, enabling efficient classification without retraining.
                     </p>
                 </article>
             </div>
@@ -238,38 +191,61 @@
     <!-- Section: Challenges -->
     <div class="container">
         <section class="content-section">
-            <h2 class="section-title">Challenges in Trustworthy AutoML</h2>
+            <h2 class="section-title">Challenges in AutoML & Few-Shot Learning</h2>
             <p class="section-intro">
-                Tensions between automation and trustworthiness
+                Open problems limiting widespread adoption
             </p>
 
             <div class="challenge-list">
                 <div class="challenge-item">
                     <span class="challenge-number">01</span>
-                    <h3 class="challenge-title">Accuracy-Interpretability Trade-off</h3>
+                    <h3 class="challenge-title">Search Space Explosion</h3>
                     <p class="challenge-desc">
-                        Simple models are interpretable but less accurate. Complex models are
-                        more accurate but opaque. Non-trivial balance.
+                        The number of possible architectures, hyperparameters, and pipelines grows exponentially.
+                        Efficient search strategies remain an active research frontier.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">02</span>
-                    <h3 class="challenge-title">Computational Scale</h3>
+                    <h3 class="challenge-title">Domain Transfer</h3>
                     <p class="challenge-desc">
-                        Searching for trustworthy models requires extended exploration. Substantial
-                        computational cost compared to unconstrained AutoML.
+                        Solutions found on one dataset rarely transfer seamlessly to others.
+                        Generalization across domains is still a major hurdle for AutoML systems.
                     </p>
                 </div>
 
                 <div class="challenge-item">
                     <span class="challenge-number">03</span>
-                    <h3 class="challenge-title">Definition of Trust</h3>
+                    <h3 class="challenge-title">Computational Cost</h3>
                     <p class="challenge-desc">
-                        What metric to optimize? Fairness has multiple definitions. Robustness depends
-                        on threat type. There is no universal answer.
+                        Automated search is computationally expensive. Balancing exploration depth
+                        with time and resource constraints is a critical practical challenge.
                     </p>
                 </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
+    <!-- Section: Practical Applications -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Practical Applications</h2>
+            <p class="section-intro">
+                Domains where AutoML and few-shot learning accelerate AI adoption
+            </p>
+            <div class="content-text">
+                <ul class="feature-list">
+                    <li><strong>Healthcare Diagnostics:</strong> Rapid deployment of medical imaging classifiers at new hospitals with minimal annotated data, adapting models across different scanners and patient populations.</li>
+                    <li><strong>Precision Agriculture:</strong> Automated crop-disease detection systems that generalize to new regions and seasons with few local examples, reducing the need for extensive field data collection.</li>
+                    <li><strong>Industrial Quality Control:</strong> AutoML pipelines that configure defect-detection models for new manufacturing lines without expert tuning, cutting setup time from weeks to hours.</li>
+                    <li><strong>Natural Language Interfaces:</strong> Few-shot adaptation of large language models to new domains (legal, medical, technical) using only a handful of labeled examples per intent.</li>
+                    <li><strong>Scientific Discovery:</strong> Accelerating hypothesis testing by automatically selecting and tuning models for novel datasets in materials science, genomics, and drug discovery.</li>
+                    <li><strong>Edge and Mobile AI:</strong> Lightweight AutoML-generated models deployed on smartphones and IoT devices for real-time speech recognition, gesture detection, and sensor analytics.</li>
+                </ul>
             </div>
         </section>
     </div>
@@ -284,15 +260,15 @@
             <div class="content-text">
                 <p>
                     In the <strong class="text-highlight">AutoML & Few-Shot Learning</strong> line of the GPAIS group at IAFER,
-                    we automate the search for ML solutions that not only maximize accuracy,
-                    but also satisfy constraints on fairness, robustness, and explainability.
+                    we focus on making machine learning faster, more accessible, and capable of adapting to new tasks
+                    with minimal supervision. Our goal is to lower the barrier to building high-performing AI systems.
                 </p>
                 <h3 class="highlight-title">🚀 Active Research Lines</h3>
                 <ul class="feature-list">
-                    <li><strong>Multi-objective AutoML:</strong> Simultaneous optimization of accuracy, fairness, and robustness</li>
-                    <li><strong>Automatic feature engineering:</strong> Automatic search for features with trustworthiness guarantees</li>
-                    <li><strong>Automated few-shot learning:</strong> Models that generalize with few labeled examples</li>
-                    <li><strong>Embedded audit:</strong> Automatic validation of biases and robustness during search</li>
+                    <li><strong>Neural Architecture Search (NAS):</strong> Automated discovery of efficient architectures tailored to specific tasks and hardware constraints.</li>
+                    <li><strong>Meta-learning for rapid adaptation:</strong> Training models that can quickly specialize to new domains with few examples.</li>
+                    <li><strong>AutoML for structured data:</strong> Automation pipelines optimized for tabular and time-series data common in industry.</li>
+                    <li><strong>Lightweight deployment:</strong> Compression and optimization techniques to make AutoML-generated models feasible for edge devices.</li>
                 </ul>
             </div>
             <div class="highlight-box">
@@ -308,20 +284,11 @@
     <div class="section-divider"></div>
 
     <!-- Footer minimalista -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                <strong>AutoML & Few-Shot Learning</strong> - GPAIS Research Area
-                <span aria-hidden="true">•</span>
-                <a href="../../index.html" class="footer-link">Back to GPAIS</a>
-                <span aria-hidden="true">•</span>
-                <a href="../../index.html" class="footer-link">IAFER Project 2026</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/pub-loader.js?v=3"></script>
-    <script src="../../js/base.js"></script>
+    <div id="footer-root"></div>
+<!-- Scripts -->
+    <script src="../../js/site-config.js"></script>
+    <script src="../../js/components.js"></script>
+<script src="../../js/pub-loader.js?v=3"></script>
+<script src="../../js/base.js"></script>
 </body>
 </html>

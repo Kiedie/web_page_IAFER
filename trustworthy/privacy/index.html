@@ -16,55 +16,9 @@
     <link rel="stylesheet" href="../../css/sidebar.css">
     <link rel="stylesheet" href="../../css/navbar.css">
 </head>
-<body id="top">
-    <!-- ==============================
-         MAIN NAVBAR
-    ============================== -->
-    <nav class="navbar" aria-label="Main navigation">
-        <div class="navbar__inner">
-            <a href="../../index.html" class="navbar__brand">IAFER</a>
-
-            <ul class="navbar__menu" id="navbar-menu">
-                <!-- GPAIS -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../gpais/index.html" class="navbar__link">GPAIS</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../../gpais/contrastive-learning/index.html">Contrastive Learning</a></li>
-                        <li><a href="../../gpais/self-supervised/index.html">Self-Supervised Learning</a></li>
-                        <li><a href="../../gpais/zero-shot/index.html">Zero-Shot Learning</a></li>
-                        <li><a href="../../gpais/agentic-ai/index.html">Agentic AI</a></li>
-                    </ul>
-                </li>
-
-                <!-- Trustworthy -->
-                <li class="navbar__item navbar__item--dropdown">
-                    <a href="../../trustworthy/index.html" class="navbar__link">Trustworthy</a>
-                    <ul class="navbar__dropdown">
-                        <li><a href="../../trustworthy/explainability/index.html">Explainability (XAI)</a></li>
-                        <li><a href="../../trustworthy/fairness/index.html">Fairness &amp; Bias</a></li>
-                        <li><a href="../../trustworthy/robustness/index.html">Robustness</a></li>
-                        <li><a href="../../trustworthy/privacy/index.html">Privacy</a></li>
-                        <li><a href="../../trustworthy/governance/index.html">Governance</a></li>
-                        <li><a href="../../trustworthy/critical-applications/index.html">Critical Applications</a></li>
-                    </ul>
-                </li>
-
-                <!-- Results -->
-                <li class="navbar__item">
-                    <a href="../../papers/index.html" class="navbar__link">Results</a>
-                </li>
-            </ul>
-
-            <button class="navbar__hamburger" id="navbar-toggle" aria-label="Open menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-
-    <!-- Hero Section -->
+<body data-page-title="Privacy & Federated Learning" id="top">
+<div id="navbar-root"></div>
+<!-- Hero Section -->
     <div class="hero-wrapper">
         <div class="hero-particles">
             <div class="particle particle-1"></div>
@@ -262,6 +216,29 @@
     <!-- Section divider -->
     <div class="section-divider"></div>
 
+    <!-- Section: Practical Applications -->
+    <div class="container">
+        <section class="content-section">
+            <h2 class="section-title">Practical Applications</h2>
+            <p class="section-intro">
+                Scenarios where privacy-preserving AI is essential
+            </p>
+            <div class="content-text">
+                <ul class="feature-list">
+                    <li><strong>Healthcare Collaboration:</strong> Hospitals jointly train diagnostic models on distributed patient data without sharing sensitive records, enabling multi-center studies while preserving patient confidentiality.</li>
+                    <li><strong>Financial Fraud Detection:</strong> Banks collaborate to detect cross-institutional fraud patterns without exposing individual transaction histories or customer identities.</li>
+                    <li><strong>Smart Cities:</strong> Federated traffic and energy optimization across municipalities where local sensor data remains private but collective models improve urban planning.</li>
+                    <li><strong>Mobile Personalization:</strong> On-device keyboards and assistants learn user preferences from local interactions without uploading raw keystrokes or voice recordings to central servers.</li>
+                    <li><strong>Pharmaceutical Research:</strong> Competitors and research institutes train drug-discovery models together on proprietary compound data while keeping molecular structures and trial results strictly confidential.</li>
+                    <li><strong>Wearable Health Monitoring:</strong> Fitness and medical wearables train models on user biometrics locally, contributing only encrypted parameter updates to improve global health models.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- Section divider -->
+    <div class="section-divider"></div>
+
     <!-- Our Research -->
     <div class="container">
         <section class="content-section">
@@ -293,19 +270,12 @@
     <div class="section-divider"></div>
 
     <!-- Footer minimalista -->
-    <footer class="footer">
-        <div class="container">
-            <p class="footer-text">
-                <strong>Privacy & Federated Learning</strong> - Trustworthy AI
-                <span aria-hidden="true">•</span>
-                <a href="../index.html" class="footer-link">ENIA IAFER Chair 2026</a>
-            </p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script src="../../js/sidebar.js"></script>
-    <script src="../../js/base.js"></script>
-    <script src="../../js/pub-loader.js"></script>
+    <div id="footer-root"></div>
+<!-- Scripts -->
+    <script src="../../js/site-config.js"></script>
+    <script src="../../js/components.js"></script>
+<script src="../../js/sidebar.js"></script>
+<script src="../../js/base.js"></script>
+<script src="../../js/pub-loader.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 // ============================================
-// BASE.JS - Funciones compartidas (opcional)
+// BASE.JS - Funciones compartidas
 // ============================================
 
 // Función de utilidad para logging
@@ -10,7 +10,7 @@ function log(message) {
 // Smooth scroll para enlaces internos
 document.addEventListener('DOMContentLoaded', function() {
     const links = document.querySelectorAll('a[href^="#"]');
-    
+
     links.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
